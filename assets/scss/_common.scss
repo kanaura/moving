@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* 共通のスタイル */
+
+header {
+    .wrap {
+        padding: 0 28px;
+
+        .site-header {
+            padding: 28px 0 24px;
+            text-align: right;
+            border-bottom: 1px solid #000000;
+
+            .logo {
+                width: 266px;
+                margin: 0 0 0 auto;
+
+                a {
+                    @include hover-effect;
+                }
+            }
+        }
+    }
+}
+
+.wrap {
+    width: 1125px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 0 28px;
+}
+
+.main-figure {
+    margin: 0 0 44px;
+    padding: 48px 62px;
+}
