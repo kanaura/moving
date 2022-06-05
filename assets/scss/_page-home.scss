@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* トップページのスタイル */
+
+body.home {
+    .btn-start {
+        @include flex-center;
+        width: 497px;
+        height: 75px;
+        margin: 0 auto 32px;
+        font-size: 28px;
+        font-weight: $fw-bold;
+        color: #ffffff;
+        background: linear-gradient(180deg, rgba(0,128,203,1) 31%, rgba(0,73,137,1) 73%);
+        border: none;
+        border-radius: 18px;
+        outline: none;
+        cursor: pointer;
+        @include hover-effect;
+    }
+
+    .btn-lead {
+        @include flex-center;
+        width: 468px;
+        height: 43px;
+        margin: 0 auto 88px;
+        font-size: 16px;
+        font-weight: $fw-bold;
+        color: #ffffff;
+        background-color: rgb(41, 171, 226);
+        border-radius: 21px;
+        cursor: pointer;
+        @include hover-effect;
+    }
+
+    .lead {
+        padding: 0 120px;
+
+        .txt-lead {
+            position: relative;
+            padding: 0 0 0 24px;
+            font-size: 21px;
+            font-weight: $fw-normal;
+            line-height: 1.35;
+            color: #000000;
+
+            &::before {
+                position: absolute;
+                content: '※';
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}

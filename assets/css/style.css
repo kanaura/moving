@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* 変数 */
+/* 基礎のスタイル */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700;900&display=swap&subset=japanese");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: 'Noto Sans JP', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+* a {
+  text-decoration: none !important;
+  color: unset;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 共通のスタイル */
+header .wrap {
+  padding: 0 28px;
+}
+
+header .wrap .site-header {
+  padding: 28px 0 24px;
+  text-align: right;
+  border-bottom: 1px solid #000000;
+}
+
+header .wrap .site-header .logo {
+  width: 266px;
+  margin: 0 0 0 auto;
+}
+
+header .wrap .site-header .logo a {
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+header .wrap .site-header .logo a:hover {
+  opacity: 0.7;
+}
+
+.wrap {
+  width: 1125px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 0 28px;
+}
+
+.main-figure {
+  margin: 0 0 44px;
+  padding: 48px 62px;
+}
+
+/* ナビーメニュー */
+/* トップページのスタイル */
+body.home .btn-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 497px;
+  height: 75px;
+  margin: 0 auto 32px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #0080cb), color-stop(73%, #004989));
+  background: linear-gradient(180deg, #0080cb 31%, #004989 73%);
+  border: none;
+  border-radius: 18px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.home .btn-start:hover {
+  opacity: 0.7;
+}
+
+body.home .btn-lead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 468px;
+  height: 43px;
+  margin: 0 auto 88px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #29abe2;
+  border-radius: 21px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.home .btn-lead:hover {
+  opacity: 0.7;
+}
+
+body.home .lead {
+  padding: 0 120px;
+}
+
+body.home .lead .txt-lead {
+  position: relative;
+  padding: 0 0 0 24px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #000000;
+}
+
+body.home .lead .txt-lead::before {
+  position: absolute;
+  content: '※';
+  left: 0;
+  top: 0;
+}
