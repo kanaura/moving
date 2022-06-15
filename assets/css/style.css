@@ -184,6 +184,26 @@ header .wrap .site-header .logo a:hover {
   margin: 0 8px 12px;
 }
 
+/* ----- TITLE ----- */
+.ttl-blue-wide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -24px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #0080cb), color-stop(73%, #004989));
+  background: linear-gradient(180deg, #0080cb 31%, #004989 73%);
+}
+
 /* ----- TEXT ----- */
 .txt {
   position: relative;
@@ -595,22 +615,7 @@ body.select .select-body {
 }
 
 body.select .select-body .select-body-ttl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 -24px 18px;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.8;
-  color: #ffffff;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #0080cb), color-stop(73%, #004989));
-  background: linear-gradient(180deg, #0080cb 31%, #004989 73%);
+  margin-bottom: 18px;
 }
 
 body.select .select-body .select-list .select-item .select-item-head {

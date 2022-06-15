@@ -65,7 +65,7 @@ $infos = [
             </div>
 
             <div class="select-body">
-                <p class="select-body-ttl">家財の選択</p>
+                <p class="select-body-ttl ttl-blue-wide">オプション</p>
 
                 <div class="select-list">
                     <?php for ($i = 0; $i < count($infos); $i++) : ?>
