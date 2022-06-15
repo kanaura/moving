@@ -49,7 +49,7 @@ include_once('./head.php');
                     下記よりお問い合わせください
                 </p>
 
-                <a class="btn-default" href="./">家財の内容を入力する</a>
+                <a class="btn-default" href="./select-01.php">家財の内容を入力する</a>
 
                 <div class="address-lead">
                     <p class="address-lead-head">

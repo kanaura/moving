@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* 家財・オプション選択ページのスタイル */
+
+body.select {
+    .select-head {
+        display: flex;
+        margin: 20px 0 50px;
+
+        .select-head-l {
+            width: calc(100% - 185px);
+
+            .select-head-l-ttl {
+                @include flex-center-v;
+                font-size: 15px;
+                font-weight: $fw-normal;
+                line-height: 1.8;
+
+                span {
+                    margin-right: 16px;
+                    font-size: 28px;
+                    font-weight: $fw-bold;
+                }
+            }
+
+            .select-head-bar-list {
+                @include flex-center-v;
+
+                .select-head-bar-item {
+                    position: relative;
+                    width: 25%;
+                    height: 68px;
+
+                    span {
+                        @include absolute-center;
+                        font-size: 14px;
+                        font-weight: $fw-bold;
+                    }
+
+                    &:nth-child(1) {
+                        background-color: rgba(0, 255, 255, 1.0);
+
+                        span {
+                            color: rgba(0, 73, 137, 1.0);
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        background-color: rgba(217, 224, 33, 1.0);
+
+                        span {
+                            color: rgba(0, 146, 69, 1.0);
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        background-color: rgba(251, 176, 59, 1.0);
+
+                        span {
+                            color: rgba(241, 90, 36, 1.0);
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        background-color: rgba(255, 123, 172, 1.0);
+
+                        span {
+                            color: rgba(193, 39, 45, 1.0);
+                        }
+                    }
+                }
+            }
+        }
+
+        .select-head-r {
+            width: 185px;
+            text-align: center;
+
+            .select-head-r-ttl {
+                margin: 0 0 7px;
+                font-size: 24px;
+                font-weight: $fw-bold;
+                line-height: 1.8;
+            }
+
+            .select-head-cur-value {
+                font-size: 26px;
+                font-weight: $fw-bold;
+                line-height: 1.8;
+
+                span {
+                    font-size: 68px;
+                    line-height: 1.0;
+                    color: rgba(255, 0, 0, 1.0);
+                }
+            }
+        }
+    }
+}
