@@ -5,25 +5,28 @@ include_once('./head.php');
 <?php
 $infos = [
     [
-        'ttl'   => '家　電',
+        'ttl'   => '家　電　設　置',
     ], 
     [
-        'ttl'   => '家　具',
+        'ttl'   => '家具設置',
     ], 
     [
-        'ttl'   => 'AV・PC',
+        'ttl'   => 'エアコンクリーニング',
     ], 
     [
-        'ttl'   => '生活用品',
+        'ttl'   => 'リサイクル処分',
     ], 
     [
-        'ttl'   => 'その他',
+        'ttl'   => 'マットレス処分',
     ], 
     [
-        'ttl'   => 'ダンボール',
+        'ttl'   => '不用品回収',
     ], 
     [
-        'ttl'   => 'フリー入力',
+        'ttl'   => 'エリア外対応',
+    ], 
+    [
+        'ttl'   => '4階以上作業',
     ], 
 ]
 ?>
@@ -101,39 +104,9 @@ $infos = [
                 </div>
             </div>
 
-            <p class="txt txt-has-star">
-                リスト内に掲載のない家財がある場合は、上記の「フリー入力」バナーを開いて家財の寸法（縦・横・高さ）をご入力ください。
-            </p>
-
-            <div class="select-standalone">
-                <div class="standalone-icon">
-                    <img src="./assets/img/select/standalone.png" alt="" />
-                </div>
-                <div class="standalone-info">
-                    <p class="standalone-info-ttl">単身楽チョイス</p>
-                    <p class="standalone-info-txt">
-                        コチラのボタンを押すと、下記の「単身者さまの基本的な家財」が自動で選択されますので、そこからお客様の家財に合わせて数量の変更、家財の追加・削除をしてください。
-                    </p>
-                </div>
-                <p class="standalone-desc">
-                    「単身楽チョイス」ボタンでの家財選択でもお見積り可能ですが、より正確なお見積りを行える様、必ず数量の変更、追加・削除を行ってください。
-                </p>
-            </div>
-
-            <div class="select-object">
-                <p class="select-object-ttl"><span>選択される家財</span></p>
-                <p class="select-object-txt txt">
-                    テレビ（32型以下）・冷蔵庫（100〜200L）・洗濯機（4〜8kg）・レンジ・エアコン・掃除機<br>
-                    ガスコンロ・ベッド（シングル）・マットレス（シングル）・メタルラック（横幅60cm以下）<br>
-                    ローボード・姿見・カーペット（6畳まで）・ソファー（2人掛け）・衣装ケース（3段以上）<br>
-                    ローテーブル（横幅120cm以下）・カラーボックス（3段以上）・布団一式・物干し竿<br>
-                    自転車（大人用）・ダンボール（大）5個
-                </p>
-            </div>
-
             <div class="bottom-btn-list">
-                <a class="btn btn-back" href="./address.php">戻る</a>
-                <a class="btn btn-default" href="./select-02.php">オプションの選択</a>
+                <a class="btn btn-back" href="./select-01.php">戻る</a>
+                <a class="btn btn-default" href="./select-date.php">お引越要望日の選択</a>
                 <a class="btn btn-clear" href="">クリア</a>
             </div>
         </div>
