@@ -30,7 +30,8 @@ $infos = [
     ], 
 ]
 ?>
-<body class="select select-01">
+
+<body class="select select-02">
     <?php include_once('./header.php'); ?>
 
     <div class="wrap">

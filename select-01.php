@@ -27,6 +27,7 @@ $infos = [
     ], 
 ]
 ?>
+
 <body class="select select-01">
     <?php include_once('./header.php'); ?>
 
