@@ -10,4 +10,21 @@ $(document).ready(function() {
     $('#popup-bg').on('click', function() {
         $('#popup').hide();
     });
+
+    /* 選択画面 */
+    $('.select-list .select-item .select-item-head').on('click', function() {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this)
+                .siblings('.select-item-body')
+                .slideUp(200);
+        } else {
+            $('.select-list .select-item .select-item-head').removeClass('active');
+            $(this).addClass('active');
+            $('.select-list .select-item .select-item-body').slideUp(200);
+            $(this)
+                .siblings('.select-item-body')
+                .slideDown(200);
+        }
+    });
 });

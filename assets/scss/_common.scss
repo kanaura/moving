@@ -53,6 +53,49 @@ header {
     @include hover-effect;
 }
 
+.btn-back {
+    @include flex-center;
+    width: 277px;
+    height: 75px;
+    margin: 0 auto 32px;
+    font-size: 28px;
+    font-weight: $fw-bold;
+    color: #ffffff;
+    background: linear-gradient(180deg, rgba(87,216,82,1) 31%, rgba(0,146,69,1) 73%);
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    cursor: pointer;
+    @include hover-effect;    
+}
+
+.btn-clear {
+    @include flex-center;
+    width: 497px;
+    height: 75px;
+    margin: 0 auto 32px;
+    font-size: 28px;
+    font-weight: $fw-bold;
+    color: #ffffff;
+    background: linear-gradient(180deg, rgba(204,204,204,1) 31%, rgba(102,102,102,1) 73%);
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    cursor: pointer;
+    @include hover-effect;
+}
+
+.bottom-btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+
+    .btn {
+        margin: 0 8px 12px;
+    }
+}
+
 /* ----- TEXT ----- */
 .txt {
     position: relative;
