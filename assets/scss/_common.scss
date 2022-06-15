@@ -47,7 +47,7 @@ header {
 
     &.txt-has-star {
         padding: 0 0 0 24px;
-        
+
         &::before {
             position: absolute;
             content: '※';
@@ -55,4 +55,9 @@ header {
             top: 0;
         }
     }
+}
+
+/* ----- MARGIN ----- */
+.mb-20 {
+    margin-bottom: 20px !important;
 }

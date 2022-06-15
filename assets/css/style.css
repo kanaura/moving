@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* 変数 */
 /* 基礎のスタイル */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700;900&display=swap&subset=japanese");
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,7 @@
 body {
   position: relative;
   padding-bottom: 100px;
-  font-family: 'Noto Sans JP', sans-serif;
+  /* font-family: 'Noto Sans JP', sans-serif; */
   overflow-x: hidden;
 }
 
@@ -98,6 +97,11 @@ header .wrap .site-header .logo a:hover {
   top: 0;
 }
 
+/* ----- MARGIN ----- */
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
 /* ナビーメニュー */
 /* トップページのスタイル */
 body.home .btn-start {
@@ -159,4 +163,118 @@ body.home .btn-lead:hover {
 
 body.home .lead {
   padding: 0 120px;
+}
+
+body.home #popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+body.home #popup .popup-bg {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.home #popup .popup-body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 844px;
+  padding: 16px 10px;
+  background-color: #ffffff;
+  border: 7px solid #002589;
+  border-radius: 12px;
+}
+
+body.home #popup .popup-body .popup-body-ttl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 75px;
+  margin: 0 0 10px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #002589;
+  border-radius: 40px;
+}
+
+body.home #popup .popup-body .popup-block {
+  position: relative;
+  width: 80%;
+  margin: 0 0 30px;
+  z-index: 1;
+}
+
+body.home #popup .popup-body .popup-block .popup-block-ttl {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: #002589;
+}
+
+body.home #popup .popup-body .popup-block .popup-block-txt {
+  padding: 0 0 0 24px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+body.home #popup .popup-body .popup-block .popup-block-txt span {
+  position: relative;
+  display: block;
+  padding: 0 0 0 16px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+body.home #popup .popup-body .popup-block .popup-block-txt span::before {
+  position: absolute;
+  content: '※';
+  left: 0;
+  top: 0;
+}
+
+body.home #popup .popup-body .popup-block:after {
+  content: '';
+  position: absolute;
+  left: 45%;
+  -webkit-transform: translateX(-45%);
+          transform: translateX(-45%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 23px 23px 0 23px;
+  border-color: #ff1d1b transparent transparent transparent;
+}
+
+body.home #popup .popup-body .popup-figure {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 360px;
+  z-index: 0;
 }
