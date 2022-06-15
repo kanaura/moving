@@ -37,6 +37,22 @@ header {
     padding: 48px 62px;
 }
 
+.btn-default {
+    @include flex-center;
+    width: 497px;
+    height: 75px;
+    margin: 0 auto 32px;
+    font-size: 28px;
+    font-weight: $fw-bold;
+    color: #ffffff;
+    background: linear-gradient(180deg, rgba(0,128,203,1) 31%, rgba(0,73,137,1) 73%);
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    cursor: pointer;
+    @include hover-effect;
+}
+
 /* ----- TEXT ----- */
 .txt {
     position: relative;
