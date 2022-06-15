@@ -36,3 +36,23 @@ header {
     margin: 0 0 44px;
     padding: 48px 62px;
 }
+
+/* ----- TEXT ----- */
+.txt {
+    position: relative;
+    font-size: 21px;
+    font-weight: $fw-normal;
+    line-height: 1.35;
+    color: #000000;
+
+    &.txt-has-star {
+        padding: 0 0 0 24px;
+        
+        &::before {
+            position: absolute;
+            content: '※';
+            left: 0;
+            top: 0;
+        }
+    }
+}
