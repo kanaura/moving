@@ -67,13 +67,13 @@ include_once('./head.php');
                 <p class="select-body-ttl ttl-blue-wide">お問い合わせ・要望</p>
 
                 <div class="select-message">
-                    <textarea></textarea>
+                    <textarea rows="10"></textarea>
                 </div>
             </div>
 
             <div class="bottom-btn-list">
-                <a class="btn btn-back" href="./select-01.php">戻る</a>
-                <a class="btn btn-default" href="./select-date.php">お引越要望日の選択</a>
+                <a class="btn btn-back" href="./select-02.php">戻る</a>
+                <a class="btn btn-default" href="./select-list.php">お引越要望日の選択</a>
                 <a class="btn btn-clear" href="">クリア</a>
             </div>
         </div>
