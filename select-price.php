@@ -80,7 +80,7 @@ include_once('./head.php');
 
             <div class="bottom-btn-list">
                 <a class="btn btn-back" href="./select-date.php">戻る</a>
-                <a class="btn btn-default" href="./select-price.php">お引越要望日の選択</a>
+                <a class="btn btn-default" href="./final.php">お引越要望日の選択</a>
             </div>
         </div>
     </div>
