@@ -204,6 +204,10 @@ header .wrap .site-header .logo a:hover {
   background: linear-gradient(180deg, #0080cb 31%, #004989 73%);
 }
 
+.ttl-blue-wide.ttl-blue-wide-full {
+  margin: 0;
+}
+
 /* ----- TEXT ----- */
 .txt {
   position: relative;
@@ -886,4 +890,134 @@ body.select-infos .select-info-date-wrapper .select-info-date {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.7;
+}
+
+body.select-price .price-body {
+  margin: 0 0 190px;
+  padding: 0 80px;
+}
+
+body.select-price .price-body .price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 148px;
+  margin: 0 0 16px;
+  background-color: #adffff;
+}
+
+body.select-price .price-body .price-wrapper .price {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+body.select-price .price-body .price-wrapper .price span {
+  font-size: 80px;
+}
+
+body.select-price .price-body .price-table {
+  margin: 0 0 36px;
+}
+
+body.select-price .price-body .price-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 36px;
+}
+
+body.select-price .price-body .price-table table tr {
+  width: 100%;
+}
+
+body.select-price .price-body .price-table table tr td, body.select-price .price-body .price-table table tr th {
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  border: 1px solid #000000;
+}
+
+body.select-price .price-body .price-table table tr th {
+  background-color: #adffff;
+}
+
+body.select-price .price-body .price-table table tr:last-child td {
+  background-color: #adffff;
+}
+
+body.select-price .attention .attention-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 72px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #ffb749), color-stop(73%, #ff6d00));
+  background: linear-gradient(180deg, #ffb749 31%, #ff6d00 73%);
+}
+
+body.select-price .attention .attention-body {
+  padding: 20px 24px 40px;
+  background-color: #fff29d;
+}
+
+body.select-price .attention .attention-body .attention-txt {
+  margin: 0 0 40px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+body.select-price .attention .attention-body .attention-agree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body.select-price .attention .attention-body .attention-agree .chk-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.select-price .attention .attention-body .attention-agree .chk-wrapper input[type=checkbox] {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+
+body.select-price .attention .attention-body .attention-agree .chk-wrapper label {
+  padding: 0 0 0 18px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.7;
+  cursor: pointer;
 }
