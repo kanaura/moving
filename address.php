@@ -15,15 +15,13 @@ include_once('./head.php');
                 <div class="address-select-block">
                     <p class="address-select-block-ttl">現住所</p>
                     <div class="address-select-wrapper">
-                        <select>
+                        <select name="select_prefecture_01" id="select_prefecture_01" >
                             <option>都道府県を選択</option>
-                            <option>北海道</option>
                         </select>
                     </div>
                     <div class="address-select-wrapper">
-                        <select>
+                        <select name="select_city_01" id="select_city_01">
                             <option>市町村を選択</option>
-                            <option>北海道</option>
                         </select>
                     </div>
                 </div>
@@ -75,5 +73,7 @@ include_once('./head.php');
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/address/address.js"></script>
+    <script src="./assets/js/address/prefectureCity.js"></script>
 </body>
 </html>
