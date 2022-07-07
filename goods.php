@@ -9,7 +9,7 @@ $infos = [
         'items' => [
             [
                 'ttl' => '冷蔵庫',
-                'img' => 'reizouko/reizouko-s.png', 
+                'img' => 'kaden/reizouko-s.png', 
                 'items' => [
                     [
                         'ttl'    => '100〜200L未満', 
@@ -43,7 +43,7 @@ $infos = [
             ],
             [
                 'ttl' => '洗濯機',
-                'img' => 'sentakuki/sentakuki.png', 
+                'img' => 'kaden/sentakuki.png', 
                 'items' => [
                     [
                         'ttl'    => '4kg〜8kg', 
@@ -70,7 +70,7 @@ $infos = [
             ],
             [
                 'ttl' => 'レンジ',
-                'img' => 'renji.png', 
+                'img' => 'kaden/renji.png', 
                 'len_01' => 50, 
                 'len_02' => 40, 
                 'len_03' => 30, 
@@ -79,7 +79,7 @@ $infos = [
             ],
             [
                 'ttl' => 'エアコン',
-                'img' => 'eakon.png', 
+                'img' => 'kaden/eakon.png', 
                 'items' => [
                     [
                         'ttl'    => '一般', 
@@ -99,11 +99,112 @@ $infos = [
             ],
             [
                 'ttl' => 'ファンヒーター',
-                'img' => 'renji.png', 
+                'img' => 'kaden/pensutando.png', 
                 'len_01' => 50, 
                 'len_02' => 40, 
                 'len_03' => 30, 
                 'size'   => 60000, 
+                'items' => []
+            ],
+            [
+                'ttl' => 'こたつ',
+                'img' => 'kaden/kotatu.png', 
+                'items' => [
+                    [
+                        'ttl'    => '正方形', 
+                        'len_01' => 75, 
+                        'len_02' => 75, 
+                        'len_03' => 40, 
+                        'size'   => 225000
+                    ], 
+                    [
+                        'ttl'    => '長方形', 
+                        'len_01' => 120, 
+                        'len_02' => 50, 
+                        'len_03' => 40, 
+                        'size'   => 240000
+                    ], 
+                ]
+            ],
+            [
+                'ttl' => '空気清浄機',
+                'img' => 'kaden/kuukiseijyouki.png', 
+                'len_01' => 60, 
+                'len_02' => 60, 
+                'len_03' => 30, 
+                'size'   => 108000, 
+                'items' => []
+            ],
+            [
+                'ttl' => 'ウォーターサーバー',
+                'img' => 'kaden/woterserver.png', 
+                'len_01' => 40, 
+                'len_02' => 40, 
+                'len_03' => 150, 
+                'size'   => 240000, 
+                'items' => []
+            ],
+            [
+                'ttl' => '掃除機',
+                'img' => 'kaden/soujiki.png', 
+                'len_01' => 30, 
+                'len_02' => 30, 
+                'len_03' => 90, 
+                'size'   => 81000, 
+                'items' => []
+            ],
+            [
+                'ttl' => '扇風機',
+                'img' => 'kaden/senpuuki.png', 
+                'len_01' => 40, 
+                'len_02' => 30, 
+                'len_03' => 70, 
+                'size'   => 84000, 
+                'items' => []
+            ],
+            [
+                'ttl' => 'ガスコンロ',
+                'img' => 'kaden/konro.png', 
+                'len_01' => 55, 
+                'len_02' => 40, 
+                'len_03' => 25, 
+                'size'   => 55000, 
+                'items' => []
+            ],
+            [
+                'ttl' => 'オーブントースター',
+                'img' => '', 
+                'len_01' => 35, 
+                'len_02' => 25, 
+                'len_03' => 30, 
+                'size'   => 26250, 
+                'items' => []
+            ],
+            [
+                'ttl' => '炊飯器',
+                'img' => '', 
+                'len_01' => 25, 
+                'len_02' => 35, 
+                'len_03' => 20, 
+                'size'   => 17500, 
+                'items' => []
+            ],
+            [
+                'ttl' => 'ポット',
+                'img' => '', 
+                'len_01' => 20, 
+                'len_02' => 30, 
+                'len_03' => 25, 
+                'size'   => 15000, 
+                'items' => []
+            ],
+            [
+                'ttl' => '照明器具',
+                'img' => 'kaden/siiringulight.png', 
+                'len_01' => 50, 
+                'len_02' => 50, 
+                'len_03' => 30, 
+                'size'   => 75000, 
                 'items' => []
             ],
         ]
