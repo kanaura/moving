@@ -33,7 +33,7 @@ include_once('./global.php');
                     <div class="select-head-r">
                         <p class="select-head-r-ttl">現在の家財</p>
                         <p class="select-head-cur-value">
-                            <span>10</span>立米
+                            <span id="calc-total">0</span>立米
                         </p>
                     </div>
                 </div>
@@ -78,6 +78,9 @@ include_once('./global.php');
                                                                             <span class="up"></span>
                                                                             <span class="dn"></span>
                                                                         </p>
+                                                                        <input type="hidden" class="ttl" name="goods_ttl[]" value="<?=$item['ttl'];?>" />
+                                                                        <input type="hidden" class="cnt" name="goods_cnt[]" value="0" />
+                                                                        <input type="hidden" class="size" name="goods_size[]" value="<?=$item['size'];?>" />
                                                                     </div>
                                                                 </li>
                                                             <?php endfor; ?>
@@ -90,6 +93,9 @@ include_once('./global.php');
                                                                 <span class="up"></span>
                                                                 <span class="dn"></span>
                                                             </p>
+                                                            <input type="hidden" class="ttl" name="goods_ttl[]" value="<?=$item['ttl'];?>" />
+                                                            <input type="hidden" class="cnt" name="goods_cnt[]" value="0" />
+                                                            <input type="hidden" class="size" name="goods_size[]" value="<?=$item['size'];?>" />
                                                         </div>
                                                     <?php endif; ?>
                                                 </td>
@@ -166,8 +172,8 @@ include_once('./global.php');
                 </div>
 
                 <div class="bottom-btn-list">
-                    <button type="button" class="btn btn-back" href="./address.php">戻る</a>
-                    <button type="submit" class="btn btn-default" href="./options.php">オプションの選択</a>
+                    <button type="button" class="btn btn-back" onclick="history.go(-1);">戻る</a>
+                    <button type="submit" class="btn btn-default">オプションの選択</a>
                     <button type="button" class="btn btn-clear" href="">クリア</a>
                 </div>
             </form>

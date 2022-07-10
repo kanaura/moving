@@ -689,6 +689,26 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
           transform: translateY(-50%);
   right: 24px;
   cursor: pointer;
+  padding-right: 30px;
+}
+
+body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 10px 0 10px;
+  border-color: #000000 transparent transparent transparent;
+}
+
+body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size.active:before {
+  border-width: 0 10px 20px 10px;
+  border-color: transparent transparent #000000 transparent;
 }
 
 body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl {

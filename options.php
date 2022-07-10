@@ -100,9 +100,9 @@ include_once('./global.php');
                 </div>
 
                 <div class="bottom-btn-list">
-                    <button type="button" class="btn btn-back" href="./select-01.php">戻る</button>
-                    <button type="submit" class="btn btn-default" href="./select-date.php">お引越要望日の選択</button>
-                    <button type="button" class="btn btn-clear" href="">クリア</button>
+                    <button type="button" class="btn btn-back" onclick="history.back()">戻る</a>
+                    <button type="submit" class="btn btn-default">お引越要望日の選択</button>
+                    <button type="button" class="btn btn-clear">クリア</button>
                 </div>
             </form>
         </div>
