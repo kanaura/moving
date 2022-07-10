@@ -698,6 +698,7 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
           transform: translateY(-50%);
   right: 24px;
   padding: 10px 60px 10px 10px;
+  background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 6px;
 }
@@ -739,6 +740,26 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
   border-style: solid;
   border-width: 15px 7px 0 7px;
   border-color: #000000 transparent transparent transparent;
+}
+
+body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text] {
+  width: 140px;
+  height: 56px;
+  font-size: 28px;
+  margin: 0 10px;
+  padding: 0 10px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  outline: none;
 }
 
 body.select .select-body .select-list .select-item .select-item-body table tr td .sub-item-list {

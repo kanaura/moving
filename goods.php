@@ -98,6 +98,39 @@ include_once('./global.php');
                             </div>
                         </div>
                     <?php endfor; ?>
+                    <div class="select-item">
+                        <p class="select-item-head">フリー入力</p>
+                        <div class="select-item-body">
+                            <table>
+                                <tbody>
+                                    <?php for ($i = 0; $i < 5; $i++) : ?>
+                                    <tr>
+                                        <td>
+                                            <div class="item-name">
+                                                <div class="free-row">
+                                                    <span>縦</span>
+                                                    <input type="text" />
+                                                    <span>cm ×&nbsp;</span>
+                                                    <span>横</span>
+                                                    <input type="text" />
+                                                    <span>cm ×&nbsp;</span>
+                                                    <span>高さ</span>
+                                                    <input type="text" />
+                                                    <span>cm</span>
+                                                </div>
+                                                <p class="item-ctrl">
+                                                    <span class="num">0</span>台
+                                                    <span class="up"></span>
+                                                    <span class="dn"></span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <?php endfor; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
 
