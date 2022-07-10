@@ -762,17 +762,17 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
   outline: none;
 }
 
-body.select .select-body .select-list .select-item .select-item-body table tr td .sub-item-list {
-  display: none;
-}
-
-body.select .select-body .select-list .select-item .select-item-body table tr td .sub-item-list li {
+body.select .select-body .select-list .select-item .select-item-body table tr td ul li {
   padding: 0 0 0 56px;
   border-top: 1px solid #000000;
 }
 
-body.select .select-body .select-list .select-item .select-item-body table tr td .sub-item-list li.gray {
+body.select .select-body .select-list .select-item .select-item-body table tr td ul li.gray {
   background-color: #e6e6e6;
+}
+
+body.select .select-body .select-list .select-item .select-item-body table tr td ul.sub-item-list {
+  display: none;
 }
 
 body.select .select-body .select-list .select-item .select-item-body table.has-image tr th {

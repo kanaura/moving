@@ -222,9 +222,7 @@ body.select {
                                     }
                                 }
 
-                                .sub-item-list {
-                                    display: none;
-
+                                ul {
                                     li {
                                         padding: 0 0 0 56px;
                                         border-top: 1px solid #000000;
@@ -232,6 +230,10 @@ body.select {
                                         &.gray {
                                             background-color: #e6e6e6;
                                         }
+                                    }
+
+                                    &.sub-item-list {
+                                        display: none;
                                     }
                                 }
                             }
