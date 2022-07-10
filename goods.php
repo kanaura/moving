@@ -1,239 +1,6 @@
 <?php
 include_once('./head.php');
-?>
-
-<?php
-$infos = [
-    [
-        'ttl'   => '家　電', 
-        'items' => [
-            [
-                'ttl' => '冷蔵庫',
-                'img' => 'kaden/reizouko-s.png', 
-                'items' => [
-                    [
-                        'ttl'    => '100〜200L未満', 
-                        'len_01' => 50, 
-                        'len_02' => 50, 
-                        'len_03' => 100, 
-                        'size'   => 250000
-                    ], 
-                    [
-                        'ttl'    => '200〜400L未満', 
-                        'len_01' => 60, 
-                        'len_02' => 60, 
-                        'len_03' => 160, 
-                        'size'   => 576000
-                    ], 
-                    [
-                        'ttl'    => '400〜500L未満', 
-                        'len_01' => 60, 
-                        'len_02' => 65, 
-                        'len_03' => 180, 
-                        'size'   => 702000
-                    ], 
-                    [
-                        'ttl'    => '500L以上', 
-                        'len_01' => 60, 
-                        'len_02' => 75, 
-                        'len_03' => 180, 
-                        'size'   => 877500
-                    ], 
-                ]
-            ],
-            [
-                'ttl' => '洗濯機',
-                'img' => 'kaden/sentakuki.png', 
-                'items' => [
-                    [
-                        'ttl'    => '4kg〜8kg', 
-                        'len_01' => 55, 
-                        'len_02' => 55, 
-                        'len_03' => 85, 
-                        'size'   => 257125
-                    ], 
-                    [
-                        'ttl'    => '9kg以上', 
-                        'len_01' => 60, 
-                        'len_02' => 60, 
-                        'len_03' => 90, 
-                        'size'   => 324000
-                    ], 
-                    [
-                        'ttl'    => 'ドラム式', 
-                        'len_01' => 60, 
-                        'len_02' => 70, 
-                        'len_03' => 110, 
-                        'size'   => 462000
-                    ], 
-                ]
-            ],
-            [
-                'ttl' => 'レンジ',
-                'img' => 'kaden/renji.png', 
-                'len_01' => 50, 
-                'len_02' => 40, 
-                'len_03' => 30, 
-                'size'   => 60000, 
-                'items' => []
-            ],
-            [
-                'ttl' => 'エアコン',
-                'img' => 'kaden/eakon.png', 
-                'items' => [
-                    [
-                        'ttl'    => '一般', 
-                        'len_01' => 80, 
-                        'len_02' => 30, 
-                        'len_03' => 90, 
-                        'size'   => 216000
-                    ], 
-                    [
-                        'ttl'    => '窓用', 
-                        'len_01' => 80, 
-                        'len_02' => 30, 
-                        'len_03' => 100, 
-                        'size'   => 240000
-                    ], 
-                ]
-            ],
-            [
-                'ttl' => 'ファンヒーター',
-                'img' => 'kaden/pensutando.png', 
-                'len_01' => 50, 
-                'len_02' => 40, 
-                'len_03' => 30, 
-                'size'   => 60000, 
-                'items' => []
-            ],
-            [
-                'ttl' => 'こたつ',
-                'img' => 'kaden/kotatu.png', 
-                'items' => [
-                    [
-                        'ttl'    => '正方形', 
-                        'len_01' => 75, 
-                        'len_02' => 75, 
-                        'len_03' => 40, 
-                        'size'   => 225000
-                    ], 
-                    [
-                        'ttl'    => '長方形', 
-                        'len_01' => 120, 
-                        'len_02' => 50, 
-                        'len_03' => 40, 
-                        'size'   => 240000
-                    ], 
-                ]
-            ],
-            [
-                'ttl' => '空気清浄機',
-                'img' => 'kaden/kuukiseijyouki.png', 
-                'len_01' => 60, 
-                'len_02' => 60, 
-                'len_03' => 30, 
-                'size'   => 108000, 
-                'items' => []
-            ],
-            [
-                'ttl' => 'ウォーターサーバー',
-                'img' => 'kaden/woterserver.png', 
-                'len_01' => 40, 
-                'len_02' => 40, 
-                'len_03' => 150, 
-                'size'   => 240000, 
-                'items' => []
-            ],
-            [
-                'ttl' => '掃除機',
-                'img' => 'kaden/soujiki.png', 
-                'len_01' => 30, 
-                'len_02' => 30, 
-                'len_03' => 90, 
-                'size'   => 81000, 
-                'items' => []
-            ],
-            [
-                'ttl' => '扇風機',
-                'img' => 'kaden/senpuuki.png', 
-                'len_01' => 40, 
-                'len_02' => 30, 
-                'len_03' => 70, 
-                'size'   => 84000, 
-                'items' => []
-            ],
-            [
-                'ttl' => 'ガスコンロ',
-                'img' => 'kaden/konro.png', 
-                'len_01' => 55, 
-                'len_02' => 40, 
-                'len_03' => 25, 
-                'size'   => 55000, 
-                'items' => []
-            ],
-            [
-                'ttl' => 'オーブントースター',
-                'img' => '', 
-                'len_01' => 35, 
-                'len_02' => 25, 
-                'len_03' => 30, 
-                'size'   => 26250, 
-                'items' => []
-            ],
-            [
-                'ttl' => '炊飯器',
-                'img' => '', 
-                'len_01' => 25, 
-                'len_02' => 35, 
-                'len_03' => 20, 
-                'size'   => 17500, 
-                'items' => []
-            ],
-            [
-                'ttl' => 'ポット',
-                'img' => '', 
-                'len_01' => 20, 
-                'len_02' => 30, 
-                'len_03' => 25, 
-                'size'   => 15000, 
-                'items' => []
-            ],
-            [
-                'ttl' => '照明器具',
-                'img' => 'kaden/siiringulight.png', 
-                'len_01' => 50, 
-                'len_02' => 50, 
-                'len_03' => 30, 
-                'size'   => 75000, 
-                'items' => []
-            ],
-        ]
-    ], 
-    [
-        'ttl'   => '家　具',
-        'items' => []
-    ], 
-    [
-        'ttl'   => 'AV・PC',
-        'items' => []
-    ], 
-    [
-        'ttl'   => '生活用品',
-        'items' => []
-    ], 
-    [
-        'ttl'   => 'その他',
-        'items' => []
-    ], 
-    [
-        'ttl'   => 'ダンボール',
-        'items' => []
-    ], 
-    [
-        'ttl'   => 'フリー入力',
-        'items' => []
-    ], 
-];
+include_once('./global.php');
 ?>
 
 <body class="select select-01">
@@ -275,13 +42,13 @@ $infos = [
 
                 <div class="select-list">
                     <?php 
-                    for ($i = 0; $i < count($infos); $i++) :
-                        $info = $infos[$i];
+                    for ($i = 0; $i < count($goods); $i++) :
+                        $info = $goods[$i];
                     ?>
                         <div class="select-item">
                             <p class="select-item-head"><?=$info['ttl'];?></p>
                             <div class="select-item-body">
-                                <table>
+                                <table class="has-image">
                                     <?php
                                     for ($j = 0; $j < count($info['items']); $j++) :
                                         $item = $info['items'][$j];
@@ -300,8 +67,9 @@ $infos = [
                                                         <?php
                                                         for ($k = 0; $k < count($item['items']); $k++) :
                                                             $sub_item = $item['items'][$k];
+                                                            $class = (($k % 2) != 0) ? 'gray' : '';
                                                         ?>
-                                                            <li>
+                                                            <li class="<?=$class;?>">
                                                                 <div class="item-name">
                                                                     <?=$sub_item['ttl'];?>
                                                                     <p class="item-ctrl">

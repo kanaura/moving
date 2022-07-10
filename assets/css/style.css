@@ -662,7 +662,6 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
 }
 
 body.select .select-body .select-list .select-item .select-item-body table tr th {
-  width: 135px;
   padding: 0 24px;
   text-align: center;
   vertical-align: top;
@@ -674,7 +673,6 @@ body.select .select-body .select-list .select-item .select-item-body table tr th
 
 body.select .select-body .select-list .select-item .select-item-body table tr td {
   position: relative;
-  width: calc(100% - 135px);
   font-size: 28px;
   font-weight: 700;
 }
@@ -750,6 +748,18 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
 body.select .select-body .select-list .select-item .select-item-body table tr td .sub-item-list li {
   padding: 0 0 0 56px;
   border-top: 1px solid #000000;
+}
+
+body.select .select-body .select-list .select-item .select-item-body table tr td .sub-item-list li.gray {
+  background-color: #e6e6e6;
+}
+
+body.select .select-body .select-list .select-item .select-item-body table.has-image tr th {
+  width: 135px;
+}
+
+body.select .select-body .select-list .select-item .select-item-body table.has-image tr td {
+  width: calc(100% - 135px);
 }
 
 body.select .select-standalone {

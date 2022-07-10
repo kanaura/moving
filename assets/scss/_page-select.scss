@@ -134,7 +134,6 @@ body.select {
                             }
 
                             th {
-                                width: 135px;
                                 padding: 0 24px;
                                 text-align: center;
                                 vertical-align: top;
@@ -146,7 +145,6 @@ body.select {
 
                             td {
                                 position: relative;
-                                width: calc(100% - 135px);
                                 font-size: 28px;
                                 font-weight: $fw-bold;
 
@@ -214,7 +212,23 @@ body.select {
                                     li {
                                         padding: 0 0 0 56px;
                                         border-top: 1px solid #000000;
+
+                                        &.gray {
+                                            background-color: #e6e6e6;
+                                        }
                                     }
+                                }
+                            }
+                        }
+
+                        &.has-image {
+                            tr {
+                                th {
+                                    width: 135px;
+                                }
+
+                                td {
+                                    width: calc(100% - 135px);
                                 }
                             }
                         }
