@@ -1,4 +1,10 @@
 <?php
+header('Cache-Control: no cache');
+session_cache_limiter('private_no_expire');
+session_start();
+
+$page_ttl = '入力内容の確認 | 株式会社ハコビズ';
+
 include_once('./head.php');
 ?>
 
@@ -11,7 +17,7 @@ include_once('./head.php');
                 <p class="select-body-ttl ttl-blue-wide">入力内容の確認</p>
                 <p class="select-overview">
                     <span class="small right">この度のお客様の<br>家財Lv.は</span>
-                    <span class="large">10</span>
+                    <span class="large"><?=$_SESSION['total_m3'];?></span>
                     <span class="medium">立米</span>
                     <span class="small">です。</span>
                 </p>

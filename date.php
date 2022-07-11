@@ -12,7 +12,7 @@ include_once('./head.php');
 
     <div class="wrap">
         <div class="content">
-            <form action="./list.php" method="POST">
+            <form action="./confirm.php" method="POST">
                 <div class="select-head">
                     <div class="select-head-l">
                         <p class="select-head-l-ttl">
