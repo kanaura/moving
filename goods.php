@@ -34,6 +34,7 @@ include_once('./global.php');
                         <p class="select-head-r-ttl">現在の家財</p>
                         <p class="select-head-cur-value">
                             <span id="calc-total">0</span>立米
+                            <input id="total-cm3" type="hidden" name="total" value="0" />
                         </p>
                     </div>
                 </div>

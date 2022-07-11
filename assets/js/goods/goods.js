@@ -22,8 +22,9 @@ $(function() {
 
             size = $(this).parent().find('.size').val();
             total += (size * count);
-            console.log(size);
         });
+
+        $('#total-cm3').val(total);
 
         total = total / 1000000;
         show_total = total.toFixed(1);
@@ -43,11 +44,20 @@ $(function() {
         return false;
     });
 
-    $('.up').on('click', function() {
+    $('.up').on('click', function() {        
         num = parseInt($(this).parent().find('.num').text());
         if (num < 9) {
             num++;
         }
+
+        total_cm3 = parseInt($('#total-cm3').val());
+        sel_size = parseInt($(this).parent().parent().find('.size').val());
+        calced_total = parseInt(total_cm3 + (sel_size * num));
+        if (calced_total > 23000000) {
+            alert('OVER!');
+            return false;
+        }
+
         $(this).parent().find('.num').text(num);
         $(this).parent().parent().find('.cnt').val(num);
 
