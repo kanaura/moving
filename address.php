@@ -25,7 +25,7 @@ include_once('./head.php');
                         </div>
                         <div class="address-select-wrapper">
                             <select name="select_city_01" id="select_city_01">
-                                <option>市町村を選択</option>
+                                <option value="">市町村を選択</option>
                             </select>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ include_once('./head.php');
                         <p class="address-select-block-ttl">転居先</p>
                         <div class="address-select-wrapper">
                             <select name="select_pref_02" id="select_prefecture_02" >
-                                <option>都道府県を選択</option>
+                                <option value="">都道府県を選択</option>
                             </select>
                         </div>
                         <div class="address-select-wrapper">
