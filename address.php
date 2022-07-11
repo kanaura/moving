@@ -1,4 +1,7 @@
 <?php
+session_start();
+
+$page_ttl = '住所の選択 | 株式会社ハコビズ';
 include_once('./head.php');
 ?>
 
@@ -16,7 +19,7 @@ include_once('./head.php');
                     <div class="address-select-block">
                         <p class="address-select-block-ttl">現住所</p>
                         <div class="address-select-wrapper">
-                            <select name="select_prefecture_01" id="select_prefecture_01" >
+                            <select name="select_pref_01" id="select_prefecture_01" >
                                 <option>都道府県を選択</option>
                             </select>
                         </div>
@@ -30,7 +33,7 @@ include_once('./head.php');
                     <div class="address-select-block">
                         <p class="address-select-block-ttl">転居先</p>
                         <div class="address-select-wrapper">
-                            <select name="select_prefecture_02" id="select_prefecture_02" >
+                            <select name="select_pref_02" id="select_prefecture_02" >
                                 <option>都道府県を選択</option>
                             </select>
                         </div>

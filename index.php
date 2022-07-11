@@ -1,4 +1,5 @@
 <?php
+$page_ttl = '住所の選択 | 株式会社ハコビズ';
 include_once('./head.php');
 ?>
 

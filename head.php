@@ -7,7 +7,7 @@
 	<meta http-equiv="Content-Style-Type" content="text/css" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title><?=$page_ttl;?></title>
 
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css">

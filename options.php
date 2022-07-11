@@ -1,6 +1,20 @@
 <?php
+header('Cache-Control: no cache');
+session_cache_limiter('private_no_expire');
+session_start();
+
+$page_ttl = 'オプションの選択 | 株式会社ハコビズ';
 include_once('./head.php');
 include_once('./global.php');
+?>
+
+<?php
+if (empty($_SESSION['sel_pref_01']) || empty($_SESSION['sel_city_01']) || 
+    empty($_SESSION['sel_city_01']) || empty($_SESSION['sel_city_02'])) {
+    header('Location: ' . './');
+}
+
+print_r($_SESSION['sel_pref_01']);
 ?>
 
 <body class="select select-02">

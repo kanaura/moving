@@ -1,6 +1,39 @@
 <?php
+header('Cache-Control: no cache');
+session_cache_limiter('private_no_expire');
+session_start();
+
+$page_ttl = '家財の選択 | 株式会社ハコビズ';
 include_once('./head.php');
 include_once('./global.php');
+?>
+
+<?php
+if (isset($_POST['select_pref_01'])) {
+    $_SESSION['sel_pref_01'] = $_POST['select_pref_01'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['select_city_01'])) {
+    $_SESSION['sel_city_01'] = $_POST['select_city_01'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['select_pref_02'])) {
+    $_SESSION['sel_pref_02'] = $_POST['select_pref_02'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['select_city_02'])) {
+    $_SESSION['sel_city_02'] = $_POST['select_city_02'];
+} else {
+    header('Location: ' . './');
+}
+
+print_r($_SESSION['sel_pref_01']);
 ?>
 
 <body class="select select-01">
@@ -79,9 +112,9 @@ include_once('./global.php');
                                                                             <span class="up"></span>
                                                                             <span class="dn"></span>
                                                                         </p>
-                                                                        <input type="hidden" class="ttl" name="goods_ttl[]" value="<?=$item['ttl'];?>" />
-                                                                        <input type="hidden" class="cnt" name="goods_cnt[]" value="0" />
-                                                                        <input type="hidden" class="size" name="goods_size[]" value="<?=$item['size'];?>" />
+                                                                        <input type="hidden" class="ttl" name="goods_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
+                                                                        <input type="hidden" class="cnt" name="goods_cnt[<?=$sub_item['idx'];?>]" value="0" />
+                                                                        <input type="hidden" class="size" name="goods_size[<?=$sub_item['idx'];?>]" value="<?=$sub_item['size'];?>" />
                                                                     </div>
                                                                 </li>
                                                             <?php endfor; ?>
@@ -94,9 +127,9 @@ include_once('./global.php');
                                                                 <span class="up"></span>
                                                                 <span class="dn"></span>
                                                             </p>
-                                                            <input type="hidden" class="ttl" name="goods_ttl[]" value="<?=$item['ttl'];?>" />
-                                                            <input type="hidden" class="cnt" name="goods_cnt[]" value="0" />
-                                                            <input type="hidden" class="size" name="goods_size[]" value="<?=$item['size'];?>" />
+                                                            <input type="hidden" class="ttl" name="goods_ttl[<?=$item['idx'];?>]" value="<?=$item['ttl'];?>" />
+                                                            <input type="hidden" class="cnt" name="goods_cnt[<?=$item['idx'];?>]" value="0" />
+                                                            <input type="hidden" class="size" name="goods_size[<?=$item['idx'];?>]" value="<?=$item['size'];?>" />
                                                         </div>
                                                     <?php endif; ?>
                                                 </td>
