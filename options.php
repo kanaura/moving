@@ -129,7 +129,7 @@ if (isset($_POST['total_cm3'])) {
                 </div>
 
                 <div class="bottom-btn-list">
-                    <button type="button" class="btn btn-back" onclick="history.back()">戻る</a>
+                    <button type="button" class="btn btn-back" onclick="history.back()">戻る</button>
                     <button type="submit" class="btn btn-default">お引越要望日の選択</button>
                     <button type="button" class="btn btn-clear">クリア</button>
                 </div>
