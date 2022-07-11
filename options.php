@@ -14,7 +14,13 @@ if (empty($_SESSION['sel_pref_01']) || empty($_SESSION['sel_city_01']) ||
     header('Location: ' . './');
 }
 
-print_r($_SESSION['sel_pref_01']);
+if (isset($_POST['total_m3'])) {
+    $_SESSION['total_m3'] = $_POST['total_m3'];
+}
+
+if (isset($_POST['total_cm3'])) {
+    $_SESSION['total_cm3'] = $_POST['total_cm3'];
+}
 ?>
 
 <body class="select select-02">
@@ -47,7 +53,10 @@ print_r($_SESSION['sel_pref_01']);
                     <div class="select-head-r">
                         <p class="select-head-r-ttl">現在の家財</p>
                         <p class="select-head-cur-value">
-                            <span>10</span>立米
+                            <span id="calc-total"><?=$_SESSION['total_m3'];?></span>立米
+                            <input id="total-base" type="hidden" name="total_base" value="<?=$_SESSION['total_cm3'];?>" />
+                            <input id="total-m3" type="hidden" name="total" value="<?=$_SESSION['total_m3'];?>" />
+                            <input id="total-cm3" type="hidden" name="total" value="<?=$_SESSION['total_cm3'];?>" />
                         </p>
                     </div>
                 </div>
@@ -89,6 +98,9 @@ print_r($_SESSION['sel_pref_01']);
                                                                     <span class="up"></span>
                                                                     <span class="dn"></span>
                                                                 </p>
+                                                                <input type="hidden" class="ttl" name="options_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
+                                                                <input type="hidden" class="cnt" name="options_cnt[<?=$sub_item['idx'];?>]" value="0" />
+                                                                <input type="hidden" class="size" name="options_size[<?=$sub_item['idx'];?>]" value="<?=$sub_item['size'];?>" />
                                                             </div>
                                                         </li>
                                                     <?php endfor; ?>
@@ -101,6 +113,9 @@ print_r($_SESSION['sel_pref_01']);
                                                         <span class="up"></span>
                                                         <span class="dn"></span>
                                                     </p>
+                                                    <input type="hidden" class="ttl" name="options_ttl[<?=$item['idx'];?>]" value="<?=$item['ttl'];?>" />
+                                                    <input type="hidden" class="cnt" name="options_cnt[<?=$item['idx'];?>]" value="0" />
+                                                    <input type="hidden" class="size" name="options_size[<?=$item['idx'];?>]" value="<?=$item['size'];?>" />
                                                 </div>
                                             <?php endif; ?>
                                         </td>

@@ -32,8 +32,6 @@ if (isset($_POST['select_city_02'])) {
 } else {
     header('Location: ' . './');
 }
-
-print_r($_SESSION['sel_pref_01']);
 ?>
 
 <body class="select select-01">
@@ -67,7 +65,9 @@ print_r($_SESSION['sel_pref_01']);
                         <p class="select-head-r-ttl">現在の家財</p>
                         <p class="select-head-cur-value">
                             <span id="calc-total">0</span>立米
-                            <input id="total-cm3" type="hidden" name="total" value="0" />
+                            <input id="total-base" type="hidden" name="total_base" value="0" />
+                            <input id="total-m3" type="hidden" name="total_m3" value="0" />
+                            <input id="total-cm3" type="hidden" name="total_cm3" value="0" />
                         </p>
                     </div>
                 </div>

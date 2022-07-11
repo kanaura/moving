@@ -15,12 +15,13 @@ $(function() {
     });
 
     function refresh_total() {
-        total = 0;
+        total = parseInt($('#total-base').val());
+
         $('.cnt').each(function(index) {
-            count = $(this).val();
+            count = parseInt($(this).val());
             if (count == 0) return;
 
-            size = $(this).parent().find('.size').val();
+            size = parseInt($(this).parent().find('.size').val());
             total += (size * count);
         });
 
@@ -29,6 +30,7 @@ $(function() {
         total = total / 1000000;
         show_total = total.toFixed(1);
         $('#calc-total').text(show_total);
+        $('#total-m3').val(show_total);
     }
 
     $('.dn').on('click', function() {
