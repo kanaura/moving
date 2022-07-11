@@ -31,11 +31,11 @@ include_once('./head.php');
                         </tr>
                         <tr>
                             <td class="sht">現住所</td>
-                            <td class="lng"></td>
+                            <td class="lng"><?=$_SESSION['sel_pref_01']?></td>
                         </tr>
                         <tr>
                             <td class="sht">転居先</td>
-                            <td class="lng"></td>
+                            <td class="lng"><?=$_SESSION['sel_pref_02']?></td>
                         </tr>
                     </table>
                 </div>

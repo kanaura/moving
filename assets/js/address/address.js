@@ -60,7 +60,7 @@ $(function() {
         $(target + ' option:nth-child(n+2)').remove();
 
         for (i = 0; i < city[idx].length; i++) {
-            $(target).append('<option>' + city[idx][i] + '</option>');
+            $(target).append('<option value="' + i + '">' + city[idx][i] + '</option>');
         }
 
         return city[idx];

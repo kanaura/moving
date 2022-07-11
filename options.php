@@ -21,6 +21,18 @@ if (isset($_POST['total_m3'])) {
 if (isset($_POST['total_cm3'])) {
     $_SESSION['total_cm3'] = $_POST['total_cm3'];
 }
+
+if (isset($_POST['goods_ttl'])) {
+    $_SESSION['goods_ttl'] = $_POST['goods_ttl'];
+}
+
+if (isset($_POST['goods_cnt'])) {
+    $_SESSION['goods_cnt'] = $_POST['goods_cnt'];
+}
+
+if (isset($_POST['goods_size'])) {
+    $_SESSION['goods_size'] = $_POST['goods_size'];
+}
 ?>
 
 <body class="select select-02">

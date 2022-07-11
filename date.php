@@ -7,6 +7,25 @@ $page_ttl = 'お引越要望日の選択 | 株式会社ハコビズ';
 include_once('./head.php');
 ?>
 
+<?php
+if (empty($_SESSION['sel_pref_01']) || empty($_SESSION['sel_city_01']) || 
+    empty($_SESSION['sel_city_01']) || empty($_SESSION['sel_city_02'])) {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['options_ttl'])) {
+    $_SESSION['options_ttl'] = $_POST['options_ttl'];
+}
+
+if (isset($_POST['options_cnt'])) {
+    $_SESSION['options_cnt'] = $_POST['options_cnt'];
+}
+
+if (isset($_POST['options_size'])) {
+    $_SESSION['options_size'] = $_POST['options_size'];
+}
+?>
+
 <body class="select select-date">
     <?php include_once('./header.php'); ?>
 
