@@ -39,8 +39,7 @@ include_once('./head.php');
                         </div>
                         <div class="address-select-wrapper">
                             <select name="select_city_02" id="select_city_02">
-                                <option>市町村を選択</option>
-                                <option>北海道</option>
+                                <option value="">市町村を選択</option>
                             </select>
                         </div>
                     </div>

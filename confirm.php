@@ -6,6 +6,25 @@ session_start();
 $page_ttl = '入力内容の確認 | 株式会社ハコビズ';
 
 include_once('./head.php');
+include_once('./global.php');
+?>
+
+<?php
+function get_pref($pref_id)
+{
+    global $address;
+
+    $result = null;
+
+    for ($i = 0; $i < count($address); $i++) {
+        if ($address[$i]['id'] == $pref_id) {
+            $result = $address[$i];
+            break;
+        }
+    }
+
+    return $result;
+}
 ?>
 
 <body class="select select-infos select-price">
@@ -31,11 +50,27 @@ include_once('./head.php');
                         </tr>
                         <tr>
                             <td class="sht">現住所</td>
-                            <td class="lng"><?=$_SESSION['sel_pref_01']?></td>
+                            <td class="lng">
+                                <?php
+                                $pref = get_pref($_SESSION['sel_pref_01']);
+                                if ($pref != null) :
+                                ?>
+                                <?=$pref['name'];?>&nbsp;
+                                <?=$pref['city'][$_SESSION['sel_city_01']];?>
+                                <?php endif; ?>
+                            </td>
                         </tr>
                         <tr>
                             <td class="sht">転居先</td>
-                            <td class="lng"><?=$_SESSION['sel_pref_02']?></td>
+                            <td class="lng">
+                                <?php
+                                $pref = get_pref($_SESSION['sel_pref_02']);
+                                if ($pref != null) :
+                                ?>
+                                <?=$pref['name'];?>&nbsp;
+                                <?=$pref['city'][$_SESSION['sel_city_02']];?>
+                                <?php endif; ?>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -43,48 +78,40 @@ include_once('./head.php');
                 <p class="select-body-ttl ttl-blue-wide">選んだ家財</p>
                 <div class="select-info-table">
                     <table>
+                        <?php
+                        $goods_ttl = $_SESSION['goods_ttl'];
+                        $goods_cnt = $_SESSION['goods_cnt'];
+                        for ($i = 0; $i < count($_SESSION['goods_ttl']); $i++) :
+                            if ($goods_cnt[$i] != 0) :
+                        ?>
                         <tr>
-                            <td class="lng">冷蔵庫 [100L～200L 未満]</td>
-                            <td class="sht">1台</td>
+                            <td class="lng"><?=$goods_ttl[$i];?></td>
+                            <td class="sht"><?=$goods_cnt[$i];?>台</td>
                         </tr>
-                        <tr>
-                            <td class="lng">洗濯機 [4kgから8kg]</td>
-                            <td class="sht">1台</td>
-                        </tr>
-                        <tr>
-                            <td class="lng">レンジ</td>
-                            <td class="sht">1台</td>
-                        </tr>
-                        <tr>
-                            <td class="lng">エアコン</td>
-                            <td class="sht">1台</td>
-                        </tr>
-                        <tr>
-                            <td class="lng">ストーブ</td>
-                            <td class="sht">1台</td>
-                        </tr>
-                        <tr>
-                            <td class="lng">こたつ</td>
-                            <td class="sht">1台</td>
-                        </tr>
+                        <?php
+                            endif;
+                        endfor; 
+                        ?>
                     </table>
                 </div>
 
                 <p class="select-body-ttl ttl-blue-wide">オプション</p>
                 <div class="select-info-table">
                     <table>
+                        <?php
+                        $options_ttl = $_SESSION['options_ttl'];
+                        $options_cnt = $_SESSION['options_cnt'];
+                        for ($i = 0; $i < count($_SESSION['options_ttl']); $i++) :
+                            if ($options_cnt[$i] != 0) :
+                        ?>
                         <tr>
-                            <td class="lng">エアコンクリーニング</td>
-                            <td class="sht">1台</td>
+                            <td class="lng"><?=$options_ttl[$i];?></td>
+                            <td class="sht"><?=$options_cnt[$i];?>台</td>
                         </tr>
-                        <tr>
-                            <td class="lng">テレビ設置</td>
-                            <td class="sht">1台</td>
-                        </tr>
-                        <tr>
-                            <td class="lng">エリア外対応</td>
-                            <td class="sht">1台</td>
-                        </tr>
+                        <?php
+                            endif;
+                        endfor; 
+                        ?>
                     </table>
                 </div>
 

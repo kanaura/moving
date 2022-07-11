@@ -8,8 +8,7 @@ include_once('./head.php');
 ?>
 
 <?php
-if (empty($_SESSION['sel_pref_01']) || empty($_SESSION['sel_city_01']) || 
-    empty($_SESSION['sel_city_01']) || empty($_SESSION['sel_city_02'])) {
+if (!isset($_SESSION['sel_pref_01']) || !isset($_SESSION['sel_city_01']) || !isset($_SESSION['sel_pref_02']) || !isset($_SESSION['sel_city_02'])) {
     header('Location: ' . './');
 }
 
