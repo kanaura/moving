@@ -909,22 +909,85 @@ body.select-date .select-calendar table tr th, body.select-date .select-calendar
   border: 1px solid #000000;
 }
 
-body.select-date .select-calendar table tr th:first-child, body.select-date .select-calendar table tr td:first-child {
+body.select-date .select-calendar table thead tr th:first-child {
   color: red;
   background-color: #ff7bac;
 }
 
-body.select-date .select-calendar table tr th:last-child, body.select-date .select-calendar table tr td:last-child {
+body.select-date .select-calendar table thead tr th:last-child {
   color: #004989;
   background-color: #3fa9f5;
 }
 
-body.select-date .select-calendar table tr th {
-  height: 55px;
+body.select-date .select-calendar table tbody table tr td {
+  height: 95px;
 }
 
-body.select-date .select-calendar table tr td {
-  height: 95px;
+body.select-date .select-calendar table tbody table tr td:first-child {
+  color: red;
+  background-color: #ff7bac;
+}
+
+body.select-date .select-calendar table tbody table tr td:last-child {
+  color: #004989;
+  background-color: #3fa9f5;
+}
+
+body.select-date .select-calendar .fc-header-toolbar {
+  position: relative;
+}
+
+body.select-date .select-calendar .fc-header-toolbar .fc-toolbar-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+body.select-date .select-calendar .fc-header-toolbar .fc-prev-button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body.select-date .select-calendar .fc-header-toolbar .fc-prev-button:before {
+  content: '<先月';
+}
+
+body.select-date .select-calendar .fc-header-toolbar .fc-next-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body.select-date .select-calendar .fc-header-toolbar .fc-next-button:before {
+  content: '次月>';
+}
+
+body.select-date .select-calendar .fc-header-toolbar .fc-today-button {
+  display: none;
+}
+
+body.select-date .select-calendar .fc-header-toolbar .fc-toolbar-chunk:first-child {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+body.select-date .select-calendar .fc-header-toolbar .fc-toolbar-chunk:last-child {
+  display: none;
 }
 
 body.select-infos .select-overview {

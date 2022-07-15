@@ -67,28 +67,7 @@ if (isset($_POST['options_size'])) {
                     <p class="select-body-ttl ttl-blue-wide">お引越要望日</p>
 
                     <div class="select-calendar">
-                        <table>
-                            <tr>
-                                <th>日</th>
-                                <th>月</th>
-                                <th>火</th>
-                                <th>水</th>
-                                <th>木</th>
-                                <th>金</th>
-                                <th>土</th>
-                            </tr>
-                            <?php for ($i = 0; $i < 5; $i++) : ?>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <?php endfor; ?>
-                        </table>
+                        <div id="calendar"></div>
                     </div>
 
                     <p class="select-body-ttl ttl-blue-wide">お問い合わせ・要望</p>
@@ -108,5 +87,8 @@ if (isset($_POST['options_size'])) {
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./libs/moment/moment.min.js"></script>
+    <script src="./libs/fullcalendar/main.js"></script>
+    <script src="./assets/js/date/date.js"></script>
 </body>
 </html>
