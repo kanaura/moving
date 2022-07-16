@@ -71,6 +71,18 @@ if (isset($_POST['options_size'])) {
                         <input id="date" type="hidden" name="date" value="" />
                     </div>
 
+                    <div class="select-time">
+                        <p>時　間　帯　：　</p>
+                        <label style="margin-right: 20px;">
+                            <input type="radio" name="time" value="am" />
+                            <span>　午　前</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="time" value="pm" />
+                            <span>　午　後</span>
+                        </label>
+                    </div>
+
                     <p class="select-body-ttl ttl-blue-wide">お問い合わせ・要望</p>
 
                     <div class="select-message">

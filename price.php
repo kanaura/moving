@@ -1,4 +1,10 @@
 <?php
+header('Cache-Control: no cache');
+session_cache_limiter('private_no_expire');
+session_start();
+
+$page_ttl = 'お見積り金額 | 株式会社ハコビズ';
+
 include_once('./head.php');
 ?>
 
