@@ -397,7 +397,7 @@ body.select-date {
                 table {
                     tr {
                         td {
-                            height: 95px;
+                            cursor: pointer;
 
                             &:first-child {
                                 color: rgba(255, 0, 0, 1.0);
@@ -407,6 +407,33 @@ body.select-date {
                             &:last-child {
                                 color: rgba(0, 73, 137, 1.0);
                                 background-color: rgba(63, 169, 245, 1.0);
+                            }
+
+                            .fc-daygrid-day-frame {
+                                position: relative;
+
+                                .fc-daygrid-day-top {
+                                    position: relative;
+                                    @include flex-center;
+                                    height: 95px;
+
+                                    .fc-daygrid-day-number {
+                                        z-index: 1;
+                                    }
+                                }
+
+                                .fc-daygrid-day-bg {
+                                    z-index: 0;
+
+                                    .fc-highlight {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        background-color: #c6c6c6;
+                                    }
+                                }
                             }
                         }
                     }

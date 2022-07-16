@@ -920,7 +920,7 @@ body.select-date .select-calendar table thead tr th:last-child {
 }
 
 body.select-date .select-calendar table tbody table tr td {
-  height: 95px;
+  cursor: pointer;
 }
 
 body.select-date .select-calendar table tbody table tr td:first-child {
@@ -931,6 +931,41 @@ body.select-date .select-calendar table tbody table tr td:first-child {
 body.select-date .select-calendar table tbody table tr td:last-child {
   color: #004989;
   background-color: #3fa9f5;
+}
+
+body.select-date .select-calendar table tbody table tr td .fc-daygrid-day-frame {
+  position: relative;
+}
+
+body.select-date .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-top {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 95px;
+}
+
+body.select-date .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-top .fc-daygrid-day-number {
+  z-index: 1;
+}
+
+body.select-date .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-bg {
+  z-index: 0;
+}
+
+body.select-date .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-bg .fc-highlight {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c6c6c6;
 }
 
 body.select-date .select-calendar .fc-header-toolbar {

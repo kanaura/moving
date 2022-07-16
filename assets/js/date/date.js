@@ -15,6 +15,7 @@ $(function() {
             center: 'title',
         },
         locale: 'ja',
+        selectable: true,
     });
 
     calendar.render();
