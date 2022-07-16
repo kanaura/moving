@@ -409,6 +409,7 @@ body.select-date {
                                 background-color: rgba(63, 169, 245, 1.0);
                             }
 
+                            
                             .fc-daygrid-day-frame {
                                 position: relative;
 
@@ -434,6 +435,10 @@ body.select-date {
                                         background-color: #c6c6c6;
                                     }
                                 }
+                            }
+
+                            &.fc-day-past {
+                                color: #e6e6e6;
                             }
                         }
                     }
@@ -498,6 +503,10 @@ body.select-date {
                     display: none;
                 }
             }
+        }
+
+        .fc-view-harness {
+            height: auto !important
         }
     }
 }

@@ -968,6 +968,10 @@ body.select-date .select-calendar table tbody table tr td .fc-daygrid-day-frame 
   background-color: #c6c6c6;
 }
 
+body.select-date .select-calendar table tbody table tr td.fc-day-past {
+  color: #e6e6e6;
+}
+
 body.select-date .select-calendar .fc-header-toolbar {
   position: relative;
 }
@@ -1023,6 +1027,10 @@ body.select-date .select-calendar .fc-header-toolbar .fc-toolbar-chunk:first-chi
 
 body.select-date .select-calendar .fc-header-toolbar .fc-toolbar-chunk:last-child {
   display: none;
+}
+
+body.select-date .select-calendar .fc-view-harness {
+  height: auto !important;
 }
 
 body.select-infos .select-overview {

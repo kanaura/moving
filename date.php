@@ -68,6 +68,7 @@ if (isset($_POST['options_size'])) {
 
                     <div class="select-calendar">
                         <div id="calendar"></div>
+                        <input id="date" type="hidden" name="date" value="" />
                     </div>
 
                     <p class="select-body-ttl ttl-blue-wide">お問い合わせ・要望</p>

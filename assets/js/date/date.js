@@ -1,9 +1,9 @@
 /* javascriptのコードを記載 */
 $(function() {
-    var date = new Date()
-    var d    = date.getDate(),
-        m    = date.getMonth(),
-        y    = date.getFullYear()
+    var startDate = new Date()
+    var d    = startDate.getDate(),
+        m    = startDate.getMonth(),
+        y    = startDate.getFullYear()
 
     var Calendar = FullCalendar.Calendar;
 
@@ -16,6 +16,13 @@ $(function() {
         },
         locale: 'ja',
         selectable: true,
+        selectConstraint: {
+            start: startDate
+        },
+        select: function(start, end, event, view) {
+            console.log(start);
+            $('#date').val(start.startStr);
+        }
     });
 
     calendar.render();
