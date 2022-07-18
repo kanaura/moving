@@ -8,6 +8,23 @@ $page_ttl = 'お見積り金額 | 株式会社ハコビズ';
 include_once('./head.php');
 ?>
 
+<?php
+function calc_price_options() {
+    $sum = 0;
+    for ($i = 0; $i < count($_SESSION['options_cnt']); $i++) {
+        $cnt = $_SESSION['options_cnt'][$i];
+        $price = $_SESSION['options_price'][$i];
+        if ($cnt != 0) {
+            $sum += ($price * $cnt);    
+        }
+    }
+
+    return $sum;
+}
+
+$price_options = calc_price_options();
+?>
+
 <body class="select select-infos select-price">
     <?php include_once('./header.php'); ?>
 
@@ -17,9 +34,12 @@ include_once('./head.php');
                 <p class="select-body-ttl ttl-blue-wide">お見積り金額</p>
                 <p class="select-overview">
                     <span class="small right">この度のお客様の<br>家財Lv.は</span>
-                    <span class="large">10</span>
+                    <span class="large"><?=$_SESSION['total_m3'];?></span>
                     <span class="medium">立米</span>
                     <span class="small">です。</span>
+                    <input id="total-base" type="hidden" name="total_base" value="<?=$_SESSION['total_cm3'];?>" />
+                    <input id="total-m3" type="hidden" name="total_m3" value="<?=$_SESSION['total_m3'];?>" />
+                    <input id="total-cm3" type="hidden" name="total_cm3" value="<?=$_SESSION['total_cm3'];?>" />
                 </p>
 
                 <div class="price-body">
@@ -41,7 +61,7 @@ include_once('./head.php');
                             </tr>
                             <tr>
                                 <td>オプション</td>
-                                <td></td>
+                                <td><?=number_format($price_options);?></td>
                             </tr>
                             <tr>
                                 <td>消費税</td>

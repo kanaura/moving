@@ -23,6 +23,10 @@ if (isset($_POST['options_cnt'])) {
 if (isset($_POST['options_size'])) {
     $_SESSION['options_size'] = $_POST['options_size'];
 }
+
+if (isset($_POST['options_price'])) {
+    $_SESSION['options_price'] = $_POST['options_price'];
+}
 ?>
 
 <body class="select select-date">
@@ -57,8 +61,8 @@ if (isset($_POST['options_size'])) {
                         <p class="select-head-cur-value">
                             <span id="calc-total"><?=$_SESSION['total_m3'];?></span>立米
                             <input id="total-base" type="hidden" name="total_base" value="<?=$_SESSION['total_cm3'];?>" />
-                            <input id="total-m3" type="hidden" name="total" value="<?=$_SESSION['total_m3'];?>" />
-                            <input id="total-cm3" type="hidden" name="total" value="<?=$_SESSION['total_cm3'];?>" />
+                            <input id="total-m3" type="hidden" name="total_m3" value="<?=$_SESSION['total_m3'];?>" />
+                            <input id="total-cm3" type="hidden" name="total_cm3" value="<?=$_SESSION['total_cm3'];?>" />
                         </p>
                     </div>
                 </div>

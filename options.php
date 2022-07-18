@@ -66,8 +66,8 @@ if (isset($_POST['goods_size'])) {
                         <p class="select-head-cur-value">
                             <span id="calc-total"><?=$_SESSION['total_m3'];?></span>立米
                             <input id="total-base" type="hidden" name="total_base" value="<?=$_SESSION['total_cm3'];?>" />
-                            <input id="total-m3" type="hidden" name="total" value="<?=$_SESSION['total_m3'];?>" />
-                            <input id="total-cm3" type="hidden" name="total" value="<?=$_SESSION['total_cm3'];?>" />
+                            <input id="total-m3" type="hidden" name="total_m3" value="<?=$_SESSION['total_m3'];?>" />
+                            <input id="total-cm3" type="hidden" name="total_cm3" value="<?=$_SESSION['total_cm3'];?>" />
                         </p>
                     </div>
                 </div>
@@ -112,6 +112,7 @@ if (isset($_POST['goods_size'])) {
                                                                 <input type="hidden" class="ttl" name="options_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
                                                                 <input type="hidden" class="cnt" name="options_cnt[<?=$sub_item['idx'];?>]" value="0" />
                                                                 <input type="hidden" class="size" name="options_size[<?=$sub_item['idx'];?>]" value="<?=$sub_item['size'];?>" />
+                                                                <input type="hidden" class="price" name="options_price[<?=$sub_item['idx'];?>]" value="<?=$sub_item['price'];?>" />
                                                             </div>
                                                         </li>
                                                     <?php endfor; ?>
@@ -127,6 +128,7 @@ if (isset($_POST['goods_size'])) {
                                                     <input type="hidden" class="ttl" name="options_ttl[<?=$item['idx'];?>]" value="<?=$item['ttl'];?>" />
                                                     <input type="hidden" class="cnt" name="options_cnt[<?=$item['idx'];?>]" value="0" />
                                                     <input type="hidden" class="size" name="options_size[<?=$item['idx'];?>]" value="<?=$item['size'];?>" />
+                                                    <input type="hidden" class="price" name="options_price[<?=$item['idx'];?>]" value="<?=$item['price'];?>" />
                                                 </div>
                                             <?php endif; ?>
                                         </td>

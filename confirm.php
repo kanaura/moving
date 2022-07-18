@@ -54,6 +54,9 @@ if (isset($_POST['time'])) {
                         <span class="large"><?=$_SESSION['total_m3'];?></span>
                         <span class="medium">立米</span>
                         <span class="small">です。</span>
+                        <input id="total-base" type="hidden" name="total_base" value="<?=$_SESSION['total_cm3'];?>" />
+                        <input id="total-m3" type="hidden" name="total_m3" value="<?=$_SESSION['total_m3'];?>" />
+                        <input id="total-cm3" type="hidden" name="total_cm3" value="<?=$_SESSION['total_cm3'];?>" />
                     </p>
 
                     <p class="select-body-ttl ttl-blue-wide">お客様情報</p>
