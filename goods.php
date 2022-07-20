@@ -110,7 +110,7 @@ if (isset($_POST['select_city_02'])) {
                                                                         <p class="item-ctrl">
                                                                             <span class="num">0</span>台
                                                                             <span class="up"></span>
-                                                                            <span class="dn"></span>
+                                                                            <span class="dn good"></span>
                                                                         </p>
                                                                         <input type="hidden" class="ttl" name="goods_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
                                                                         <input type="hidden" class="cnt" name="goods_cnt[<?=$sub_item['idx'];?>]" value="0" />
@@ -124,8 +124,8 @@ if (isset($_POST['select_city_02'])) {
                                                             <?=$item['ttl'];?>
                                                             <p class="item-ctrl">
                                                                 <span class="num">0</span>台
-                                                                <span class="up"></span>
-                                                                <span class="dn"></span>
+                                                                <span class="up good"></span>
+                                                                <span class="dn good"></span>
                                                             </p>
                                                             <input type="hidden" class="ttl" name="goods_ttl[<?=$item['idx'];?>]" value="<?=$item['ttl'];?>" />
                                                             <input type="hidden" class="cnt" name="goods_cnt[<?=$item['idx'];?>]" value="0" />
@@ -161,8 +161,8 @@ if (isset($_POST['select_city_02'])) {
                                                     </div>
                                                     <p class="item-ctrl">
                                                         <span class="num">0</span>台
-                                                        <span class="up"></span>
-                                                        <span class="dn"></span>
+                                                        <span class="up good"></span>
+                                                        <span class="dn good"></span>
                                                     </p>
                                                 </div>
                                             </td>

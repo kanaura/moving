@@ -106,8 +106,8 @@ if (isset($_POST['goods_size'])) {
                                                                 <?=$sub_item['ttl'];?>
                                                                 <p class="item-ctrl">
                                                                     <span class="num">0</span>台
-                                                                    <span class="up"></span>
-                                                                    <span class="dn"></span>
+                                                                    <span class="up option"></span>
+                                                                    <span class="dn option"></span>
                                                                 </p>
                                                                 <input type="hidden" class="ttl" name="options_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
                                                                 <input type="hidden" class="cnt" name="options_cnt[<?=$sub_item['idx'];?>]" value="0" />
@@ -122,8 +122,8 @@ if (isset($_POST['goods_size'])) {
                                                     <?=$item['ttl'];?>
                                                     <p class="item-ctrl">
                                                         <span class="num">0</span>台
-                                                        <span class="up"></span>
-                                                        <span class="dn"></span>
+                                                        <span class="up option"></span>
+                                                        <span class="dn option"></span>
                                                     </p>
                                                     <input type="hidden" class="ttl" name="options_ttl[<?=$item['idx'];?>]" value="<?=$item['ttl'];?>" />
                                                     <input type="hidden" class="cnt" name="options_cnt[<?=$item['idx'];?>]" value="0" />

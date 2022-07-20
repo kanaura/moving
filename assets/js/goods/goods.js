@@ -41,7 +41,9 @@ $(function() {
         $(this).parent().find('.num').text(num);
         $(this).parent().parent().find('.cnt').val(num);
 
-        refresh_total();
+        if ($(this).hasClass('good')) {
+            refresh_total();
+        }
 
         return false;
     });
@@ -55,15 +57,19 @@ $(function() {
         total_cm3 = parseInt($('#total-cm3').val());
         sel_size = parseInt($(this).parent().parent().find('.size').val());
         calced_total = parseInt(total_cm3 + (sel_size * num));
-        if (calced_total > 23000000) {
-            alert('OVER!');
-            return false;
+        if ($(this).hasClass('good')) {
+            if (calced_total > 23000000) {
+                alert('OVER!');
+                return false;
+            }
         }
 
         $(this).parent().find('.num').text(num);
         $(this).parent().parent().find('.cnt').val(num);
 
-        refresh_total();
+        if ($(this).hasClass('good')) {
+            refresh_total();
+        }
         
         return false;
     });

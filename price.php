@@ -153,7 +153,7 @@ $price_total = $price_good + $price_option + $price_tax;
 
             <div class="bottom-btn-list">
                 <a class="btn btn-back" href="./select-date.php">戻る</a>
-                <a class="btn btn-default" href="./final.php">お引越要望日の選択</a>
+                <a class="btn btn-default" href="./final.php">この内容で仮申込をする</a>
             </div>
         </div>
     </div>

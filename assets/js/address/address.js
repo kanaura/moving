@@ -66,9 +66,9 @@ $(function() {
         return city[idx];
     }
 
-    let initPrefVal = '13';
-    let initCityVal = '113';
-    let valType = 'code';
+    initPrefVal = '38';
+    initCityVal = '113';
+    valType = 'code';
 
     getPrefectureSelection('#select_prefecture_01', '#select_city_01', './assets/js/address/prefectureCityCode.json', valType, initPrefVal, initCityVal);
 
