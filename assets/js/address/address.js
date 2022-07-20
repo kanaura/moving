@@ -66,7 +66,7 @@ $(function() {
         return city[idx];
     }
 
-    initPrefVal = '38';
+    initPrefVal = '13';
     initCityVal = '113';
     valType = 'code';
 

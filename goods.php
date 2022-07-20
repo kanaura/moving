@@ -64,7 +64,7 @@ if (isset($_POST['select_city_02'])) {
                     <div class="select-head-r">
                         <p class="select-head-r-ttl">現在の家財</p>
                         <p class="select-head-cur-value">
-                            <span id="calc-total">0</span>立米
+                            <span id="calc-total">0.0</span>立米
                             <input id="total-base" type="hidden" name="total_base" value="0" />
                             <input id="total-m3" type="hidden" name="total_m3" value="0" />
                             <input id="total-cm3" type="hidden" name="total_cm3" value="0" />
@@ -108,8 +108,12 @@ if (isset($_POST['select_city_02'])) {
                                                                     <div class="item-name">
                                                                         <?=$sub_item['ttl'];?>
                                                                         <p class="item-ctrl">
+                                                                            <?php if (!$sub_item['single']) : ?>
                                                                             <span class="num">0</span>台
-                                                                            <span class="up"></span>
+                                                                            <?php else : ?>
+                                                                            <span class="num single single-<?=$sub_item['idx'];?>">0</span>台
+                                                                            <?php endif; ?>
+                                                                            <span class="up good"></span>
                                                                             <span class="dn good"></span>
                                                                         </p>
                                                                         <input type="hidden" class="ttl" name="goods_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
@@ -123,7 +127,11 @@ if (isset($_POST['select_city_02'])) {
                                                         <div class="item-name">
                                                             <?=$item['ttl'];?>
                                                             <p class="item-ctrl">
+                                                                <?php if (!$item['single']) : ?>
                                                                 <span class="num">0</span>台
+                                                                <?php else : ?>
+                                                                <span class="num single single-<?=$item['idx'];?>">0</span>台
+                                                                <?php endif; ?>
                                                                 <span class="up good"></span>
                                                                 <span class="dn good"></span>
                                                             </p>
@@ -208,7 +216,7 @@ if (isset($_POST['select_city_02'])) {
                 <div class="bottom-btn-list">
                     <button type="button" class="btn btn-back" onclick="history.go(-1);">戻る</a>
                     <button type="submit" class="btn btn-default">オプションの選択</a>
-                    <button type="button" class="btn btn-clear" href="">クリア</a>
+                    <button type="button" class="btn btn-clear good" href="">クリア</a>
                 </div>
             </form>
         </div>

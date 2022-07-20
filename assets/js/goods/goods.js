@@ -73,4 +73,38 @@ $(function() {
         
         return false;
     });
+
+    function clear_all() {
+        $('.item-ctrl .num').each(function(index) {
+            $(this).text('0');
+            $(this).parent().parent().find('.cnt').val(0);
+        });
+    }
+
+    $('.btn-clear').on('click', function() {
+        clear_all();
+
+        if ($(this).hasClass('good')) {
+            refresh_total();
+        }
+
+        return false;
+    });
+    
+    $('.standalone-icon').on('click', function() {
+        clear_all();
+
+        $('.item-ctrl .num.single').each(function(index) {
+            cnt = 1;
+            if ($(this).hasClass('single-99')) {
+                cnt = 5;
+            }
+            $(this).text(cnt);
+            $(this).parent().parent().find('.cnt').val(cnt);
+        });
+
+        refresh_total();
+
+        return false;
+    });
 });

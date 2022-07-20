@@ -814,6 +814,7 @@ body.select .select-standalone {
 
 body.select .select-standalone .standalone-icon {
   width: 219px;
+  cursor: pointer;
 }
 
 body.select .select-standalone .standalone-info {
