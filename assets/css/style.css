@@ -233,6 +233,15 @@ header .wrap .site-header .logo a:hover {
   margin-bottom: 20px !important;
 }
 
+.warning-txt {
+  width: 900px;
+  margin: 0 auto 80px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #000000;
+}
+
 /* ナビーメニュー */
 /* トップページのスタイル */
 body.home .btn-lead {

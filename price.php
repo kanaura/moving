@@ -26,28 +26,6 @@ function get_truck_idx($total_cm3) {
 
 $truck_id = get_truck_idx($_SESSION['total_cm3']);
 
-function get_area_idx($pref_id, $city_id) {
-    $result = -1;
-    if ($pref_id == 38) {
-        if ($city_id == 1 || $city_id == 2 || $city_id == 3 || $city_id == 7 || $city_id == 14 || $city_id == 17) {
-            $result = 0;
-        } else if ($city_id == 0 || $city_id == 6 || $city_id == 11 || $city_id == 12 || $city_id == 15) {
-            $result = 1;
-        } else if ($city_id == 4 || $city_id == 5 || $city_id == 8 || $city_id == 9 || $city_id == 10 || $city_id == 13 || $city_id == 16 || $city_id == 18 || $city_id == 19) {
-            $result = 2;
-        }
-    } else if ($pref_id == 37 || $pref_id == 36 || $pref_id == 39) {
-        $result = 3;
-    } else if ($pref_id == 34 || $pref_id == 33 || $pref_id == 35 || $pref_id == 31 || $pref_id == 32) {
-        $result = 4;
-    } else if ($pref_id == 27 || $pref_id == 26 || $pref_id == 28 || $pref_id == 25 || $pref_id == 29 || $pref_id == 30 || $pref_id == 24) {
-        $result = 5;
-    } else if ($pref_id == 40 || $pref_id == 41 || $pref_id == 42 || $pref_id == 43 || $pref_id == 44 || $pref_id == 45 || $pref_id == 46) {
-        $result = 6;
-    }
-    return $result;
-}
-
 $area_01_id = get_area_idx($_SESSION['sel_pref_01'], $_SESSION['sel_city_01']);
 $area_02_id = get_area_idx($_SESSION['sel_pref_02'], $_SESSION['sel_city_02']);
 $price_good = $price_goods[$area_01_id][$truck_id][$area_02_id];

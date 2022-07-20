@@ -32,6 +32,15 @@ if (isset($_POST['select_city_02'])) {
 } else {
     header('Location: ' . './');
 }
+
+$area_01_id = get_area_idx($_SESSION['sel_pref_01'], $_SESSION['sel_city_01']);
+$area_02_id = get_area_idx($_SESSION['sel_pref_02'], $_SESSION['sel_city_02']);
+if (!($area_01_id >= 0 && $area_01_id <= 3)) {
+    header('Location: ' . './exception.php');
+}
+if (!($area_02_id >= 0 && $area_02_id <= 6)) {
+    header('Location: ' . './exception.php');
+}
 ?>
 
 <body class="select select-01">
@@ -214,9 +223,9 @@ if (isset($_POST['select_city_02'])) {
                 </div>
 
                 <div class="bottom-btn-list">
-                    <button type="button" class="btn btn-back" onclick="history.go(-1);">戻る</a>
-                    <button type="submit" class="btn btn-default">オプションの選択</a>
-                    <button type="button" class="btn btn-clear good" href="">クリア</a>
+                    <button type="button" class="btn btn-back" onclick="history.go(-1);">戻る</button>
+                    <button type="submit" class="btn btn-default">オプションの選択</button>
+                    <button type="button" class="btn btn-clear good" href="">クリア</button>
                 </div>
             </form>
         </div>

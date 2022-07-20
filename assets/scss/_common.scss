@@ -135,3 +135,12 @@ header {
 .mb-20 {
     margin-bottom: 20px !important;
 }
+
+.warning-txt {
+    width: 900px;
+    margin: 0 auto 80px;
+    font-size: 32px;
+    font-weight: $fw-normal;
+    line-height: 1.7;
+    color: #000000;
+}
