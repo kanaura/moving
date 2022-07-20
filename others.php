@@ -3,8 +3,7 @@ header('Cache-Control: no cache');
 session_cache_limiter('private_no_expire');
 session_start();
 
-$page_ttl = '仮申込をする | 株式会社ハコビズ';
-
+$page_ttl = '見積もりを申し込む | 株式会社ハコビズ';
 include_once('./head.php');
 ?>
 
@@ -16,16 +15,6 @@ include_once('./head.php');
             <p class="form-page-ttl">お客様情報を入力ください。</form>
             <form>
                 <div class="form-list">
-                    <div class="form-row">
-                        <div class="form-item-name bold">引越の種類</div>
-                        <div class="form-item-group full">
-                            <label class="radio"><input type="radio" />一戸建て</label>
-                            <label class="radio"><input type="radio" />単身引越</label>
-                            <label class="radio"><input type="radio" />ファミリー</label>
-                            <label class="radio"><input type="radio" />その他</label>
-                        </div>
-                    </div>
-
                     <div class="form-row">
                         <div class="form-item-name bold">お名前</div>
                         <div class="form-item-group full">
@@ -53,8 +42,6 @@ include_once('./head.php');
                             <input type="tel" />
                         </div>
                     </div>
-                    
-                    <hr>
 
                     <div class="form-block">
                         <p class="form-block-ttl"><span>現住所</span></p>
@@ -83,6 +70,13 @@ include_once('./head.php');
                                 <label class="radio"><input type="radio" />一戸建て</label>
                                 <label class="radio"><input type="radio" />マンション</label>
                                 <label class="radio"><input type="radio" />アパート・コーポ</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-item-name small">エレベーター</div>
+                            <div class="form-item-group">
+                                <label class="radio"><input type="radio" />あり</label>
+                                <label class="radio"><input type="radio" />なし</label>
                             </div>
                         </div>
                     </div>
@@ -116,23 +110,76 @@ include_once('./head.php');
                                 <label class="radio"><input type="radio" />アパート・コーポ</label>
                             </div>
                         </div>
+                        <div class="form-row">
+                            <div class="form-item-name small">エレベーター</div>
+                            <div class="form-item-group">
+                                <label class="radio"><input type="radio" />あり</label>
+                                <label class="radio"><input type="radio" />なし</label>
+                            </div>
+                        </div>
                     </div>
 
-                    <hr>
-
                     <div class="form-row">
-                        <div class="form-item-name bold">ご連絡方法</div>
+                        <div class="form-item-name bold">引越の種類</div>
                         <div class="form-item-group full">
-                            <label class="radio"><input type="radio" />電話</label>
-                            <label class="radio"><input type="radio" />メール</label>
-                            <label class="radio"><input type="radio" />LINE</label>
+                            <label class="radio"><input type="radio" />一戸建て</label>
+                            <label class="radio"><input type="radio" />単身引越</label>
+                            <label class="radio"><input type="radio" />ファミリー</label>
                             <label class="radio"><input type="radio" />その他</label>
                         </div>
                     </div>
 
-                    <p class="form-desc">
-                        LINEでのご連絡をご希望の方はコチラから「ハコビス公式LINE」を友達登録していただき、フルネームでお名前を入力して送信をお願いします。
-                    </p>
+                    <div class="form-row">
+                        <div class="form-item-name bold">現在の間取り</div>
+                        <div class="form-item-group full">
+                            <label class="radio"><input type="radio" />1K</label>
+                            <label class="radio"><input type="radio" />1DK</label>
+                            <label class="radio"><input type="radio" />2DK</label>
+                            <label class="radio"><input type="radio" />3DL</label>
+                            <label class="radio"><input type="radio" />4DL</label>
+                        </div>
+                        <div class="form-item-group full">
+                            <label class="radio"><input type="radio" />1LDK</label>
+                            <label class="radio"><input type="radio" />2LDK</label>
+                            <label class="radio"><input type="radio" />3LDK</label>
+                            <label class="radio"><input type="radio" />4LDK以上</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-item-name bold">お引越し要望日</div>
+                        <div class="form-item-group full">
+                            <label>
+                                <input class="date-01" type="text" />
+                                <span style="margin-left: 10px">年</span>
+                            </label>
+                            <label>
+                                <input class="date-02" type="text" />
+                                <span style="margin-left: 10px">月</span>
+                            </label>
+                            <label style="margin-right: 60px;">
+                                <input class="date-02" type="text" />
+                                <span style="margin-left: 10px">日</span>
+                            </label>
+
+                            <label class="radio"><input type="radio" />午前</label>
+                            <label class="radio"><input type="radio" />午後</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row" style="margin-top: 40px;">
+                        <div class="form-item-name bold">お問い合わせご要望</div>
+                        <p class="form-desc" style="margin-bottom: 20px;">
+                            下記項目に当てはまる場合は、要望欄にてお知らせください。<br>
+                            現地、行先の建物が21階以上のタワーマンションの場合<br>
+                            行先建物がご新築の場合<br>
+                            建物の搬出搬入時間に制限がある場合<br>
+                            特殊な作業が必要な場合（金庫・ピアノなど重量物がある場合など）
+                        </p>
+                        <div class="form-item-group full">
+                            <textarea rows="10"></textarea>
+                        </div>
+                    </div>
                 </div>
             </form>
 
