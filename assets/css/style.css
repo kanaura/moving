@@ -978,8 +978,13 @@ body.select-date .select-calendar table tbody table tr td .fc-daygrid-day-frame 
   background-color: #c6c6c6;
 }
 
-body.select-date .select-calendar table tbody table tr td.fc-day-past {
+body.select-date .select-calendar table tbody table tr td.fc-day-past, body.select-date .select-calendar table tbody table tr td.fc-day-today {
   color: #e6e6e6;
+  cursor: initial;
+}
+
+body.select-date .select-calendar table tbody table tr td.fc-day.selected {
+  background-color: #c6c6c6;
 }
 
 body.select-date .select-calendar .fc-header-toolbar {
