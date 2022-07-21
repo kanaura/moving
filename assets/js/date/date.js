@@ -49,11 +49,21 @@ $(function() {
 
     $('body').on('click', '.fc-prev-button', function(){
         init_selected_date();
-     });
+    });
      
-     $('body').on('click', '.fc-next-button', function(){
+    $('body').on('click', '.fc-next-button', function(){
         init_selected_date();
-     });
+    });
+
+    $('.btn-clear').on('click', function() {
+        $('.fc-daygrid-day').each(function(index) {
+            $(this).removeClass('selected');
+        });
+
+        date = $('#date').val('');
+
+        $('input[name=time]').prop('checked', false);
+    });
 
     calendar.render();
 });
