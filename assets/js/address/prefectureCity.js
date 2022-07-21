@@ -13,7 +13,9 @@ function getPrefectureSelection(prefSelectionId, citySelectionId, jsonPath, valT
             // This prefecture has been selected.
             selected = ' selected';
             // Create a city select-box.
-            getCitySelection(prefSelectionId, citySelectionId, jsonPath, valType, initPrefVal, initCityVal, obj.groupCode.slice(0, 2));
+            if (initPrefVal != '38') {              
+              getCitySelection(prefSelectionId, citySelectionId, jsonPath, valType, initPrefVal, initCityVal, obj.groupCode.slice(0, 2));
+            }
           }
           if (valType === 'code') {
             $(prefSelectionId).append('<option value="' + obj.groupCode.slice(0, 2) + '" data-pref-id="' + obj.groupCode.slice(0, 2) + '"' + selected + '>' + obj.prefectureName + '</option>');

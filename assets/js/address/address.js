@@ -60,13 +60,17 @@ $(function() {
         $(target + ' option:nth-child(n+2)').remove();
 
         for (i = 0; i < city[idx].length; i++) {
-            $(target).append('<option value="' + i + '">' + city[idx][i] + '</option>');
+            if (pref_val == 38 && i == 17) {
+                $(target).append('<option value="' + i + '" selected>' + city[idx][i] + '</option>');
+            } else {
+                $(target).append('<option value="' + i + '">' + city[idx][i] + '</option>');
+            }
         }
 
         return city[idx];
     }
 
-    initPrefVal = '13';
+    initPrefVal = '38';
     initCityVal = '113';
     valType = 'code';
 
@@ -79,6 +83,8 @@ $(function() {
         }            
     });
 
+    process_target_city(38, '#select_city_01');
+
     getPrefectureSelection('#select_prefecture_02', '#select_city_02', './assets/js/address/prefectureCityCode.json', valType, initPrefVal, initCityVal);
 
     $('#select_prefecture_02').on('change', function() {
@@ -87,4 +93,6 @@ $(function() {
             getCitySelection('#select_prefecture_02', '#select_city_02', './assets/js/address/prefectureCityCode.json', valType);
         }
     });
+
+    process_target_city(38, '#select_city_02');
 });
