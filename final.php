@@ -15,43 +15,43 @@ include_once('./head.php');
     <div class="wrap">
         <div class="content">
             <p class="form-page-ttl">お客様情報を入力ください。</form>
-            <form>
+            <form action="./mail_send.php" method="POST">
                 <div class="form-list">
                     <div class="form-row">
                         <div class="form-item-name bold">引越の種類</div>
                         <div class="form-item-group full">
-                            <label class="radio"><input type="radio" />一戸建て</label>
-                            <label class="radio"><input type="radio" />単身引越</label>
-                            <label class="radio"><input type="radio" />ファミリー</label>
-                            <label class="radio"><input type="radio" />その他</label>
+                            <label class="radio"><input type="radio" name="final_moving_type" value="一戸建て" />一戸建て</label>
+                            <label class="radio"><input type="radio" name="final_moving_type" value="単身引越" />単身引越</label>
+                            <label class="radio"><input type="radio" name="final_moving_type" value="ファミリー" />ファミリー</label>
+                            <label class="radio"><input type="radio" name="final_moving_type" value="その他" />その他</label>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-item-name bold">お名前</div>
                         <div class="form-item-group full">
-                            <input type="text" />
+                            <input type="text" name="final_name" value="" />
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-item-name bold">ふりがな</div>
                         <div class="form-item-group full">
-                            <input type="text" />
+                            <input type="text" name="final_gana" value="" />
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-item-name bold">電話番号<span class="vertical">※半角　※ハイフンなし</span></div>
                         <div class="form-item-group full">
-                            <input type="tel" />
+                            <input type="tel" name="final_tel" value="" />
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-item-name bold">メールアドレス<span>※半角</span></div>
                         <div class="form-item-group full">
-                            <input type="tel" />
+                            <input type="email" name="final_email" value="" />
                         </div>
                     </div>
                     
@@ -62,28 +62,28 @@ include_once('./head.php');
                         <div class="form-row">
                             <div class="form-item-name small">郵便番号</div>
                             <div class="form-item-group">
-                                <input class="post-code" type="text" />
+                                <input class="post-code" type="text" name="final_post_code_01" value="" />
                                 <div class="form-btn">検索</div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-item-name small">住所</div>
                             <div class="form-item-group">
-                                <input type="text" />
+                                <input type="text" name="final_addr_01_01" value="" />
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-item-name small">建物名</div>
                             <div class="form-item-group">
-                                <input type="text" />
+                                <input type="text" name="final_addr_01_02" value="" />
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-item-name small">建物種類</div>
                             <div class="form-item-group">
-                                <label class="radio"><input type="radio" />一戸建て</label>
-                                <label class="radio"><input type="radio" />マンション</label>
-                                <label class="radio"><input type="radio" />アパート・コーポ</label>
+                                <label class="radio"><input type="radio" name="final_addr_01_type" value="一戸建て" />一戸建て</label>
+                                <label class="radio"><input type="radio" name="final_addr_01_type" value="マンション" />マンション</label>
+                                <label class="radio"><input type="radio" name="final_addr_01_type" value="アパート・コーポ" />アパート・コーポ</label>
                             </div>
                         </div>
                     </div>
@@ -93,28 +93,28 @@ include_once('./head.php');
                         <div class="form-row">
                             <div class="form-item-name small">郵便番号</div>
                             <div class="form-item-group">
-                                <input class="post-code" type="text" />
+                                <input class="post-code" type="text" name="final_post_code_02" value="" />
                                 <div class="form-btn">検索</div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-item-name small">住所</div>
                             <div class="form-item-group">
-                                <input type="text" />
+                                <input type="text" name="final_addr_02_01" value="" />
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-item-name small">建物名</div>
                             <div class="form-item-group">
-                                <input type="text" />
+                                <input type="text" name="final_addr_02_02" value="" />
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-item-name small">建物種類</div>
                             <div class="form-item-group">
-                                <label class="radio"><input type="radio" />一戸建て</label>
-                                <label class="radio"><input type="radio" />マンション</label>
-                                <label class="radio"><input type="radio" />アパート・コーポ</label>
+                                <label class="radio"><input type="radio" name="final_addr_01_type" value="一戸建て" />一戸建て</label>
+                                <label class="radio"><input type="radio" name="final_addr_01_type" value="マンション" />マンション</label>
+                                <label class="radio"><input type="radio" name="final_addr_01_type" value="アパート・コーポ" />アパート・コーポ</label>
                             </div>
                         </div>
                     </div>
@@ -124,10 +124,10 @@ include_once('./head.php');
                     <div class="form-row">
                         <div class="form-item-name bold">ご連絡方法</div>
                         <div class="form-item-group full">
-                            <label class="radio"><input type="radio" />電話</label>
-                            <label class="radio"><input type="radio" />メール</label>
-                            <label class="radio"><input type="radio" />LINE</label>
-                            <label class="radio"><input type="radio" />その他</label>
+                            <label class="radio"><input type="radio" name="final_contact_method" value="電話" />電話</label>
+                            <label class="radio"><input type="radio" name="final_contact_method" value="メール" />メール</label>
+                            <label class="radio"><input type="radio" name="final_contact_method" value="LINE" />LINE</label>
+                            <label class="radio"><input type="radio" name="final_contact_method" value="その他" />その他</label>
                         </div>
                     </div>
 
@@ -135,11 +135,11 @@ include_once('./head.php');
                         LINEでのご連絡をご希望の方はコチラから「ハコビス公式LINE」を友達登録していただき、フルネームでお名前を入力して送信をお願いします。
                     </p>
                 </div>
-            </form>
 
-            <div class="bottom-btn-list">
-                <a class="btn btn-default" href="./select-price.php">仮申し込みする</a>
-            </div>
+                <div class="bottom-btn-list">
+                    <button type="submit" class="btn btn-default">仮申し込みする</button>
+                </div>
+            </form>
         </div>
     </div>
 
