@@ -68,71 +68,81 @@ $price_total = $price_good + $price_option + $price_tax;
                     <input id="total-cm3" type="hidden" name="total_cm3" value="<?=$_SESSION['total_cm3'];?>" />
                 </p>
 
-                <div class="price-body">
-                    <p class="ttl-blue-wide ttl-blue-wide-full">お引越料金（税込）</p>
-                    <div class="price-wrapper">
-                        <p class="price">
-                            <span><?=number_format($price_total);?></span>円～
-                        </p>
-                    </div>
-                    <div class="price-table">
-                        <table>
-                            <tr>
-                                <th>明細</th>
-                                <th>料金</th>
-                            </tr>
-                            <tr>
-                                <td>基本料金</td>
-                                <td><?=number_format($price_good);?></td>
-                            </tr>
-                            <tr>
-                                <td>オプション</td>
-                                <td><?=number_format($price_option);?></td>
-                            </tr>
-                            <tr>
-                                <td>消費税</td>
-                                <td><?=number_format($price_tax);?></td>
-                            </tr>
-                            <tr>
-                                <td>高速料金</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>合計金額</td>
-                                <td><?=number_format($price_total);?></td>
-                            </tr>
-                        </table>
-                    </div>
+                <form action="./final.php" method="POST">
+                    <div class="price-body">
+                        <p class="ttl-blue-wide ttl-blue-wide-full">お引越料金（税込）</p>
+                        <div class="price-wrapper">
+                            <p class="price">
+                                <span><?=number_format($price_total);?></span>円～
+                            </p>
+                        </div>
+                        <div class="price-table">
+                            <table>
+                                <tr>
+                                    <th>明細</th>
+                                    <th>料金</th>
+                                </tr>
+                                <tr>
+                                    <td>基本料金</td>
+                                    <td>
+                                        <?=number_format($price_good);?>
+                                        <input type="hidden" name="price_good" value="<?=number_format($price_good);?>" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>オプション</td>
+                                    <td>
+                                        <?=number_format($price_option);?>
+                                        <input type="hidden" name="price_option" value="<?=number_format($price_option);?>" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>消費税</td>
+                                    <td>
+                                        <?=number_format($price_tax);?>
+                                        <input type="hidden" name="price_tax" value="<?=number_format($price_tax);?>" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>合計金額</td>
+                                    <td>
+                                        <?=number_format($price_total);?>
+                                        <input type="hidden" name="price_total" value="<?=number_format($price_total);?>" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
 
-                    <div class="attention">
-                        <p class="attention-head">注意事項</a>
-                        <div class="attention-body">
-                            <div class="attention-txt">
-                                ・旧居もしくはご新居が4階以上のマンションの場合、別途料金となります。<br>
-                                ・ご家財や間取りにより、窓吊り作業等の特殊作業が発生した場合は別途料金となります。<br>
-                                ・お運びするご家財に高価品（目安：購入時30万円以上）がある場合はお申込み内容確認のお打合せ時に当社受付担当者より確認をさせていただきます。<br>
-                                ・火薬類、化学薬品類、石油・灯油類の揮発油製品などの危険物や燃料が入った状態の原付・バイク・ストーブ等も取扱い不可能品目となります。<br>
-                                ・現金、貴金属等の貴重品につきましてはお客さまにて管理をお願いします。<br>
-                                ・お申込内容、料金等の確認のため、後ほど当社受付担当者よりお電話させていただきます。<br>
-                                  当社担当者とお打合せ後、本契約となりますので、ご了承くださいませ。<br><br>
-                                  
-                                上記注意事項とその他注意事項の詳細に関してはこちらをご確認いただき<br>
-                                「同意いたしました」にチェックを入れてください。
-                            </div>
-                            <div class="attention-agree">
-                                <div class="chk-wrapper">
-                                    <input id="chk-agree" type="checkbox">
-                                    <label for="chk-agree">同意いたします。</label>
+                        <div class="attention">
+                            <p class="attention-head">注意事項</a>
+                            <div class="attention-body">
+                                <div class="attention-txt">
+                                    ・旧居もしくはご新居が4階以上のマンションの場合、別途料金となります。<br>
+                                    ・ご家財や間取りにより、窓吊り作業等の特殊作業が発生した場合は別途料金となります。<br>
+                                    ・お運びするご家財に高価品（目安：購入時30万円以上）がある場合はお申込み内容確認のお打合せ時に当社受付担当者より確認をさせていただきます。<br>
+                                    ・火薬類、化学薬品類、石油・灯油類の揮発油製品などの危険物や燃料が入った状態の原付・バイク・ストーブ等も取扱い不可能品目となります。<br>
+                                    ・現金、貴金属等の貴重品につきましてはお客さまにて管理をお願いします。<br>
+                                    ・お申込内容、料金等の確認のため、後ほど当社受付担当者よりお電話させていただきます。<br>
+                                    当社担当者とお打合せ後、本契約となりますので、ご了承くださいませ。<br><br>
+                                    
+                                    上記注意事項とその他注意事項の詳細に関してはこちらをご確認いただき<br>
+                                    「同意いたしました」にチェックを入れてください。
+                                </div>
+                                <div class="attention-agree">
+                                    <div class="chk-wrapper">
+                                        <input id="chk-agree" type="checkbox">
+                                        <label for="chk-agree">同意いたします。</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
 
             <div class="bottom-btn-list">
-                <a class="btn btn-back" href="./select-date.php">戻る</a>
-                <a class="btn btn-default" href="./final.php">この内容で仮申込をする</a>
+                <button type="button" class="btn btn-back" onclick="history.back()">戻る</button>
+                <button type="submit" class="btn btn-default">この内容で仮申込をする</button>
             </div>
         </div>
     </div>

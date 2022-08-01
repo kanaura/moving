@@ -9,6 +9,24 @@ $page_ttl = '仮申込をする | 株式会社ハコビス'; // (2022.07.29 宮�
 include_once('./head.php');
 ?>
 
+<?php
+if (isset($_POST['price_good'])) {
+    $_SESSION['price_good'] = $_POST['price_good'];
+}
+
+if (isset($_POST['price_option'])) {
+    $_SESSION['price_option'] = $_POST['price_option'];
+}
+
+if (isset($_POST['price_tax'])) {
+    $_SESSION['price_tax'] = $_POST['price_tax'];
+}
+
+if (isset($_POST['price_total'])) {
+    $_SESSION['price_total'] = $_POST['price_total'];
+}
+?>
+
 <body class="final form">
     <?php include_once('./header.php'); ?>
 
