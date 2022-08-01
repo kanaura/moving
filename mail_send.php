@@ -56,7 +56,7 @@ for ($i = 0; $i < count($_SESSION['options_ttl']); $i++) {
 }
 $message_common .= "\r\n";
 
-$mailto  = "aketchi.07@gmail.com";
+$mailto  = "info@sangodesign.jp";
 $option  = "From:<info@hacovice.com>";
 
 $title   = "お引越しの仮お申し込み入りました";
