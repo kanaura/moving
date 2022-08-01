@@ -137,12 +137,12 @@ $price_total = $price_good + $price_option + $price_tax;
                             </div>
                         </div>
                     </div>
-                </form>
-            </div>
 
-            <div class="bottom-btn-list">
-                <button type="button" class="btn btn-back" onclick="history.back()">戻る</button>
-                <button type="submit" class="btn btn-default">この内容で仮申込をする</button>
+                    <div class="bottom-btn-list">
+                        <button type="button" class="btn btn-back" onclick="history.back()">戻る</button>
+                        <button type="submit" class="btn btn-default">この内容で仮申込をする</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

@@ -39,15 +39,15 @@ $message .= "ご連絡方法：" . $_POST['final_contact_method'] . "\r\n\r\n";
 
 $message .= "[お見積り内容]\r\n";
 $message .= "お引越要望日：" . str_date($_SESSION['date']) . " " . (($_SESSION['time'] == "am") ? "午前" : "午後") . "\r\n";
-$message .= "基本料金：" . str_date($_SESSION['price_good']) . "円\r\n";
-$message .= "オプション：" . str_date($_SESSION['price_option']) . "円\r\n";
-$message .= "消費税：" . str_date($_SESSION['price_tax']) . "円\r\n";
-$message .= "合計金額：" . str_date($_SESSION['price_tax']) . "円\r\n\r\n";
+$message .= "基本料金：" . $_SESSION['price_good'] . "円\r\n";
+$message .= "オプション：" . $_SESSION['price_option'] . "円\r\n";
+$message .= "消費税：" . $_SESSION['price_tax'] . "円\r\n";
+$message .= "合計金額：" . $_SESSION['price_total'] . "円\r\n\r\n";
 
 $message .= "[入力内容]\r\n";
 $message .= "【家財】\r\n";
 for ($i = 0; $i < count($_SESSION['goods_ttl']); $i++) {
-    if ($goods_cnt[$i] != 0) {
+    if ($_SESSION['goods_cnt'][$i] != 0) {
         $message .= $_SESSION['goods_ttl'][$i] . "：" . $_SESSION['goods_cnt'][$i] . "台\r\n";
     }
 }
@@ -55,7 +55,7 @@ for ($i = 0; $i < count($_SESSION['goods_ttl']); $i++) {
 $message .= "\r\n";
 $message .= "【オプション】\r\n";
 for ($i = 0; $i < count($_SESSION['options_ttl']); $i++) {
-    if ($options_cnt[$i] != 0) {
+    if ($_SESSION['options_cnt'][$i] != 0) {
         $message .= $_SESSION['options_ttl'][$i] . "：" . $_SESSION['options_cnt'][$i] . "台\r\n";
     }
 }
