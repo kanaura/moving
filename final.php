@@ -81,9 +81,9 @@ include_once('./head.php');
                         <div class="form-row">
                             <div class="form-item-name small">建物種類</div>
                             <div class="form-item-group">
-                                <label class="radio"><input type="radio" name="final_addr_02_type" value="一戸建て" />一戸建て</label>
-                                <label class="radio"><input type="radio" name="final_addr_02_type" value="マンション" />マンション</label>
-                                <label class="radio"><input type="radio" name="final_addr_02_type" value="アパート・コーポ" />アパート・コーポ</label>
+                                <label class="radio"><input type="radio" name="final_addr_01_type" value="一戸建て" />一戸建て</label>
+                                <label class="radio"><input type="radio" name="final_addr_01_type" value="マンション" />マンション</label>
+                                <label class="radio"><input type="radio" name="final_addr_01_type" value="アパート・コーポ" />アパート・コーポ</label>
                             </div>
                         </div>
                     </div>
@@ -112,9 +112,9 @@ include_once('./head.php');
                         <div class="form-row">
                             <div class="form-item-name small">建物種類</div>
                             <div class="form-item-group">
-                                <label class="radio"><input type="radio" name="final_addr_01_type" value="一戸建て" />一戸建て</label>
-                                <label class="radio"><input type="radio" name="final_addr_01_type" value="マンション" />マンション</label>
-                                <label class="radio"><input type="radio" name="final_addr_01_type" value="アパート・コーポ" />アパート・コーポ</label>
+                                <label class="radio"><input type="radio" name="final_addr_02_type" value="一戸建て" />一戸建て</label>
+                                <label class="radio"><input type="radio" name="final_addr_02_type" value="マンション" />マンション</label>
+                                <label class="radio"><input type="radio" name="final_addr_02_type" value="アパート・コーポ" />アパート・コーポ</label>
                             </div>
                         </div>
                     </div>

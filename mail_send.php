@@ -3,6 +3,9 @@ header('Cache-Control: no cache');
 session_cache_limiter('private_no_expire');
 session_start();
 
+ini_set('display_errors', 1);
+ini_set('error_reporting', E_ALL);
+
 //言語と文字コードを設定
 mb_language("Japanese");
 mb_internal_encoding("UTF-8");
@@ -12,7 +15,7 @@ $option  = "From:<info@hacovice.com>";
 
 $title   = "お引越しの仮お申し込み入りました";
 $message = "非対面カンタンお見積りシステムより仮お申し込みを受け付けました。\r\n\r\n";
-$message .= "[お客様情報]";
+$message .= "[お客様情報]\r\n";
 $message .= "引越の種類：" . $_POST['final_moving_type'] . "\r\n";
 $message .= "お名前：" . $_POST['final_name'] . "\r\n";
 $message .= "ふりがな：" . $_POST['final_gana'] . "\r\n";
