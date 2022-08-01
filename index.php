@@ -1,5 +1,8 @@
 <?php
-$page_ttl = '住所の選択 | 株式会社ハコビズ';
+
+// $page_ttl = '住所の選択 | 株式会社ハコビズ';
+$page_ttl = '住所の選択 | 株式会社ハコビス';
+
 include_once('./head.php');
 ?>
 

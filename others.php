@@ -3,7 +3,9 @@ header('Cache-Control: no cache');
 session_cache_limiter('private_no_expire');
 session_start();
 
-$page_ttl = '見積もりを申し込む | 株式会社ハコビズ';
+// $page_ttl = '見積もりを申し込む | 株式会社ハコビズ';
+$page_ttl = '見積もりを申し込む | 株式会社ハコビス';// (2022.07.29 宮川更新)
+
 include_once('./head.php');
 ?>
 

@@ -1,7 +1,9 @@
 <?php
 session_start();
 
-$page_ttl = '住所の選択 | 株式会社ハコビズ';
+// $page_ttl = '住所の選択 | 株式会社ハコビズ';
+$page_ttl = '住所の選択 | 株式会社ハコビス'; // (2022.07.29 宮川更新)
+
 include_once('./head.php');
 ?>
 
