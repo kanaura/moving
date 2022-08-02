@@ -68,7 +68,7 @@ $price_total = $price_good + $price_option + $price_tax;
                     <input id="total-cm3" type="hidden" name="total_cm3" value="<?=$_SESSION['total_cm3'];?>" />
                 </p>
 
-                <form action="./final.php" method="POST">
+                <form id="form-price" action="./final.php" method="POST">
                     <div class="price-body">
                         <p class="ttl-blue-wide ttl-blue-wide-full">お引越料金（税込）</p>
                         <div class="price-wrapper">
@@ -140,7 +140,7 @@ $price_total = $price_good + $price_option + $price_tax;
 
                     <div class="bottom-btn-list">
                         <button type="button" class="btn btn-back" onclick="history.back()">戻る</button>
-                        <button type="submit" class="btn btn-default">この内容で仮申込をする</button>
+                        <button id="btn-submit" type="submit" class="btn btn-default">この内容で仮申込をする</button>
                     </div>
                 </form>
             </div>
@@ -148,5 +148,6 @@ $price_total = $price_good + $price_option + $price_tax;
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/price/price.js"></script>
 </body>
 </html>
