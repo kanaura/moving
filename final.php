@@ -81,7 +81,7 @@ if (isset($_POST['price_total'])) {
                             <div class="form-item-name small">郵便番号</div>
                             <div class="form-item-group">
                                 <input class="post-code" type="text" name="final_post_code_01" value="" />
-                                <div class="form-btn">検索</div>
+                                <a class="form-btn" href="https://www.post.japanpost.jp/zipcode/" target="blank">検索</a>
                             </div>
                         </div>
                         <div class="form-row">
@@ -112,7 +112,7 @@ if (isset($_POST['price_total'])) {
                             <div class="form-item-name small">郵便番号</div>
                             <div class="form-item-group">
                                 <input class="post-code" type="text" name="final_post_code_02" value="" />
-                                <div class="form-btn">検索</div>
+                                <a class="form-btn" href="https://www.post.japanpost.jp/zipcode/" target="blank">検索</a>
                             </div>
                         </div>
                         <div class="form-row">

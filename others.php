@@ -51,7 +51,7 @@ include_once('./head.php');
                             <div class="form-item-name small">郵便番号</div>
                             <div class="form-item-group">
                                 <input class="post-code" type="text" />
-                                <div class="form-btn">検索</div>
+                                <a class="form-btn" href="https://www.post.japanpost.jp/zipcode/" target="blank">検索</a>
                             </div>
                         </div>
                         <div class="form-row">
@@ -89,7 +89,7 @@ include_once('./head.php');
                             <div class="form-item-name small">郵便番号</div>
                             <div class="form-item-group">
                                 <input class="post-code" type="text" />
-                                <div class="form-btn">検索</div>
+                                <a class="form-btn" href="https://www.post.japanpost.jp/zipcode/" target="blank">検索</a>
                             </div>
                         </div>
                         <div class="form-row">

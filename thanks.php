@@ -15,8 +15,13 @@ include_once('./head.php');
                 <img src="./assets/img/main.png" alt="" />
             </div>
             <div class="lead">
-                <p class="txt" style="font-size: 36px; font-weight: bold; margin: 0 0 60px; text-align: center;">
+                <p style="margin: 0 0 20px; font-size: 28px; font-weight: bold; text-align: center;">
                     本当にありがとうございました！
+                </p>
+                <p style="margin: 0 0 60px; margin: 0 0 20px; font-size: 18px; font-weight: normal; text-align: center;">
+                    仮お申し込みありがとうございます。<br>
+                    担当者より、あらためてご連絡させていただきますので、<br>
+                    今しばらくお待ちください。
                 </p>
             </div>
             <a class="btn-default" href="./address.php">ホームページへ</a>
