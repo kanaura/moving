@@ -7,6 +7,10 @@ body.address {
         width: 845px;
         margin: 0 auto;
 
+        @media only screen and (max-width: 992px) {
+            width: 100%;
+        }
+
         .address-select-block {
             margin: 0 0 24px;
 
@@ -53,6 +57,10 @@ body.address {
                 text-align: center;
                 color: #ffffff;
                 background-color: #ff0000;
+
+                @media only screen and (max-width: 992px) {
+                    font-size: 24px;
+                }
             }
 
             .address-lead-body {
@@ -61,6 +69,11 @@ body.address {
                 .address-lead-btn-list {
                     @include flex-center-v;
                     margin: 0 -12px;
+
+                    @media only screen and (max-width: 992px) {
+                        display: block;
+                        margin: 0;
+                    }
 
                     .address-lead-btn {
                         @include flex-center;
@@ -73,6 +86,11 @@ body.address {
                         color: #ffffff;
                         border-radius: 10px;
                         @include hover-effect;
+
+                        @media only screen and (max-width: 992px) {
+                            width: 100%;
+                            margin: 0 0 20px;
+                        }
 
                         &:nth-child(1) {
                             background: linear-gradient(180deg, rgba(87,216,82,1) 31%, rgba(0,146,69,1) 73%);

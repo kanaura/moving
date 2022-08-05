@@ -36,7 +36,7 @@ include_once('./head.php');
     <div id="popup" class="popup">
         <div id="popup-bg" class="popup-bg"></div>
         <div class="popup-body">
-            <p class="popup-body-ttl">お見積り、仮お申し込みまでのカンタン4ステップ</p>
+            <p class="popup-body-ttl">お見積り、仮お申し込みまでの<br class="br-992">カンタン4ステップ</p>
             <div class="popup-block">
                 <p class="popup-block-ttl">1.「現住所」と「転居先」を選択。</p>
                 <p class="popup-block-txt">
