@@ -1825,12 +1825,25 @@ body.form .form-list {
   padding: 0 128px;
 }
 
+@media only screen and (max-width: 768px) {
+  body.form .form-list {
+    margin: 0 0 80px;
+    padding: 0;
+  }
+}
+
 body.form .form-list .form-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .form-list .form-row {
+    display: block;
+  }
 }
 
 body.form .form-list .form-row .form-item-name {
@@ -1869,6 +1882,8 @@ body.form .form-list .form-row .form-item-group {
           align-items: center;
   width: calc(100% - 160px);
   margin: -4px 0 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body.form .form-list .form-row .form-item-group.full {
@@ -1886,6 +1901,12 @@ body.form .form-list .form-row .form-item-group label {
   font-size: 19px;
   font-weight: 400;
   line-height: 1.7;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .form-list .form-row .form-item-group label {
+    width: 100%;
+  }
 }
 
 body.form .form-list .form-row .form-item-group input[type=radio] {

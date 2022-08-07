@@ -14,9 +14,18 @@ body.form {
         margin: 0 0 200px;
         padding: 0 128px;
 
+        @media only screen and (max-width: 768px) {
+            margin: 0 0 80px;
+            padding: 0;
+        }
+
         .form-row {
             display: flex;
             flex-wrap: wrap;
+
+            @media only screen and (max-width: 768px) {
+                display: block;
+            }
 
             .form-item-name {
                 margin: 0 0 16px;
@@ -49,6 +58,7 @@ body.form {
                 @include flex-center-v;
                 width: calc(100% - 160px);
                 margin: -4px 0 16px;
+                flex-wrap: wrap;
 
                 &.full {
                     width: 100%;
@@ -60,6 +70,10 @@ body.form {
                     font-size: 19px;
                     font-weight: $fw-normal;
                     line-height: 1.7;
+
+                    @media only screen and (max-width: 768px) {
+                        width: 100%;
+                    }
                 }
 
                 input[type=radio] {
