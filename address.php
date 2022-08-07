@@ -47,8 +47,7 @@ include_once('./head.php');
                     </div>
 
                     <p class="txt txt-has-star txt-case-no-address">
-                        選択肢に現住所・転居先が表示されていない場合は別途お見積もりとなりますので<br>
-                        下記よりお問い合わせください
+                        選択肢に現住所・転居先が表示されていない場合は別途お見積もりとなりますので<br class="br-768-no">下記よりお問い合わせください
                     </p>
 
                     <button type="submit" class="btn-default">家財の内容を入力する</button>
@@ -64,8 +63,7 @@ include_once('./head.php');
                                 <a class="address-lead-btn" href="">メールでお問い合わせ</a>
                             </div>
                             <p class="txt txt-has-star address-lead-txt">
-                                お見積り日程を調整後、ご自宅にお伺いして<br>
-                                お見積りさせていただきます。
+                                お見積り日程を調整後、ご自宅にお伺いして<br class="br-768-no">お見積りさせていただきます。
                             </p>
                         </div>
                         <div class="address-lead-deco">

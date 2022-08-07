@@ -18,6 +18,10 @@ body.address {
                 font-size: 28px;
                 font-weight: $fw-bold;
                 line-height: 1.8;
+
+                @media only screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
             }
 
             .address-select-wrapper {
@@ -34,6 +38,12 @@ body.address {
                     border: none;
                     border-radius: 40px;
                     outline: none;
+
+                    @media only screen and (max-width: 768px) {
+                        height: auto;
+                        padding: 10px;
+                        font-size: 20px;
+                    }
                 }
             }
         }
@@ -61,10 +71,20 @@ body.address {
                 @media only screen and (max-width: 992px) {
                     font-size: 24px;
                 }
+
+                @media only screen and (max-width: 768px) {
+                    line-height: 1.3;
+                    padding: 0 20px;
+                    font-size: 20px;
+                }
             }
 
             .address-lead-body {
                 padding: 10px 24px 10px 200px;
+
+                @media only screen and (max-width: 768px) {
+                    padding: 20px;
+                }
 
                 .address-lead-btn-list {
                     @include flex-center-v;
@@ -111,6 +131,13 @@ body.address {
                 position: absolute;
                 left: -84px;
                 bottom: 0;
+
+                @media only screen and (max-width: 768px) {
+                    position: relative;
+                    left: unset;
+                    bottom: unset;
+                    @include flex-center;
+                }
             }
         }
     }

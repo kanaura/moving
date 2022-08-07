@@ -562,6 +562,12 @@ body.address .address-content .address-select-block .address-select-block-ttl {
   line-height: 1.8;
 }
 
+@media only screen and (max-width: 768px) {
+  body.address .address-content .address-select-block .address-select-block-ttl {
+    font-size: 20px;
+  }
+}
+
 body.address .address-content .address-select-block .address-select-wrapper {
   position: relative;
   margin: 0 0 16px;
@@ -577,6 +583,14 @@ body.address .address-content .address-select-block .address-select-wrapper sele
   border: none;
   border-radius: 40px;
   outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body.address .address-content .address-select-block .address-select-wrapper select {
+    height: auto;
+    padding: 10px;
+    font-size: 20px;
+  }
 }
 
 body.address .address-content .txt-case-no-address {
@@ -615,8 +629,22 @@ body.address .address-content .address-lead .address-lead-head {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  body.address .address-content .address-lead .address-lead-head {
+    line-height: 1.3;
+    padding: 0 20px;
+    font-size: 20px;
+  }
+}
+
 body.address .address-content .address-lead .address-lead-body {
   padding: 10px 24px 10px 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  body.address .address-content .address-lead .address-lead-body {
+    padding: 20px;
+  }
 }
 
 body.address .address-content .address-lead .address-lead-body .address-lead-btn-list {
@@ -687,6 +715,23 @@ body.address .address-content .address-lead .address-lead-deco {
   position: absolute;
   left: -84px;
   bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  body.address .address-content .address-lead .address-lead-deco {
+    position: relative;
+    left: unset;
+    bottom: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /* 家財・オプション選択ページのスタイル */
