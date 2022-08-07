@@ -65,6 +65,10 @@ header {
     outline: none;
     cursor: pointer;
     @include hover-effect;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .btn-back {
@@ -200,6 +204,22 @@ header {
     display: block;
 
     @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.br-480 {
+    display: none;
+
+    @media only screen and (max-width: 480px) {
+        display: block;
+    }
+}
+
+.br-480-no {
+    display: block;
+
+    @media only screen and (max-width: 480px) {
         display: none;
     }
 }

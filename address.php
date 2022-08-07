@@ -54,8 +54,7 @@ include_once('./head.php');
 
                     <div class="address-lead">
                         <p class="address-lead-head">
-                            現地見積り【愛媛県内のみ】をご希望の方は<br>
-                            コチラからお問い合わせください。
+                            現地見積り【愛媛県内のみ】をご希望の方は<br class="br-480-no">コチラからお問い合わせください。
                         </p>
                         <div class="address-lead-body">
                             <div class="address-lead-btn-list">
