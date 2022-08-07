@@ -1227,6 +1227,7 @@ body.select .select-object {
 
 @media only screen and (max-width: 768px) {
   body.select .select-object {
+    margin: 40px 0 0;
     padding: 40px 20px 20px;
     border-width: 2px;
   }
@@ -1280,6 +1281,12 @@ body.select-date .select-calendar table tr th, body.select-date .select-calendar
   font-size: 28px;
   font-weight: 700;
   border: 1px solid #000000;
+}
+
+@media only screen and (max-width: 768px) {
+  body.select-date .select-calendar table tr th, body.select-date .select-calendar table tr td {
+    font-size: 20px;
+  }
 }
 
 body.select-date .select-calendar table thead tr th:first-child {
@@ -1360,6 +1367,12 @@ body.select-date .select-calendar .fc-header-toolbar .fc-toolbar-title {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select-date .select-calendar .fc-header-toolbar .fc-toolbar-title {
+    font-size: 28px;
+  }
+}
+
 body.select-date .select-calendar .fc-header-toolbar .fc-prev-button {
   position: absolute;
   left: 0;
@@ -1370,6 +1383,12 @@ body.select-date .select-calendar .fc-header-toolbar .fc-prev-button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  body.select-date .select-calendar .fc-header-toolbar .fc-prev-button {
+    font-size: 20px;
+  }
 }
 
 body.select-date .select-calendar .fc-header-toolbar .fc-prev-button:before {
@@ -1386,6 +1405,12 @@ body.select-date .select-calendar .fc-header-toolbar .fc-next-button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  body.select-date .select-calendar .fc-header-toolbar .fc-next-button {
+    font-size: 20px;
+  }
 }
 
 body.select-date .select-calendar .fc-header-toolbar .fc-next-button:before {
@@ -1426,6 +1451,12 @@ body.select-date .select-time {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select-date .select-time {
+    font-size: 20px;
+  }
+}
+
 body.select-date .select-time label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1440,6 +1471,13 @@ body.select-date .select-time label input[type=radio] {
   width: 28px;
   height: 28px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  body.select-date .select-time label input[type=radio] {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 body.select-date .select-time label:nth-child(1) {
@@ -1462,15 +1500,33 @@ body.select-infos .select-overview {
   margin: 40px 0 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select-infos .select-overview {
+    display: block;
+  }
+}
+
 body.select-infos .select-overview span.small {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.3;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select-infos .select-overview span.small {
+    font-size: 20px;
+  }
+}
+
 body.select-infos .select-overview span.medium {
   font-size: 66px;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  body.select-infos .select-overview span.medium {
+    font-size: 28px;
+  }
 }
 
 body.select-infos .select-overview span.large {
@@ -1480,8 +1536,21 @@ body.select-infos .select-overview span.large {
   color: #ff0000;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select-infos .select-overview span.large {
+    font-size: 80px;
+  }
+}
+
 body.select-infos .select-overview span.right {
   text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  body.select-infos .select-overview span.right {
+    text-align: left;
+    display: block;
+  }
 }
 
 body.select-infos .select-info-table {
@@ -1505,12 +1574,30 @@ body.select-infos .select-info-table table tr td {
   border: 1px solid #000000;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select-infos .select-info-table table tr td {
+    font-size: 16px;
+  }
+}
+
 body.select-infos .select-info-table table tr td.sht {
   width: 240px;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select-infos .select-info-table table tr td.sht {
+    width: 100px;
+  }
+}
+
 body.select-infos .select-info-table table tr td.lng {
   width: calc(100% - 240px);
+}
+
+@media only screen and (max-width: 768px) {
+  body.select-infos .select-info-table table tr td.lng {
+    width: calc(100% - 100px);
+  }
 }
 
 body.select-infos .select-info-table table tr:nth-child(even) {
@@ -1537,9 +1624,22 @@ body.select-infos .select-info-date-wrapper .select-info-date {
   line-height: 1.7;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select-infos .select-info-date-wrapper .select-info-date {
+    font-size: 20px;
+  }
+}
+
 body.select-price .price-body {
   margin: 0 0 190px;
   padding: 0 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  body.select-price .price-body {
+    margin: 0 0 40px;
+    padding: 0;
+  }
 }
 
 body.select-price .price-body .price-wrapper {
@@ -1558,14 +1658,33 @@ body.select-price .price-body .price-wrapper {
   background-color: #adffff;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select-price .price-body .price-wrapper {
+    height: auto;
+    padding: 20px 10px;
+  }
+}
+
 body.select-price .price-body .price-wrapper .price {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.75;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select-price .price-body .price-wrapper .price {
+    font-size: 20px;
+  }
+}
+
 body.select-price .price-body .price-wrapper .price span {
   font-size: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  body.select-price .price-body .price-wrapper .price span {
+    font-size: 28px;
+  }
 }
 
 body.select-price .price-body .price-table {
@@ -1589,6 +1708,13 @@ body.select-price .price-body .price-table table tr td, body.select-price .price
   font-size: 28px;
   font-weight: 700;
   border: 1px solid #000000;
+}
+
+@media only screen and (max-width: 768px) {
+  body.select-price .price-body .price-table table tr td, body.select-price .price-body .price-table table tr th {
+    padding: 10px;
+    font-size: 20px;
+  }
 }
 
 body.select-price .price-body .price-table table tr th {
@@ -1631,6 +1757,12 @@ body.select-price .attention .attention-body .attention-txt {
   line-height: 1.6;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select-price .attention .attention-body .attention-txt {
+    font-size: 16px;
+  }
+}
+
 body.select-price .attention .attention-body .attention-agree {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1659,12 +1791,25 @@ body.select-price .attention .attention-body .attention-agree .chk-wrapper input
   cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select-price .attention .attention-body .attention-agree .chk-wrapper input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 body.select-price .attention .attention-body .attention-agree .chk-wrapper label {
   padding: 0 0 0 18px;
   font-size: 38px;
   font-weight: 700;
   line-height: 1.7;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  body.select-price .attention .attention-body .attention-agree .chk-wrapper label {
+    font-size: 20px;
+  }
 }
 
 /* 家財・オプション選択ページのスタイル */

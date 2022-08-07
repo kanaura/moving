@@ -51,7 +51,7 @@ if (isset($_POST['time'])) {
                 <div class="select-body">
                     <p class="select-body-ttl ttl-blue-wide">入力内容の確認</p>
                     <p class="select-overview">
-                        <span class="small right">この度のお客様の<br>家財Lv.は</span>
+                        <span class="small right">この度のお客様の<br class="br-768-no">家財Lv.は</span>
                         <span class="large"><?=$_SESSION['total_m3'];?></span>
                         <span class="medium">立米</span>
                         <span class="small">です。</span>
