@@ -170,10 +170,10 @@ if (!($area_02_id >= 0 && $area_02_id <= 6)) {
                                                     <div class="free-row">
                                                         <span>縦</span>
                                                         <input type="text" />
-                                                        <span>cm ×&nbsp;</span>
+                                                        <span>cm ×&nbsp;</span><br class="br-768">
                                                         <span>横</span>
                                                         <input type="text" />
-                                                        <span>cm ×&nbsp;</span>
+                                                        <span>cm ×&nbsp;</span><br class="br-768">
                                                         <span>高さ</span>
                                                         <input type="text" />
                                                         <span>cm</span>

@@ -7,8 +7,18 @@ body.select {
         display: flex;
         margin: 20px 0 50px;
 
+        @media only screen and (max-width: 768px) {
+            display: block;
+            margin: 20px 0;
+        }
+
         .select-head-l {
             width: calc(100% - 185px);
+
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                margin: 0 0 20px;
+            }
 
             .select-head-l-ttl {
                 @include flex-center-v;
@@ -16,10 +26,19 @@ body.select {
                 font-weight: $fw-normal;
                 line-height: 1.8;
 
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                }
+
                 span {
                     margin-right: 16px;
                     font-size: 28px;
                     font-weight: $fw-bold;
+
+                    @media only screen and (max-width: 768px) {
+                        display: block;
+                        font-size: 24px;
+                    }
                 }
             }
 
@@ -76,6 +95,10 @@ body.select {
             width: 185px;
             text-align: center;
 
+            @media only screen and (max-width: 768px) {
+                margin: 0 auto;
+            }
+
             .select-head-r-ttl {
                 margin: 0 0 7px;
                 font-size: 24px;
@@ -114,7 +137,11 @@ body.select {
                     line-height: 1.8;
                     color: #ffffff;
                     cursor: pointer;
-                    background: linear-gradient(180deg, rgba(204,204,204,1) 31%, rgba(128,128,128,1) 73%);                    
+                    background: linear-gradient(180deg, rgba(204,204,204,1) 31%, rgba(128,128,128,1) 73%);
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: 24px;
+                    }
                 }
 
                 .select-item-body {
@@ -131,12 +158,20 @@ body.select {
                             td, th {
                                 height: 75px;
                                 border: 1px solid #000000;
+
+                                @media only screen and (max-width: 768px) {
+                                    height: auto;
+                                }
                             }
 
                             th {
                                 padding: 0 24px;
                                 text-align: center;
                                 vertical-align: top;
+
+                                @media only screen and (max-width: 768px) {
+                                    padding: 0 10px;
+                                }
 
                                 img {
                                     margin: 0 auto;
@@ -148,9 +183,17 @@ body.select {
                                 font-size: 28px;
                                 font-weight: $fw-bold;
 
+                                @media only screen and (max-width: 768px) {
+                                    font-size: 20px;
+                                }
+
                                 .item-name {
                                     position: relative;
                                     padding: 24px;
+
+                                    @media only screen and (max-width: 768px) {
+                                        padding: 20px 10px;
+                                    }
                                     
                                     .select-size {
                                         @include absolute-center-y;
@@ -228,6 +271,10 @@ body.select {
                                     .free-row {
                                         @include flex-center-v;
 
+                                        @media only screen and (max-width: 768px) {
+                                            display: block;
+                                        }
+
                                         input[type=text] {
                                             width: 140px;
                                             height: 56px;
@@ -237,6 +284,17 @@ body.select {
                                             border: 1px solid #000000;
                                             border-radius: 6px;
                                             outline: none;
+
+                                            @media only screen and (max-width: 768px) {
+                                                width: auto;
+                                                height: auto;
+                                                margin: 0 0 10px;
+                                                padding: 10px;
+                                                font-size: 16px;
+                                            }
+
+                                            @media only screen and (max-width: 480px) {
+                                            }
                                         }
                                     }
                                 }
@@ -245,6 +303,10 @@ body.select {
                                     li {
                                         padding: 0 0 0 56px;
                                         border-top: 1px solid #000000;
+
+                                        @media only screen and (max-width: 768px) {
+                                            padding: 0 0 0 10px;
+                                        }
 
                                         &.gray {
                                             background-color: #e6e6e6;
@@ -280,26 +342,50 @@ body.select {
         flex-wrap: wrap;
         margin: 10px 0 50px;
 
+        @media only screen and (max-width: 768px) {
+            display: block;
+            margin: 20px 0;
+        }
+
         .standalone-icon {
             width: 219px;
             cursor: pointer;
+
+            @media only screen and (max-width: 768px) {
+                margin: 0 auto 20px;
+            }
         }
 
         .standalone-info {
             width: calc(100% - 219px);
             padding: 0 0 0 20px;
 
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                margin: 0 0 20px;
+                padding: 0;
+            }
+
             .standalone-info-ttl {
                 margin: 0 0 16px;
                 font-size: 42px;
                 font-weight: $fw-bold;
                 color: rgba(255, 29, 37, 1.0);
+
+                @media only screen and (max-width: 768px) {
+                    text-align: center;
+                    font-size: 24px;
+                }
             }
 
             .standalone-info-txt {
                 font-size: 27px;
                 font-weight: $fw-normal;
                 line-height: 1.33;
+
+                @media only screen and (max-width: 768px) {
+                    font-size: 16px;
+                }
             }
         }
 
@@ -312,6 +398,12 @@ body.select {
             font-weight: $fw-bold;
             line-height: 1.33;
             color: rgba(255, 0, 0, 1.0);
+
+            @media only screen and (max-width: 768px) {
+                margin: 0 0 20px;
+                padding: 0 0 0 20px;
+                font-size: 16px;
+            }
 
             &::before {
                 position: absolute;
@@ -327,6 +419,11 @@ body.select {
         padding: 30px 64px 10px;
         border: 4px solid rgba(237, 28, 36, 1.0);
         border-radius: 18px;
+
+        @media only screen and (max-width: 768px) {
+            padding: 40px 20px 20px;
+            border-width: 2px;
+        }
 
         .select-object-ttl {
             @include absolute-center-x;
