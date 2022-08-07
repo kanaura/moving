@@ -128,9 +128,11 @@ header .wrap .site-header .logo a:hover {
   opacity: 0.7;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .btn-default {
     width: 100%;
+    height: 60px;
+    font-size: 20px;
   }
 }
 
@@ -164,6 +166,14 @@ header .wrap .site-header .logo a:hover {
   opacity: 0.7;
 }
 
+@media only screen and (max-width: 480px) {
+  .btn-back {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+  }
+}
+
 .btn-clear {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,6 +202,14 @@ header .wrap .site-header .logo a:hover {
 
 .btn-clear:hover {
   opacity: 0.7;
+}
+
+@media only screen and (max-width: 480px) {
+  .btn-clear {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+  }
 }
 
 .bottom-btn-list {
@@ -966,6 +984,12 @@ body.select .select-body .select-list .select-item .select-item-body table tr {
   width: 100%;
 }
 
+@media only screen and (max-width: 480px) {
+  body.select .select-body .select-list .select-item .select-item-body table tr {
+    display: block;
+  }
+}
+
 body.select .select-body .select-list .select-item .select-item-body table tr td, body.select .select-body .select-list .select-item .select-item-body table tr th {
   height: 75px;
   border: 1px solid #000000;
@@ -989,6 +1013,13 @@ body.select .select-body .select-list .select-item .select-item-body table tr th
   }
 }
 
+@media only screen and (max-width: 480px) {
+  body.select .select-body .select-list .select-item .select-item-body table tr th {
+    display: block;
+    width: 100%;
+  }
+}
+
 body.select .select-body .select-list .select-item .select-item-body table tr th img {
   margin: 0 auto;
 }
@@ -1002,6 +1033,13 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
 @media only screen and (max-width: 768px) {
   body.select .select-body .select-list .select-item .select-item-body table tr td {
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body.select .select-body .select-list .select-item .select-item-body table tr td {
+    display: block;
+    font-size: 16px;
   }
 }
 
@@ -1064,6 +1102,13 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
   cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up, body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
+    width: 8px;
+    height: 8px;
+  }
+}
+
 body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up {
   position: absolute;
   right: 10px;
@@ -1080,6 +1125,12 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
   border-color: transparent transparent #000000 transparent;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up:before {
+    border-width: 0 3px 7px 3px;
+  }
+}
+
 body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
   position: absolute;
   right: 10px;
@@ -1094,6 +1145,22 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
   border-style: solid;
   border-width: 15px 7px 0 7px;
   border-color: #000000 transparent transparent transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn:before {
+    border-width: 7px 3px 0 3px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl.free {
+    position: relative;
+    top: unset;
+    right: unset;
+    -webkit-transform: unset;
+            transform: unset;
+  }
 }
 
 body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row {
@@ -1155,8 +1222,20 @@ body.select .select-body .select-list .select-item .select-item-body table.has-i
   width: 135px;
 }
 
+@media only screen and (max-width: 480px) {
+  body.select .select-body .select-list .select-item .select-item-body table.has-image tr th {
+    width: 100%;
+  }
+}
+
 body.select .select-body .select-list .select-item .select-item-body table.has-image tr td {
   width: calc(100% - 135px);
+}
+
+@media only screen and (max-width: 480px) {
+  body.select .select-body .select-list .select-item .select-item-body table.has-image tr td {
+    width: 100%;
+  }
 }
 
 body.select .select-standalone {
@@ -1273,6 +1352,12 @@ body.select .select-object .select-object-ttl {
           transform: translateX(-50%);
   top: -25px;
   text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  body.select .select-object .select-object-ttl {
+    width: 80%;
+  }
 }
 
 body.select .select-object .select-object-ttl span {

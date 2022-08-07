@@ -178,7 +178,7 @@ if (!($area_02_id >= 0 && $area_02_id <= 6)) {
                                                         <input type="text" />
                                                         <span>cm</span>
                                                     </div>
-                                                    <p class="item-ctrl">
+                                                    <p class="item-ctrl free">
                                                         <span class="num">0</span>台
                                                         <span class="up good"></span>
                                                         <span class="dn good"></span>
