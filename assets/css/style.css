@@ -1820,6 +1820,12 @@ body.form .form-page-ttl {
   line-height: 1.7;
 }
 
+@media only screen and (max-width: 768px) {
+  body.form .form-page-ttl {
+    font-size: 24px;
+  }
+}
+
 body.form .form-list {
   margin: 0 0 200px;
   padding: 0 128px;
@@ -1873,6 +1879,12 @@ body.form .form-list .form-row .form-item-name.small {
   font-size: 18px;
 }
 
+@media only screen and (max-width: 768px) {
+  body.form .form-list .form-row .form-item-name.small {
+    width: 100%;
+  }
+}
+
 body.form .form-list .form-row .form-item-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1884,6 +1896,12 @@ body.form .form-list .form-row .form-item-group {
   margin: -4px 0 16px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .form-list .form-row .form-item-group {
+    width: 100%;
+  }
 }
 
 body.form .form-list .form-row .form-item-group.full {
@@ -1926,6 +1944,12 @@ body.form .form-list .form-row .form-item-group input[type=text], body.form .for
 
 body.form .form-list .form-row .form-item-group input[type=text].post-code {
   width: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  body.form .form-list .form-row .form-item-group input[type=text].post-code {
+    width: 100%;
+  }
 }
 
 body.form .form-list .form-row .form-item-group input[type=text].date-01 {
@@ -1972,6 +1996,12 @@ body.form .form-list .form-row .form-item-group .form-btn:hover {
   opacity: 0.7;
 }
 
+@media only screen and (max-width: 480px) {
+  body.form .form-list .form-row .form-item-group .form-btn {
+    margin: 10px 0 0;
+  }
+}
+
 body.form .form-list .form-block {
   margin: 20px 0;
 }
@@ -2010,6 +2040,12 @@ body.form .form-list .form-desc {
   padding: 0 0 0 20px;
   font-size: 21px;
   line-height: 1.7;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .form-list .form-desc {
+    font-size: 16px;
+  }
 }
 
 body.form .form-list .form-desc:before {
