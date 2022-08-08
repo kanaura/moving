@@ -58,8 +58,8 @@ include_once('./head.php');
                         </p>
                         <div class="address-lead-body">
                             <div class="address-lead-btn-list">
-                                <a class="address-lead-btn" href="">お電話でお問い合わせ</a>
-                                <a class="address-lead-btn" href="">メールでお問い合わせ</a>
+                                <a class="address-lead-btn" href="tel:0120-557-154">お電話でお問い合わせ</a>
+                                <a class="address-lead-btn" href="mailto:info@hacovice.com">メールでお問い合わせ</a>
                             </div>
                             <p class="txt txt-has-star address-lead-txt">
                                 お見積り日程を調整後、ご自宅にお伺いして<br class="br-768-no">お見積りさせていただきます。

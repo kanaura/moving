@@ -50,7 +50,7 @@ $(function() {
 
     $('.up').on('click', function() {        
         num = parseInt($(this).parent().find('.num').text());
-        if (num < 9) {
+        if (num < 50) {
             num++;
         }
 

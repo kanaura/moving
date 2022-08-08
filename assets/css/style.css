@@ -1024,6 +1024,13 @@ body.select .select-body .select-list .select-item .select-item-body table tr th
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+  body.select .select-body .select-list .select-item .select-item-body table tr th img {
+    width: auto;
+    height: 100px;
+  }
+}
+
 body.select .select-body .select-list .select-item .select-item-body table tr td {
   position: relative;
   font-size: 28px;
@@ -1089,10 +1096,17 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 24px;
+  min-width: 140px;
   padding: 10px 60px 10px 10px;
   background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 6px;
+}
+
+@media only screen and (max-width: 480px) {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl {
+    min-width: 100px;
+  }
 }
 
 body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up, body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
@@ -1575,6 +1589,12 @@ body.select-date .select-time {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  body.select-date .select-time {
+    font-size: 14px;
+  }
+}
+
 body.select-date .select-time label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1595,6 +1615,13 @@ body.select-date .select-time label input[type=radio] {
   body.select-date .select-time label input[type=radio] {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body.select-date .select-time label input[type=radio] {
+    width: 14px;
+    height: 14px;
   }
 }
 

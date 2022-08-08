@@ -16,9 +16,9 @@ include_once('./head.php');
             </div>
             <div class="lead">
                 <p style="margin: 0 0 20px; font-size: 28px; font-weight: bold; text-align: center;">
-                    本当にありがとうございました！
+                    仮お申し込みが完了いたしました
                 </p>
-                <p style="margin: 0 0 60px; margin: 0 0 20px; font-size: 18px; font-weight: normal; text-align: center;">
+                <p class="txt" style="text-align: center;">
                     仮お申し込みありがとうございます。<br>
                     担当者より、あらためてご連絡させていただきますので、<br>
                     今しばらくお待ちください。
