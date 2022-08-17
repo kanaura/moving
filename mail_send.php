@@ -56,8 +56,9 @@ for ($i = 0; $i < count($_SESSION['options_ttl']); $i++) {
 }
 $message_common .= "\r\n";
 
-$mailto  = "info@sangodesign.jp";
-$option  = "From:<info@hacovice.com>";
+$mailto  = "info@hacovice.com";
+$option  = "From:<info@hacovice.com>" . "\r\n";
+$option  .= "Bcc:<info@sangodesign.jp>";
 
 $title   = "お引越しの仮お申し込み入りました";
 $message = "非対面カンタンお見積りシステムより仮お申し込みを受け付けました。\r\n\r\n";
@@ -96,6 +97,8 @@ $message .= "広島県広島市中区幟町13-15\r\n";
 $message .= "新広島ビルディング 2階\r\n";
 $message .= "TEL 082-512-2257\r\n\r\n";
 $message .= "https://www.hacovice.com/company/\r\n";
+
+$option  = "From:<info@hacovice.com>";
 
 if (mb_send_mail($mailto, $title, $message, $option)) {
     // echo "送信成功";
