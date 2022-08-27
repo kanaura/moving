@@ -96,7 +96,7 @@ $(function() {
 
         $('.item-ctrl.num.single').each(function(index) {
             cnt = 1;
-            if ($(this).hasClass('single-99')) {
+            if ($(this).hasClass('single-129')) {
                 cnt = 5;
             }
             $(this).val(cnt);

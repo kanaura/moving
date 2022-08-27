@@ -137,7 +137,6 @@ if (!($area_02_id >= 0 && $area_02_id <= 6)) {
                                                     <?php else: ?>
                                                         <div class="item-name">
                                                             <?=$item['ttl'];?>
-                                                            <?=$item['ttl'];?>
                                                             <?php if (!$item['single']) : ?>
                                                             <select class="item-ctrl num good">
                                                             <?php else : ?>
