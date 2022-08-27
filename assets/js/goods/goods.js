@@ -75,9 +75,9 @@ $(function() {
     });
 
     function clear_all() {
-        $('.item-ctrl .num').each(function(index) {
-            $(this).text('0');
-            $(this).parent().parent().find('.cnt').val(0);
+        $('.item-ctrl.num').each(function(index) {
+            $(this).val(0);
+            $(this).parent().find('.cnt').val(0);
         });
     }
 
@@ -94,17 +94,29 @@ $(function() {
     $('.standalone-icon').on('click', function() {
         clear_all();
 
-        $('.item-ctrl .num.single').each(function(index) {
+        $('.item-ctrl.num.single').each(function(index) {
             cnt = 1;
             if ($(this).hasClass('single-99')) {
                 cnt = 5;
             }
-            $(this).text(cnt);
-            $(this).parent().parent().find('.cnt').val(cnt);
+            $(this).val(cnt);
+            $(this).parent().find('.cnt').val(cnt);
         });
 
         refresh_total();
 
         return false;
+    });
+
+    $('select.item-ctrl').on('change', function() {
+        console.log($(this)[0].selectedIndex);
+
+        num = $(this)[0].selectedIndex;
+        
+        $(this).parent().find('.cnt').val(num);
+
+        if ($(this).hasClass('good')) {
+            refresh_total();
+        }
     });
 });

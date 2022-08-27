@@ -1057,7 +1057,7 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
 
 @media only screen and (max-width: 480px) {
   body.select .select-body .select-list .select-item .select-item-body table tr td .item-name {
-    padding: 10px 5px;
+    padding: 10px 80px 10px 5px;
   }
 }
 
@@ -1125,12 +1125,18 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
   background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 6px;
+  outline: none;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 480px) {
   body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl {
-    min-width: 100px;
+    min-width: 60px;
+    padding: 5px;
     right: 5px;
+    font-size: 12px;
+    font-weight: 400;
   }
 }
 

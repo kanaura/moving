@@ -118,15 +118,15 @@ if (!($area_02_id >= 0 && $area_02_id <= 6)) {
                                                                 <li class="<?=$class;?>">
                                                                     <div class="item-name">
                                                                         <?=$sub_item['ttl'];?>
-                                                                        <p class="item-ctrl">
-                                                                            <?php if (!$sub_item['single']) : ?>
-                                                                            <span class="num">0</span>台
-                                                                            <?php else : ?>
-                                                                            <span class="num single single-<?=$sub_item['idx'];?>">0</span>台
-                                                                            <?php endif; ?>
-                                                                            <span class="up good"></span>
-                                                                            <span class="dn good"></span>
-                                                                        </p>
+                                                                        <?php if (!$sub_item['single']) : ?>
+                                                                        <select class="item-ctrl num good">
+                                                                        <?php else : ?>
+                                                                        <select class="item-ctrl num good single single-<?=$sub_item['idx'];?>">
+                                                                        <?php endif; ?>
+                                                                            <?php for ($cnt = 0; $cnt <= 50; $cnt++) : ?>
+                                                                            <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
+                                                                            <?php endfor; ?>
+                                                                        </select>
                                                                         <input type="hidden" class="ttl" name="goods_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
                                                                         <input type="hidden" class="cnt" name="goods_cnt[<?=$sub_item['idx'];?>]" value="0" />
                                                                         <input type="hidden" class="size" name="goods_size[<?=$sub_item['idx'];?>]" value="<?=$sub_item['size'];?>" />
@@ -137,15 +137,16 @@ if (!($area_02_id >= 0 && $area_02_id <= 6)) {
                                                     <?php else: ?>
                                                         <div class="item-name">
                                                             <?=$item['ttl'];?>
-                                                            <p class="item-ctrl">
-                                                                <?php if (!$item['single']) : ?>
-                                                                <span class="num">0</span>台
-                                                                <?php else : ?>
-                                                                <span class="num single single-<?=$item['idx'];?>">0</span>台
-                                                                <?php endif; ?>
-                                                                <span class="up good"></span>
-                                                                <span class="dn good"></span>
-                                                            </p>
+                                                            <?=$item['ttl'];?>
+                                                            <?php if (!$item['single']) : ?>
+                                                            <select class="item-ctrl num good">
+                                                            <?php else : ?>
+                                                            <select class="item-ctrl num  good single single-<?=$item['idx'];?>">
+                                                            <?php endif; ?>
+                                                                <?php for ($cnt = 0; $cnt <= 50; $cnt++) : ?>
+                                                                <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
+                                                                <?php endfor; ?>
+                                                            </select>
                                                             <input type="hidden" class="ttl" name="goods_ttl[<?=$item['idx'];?>]" value="<?=$item['ttl'];?>" />
                                                             <input type="hidden" class="cnt" name="goods_cnt[<?=$item['idx'];?>]" value="0" />
                                                             <input type="hidden" class="size" name="goods_size[<?=$item['idx'];?>]" value="<?=$item['size'];?>" />

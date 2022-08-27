@@ -106,11 +106,11 @@ if (isset($_POST['goods_size'])) {
                                                         <li class="<?=$class;?>">
                                                             <div class="item-name">
                                                                 <?=$sub_item['ttl'];?>
-                                                                <p class="item-ctrl">
-                                                                    <span class="num">0</span>台
-                                                                    <span class="up option"></span>
-                                                                    <span class="dn option"></span>
-                                                                </p>
+                                                                <select class="item-ctrl num">
+                                                                    <?php for ($cnt = 0; $cnt <= 50; $cnt++) : ?>
+                                                                    <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
+                                                                    <?php endfor; ?>
+                                                                </select>
                                                                 <input type="hidden" class="ttl" name="options_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
                                                                 <input type="hidden" class="cnt" name="options_cnt[<?=$sub_item['idx'];?>]" value="0" />
                                                                 <input type="hidden" class="size" name="options_size[<?=$sub_item['idx'];?>]" value="<?=$sub_item['size'];?>" />
@@ -122,11 +122,11 @@ if (isset($_POST['goods_size'])) {
                                             <?php else: ?>
                                                 <div class="item-name">
                                                     <?=$item['ttl'];?>
-                                                    <p class="item-ctrl">
-                                                        <span class="num">0</span>台
-                                                        <span class="up option"></span>
-                                                        <span class="dn option"></span>
-                                                    </p>
+                                                    <select class="item-ctrl num">
+                                                        <?php for ($cnt = 0; $cnt <= 50; $cnt++) : ?>
+                                                        <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
+                                                        <?php endfor; ?>
+                                                    </select>
                                                     <input type="hidden" class="ttl" name="options_ttl[<?=$item['idx'];?>]" value="<?=$item['ttl'];?>" />
                                                     <input type="hidden" class="cnt" name="options_cnt[<?=$item['idx'];?>]" value="0" />
                                                     <input type="hidden" class="size" name="options_size[<?=$item['idx'];?>]" value="<?=$item['size'];?>" />

@@ -211,7 +211,7 @@ body.select {
                                     }
 
                                     @media only screen and (max-width: 480px) {
-                                        padding: 10px 5px;
+                                        padding: 10px 80px 10px 5px;
                                     }
                                     
                                     .select-size {
@@ -265,10 +265,16 @@ body.select {
                                         background-color: #ffffff;
                                         border: 1px solid #000000;
                                         border-radius: 6px;
+                                        outline: none;
+                                        font-size: 28px;
+                                        font-weight: $fw-bold;
 
                                         @media only screen and (max-width: 480px) {
-                                            min-width: 100px;
+                                            min-width: 60px;
+                                            padding: 5px;
                                             right: 5px;
+                                            font-size: 12px;
+                                            font-weight: $fw-normal;
                                         }
 
                                         .up, .dn {
