@@ -984,12 +984,6 @@ body.select .select-body .select-list .select-item .select-item-body table tr {
   width: 100%;
 }
 
-@media only screen and (max-width: 480px) {
-  body.select .select-body .select-list .select-item .select-item-body table tr {
-    display: block;
-  }
-}
-
 body.select .select-body .select-list .select-item .select-item-body table tr td, body.select .select-body .select-list .select-item .select-item-body table tr th {
   height: 75px;
   border: 1px solid #000000;
@@ -1013,13 +1007,6 @@ body.select .select-body .select-list .select-item .select-item-body table tr th
   }
 }
 
-@media only screen and (max-width: 480px) {
-  body.select .select-body .select-list .select-item .select-item-body table tr th {
-    display: block;
-    width: 100%;
-  }
-}
-
 body.select .select-body .select-list .select-item .select-item-body table tr th img {
   margin: 0 auto;
 }
@@ -1028,6 +1015,13 @@ body.select .select-body .select-list .select-item .select-item-body table tr th
   body.select .select-body .select-list .select-item .select-item-body table tr th img {
     width: auto;
     height: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body.select .select-body .select-list .select-item .select-item-body table tr th img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1045,8 +1039,8 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
 
 @media only screen and (max-width: 480px) {
   body.select .select-body .select-list .select-item .select-item-body table tr td {
-    display: block;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 400;
   }
 }
 
@@ -1061,6 +1055,12 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
   }
 }
 
+@media only screen and (max-width: 480px) {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name {
+    padding: 10px 5px;
+  }
+}
+
 body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size {
   position: absolute;
   top: 50%;
@@ -1069,6 +1069,12 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
   right: 24px;
   cursor: pointer;
   padding-right: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size {
+    right: 4px;
+  }
 }
 
 body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size:before {
@@ -1106,6 +1112,7 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
 @media only screen and (max-width: 480px) {
   body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl {
     min-width: 100px;
+    right: 5px;
   }
 }
 
@@ -1238,7 +1245,7 @@ body.select .select-body .select-list .select-item .select-item-body table.has-i
 
 @media only screen and (max-width: 480px) {
   body.select .select-body .select-list .select-item .select-item-body table.has-image tr th {
-    width: 100%;
+    width: 64px;
   }
 }
 
@@ -1248,7 +1255,7 @@ body.select .select-body .select-list .select-item .select-item-body table.has-i
 
 @media only screen and (max-width: 480px) {
   body.select .select-body .select-list .select-item .select-item-body table.has-image tr td {
-    width: 100%;
+    width: calc(100% - 64px);
   }
 }
 

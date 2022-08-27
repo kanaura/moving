@@ -155,10 +155,6 @@ body.select {
                         tr {
                             width: 100%;
 
-                            @media only screen and (max-width: 480px) {
-                                display: block;
-                            }
-
                             td, th {
                                 height: 75px;
                                 border: 1px solid #000000;
@@ -177,17 +173,17 @@ body.select {
                                     padding: 0 10px;
                                 }
 
-                                @media only screen and (max-width: 480px) {
-                                    display: block;
-                                    width: 100%;
-                                }
-
                                 img {
                                     margin: 0 auto;
 
                                     @media only screen and (max-width: 768px) {
                                         width: auto;
                                         height: 100px;
+                                    }
+
+                                    @media only screen and (max-width: 480px) {
+                                        width: 100%;
+                                        height: auto;
                                     }
                                 }
                             }
@@ -202,8 +198,8 @@ body.select {
                                 }
 
                                 @media only screen and (max-width: 480px) {
-                                    display: block;
-                                    font-size: 16px;
+                                    font-size: 14px;
+                                    font-weight: $fw-normal;
                                 }
 
                                 .item-name {
@@ -213,12 +209,20 @@ body.select {
                                     @media only screen and (max-width: 768px) {
                                         padding: 20px 10px;
                                     }
+
+                                    @media only screen and (max-width: 480px) {
+                                        padding: 10px 5px;
+                                    }
                                     
                                     .select-size {
                                         @include absolute-center-y;
                                         right: 24px;
                                         cursor: pointer;
                                         padding-right: 30px;
+
+                                        @media only screen and (max-width: 480px) {
+                                            right: 4px;
+                                        }
 
                                         &:before {
                                             content: '';
@@ -250,6 +254,7 @@ body.select {
 
                                         @media only screen and (max-width: 480px) {
                                             min-width: 100px;
+                                            right: 5px;
                                         }
 
                                         .up, .dn {
@@ -372,7 +377,7 @@ body.select {
                                     width: 135px;
 
                                     @media only screen and (max-width: 480px) {
-                                        width: 100%;
+                                        width: 64px;
                                     }
                                 }
 
@@ -380,7 +385,7 @@ body.select {
                                     width: calc(100% - 135px);
 
                                     @media only screen and (max-width: 480px) {
-                                        width: 100%;
+                                        width: calc(100% - 64px);
                                     }
                                 }
                             }
