@@ -330,11 +330,15 @@ body.select {
                                         }
 
                                         &.free {
+                                            border: none;
+
                                             @media only screen and (max-width: 480px) {
                                                 position: relative;
                                                 top: unset;
                                                 right: unset;
                                                 transform: unset;
+                                                min-width: unset;
+                                                padding: 0;
                                             }
                                         }
                                     }
@@ -343,7 +347,8 @@ body.select {
                                         @include flex-center-v;
 
                                         @media only screen and (max-width: 768px) {
-                                            display: block;
+                                            width: calc(100% - 80px);
+                                            display: flex;
                                         }
 
                                         input[type=text] {
@@ -357,14 +362,48 @@ body.select {
                                             outline: none;
 
                                             @media only screen and (max-width: 768px) {
-                                                width: auto;
-                                                height: auto;
-                                                margin: 0 0 10px;
+                                                margin: 0;
                                                 padding: 10px;
                                                 font-size: 16px;
                                             }
 
                                             @media only screen and (max-width: 480px) {
+                                                width: 33%;
+                                                height: 28px;
+                                                margin: 0 4px;
+                                                font-size: 12px;
+                                            }
+
+                                            &::placeholder {
+                                                color: transparent;
+
+                                                @media only screen and (max-width: 480px) {
+                                                    color: #cccccc;
+                                                }
+                                            }
+                                        }
+
+                                        span {
+                                            @media only screen and (max-width: 480px) {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+
+                                    &.free-item {
+                                        display: flex;
+
+                                        @media only screen and (max-width: 480px) {
+                                            padding: 10px 5px;
+                                        }
+
+                                        select {
+                                            @media only screen and (max-width: 480px) {
+                                                position: relative;
+                                                top: unset;
+                                                right: unset;
+                                                transform: unset;
+                                                margin: 0 4px;
                                             }
                                         }
                                     }

@@ -167,23 +167,25 @@ if (!($area_02_id >= 0 && $area_02_id <= 6)) {
                                         <?php for ($i = 0; $i < 5; $i++) : ?>
                                         <tr>
                                             <td>
-                                                <div class="item-name">
+                                                <div class="item-name free-item">
                                                     <div class="free-row">
                                                         <span>縦</span>
-                                                        <input type="text" />
+                                                        <input type="text" placeholder="縦(cm)" />
                                                         <span>cm ×&nbsp;</span><br class="br-768">
                                                         <span>横</span>
-                                                        <input type="text" />
+                                                        <input type="text" placeholder="横(cm)" />
                                                         <span>cm ×&nbsp;</span><br class="br-768">
                                                         <span>高さ</span>
-                                                        <input type="text" />
+                                                        <input type="text" placeholder="高(cm)" />
                                                         <span>cm</span>
                                                     </div>
-                                                    <p class="item-ctrl free">
-                                                        <span class="num">0</span>台
-                                                        <span class="up good"></span>
-                                                        <span class="dn good"></span>
-                                                    </p>
+                                                    <div class="item-ctrl free">
+                                                        <select class="item-ctrl num good">
+                                                            <?php for ($cnt = 0; $cnt <= 50; $cnt++) : ?>
+                                                            <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
+                                                            <?php endfor; ?>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </td>
                                         </tr>
