@@ -87,6 +87,7 @@ if (!($area_02_id >= 0 && $area_02_id <= 6)) {
                     <p class="select-body-ttl ttl-blue-wide">家財を選ぶ</p>
 
                     <div class="select-list">
+                        <div id="select-list-top"></div>
                         <?php 
                         for ($i = 0; $i < count($goods); $i++) :
                             $info = $goods[$i];

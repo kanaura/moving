@@ -78,6 +78,7 @@ if (isset($_POST['goods_size'])) {
                     <p class="select-body-ttl ttl-blue-wide">オプション</p>
 
                     <div class="select-list">
+                        <div id="select-list-top"></div>
                         <?php
                         for ($i = 0; $i < count($options); $i++) :
                             $option = $options[$i];
