@@ -1706,7 +1706,7 @@ $goods = [
             [
                 'idx'    => 125, 
                 'ttl' => 'ベンチプレス',
-                'img' => '', 
+                'img' => '/hobby/bench-press.jpg', 
                 'len_01' => 110, 
                 'len_02' => 150, 
                 'len_03' => 60, 
