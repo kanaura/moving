@@ -92,7 +92,7 @@ if (isset($_POST['options_price'])) {
                     <p class="select-body-ttl ttl-blue-wide">お問い合わせ・要望</p>
 
                     <div class="select-message">
-                        <textarea rows="10"></textarea>
+                        <textarea rows="10" name="message"></textarea>
                     </div>
                 </div>
 

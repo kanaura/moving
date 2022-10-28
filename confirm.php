@@ -40,6 +40,10 @@ if (isset($_POST['date'])) {
 if (isset($_POST['time'])) {
     $_SESSION['time'] = $_POST['time'];
 }
+
+if (isset($_POST['message'])) {
+    $_SESSION['message'] = $_POST['message'];
+}
 ?>
 
 <body class="select select-infos select-price">
@@ -144,7 +148,7 @@ if (isset($_POST['time'])) {
 
                     <p class="select-body-ttl ttl-blue-wide">お問い合わせ・ご要望</p>
                     <div class="select-message">
-                        <textarea rows="4"></textarea>
+                        <textarea rows="4" name="message" readonly><?php print_r($_SESSION['message']); ?></textarea>
                     </div>
                 </div>
 
