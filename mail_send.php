@@ -55,6 +55,10 @@ for ($i = 0; $i < count($_SESSION['options_ttl']); $i++) {
     }
 }
 $message_common .= "\r\n";
+$message_common .= "お問い合わせ：\r\n".$_SESSION['message'];
+
+$message_common .= "\r\n";
+$message_common .= "\r\n";
 
 $mailto  = "info@hacovice.com";
 $option  = "From:<info@hacovice.com>" . "\r\n";
