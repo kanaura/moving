@@ -47,6 +47,13 @@ for ($i = 0; $i < count($_SESSION['goods_ttl']); $i++) {
     }
 }
 
+$message_common .= "【フリー】\r\n";
+for ($i = 0; $i < count($_SESSION['free_ttl']); $i++) {
+    if ($_SESSION['free_cnt'][$i] != 0) {
+        $message_common .= $_SESSION['free_ttl'][$i] . "：(" . $_SESSION['free_w'][$i] . "cm・" . $_SESSION['free_h'][$i] . "cm・" . $_SESSION['free_d'][$i] . "cm)" . $_SESSION['free_cnt'][$i] . "台\r\n";
+    }
+}
+
 $message_common .= "\r\n";
 $message_common .= "【オプション】\r\n";
 for ($i = 0; $i < count($_SESSION['options_ttl']); $i++) {

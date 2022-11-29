@@ -115,6 +115,21 @@ if (isset($_POST['message'])) {
                                 endif;
                             endfor; 
                             ?>
+
+                            <?php
+                            $free_ttl = $_SESSION['free_ttl'];
+                            $free_cnt = $_SESSION['free_cnt'];
+                            for ($i = 0; $i < count($_SESSION['free_ttl']); $i++) :
+                                if ($free_cnt[$i] != 0) :
+                            ?>
+                            <tr>
+                                <td class="lng"><?=$free_ttl[$i];?>(<?=$_SESSION['free_w'][$i];?>cm・<?=$_SESSION['free_h'][$i];?>cm・<?=$_SESSION['free_d'][$i];?>cm)</td>
+                                <td class="sht"><?=$free_cnt[$i];?>台</td>
+                            </tr>
+                            <?php
+                                endif;
+                            endfor; 
+                            ?>
                         </table>
                     </div>
 
