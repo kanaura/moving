@@ -170,13 +170,13 @@ if (!($area_02_id >= 0 && $area_02_id <= 6)) {
                                                 <div class="item-name free-item">
                                                     <div class="free-row">
                                                         <span>縦</span>
-                                                        <input type="text" placeholder="縦(cm)" />
+                                                        <input type="number" class="input-free input-free-w" placeholder="縦(cm)" min="0" max="500" name="free_w[$i]" />
                                                         <span>cm ×&nbsp;</span><br class="br-768">
                                                         <span>横</span>
-                                                        <input type="text" placeholder="横(cm)" />
+                                                        <input type="number" class="input-free input-free-h" placeholder="横(cm)" min="0" max="500" name="free_h[$i]" />
                                                         <span>cm ×&nbsp;</span><br class="br-768">
                                                         <span>高さ</span>
-                                                        <input type="text" placeholder="高(cm)" />
+                                                        <input type="number" class="input-free input-free-d" placeholder="高(cm)" min="0" max="500" name="free_d[$i]" />
                                                         <span>cm</span>
                                                     </div>
                                                     <div class="item-ctrl free">
@@ -185,6 +185,9 @@ if (!($area_02_id >= 0 && $area_02_id <= 6)) {
                                                             <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
                                                             <?php endfor; ?>
                                                         </select>
+                                                        <input type="hidden" class="ttl free" name="free_ttl[$i]" value="フリー<?=$i+1;?>" />
+                                                        <input type="hidden" class="cnt free" name="free_cnt[$i]" value="0" />
+                                                        <input type="hidden" class="size free" name="free_size[$i]" value="0" />
                                                     </div>
                                                 </div>
                                             </td>

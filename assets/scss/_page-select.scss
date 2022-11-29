@@ -351,7 +351,7 @@ body.select {
                                             display: flex;
                                         }
 
-                                        input[type=text] {
+                                        input[type=text], input[type=number] {
                                             width: 140px;
                                             height: 56px;
                                             font-size: 28px;

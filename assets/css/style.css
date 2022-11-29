@@ -1232,7 +1232,7 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
   }
 }
 
-body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text] {
+body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
   width: 140px;
   height: 56px;
   font-size: 28px;
@@ -1244,7 +1244,7 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
 }
 
 @media only screen and (max-width: 768px) {
-  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text] {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
     margin: 0;
     padding: 10px;
     font-size: 16px;
@@ -1252,7 +1252,7 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
 }
 
 @media only screen and (max-width: 480px) {
-  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text] {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
     width: 33%;
     height: 28px;
     margin: 0 4px;
@@ -1260,33 +1260,33 @@ body.select .select-body .select-list .select-item .select-item-body table tr td
   }
 }
 
-body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-webkit-input-placeholder {
+body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-webkit-input-placeholder, body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-webkit-input-placeholder {
   color: transparent;
 }
 
-body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]:-ms-input-placeholder {
+body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]:-ms-input-placeholder, body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]:-ms-input-placeholder {
   color: transparent;
 }
 
-body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-ms-input-placeholder {
+body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-ms-input-placeholder, body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-ms-input-placeholder {
   color: transparent;
 }
 
-body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::placeholder {
+body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::placeholder, body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::placeholder {
   color: transparent;
 }
 
 @media only screen and (max-width: 480px) {
-  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-webkit-input-placeholder {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-webkit-input-placeholder, body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-webkit-input-placeholder {
     color: #cccccc;
   }
-  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]:-ms-input-placeholder {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]:-ms-input-placeholder, body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]:-ms-input-placeholder {
     color: #cccccc;
   }
-  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-ms-input-placeholder {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-ms-input-placeholder, body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-ms-input-placeholder {
     color: #cccccc;
   }
-  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::placeholder {
+  body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::placeholder, body.select .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::placeholder {
     color: #cccccc;
   }
 }

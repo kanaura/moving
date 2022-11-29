@@ -113,10 +113,43 @@ $(function() {
 
         num = $(this)[0].selectedIndex;
         
-        $(this).parent().find('.cnt').val(num);
+        var cnt_item = $(this).parent().find('.cnt');
+        cnt_item.val(num);
+        if (cnt_item.hasClass('free')) {
+            free_w = parseInt($(this).parent().parent().find('.input-free-w').val());
+            free_h = parseInt($(this).parent().parent().find('.input-free-h').val());
+            free_d = parseInt($(this).parent().parent().find('.input-free-d').val());
+            free_size = free_w * free_h * free_d;
+            if (free_size === null || isNaN(free_size)) {
+                free_size = 0;
+            }
+            $(this).parent().find('.size').val(free_size);
+        }
 
         if ($(this).hasClass('good')) {
             refresh_total();
         }
+    });
+
+    $('.input-free').on('mouseup keyup', function(e) {
+        // var value = parseInt($(this).val());
+        // var valueMax = parseInt($(this).attr('max'));
+        // var valueMin = parseInt($(this).attr('min'));
+        // if(value > valueMax){ $(this).val(valueMax); }
+        // if(value < valueMin){ $(this).val(valueMin); }
+        // if(isNaN(value)){ $(this).val(0); }
+
+        free_w = parseInt($(this).parent().parent().find('.input-free-w').val());
+        console.log(free_w);
+        free_h = parseInt($(this).parent().parent().find('.input-free-h').val());
+        free_d = parseInt($(this).parent().parent().find('.input-free-d').val());
+        free_size = free_w * free_h * free_d;
+        console.log(free_size);
+        if (free_size === null || isNaN(free_size)) {
+            free_size = 0;
+        }
+
+        $(this).parent().parent().find('.size').val(free_size);
+        refresh_total();
     });
 });

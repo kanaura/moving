@@ -34,6 +34,30 @@ if (isset($_POST['goods_cnt'])) {
 if (isset($_POST['goods_size'])) {
     $_SESSION['goods_size'] = $_POST['goods_size'];
 }
+
+if (isset($_POST['free_ttl'])) {
+    $_SESSION['free_ttl'] = $_POST['free_ttl'];
+}
+
+if (isset($_POST['free_cnt'])) {
+    $_SESSION['free_cnt'] = $_POST['free_cnt'];
+}
+
+if (isset($_POST['free_size'])) {
+    $_SESSION['free_size'] = $_POST['free_size'];
+}
+
+if (isset($_POST['free_w'])) {
+    $_SESSION['free_w'] = $_POST['free_w'];
+}
+
+if (isset($_POST['free_h'])) {
+    $_SESSION['free_h'] = $_POST['free_h'];
+}
+
+if (isset($_POST['free_d'])) {
+    $_SESSION['free_d'] = $_POST['free_d'];
+}
 ?>
 
 <body class="select select-02">
