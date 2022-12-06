@@ -12,7 +12,7 @@ include_once('./head.php');
             <div class="main-figure">
                 <img src="./assets/img/main.png" alt="" />
             </div>
-            <a class="btn-default" href="./address.php">お見積りスタート</a>
+            <a class="btn-default" href="./form.php">お見積りスタート</a>
             <div id="btn-lead" class="btn-lead">お見積り、仮お申し込みまでの流れ</div>
             <div class="lead">
                 <p class="txt txt-has-star">

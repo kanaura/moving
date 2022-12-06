@@ -596,3 +596,198 @@ body.home #popup .popup-body .popup-figure {
 body.home #popup .popup-body .popup-figure img {
   display: inline;
 }
+
+/* フォームのスタイル */
+body.form .address-content {
+  width: 845px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 992px) {
+  body.form .address-content {
+    width: 100%;
+  }
+}
+
+body.form .address-content .address-select-block {
+  margin: 0 0 24px;
+}
+
+body.form .address-content .address-select-block .address-select-block-ttl {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .address-content .address-select-block .address-select-block-ttl {
+    font-size: 20px;
+  }
+}
+
+body.form .address-content .address-select-block .address-select-wrapper {
+  position: relative;
+  margin: 0 0 16px;
+}
+
+body.form .address-content .address-select-block .address-select-wrapper select {
+  width: 100%;
+  height: 75px;
+  padding: 0 35px;
+  font-size: 28px;
+  font-weight: 700;
+  background-color: #cccccc;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .address-content .address-select-block .address-select-wrapper select {
+    height: auto;
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+
+body.form .address-content .txt-case-no-address {
+  margin: 0 0 32px;
+}
+
+body.form .address-content .address-lead {
+  position: relative;
+  border-radius: 15px 15px 12px 12px;
+  border: 4px solid #ff0000;
+}
+
+body.form .address-content .address-lead .address-lead-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 0 0 120px;
+  font-size: 29px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff0000;
+}
+
+@media only screen and (max-width: 992px) {
+  body.form .address-content .address-lead .address-lead-head {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .address-content .address-lead .address-lead-head {
+    height: auto;
+    line-height: 1.3;
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+
+body.form .address-content .address-lead .address-lead-body {
+  padding: 10px 24px 10px 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .address-content .address-lead .address-lead-body {
+    padding: 20px;
+  }
+}
+
+body.form .address-content .address-lead .address-lead-body .address-lead-btn-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -12px;
+}
+
+@media only screen and (max-width: 992px) {
+  body.form .address-content .address-lead .address-lead-body .address-lead-btn-list {
+    display: block;
+    margin: 0;
+  }
+}
+
+body.form .address-content .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(50% - 24px);
+  height: 51px;
+  margin: 0 12px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.form .address-content .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 992px) {
+  body.form .address-content .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
+
+body.form .address-content .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:nth-child(1) {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #57d852), color-stop(73%, #009245));
+  background: linear-gradient(180deg, #57d852 31%, #009245 73%);
+}
+
+body.form .address-content .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:nth-child(2) {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, cyan), color-stop(73%, #2abada));
+  background: linear-gradient(180deg, cyan 31%, #2abada 73%);
+}
+
+body.form .address-content .address-lead .address-lead-body .address-lead-txt {
+  margin: 8px 0 0;
+}
+
+body.form .address-content .address-lead .address-lead-deco {
+  position: absolute;
+  left: -84px;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .address-content .address-lead .address-lead-deco {
+    position: relative;
+    left: unset;
+    bottom: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
