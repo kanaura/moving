@@ -131,9 +131,9 @@ include_once('./global.php');
                                                                                 <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
                                                                                 <?php endfor; ?>
                                                                             </select>
-                                                                            <input type="hidden" class="ttl" name="goods_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
-                                                                            <input type="hidden" class="cnt" name="goods_cnt[<?=$sub_item['idx'];?>]" value="0" />
-                                                                            <input type="hidden" class="size" name="goods_size[<?=$sub_item['idx'];?>]" value="<?=$sub_item['size'];?>" />
+                                                                            <input type="hidden" class="ttl goods-ttl" name="goods_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
+                                                                            <input type="hidden" class="cnt goods-cnt" name="goods_cnt[<?=$sub_item['idx'];?>]" value="0" />
+                                                                            <input type="hidden" class="size goods-size" name="goods_size[<?=$sub_item['idx'];?>]" value="<?=$sub_item['size'];?>" />
                                                                         </div>
                                                                     </li>
                                                                 <?php endfor; ?>
@@ -150,9 +150,9 @@ include_once('./global.php');
                                                                     <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
                                                                     <?php endfor; ?>
                                                                 </select>
-                                                                <input type="hidden" class="ttl" name="goods_ttl[<?=$item['idx'];?>]" value="<?=$item['ttl'];?>" />
-                                                                <input type="hidden" class="cnt" name="goods_cnt[<?=$item['idx'];?>]" value="0" />
-                                                                <input type="hidden" class="size" name="goods_size[<?=$item['idx'];?>]" value="<?=$item['size'];?>" />
+                                                                <input type="hidden" class="ttl goods-ttl" name="goods_ttl[<?=$item['idx'];?>]" value="<?=$item['ttl'];?>" />
+                                                                <input type="hidden" class="cnt goods-cnt" name="goods_cnt[<?=$item['idx'];?>]" value="0" />
+                                                                <input type="hidden" class="size goods-size" name="goods_size[<?=$item['idx'];?>]" value="<?=$item['size'];?>" />
                                                             </div>
                                                         <?php endif; ?>
                                                     </td>
@@ -188,9 +188,9 @@ include_once('./global.php');
                                                                 <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
                                                                 <?php endfor; ?>
                                                             </select>
-                                                            <input type="hidden" class="ttl free" name="free_ttl[<?=$i;?>]" value="フリー<?=$i+1;?>" />
-                                                            <input type="hidden" class="cnt free" name="free_cnt[<?=$i;?>]" value="0" />
-                                                            <input type="hidden" class="size free" name="free_size[<?=$i;?>]" value="0" />
+                                                            <input type="hidden" class="ttl free free-ttl" name="free_ttl[<?=$i;?>]" value="フリー<?=$i+1;?>" />
+                                                            <input type="hidden" class="cnt free free-cnt" name="free_cnt[<?=$i;?>]" value="0" />
+                                                            <input type="hidden" class="size free free-size" name="free_size[<?=$i;?>]" value="0" />
                                                         </div>
                                                     </div>
                                                 </td>
@@ -273,10 +273,10 @@ include_once('./global.php');
                                                                         <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
                                                                         <?php endfor; ?>
                                                                     </select>
-                                                                    <input type="hidden" class="ttl" name="options_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
-                                                                    <input type="hidden" class="cnt" name="options_cnt[<?=$sub_item['idx'];?>]" value="0" />
-                                                                    <input type="hidden" class="size" name="options_size[<?=$sub_item['idx'];?>]" value="<?=$sub_item['size'];?>" />
-                                                                    <input type="hidden" class="price" name="options_price[<?=$sub_item['idx'];?>]" value="<?=$sub_item['price'];?>" />
+                                                                    <input type="hidden" class="ttl option-ttl" name="options_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
+                                                                    <input type="hidden" class="cnt option-cnt" name="options_cnt[<?=$sub_item['idx'];?>]" value="0" />
+                                                                    <input type="hidden" class="size option-size" name="options_size[<?=$sub_item['idx'];?>]" value="<?=$sub_item['size'];?>" />
+                                                                    <input type="hidden" class="price option-price" name="options_price[<?=$sub_item['idx'];?>]" value="<?=$sub_item['price'];?>" />
                                                                 </div>
                                                             </li>
                                                         <?php endfor; ?>
@@ -289,10 +289,10 @@ include_once('./global.php');
                                                             <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
                                                             <?php endfor; ?>
                                                         </select>
-                                                        <input type="hidden" class="ttl" name="options_ttl[<?=$item['idx'];?>]" value="<?=$item['ttl'];?>" />
-                                                        <input type="hidden" class="cnt" name="options_cnt[<?=$item['idx'];?>]" value="0" />
-                                                        <input type="hidden" class="size" name="options_size[<?=$item['idx'];?>]" value="<?=$item['size'];?>" />
-                                                        <input type="hidden" class="price" name="options_price[<?=$item['idx'];?>]" value="<?=$item['price'];?>" />
+                                                        <input type="hidden" class="ttl option-ttl" name="options_ttl[<?=$item['idx'];?>]" value="<?=$item['ttl'];?>" />
+                                                        <input type="hidden" class="cnt option-cnt" name="options_cnt[<?=$item['idx'];?>]" value="0" />
+                                                        <input type="hidden" class="size option-size" name="options_size[<?=$item['idx'];?>]" value="<?=$item['size'];?>" />
+                                                        <input type="hidden" class="price option-price" name="options_price[<?=$item['idx'];?>]" value="<?=$item['price'];?>" />
                                                     </div>
                                                 <?php endif; ?>
                                             </td>
@@ -340,7 +340,7 @@ include_once('./global.php');
                         <p class="select-body-ttl ttl-blue-wide">入力内容の確認</p>
                         <p class="select-overview">
                             <span class="small right">この度のお客様の<br class="br-768-no">家財Lv.は</span>
-                            <span class="large" id="calc-total-confirm"></span>
+                            <span class="large" id="calc-total-confirm">0</span>
                             <span class="medium">立米</span>
                             <span class="small">です。</span>
                         </p>
@@ -361,6 +361,12 @@ include_once('./global.php');
                                     <td id="confirm-addr-target" class="lng"></td>
                                 </tr>
                             </table>
+                        </div>
+
+                        <p class="select-body-ttl ttl-blue-wide">選んだ家財</p>
+                        <div class="select-info-table">
+                            <table id="confirm-good-table">
+                            </table>                                
                         </div>
                     </div>
                 </div>

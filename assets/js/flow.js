@@ -72,6 +72,20 @@ $(document).ready(function() {
             p2 = $('select#select_prefecture_02 option:selected').text();
             c2 = $('select#select_city_02 option:selected').text();
             $('#confirm-addr-target').text(p2 + ' ' + c2);
+        } else if (flow_step == 1) {
+            $('#confirm-good-table').empty();
+            var tbl_content = '';
+            $('input.goods-ttl').each(function(index) {
+                var cnt = parseInt($(this).parent().find('.cnt').val());
+                if (cnt != 0) {
+                    tbl_content += '<tr>';
+                    tbl_content += '<td>' + $(this).val() + '</td>';
+                    tbl_content += '<td>' + cnt + '台</td>';
+                    tbl_content += '</tr>';
+                }
+            });
+
+            $('#confirm-good-table').html(tbl_content);
         }
         flow_step++;
         refresh_form();
