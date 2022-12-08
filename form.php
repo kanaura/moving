@@ -111,9 +111,9 @@ include_once('./global.php');
                                                         <?php if (count($item['items'])) : ?>
                                                             <div class="item-name">
                                                                 <?=$item['ttl'];?>
-                                                                <span class="select-size" data-target="sub-item-<?=$i;?><?=$j;?>">サイズ選択</span>
+                                                                <span class="select-size" data-target="option-sub-item-<?=$i;?><?=$j;?>">サイズ選択</span>
                                                             </div>
-                                                            <ul id="sub-item-<?=$i;?><?=$j;?>" class="sub-item-list">
+                                                            <ul id="option-sub-item-<?=$i;?><?=$j;?>" class="sub-item-list">
                                                                 <?php
                                                                 for ($k = 0; $k < count($item['items']); $k++) :
                                                                     $sub_item = $item['items'][$k];
@@ -257,9 +257,9 @@ include_once('./global.php');
                                                 <?php if (count($item['items'])) : ?>
                                                     <div class="item-name">
                                                         <?=$item['ttl'];?>
-                                                        <span class="select-size" data-target="sub-item-<?=$i;?><?=$j;?>">サイズ選択</span>
+                                                        <span class="select-size" data-target="good-sub-item-<?=$i;?><?=$j;?>">サイズ選択</span>
                                                     </div>
-                                                    <ul id="sub-item-<?=$i;?><?=$j;?>" class="sub-item-list">
+                                                    <ul id="good-sub-item-<?=$i;?><?=$j;?>" class="sub-item-list">
                                                         <?php
                                                         for ($k = 0; $k < count($item['items']); $k++) :
                                                             $sub_item = $item['items'][$k];
