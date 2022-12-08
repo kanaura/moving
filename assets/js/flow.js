@@ -118,6 +118,15 @@ $(document).ready(function() {
             });
 
             $('#confirm-option-table').html(tbl_content);
+        } else if (flow_step == 3) {
+            var date_str = $('input[name=date]').val();
+            var date_str_y = date_str.substring(0, 4);
+            var date_str_m = date_str.substring(5, 7);
+            var date_str_d = date_str.substring(8, 10);
+            dt_str = date_str_y + '年 ' + date_str_m + '月 ' + date_str_d + '日 ';
+            var time_str = $('input[name=time]').val();
+            dt_str = dt_str + ((time_str == 'am') ? '午前' : '午後');
+            $('#select-info-date').text(dt_str);
         }
 
         flow_step++;
