@@ -234,10 +234,82 @@ include_once('./global.php');
                     </div>
                 </div>
 
+                <div class="option-select-content select-content" style="display: none;">
+                    <div class="select-body">
+                        <p class="select-body-ttl ttl-blue-wide">オプション</p>
+
+                        <div class="select-list">
+                            <div id="select-list-top"></div>
+                            <?php
+                            for ($i = 0; $i < count($options); $i++) :
+                                $option = $options[$i];
+                            ?>
+                            <div class="select-item">
+                                <p class="select-item-head"><?=$option['ttl'];?></p>
+                                <div class="select-item-body">
+                                    <table>
+                                        <?php
+                                        for ($j = 0; $j < count($option['items']); $j++) :
+                                            $item = $option['items'][$j];
+                                        ?>
+                                        <tr>
+                                            <td>
+                                                <?php if (count($item['items'])) : ?>
+                                                    <div class="item-name">
+                                                        <?=$item['ttl'];?>
+                                                        <span class="select-size" data-target="sub-item-<?=$i;?><?=$j;?>">サイズ選択</span>
+                                                    </div>
+                                                    <ul id="sub-item-<?=$i;?><?=$j;?>" class="sub-item-list">
+                                                        <?php
+                                                        for ($k = 0; $k < count($item['items']); $k++) :
+                                                            $sub_item = $item['items'][$k];
+                                                            $class = (($k % 2) != 0) ? 'gray' : '';
+                                                        ?>
+                                                            <li class="<?=$class;?>">
+                                                                <div class="item-name">
+                                                                    <?=$sub_item['ttl'];?>
+                                                                    <select class="item-ctrl num">
+                                                                        <?php for ($cnt = 0; $cnt <= 50; $cnt++) : ?>
+                                                                        <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
+                                                                        <?php endfor; ?>
+                                                                    </select>
+                                                                    <input type="hidden" class="ttl" name="options_ttl[<?=$sub_item['idx'];?>]" value="<?=$sub_item['full_ttl'];?>" />
+                                                                    <input type="hidden" class="cnt" name="options_cnt[<?=$sub_item['idx'];?>]" value="0" />
+                                                                    <input type="hidden" class="size" name="options_size[<?=$sub_item['idx'];?>]" value="<?=$sub_item['size'];?>" />
+                                                                    <input type="hidden" class="price" name="options_price[<?=$sub_item['idx'];?>]" value="<?=$sub_item['price'];?>" />
+                                                                </div>
+                                                            </li>
+                                                        <?php endfor; ?>
+                                                    </ul>
+                                                <?php else: ?>
+                                                    <div class="item-name">
+                                                        <?=$item['ttl'];?>
+                                                        <select class="item-ctrl num">
+                                                            <?php for ($cnt = 0; $cnt <= 50; $cnt++) : ?>
+                                                            <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
+                                                            <?php endfor; ?>
+                                                        </select>
+                                                        <input type="hidden" class="ttl" name="options_ttl[<?=$item['idx'];?>]" value="<?=$item['ttl'];?>" />
+                                                        <input type="hidden" class="cnt" name="options_cnt[<?=$item['idx'];?>]" value="0" />
+                                                        <input type="hidden" class="size" name="options_size[<?=$item['idx'];?>]" value="<?=$item['size'];?>" />
+                                                        <input type="hidden" class="price" name="options_price[<?=$item['idx'];?>]" value="<?=$item['price'];?>" />
+                                                    </div>
+                                                <?php endif; ?>
+                                            </td>
+                                        </tr>
+                                        <?php endfor; ?>
+                                    </table>
+                                </div>
+                            </div>
+                            <?php endfor; ?>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="bottom-btn-list">
                     <button type="button" class="btn btn-back">戻る</button>
                     <button type="button" class="btn btn-default">オプションの選択</button>
-                    <button type="button" class="btn btn-clear good">クリア</button>
+                    <button type="button" class="btn btn-clear">クリア</button>
                 </div>
 
                 <div class="address-lead">

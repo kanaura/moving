@@ -34,8 +34,17 @@ $(document).ready(function() {
             // 家財の選択
             $('.good-select-content').show();
             $('.btn-default').text('オプションの選択');
+            $('.btn-clear').addClass('good');
         } else {
             $('.good-select-content').hide();
+            $('.btn-clear').removeClass('good');
+        }
+
+        if (flow_step == 2) {
+            $('.option-select-content').show();
+            $('.btn-default').text('お引越要望日の選択');
+        } else {
+            $('.option-select-content').hide();
         }
     }
 
