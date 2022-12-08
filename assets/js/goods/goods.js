@@ -79,9 +79,15 @@ $(function() {
             $(this).val(0);
             $(this).parent().find('.cnt').val(0);
         });
+
+        $('.input-free').each(function(index) {
+            $(this).val(0);
+        });
     }
 
     $('.btn-clear').on('click', function() {
+        console.log(flow_step);
+
         clear_all();
 
         if ($(this).hasClass('good')) {
