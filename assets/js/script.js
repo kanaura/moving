@@ -24,13 +24,11 @@ $(document).ready(function() {
         } else {
             $('.select-list .select-item .select-item-head').removeClass('active');
             $(this).addClass('active');
-            console.log('TEST01');
             $('.select-list .select-item .select-item-head').each(function (i, e) {
                 if ($(this).hasClass('active')) {
                     list_top = list_top + ($(this).height() * (i));
                 }
             });
-            console.log('TEST02');
             $('html,body').animate({scrollTop: list_top }, 200);
             $('.select-list .select-item .select-item-body').slideUp(200);
             $(this)

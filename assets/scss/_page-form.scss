@@ -51,94 +51,676 @@ body.form {
         .txt-case-no-address {
             margin: 0 0 32px;
         }
+    }
 
-        .address-lead {
-            position: relative;
-            border-radius: 15px 15px 12px 12px;
-            border: 4px solid #ff0000;
+    .address-lead {
+        position: relative;
+        width: 845px;
+        margin: 0 auto;
+        border-radius: 15px 15px 12px 12px;
+        border: 4px solid #ff0000;
 
-            .address-lead-head {
-                @include flex-center;
-                width: 100%;
-                height: 80px;
-                padding: 0 0 0 120px;
-                font-size: 29px;
-                font-weight: $fw-bold;
-                text-align: center;
-                color: #ffffff;
-                background-color: #ff0000;
+        @media only screen and (max-width: 992px) {
+            width: 100%;
+        }
+
+        .address-lead-head {
+            @include flex-center;
+            width: 100%;
+            height: 80px;
+            padding: 0 0 0 120px;
+            font-size: 29px;
+            font-weight: $fw-bold;
+            text-align: center;
+            color: #ffffff;
+            background-color: #ff0000;
+
+            @media only screen and (max-width: 992px) {
+                font-size: 24px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                height: auto;
+                line-height: 1.3;
+                padding: 20px;
+                font-size: 20px;
+            }
+        }
+
+        .address-lead-body {
+            padding: 10px 24px 10px 200px;
+
+            @media only screen and (max-width: 768px) {
+                padding: 20px;
+            }
+
+            .address-lead-btn-list {
+                @include flex-center-v;
+                margin: 0 -12px;
 
                 @media only screen and (max-width: 992px) {
-                    font-size: 24px;
+                    display: block;
+                    margin: 0;
                 }
 
-                @media only screen and (max-width: 768px) {
-                    height: auto;
-                    line-height: 1.3;
-                    padding: 20px;
-                    font-size: 20px;
-                }
-            }
-
-            .address-lead-body {
-                padding: 10px 24px 10px 200px;
-
-                @media only screen and (max-width: 768px) {
-                    padding: 20px;
-                }
-
-                .address-lead-btn-list {
-                    @include flex-center-v;
-                    margin: 0 -12px;
+                .address-lead-btn {
+                    @include flex-center;
+                    width: calc(50% - 24px);
+                    height: 51px;
+                    margin: 0 12px;
+                    text-align: center;
+                    font-size: 22px;
+                    font-weight: $fw-bold;
+                    color: #ffffff;
+                    border-radius: 10px;
+                    @include hover-effect;
 
                     @media only screen and (max-width: 992px) {
-                        display: block;
-                        margin: 0;
+                        width: 100%;
+                        margin: 0 0 20px;
                     }
 
-                    .address-lead-btn {
-                        @include flex-center;
-                        width: calc(50% - 24px);
-                        height: 51px;
-                        margin: 0 12px;
-                        text-align: center;
-                        font-size: 22px;
-                        font-weight: $fw-bold;
-                        color: #ffffff;
-                        border-radius: 10px;
-                        @include hover-effect;
-
-                        @media only screen and (max-width: 992px) {
-                            width: 100%;
-                            margin: 0 0 20px;
-                        }
-
-                        &:nth-child(1) {
-                            background: linear-gradient(180deg, rgba(87,216,82,1) 31%, rgba(0,146,69,1) 73%);
-                        }
-
-                        &:nth-child(2) {
-                            background: linear-gradient(180deg, rgba(0,255,255,1) 31%, rgba(42,186,218,1) 73%);
-                        }
+                    &:nth-child(1) {
+                        background: linear-gradient(180deg, rgba(87,216,82,1) 31%, rgba(0,146,69,1) 73%);
                     }
-                }
 
-                .address-lead-txt {
-                    margin: 8px 0 0;
+                    &:nth-child(2) {
+                        background: linear-gradient(180deg, rgba(0,255,255,1) 31%, rgba(42,186,218,1) 73%);
+                    }
                 }
             }
 
-            .address-lead-deco {
-                position: absolute;
-                left: -84px;
-                bottom: 0;
+            .address-lead-txt {
+                margin: 8px 0 0;
+            }
+        }
 
+        .address-lead-deco {
+            position: absolute;
+            left: -84px;
+            bottom: 0;
+
+            @media only screen and (max-width: 768px) {
+                position: relative;
+                left: unset;
+                bottom: unset;
+                @include flex-center;
+            }
+        }
+    }
+
+    .select-content {
+        .select-head {
+            display: flex;
+            margin: 20px 0 50px;
+    
+            @media only screen and (max-width: 768px) {
+                display: block;
+                margin: 20px 0;
+            }
+    
+            .select-head-l {
+                width: calc(100% - 185px);
+    
                 @media only screen and (max-width: 768px) {
-                    position: relative;
-                    left: unset;
-                    bottom: unset;
-                    @include flex-center;
+                    width: 100%;
+                    margin: 0 0 20px;
                 }
+    
+                .select-head-l-ttl {
+                    @include flex-center-v;
+                    font-size: 15px;
+                    font-weight: $fw-normal;
+                    line-height: 1.8;
+    
+                    @media only screen and (max-width: 768px) {
+                        display: block;
+                    }
+    
+                    span {
+                        margin-right: 16px;
+                        font-size: 28px;
+                        font-weight: $fw-bold;
+    
+                        @media only screen and (max-width: 768px) {
+                            display: block;
+                            font-size: 24px;
+                        }
+                    }
+                }
+    
+                .select-head-bar-list {
+                    @include flex-center-v;
+    
+                    .select-head-bar-item {
+                        position: relative;
+                        width: 25%;
+                        height: 68px;
+    
+                        span {
+                            @include absolute-center;
+                            font-size: 14px;
+                            font-weight: $fw-bold;
+                        }
+    
+                        &:nth-child(1) {
+                            background-color: rgba(0, 255, 255, 1.0);
+    
+                            span {
+                                color: rgba(0, 73, 137, 1.0);
+                            }
+                        }
+    
+                        &:nth-child(2) {
+                            background-color: rgba(217, 224, 33, 1.0);
+    
+                            span {
+                                color: rgba(0, 146, 69, 1.0);
+                            }
+                        }
+    
+                        &:nth-child(3) {
+                            background-color: rgba(251, 176, 59, 1.0);
+    
+                            span {
+                                color: rgba(241, 90, 36, 1.0);
+                            }
+                        }
+    
+                        &:nth-child(4) {
+                            background-color: rgba(255, 123, 172, 1.0);
+    
+                            span {
+                                color: rgba(193, 39, 45, 1.0);
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .select-head-r {
+                width: 185px;
+                text-align: center;
+    
+                @media only screen and (max-width: 768px) {
+                    margin: 0 auto;
+                }
+    
+                .select-head-r-ttl {
+                    margin: 0 0 7px;
+                    font-size: 24px;
+                    font-weight: $fw-bold;
+                    line-height: 1.8;
+                }
+    
+                .select-head-cur-value {
+                    font-size: 26px;
+                    font-weight: $fw-bold;
+                    line-height: 1.8;
+    
+                    span {
+                        font-size: 68px;
+                        line-height: 1.0;
+                        color: rgba(255, 0, 0, 1.0);
+                    }
+                }
+            }
+        }
+    
+        .select-body {
+            margin: 0 0 20px;
+            padding: 28px 0 0;
+    
+            .select-body-ttl {
+                margin-bottom: 18px;
+            }
+    
+            .select-list {
+                .select-item {
+                    .select-item-head {
+                        @include flex-center;
+                        font-size: 28px;
+                        font-weight: $fw-bold;
+                        line-height: 1.8;
+                        color: #ffffff;
+                        cursor: pointer;
+                        background: linear-gradient(180deg, rgba(204,204,204,1) 31%, rgba(128,128,128,1) 73%);
+    
+                        @media only screen and (max-width: 768px) {
+                            font-size: 24px;
+                        }
+                    }
+    
+                    .select-item-body {
+                        padding: 10px 0;
+                        display: none;
+    
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+    
+                            tr {
+                                width: 100%;
+    
+                                td, th {
+                                    height: 75px;
+                                    border: 1px solid #000000;
+    
+                                    @media only screen and (max-width: 768px) {
+                                        height: auto;
+                                    }
+                                }
+    
+                                th {
+                                    padding: 0 24px;
+                                    text-align: center;
+                                    vertical-align: top;
+    
+                                    @media only screen and (max-width: 768px) {
+                                        padding: 0 10px;
+                                    }
+    
+                                    img {
+                                        margin: 0 auto;
+    
+                                        @media only screen and (max-width: 768px) {
+                                            width: auto;
+                                            height: 100px;
+                                        }
+    
+                                        @media only screen and (max-width: 480px) {
+                                            width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+                                }
+    
+                                td {
+                                    position: relative;
+                                    font-size: 28px;
+                                    font-weight: $fw-bold;
+    
+                                    @media only screen and (max-width: 768px) {
+                                        font-size: 20px;
+                                    }
+    
+                                    @media only screen and (max-width: 480px) {
+                                        font-size: 12px;
+                                        font-weight: $fw-normal;
+                                    }
+    
+                                    .item-name {
+                                        position: relative;
+                                        padding: 24px;
+    
+                                        @media only screen and (max-width: 768px) {
+                                            padding: 20px 10px;
+                                        }
+    
+                                        @media only screen and (max-width: 480px) {
+                                            padding: 10px 80px 10px 5px;
+                                        }
+                                        
+                                        .select-size {
+                                            @include absolute-center-y;
+                                            right: 24px;
+                                            cursor: pointer;
+                                            padding-right: 30px;
+    
+                                            @media only screen and (max-width: 480px) {
+                                                right: 0;
+                                                width: 100%;
+                                                height: 100%;
+                                                padding: 0 5px;
+                                                text-indent: -9999px; 
+                                            }
+    
+                                            &:before {
+                                                content: '';
+                                                @include absolute-center-y;
+                                                right: 0;
+                                                width: 0;
+                                                height: 0;
+                                                border-style: solid;
+                                                border-width: 20px 10px 0 10px;
+                                                border-color: #000000 transparent transparent transparent;
+    
+                                                @media only screen and (max-width: 480px) {
+                                                    right: 5px;
+                                                    border-width: 10px 5px 0 5px;
+                                                }
+                                            }
+    
+                                            &.active {
+                                                &:before {
+                                                    border-width: 0 10px 20px 10px;
+                                                    border-color: transparent transparent #000000 transparent;
+    
+                                                    @media only screen and (max-width: 480px) {
+                                                        right: 5px;
+                                                        border-width: 0 5px 10px 5px;
+                                                    }
+                                                }
+                                            }
+                                        }
+    
+                                        .item-ctrl {
+                                            @include absolute-center-y;
+                                            right: 24px;
+                                            min-width: 140px;
+                                            padding: 10px 60px 10px 10px;
+                                            background-color: #ffffff;
+                                            border: 1px solid #000000;
+                                            border-radius: 6px;
+                                            outline: none;
+                                            font-size: 28px;
+                                            font-weight: $fw-bold;
+    
+                                            @media only screen and (max-width: 480px) {
+                                                min-width: 60px;
+                                                padding: 5px;
+                                                right: 5px;
+                                                font-size: 12px;
+                                                font-weight: $fw-normal;
+                                            }
+    
+                                            .up, .dn {
+                                                position: relative;
+                                                width: 15px;
+                                                height: 15px;
+                                                cursor: pointer;
+    
+                                                @media only screen and (max-width: 768px) {
+                                                    width: 8px;
+                                                    height: 8px;
+                                                }
+                                            }
+    
+                                            .up {
+                                                position: absolute;
+                                                right: 10px;
+                                                top: 7px;
+    
+                                                &:before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    width: 0;
+                                                    height: 0;
+                                                    border-style: solid;
+                                                    border-width: 0 7px 15px 7px;
+                                                    border-color: transparent transparent #000000 transparent;
+    
+                                                    @media only screen and (max-width: 768px) {
+                                                        border-width: 0 3px 7px 3px;
+                                                    }
+                                                }
+                                            }
+    
+                                            .dn {
+                                                position: absolute;
+                                                right: 10px;
+                                                bottom: 7px;
+    
+                                                &:before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    width: 0;
+                                                    height: 0;
+                                                    border-style: solid;
+                                                    border-width: 15px 7px 0 7px;
+                                                    border-color: #000000 transparent transparent transparent;
+    
+                                                    @media only screen and (max-width: 768px) {
+                                                        border-width: 7px 3px 0 3px;
+                                                    }
+                                                }
+                                            }
+    
+                                            &.free {
+                                                border: none;
+    
+                                                @media only screen and (max-width: 480px) {
+                                                    position: relative;
+                                                    top: unset;
+                                                    right: unset;
+                                                    transform: unset;
+                                                    min-width: unset;
+                                                    padding: 0;
+                                                }
+                                            }
+                                        }
+    
+                                        .free-row {
+                                            @include flex-center-v;
+    
+                                            @media only screen and (max-width: 768px) {
+                                                width: calc(100% - 80px);
+                                                display: flex;
+                                            }
+    
+                                            input[type=text], input[type=number] {
+                                                width: 140px;
+                                                height: 56px;
+                                                font-size: 28px;
+                                                margin: 0 10px;
+                                                padding: 0 10px;
+                                                border: 1px solid #000000;
+                                                border-radius: 6px;
+                                                outline: none;
+    
+                                                @media only screen and (max-width: 768px) {
+                                                    margin: 0;
+                                                    padding: 10px;
+                                                    font-size: 16px;
+                                                }
+    
+                                                @media only screen and (max-width: 480px) {
+                                                    width: 33%;
+                                                    height: 28px;
+                                                    margin: 0 4px;
+                                                    font-size: 12px;
+                                                }
+    
+                                                &::placeholder {
+                                                    color: transparent;
+    
+                                                    @media only screen and (max-width: 480px) {
+                                                        color: #cccccc;
+                                                    }
+                                                }
+                                            }
+    
+                                            span {
+                                                @media only screen and (max-width: 480px) {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+    
+                                        &.free-item {
+                                            display: flex;
+    
+                                            @media only screen and (max-width: 480px) {
+                                                padding: 10px 5px;
+                                            }
+    
+                                            select {
+                                                @media only screen and (max-width: 480px) {
+                                                    position: relative;
+                                                    top: unset;
+                                                    right: unset;
+                                                    transform: unset;
+                                                    margin: 0 4px;
+                                                }
+                                            }
+                                        }
+                                    }
+    
+                                    ul {
+                                        li {
+                                            padding: 0 0 0 56px;
+                                            border-top: 1px solid #000000;
+    
+                                            @media only screen and (max-width: 768px) {
+                                                padding: 0 0 0 10px;
+                                            }
+    
+                                            &.gray {
+                                                background-color: #e6e6e6;
+                                            }
+                                        }
+    
+                                        &.sub-item-list {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+    
+                            &.has-image {
+                                tr {
+                                    th {
+                                        width: 135px;
+    
+                                        @media only screen and (max-width: 480px) {
+                                            width: 64px;
+                                        }
+                                    }
+    
+                                    td {
+                                        width: calc(100% - 135px);
+    
+                                        @media only screen and (max-width: 480px) {
+                                            width: calc(100% - 64px);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .select-standalone {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px 0 50px;
+    
+            @media only screen and (max-width: 768px) {
+                display: block;
+                margin: 20px 0;
+            }
+    
+            .standalone-icon {
+                width: 219px;
+                cursor: pointer;
+    
+                @media only screen and (max-width: 768px) {
+                    margin: 0 auto 20px;
+                }
+            }
+    
+            .standalone-info {
+                width: calc(100% - 219px);
+                padding: 0 0 0 20px;
+    
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                    margin: 0 0 20px;
+                    padding: 0;
+                }
+    
+                .standalone-info-ttl {
+                    margin: 0 0 16px;
+                    font-size: 42px;
+                    font-weight: $fw-bold;
+                    color: rgba(255, 29, 37, 1.0);
+    
+                    @media only screen and (max-width: 768px) {
+                        text-align: center;
+                        font-size: 24px;
+                    }
+                }
+    
+                .standalone-info-txt {
+                    font-size: 27px;
+                    font-weight: $fw-normal;
+                    line-height: 1.33;
+    
+                    @media only screen and (max-width: 768px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+    
+            .standalone-desc {
+                position: relative;
+                width: 100%;
+                margin: 20px 0 0;
+                padding: 0 0 0 36px;
+                font-size: 29px;
+                font-weight: $fw-bold;
+                line-height: 1.33;
+                color: rgba(255, 0, 0, 1.0);
+    
+                @media only screen and (max-width: 768px) {
+                    margin: 0 0 20px;
+                    padding: 0 0 0 20px;
+                    font-size: 16px;
+                }
+    
+                &::before {
+                    position: absolute;
+                    content: '※';
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    
+        .select-object {
+            position: relative;
+            padding: 30px 64px 10px;
+            border: 4px solid rgba(237, 28, 36, 1.0);
+            border-radius: 18px;
+    
+            @media only screen and (max-width: 768px) {
+                margin: 40px 0 0;
+                padding: 40px 20px 20px;
+                border-width: 2px;
+            }
+    
+            .select-object-ttl {
+                @include absolute-center-x;
+                top: -25px;
+                text-align: center;
+    
+                @media only screen and (max-width: 480px) {
+                    width: 80%;
+                }
+    
+                span {
+                    padding: 0 20px;
+                    font-size: 28px;
+                    font-weight: $fw-bold;
+                    line-height: 1.8;
+                    color: rgba(255, 29, 37, 1.0);
+                    background-color: #ffffff;
+                }
+            }
+        }
+    
+        .select-message {
+            textarea {
+                width: 100%;
+                padding: 20px 10px;
+                font-size: 21px;
+                font-weight: $fw-normal;
+                line-height: 1.3;
+                border: 1px solid #000000;
+                border-radius: 24px;
+                resize: none;
             }
         }
     }
