@@ -74,12 +74,26 @@ $(document).ready(function() {
             $('#confirm-addr-target').text(p2 + ' ' + c2);
         } else if (flow_step == 1) {
             $('#confirm-good-table').empty();
+
             var tbl_content = '';
             $('input.goods-ttl').each(function(index) {
                 var cnt = parseInt($(this).parent().find('.cnt').val());
                 if (cnt != 0) {
                     tbl_content += '<tr>';
                     tbl_content += '<td>' + $(this).val() + '</td>';
+                    tbl_content += '<td>' + cnt + '台</td>';
+                    tbl_content += '</tr>';
+                }
+            });
+
+            $('input.free-ttl').each(function(index) {
+                var cnt = parseInt($(this).parent().find('.cnt').val());
+                var size_01 = parseInt($(this).parent().parent().find('.input-free-w').val());
+                var size_02 = parseInt($(this).parent().parent().find('.input-free-h').val());
+                var size_03 = parseInt($(this).parent().parent().find('.input-free-d').val());
+                if (cnt != 0) {
+                    tbl_content += '<tr>';
+                    tbl_content += '<td>' + $(this).val() + '(' + size_01 + 'cm・' + size_02 + 'cm・' + size_03 + 'cm)</td>';
                     tbl_content += '<td>' + cnt + '台</td>';
                     tbl_content += '</tr>';
                 }
