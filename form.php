@@ -55,12 +55,12 @@ include_once('./global.php');
                     <div class="address-select-block">
                         <p class="address-select-block-ttl">現住所</p>
                         <div class="address-select-wrapper">
-                            <select name="select_pref_01" id="select_prefecture_01" >
+                            <select name="sel_pref_01" id="select_prefecture_01" >
                                 <option>都道府県を選択</option>
                             </select>
                         </div>
                         <div class="address-select-wrapper">
-                            <select name="select_city_01" id="select_city_01">
+                            <select name="sel_city_01" id="select_city_01">
                                 <option value="">市町村を選択</option>
                             </select>
                         </div>
@@ -69,12 +69,12 @@ include_once('./global.php');
                     <div class="address-select-block">
                         <p class="address-select-block-ttl">転居先</p>
                         <div class="address-select-wrapper">
-                            <select name="select_pref_02" id="select_prefecture_02" >
+                            <select name="sel_pref_02" id="select_prefecture_02" >
                                 <option value="">都道府県を選択</option>
                             </select>
                         </div>
                         <div class="address-select-wrapper">
-                            <select name="select_city_02" id="select_city_02">
+                            <select name="sel_city_02" id="select_city_02">
                                 <option value="">市町村を選択</option>
                             </select>
                         </div>
@@ -331,6 +331,36 @@ include_once('./global.php');
 
                         <div class="select-message">
                             <textarea rows="10" name="message"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="confirm-select-content select-content" style="display: none;">
+                    <div class="select-body">
+                        <p class="select-body-ttl ttl-blue-wide">入力内容の確認</p>
+                        <p class="select-overview">
+                            <span class="small right">この度のお客様の<br class="br-768-no">家財Lv.は</span>
+                            <span class="large" id="calc-total-confirm"></span>
+                            <span class="medium">立米</span>
+                            <span class="small">です。</span>
+                        </p>
+
+                        <p class="select-body-ttl ttl-blue-wide">お客様情報</p>
+                        <div class="select-info-table">
+                            <table>
+                                <tr>
+                                    <td class="sht">お名前</td>
+                                    <td class="lng"></td>
+                                </tr>
+                                <tr>
+                                    <td class="sht">現住所</td>
+                                    <td id="confirm-addr-current" class="lng"></td>
+                                </tr>
+                                <tr>
+                                    <td class="sht">転居先</td>
+                                    <td id="confirm-addr-target" class="lng"></td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>

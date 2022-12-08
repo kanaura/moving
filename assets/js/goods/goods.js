@@ -31,6 +31,8 @@ $(function() {
         show_total = total.toFixed(1);
         $('#calc-total').text(show_total);
         $('#total-m3').val(show_total);
+
+        $('#calc-total-confirm').text(show_total);
     }
 
     $('.dn').on('click', function() {

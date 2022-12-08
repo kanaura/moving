@@ -24,7 +24,7 @@ $(document).ready(function() {
             $('.btn-clear').show();
         }
 
-        if (flow_step > 0) {
+        if (flow_step > 0 && flow_step < 4) {
             $('#select-content-head').show();
         } else {
             $('#select-content-head').hide();
@@ -41,6 +41,7 @@ $(document).ready(function() {
         }
 
         if (flow_step == 2) {
+            // オプションの選択
             $('.option-select-content').show();
             $('.btn-default').text('お引越要望日の選択');
         } else {
@@ -48,22 +49,36 @@ $(document).ready(function() {
         }
 
         if (flow_step == 3) {
+            // お引越要望日の選択
             $('.date-select-content').show();
             $('.btn-default').text('入力内容を確認');
         } else {
             $('.date-select-content').hide();
         }
+
+        if (flow_step == 4) {
+            // 入力内容の確認
+            $('.confirm-select-content').show();
+        } else {
+            $('.confirm-select-content').hide();
+        }
     }
 
     $('.btn-default').on('click', function() {
+        if (flow_step == 0) {
+            p1 = $('select#select_prefecture_01 option:selected').text();
+            c1 = $('select#select_city_01 option:selected').text();
+            $('#confirm-addr-current').text(p1 + ' ' + c1);
+            p2 = $('select#select_prefecture_02 option:selected').text();
+            c2 = $('select#select_city_02 option:selected').text();
+            $('#confirm-addr-target').text(p2 + ' ' + c2);
+        }
         flow_step++;
-        console.log(flow_step);
         refresh_form();
     });
 
     $('.btn-back').on('click', function() {
         flow_step--;
-        console.log(flow_step);
         refresh_form();
     });
 });
