@@ -366,7 +366,13 @@ include_once('./global.php');
                         <p class="select-body-ttl ttl-blue-wide">選んだ家財</p>
                         <div class="select-info-table">
                             <table id="confirm-good-table">
-                            </table>                                
+                            </table>
+                        </div>
+
+                        <p class="select-body-ttl ttl-blue-wide">オプション</p>
+                        <div class="select-info-table">
+                            <table id="confirm-option-table">
+                            </table>
                         </div>
                     </div>
                 </div>

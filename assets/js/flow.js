@@ -58,7 +58,10 @@ $(document).ready(function() {
 
         if (flow_step == 4) {
             // 入力内容の確認
+            $('.btn-clear').hide();
+
             $('.confirm-select-content').show();
+            $('.btn-default').text('お見積り');
         } else {
             $('.confirm-select-content').hide();
         }
@@ -80,8 +83,8 @@ $(document).ready(function() {
                 var cnt = parseInt($(this).parent().find('.cnt').val());
                 if (cnt != 0) {
                     tbl_content += '<tr>';
-                    tbl_content += '<td>' + $(this).val() + '</td>';
-                    tbl_content += '<td>' + cnt + '台</td>';
+                    tbl_content += '<td class="lng">' + $(this).val() + '</td>';
+                    tbl_content += '<td class="sht">' + cnt + '台</td>';
                     tbl_content += '</tr>';
                 }
             });
@@ -93,14 +96,30 @@ $(document).ready(function() {
                 var size_03 = parseInt($(this).parent().parent().find('.input-free-d').val());
                 if (cnt != 0) {
                     tbl_content += '<tr>';
-                    tbl_content += '<td>' + $(this).val() + '(' + size_01 + 'cm・' + size_02 + 'cm・' + size_03 + 'cm)</td>';
-                    tbl_content += '<td>' + cnt + '台</td>';
+                    tbl_content += '<td class="lng">' + $(this).val() + '(' + size_01 + 'cm・' + size_02 + 'cm・' + size_03 + 'cm)</td>';
+                    tbl_content += '<td class="sht">' + cnt + '台</td>';
                     tbl_content += '</tr>';
                 }
             });
 
             $('#confirm-good-table').html(tbl_content);
+        } else if (flow_step == 2) {
+            $('#confirm-option-table').empty();
+
+            var tbl_content = '';
+            $('input.option-ttl').each(function(index) {
+                var cnt = parseInt($(this).parent().find('.cnt').val());
+                if (cnt != 0) {
+                    tbl_content += '<tr>';
+                    tbl_content += '<td class="lng">' + $(this).val() + '</td>';
+                    tbl_content += '<td class="sht">' + cnt + '台</td>';
+                    tbl_content += '</tr>';
+                }
+            });
+
+            $('#confirm-option-table').html(tbl_content);
         }
+
         flow_step++;
         refresh_form();
     });
