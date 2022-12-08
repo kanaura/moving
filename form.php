@@ -306,6 +306,35 @@ include_once('./global.php');
                     </div>
                 </div>
 
+                <div class="date-select-content select-content" style="display: none;">
+                    <div class="select-body">
+                        <p class="select-body-ttl ttl-blue-wide">お引越要望日</p>
+
+                        <div class="select-calendar">
+                            <div id="calendar"></div>
+                            <input id="date" type="hidden" name="date" value="" />
+                        </div>
+
+                        <div class="select-time">
+                            <p>時　間　帯　：　</p>
+                            <label style="margin-right: 20px;">
+                                <input type="radio" name="time" value="am" />
+                                <span>　午　前</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="pm" />
+                                <span>　午　後</span>
+                            </label>
+                        </div>
+
+                        <p class="select-body-ttl ttl-blue-wide">お問い合わせ・要望</p>
+
+                        <div class="select-message">
+                            <textarea rows="10" name="message"></textarea>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="bottom-btn-list">
                     <button type="button" class="btn btn-back">戻る</button>
                     <button type="button" class="btn btn-default">オプションの選択</button>
@@ -333,10 +362,14 @@ include_once('./global.php');
         </div>
     </div>
 
+    <script src="./libs/moment/moment.min.js"></script>
+    <script src="./libs/fullcalendar/main.js"></script>
+
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/flow.js"></script>
     <script src="./assets/js/address/address.js"></script>
     <script src="./assets/js/address/prefectureCity.js"></script>
     <script src="./assets/js/goods/goods.js"></script>
+    <script src="./assets/js/date/date.js"></script>
 </body>
 </html>

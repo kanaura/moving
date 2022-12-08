@@ -1507,3 +1507,270 @@ body.form .select-content .select-message textarea {
   border-radius: 24px;
   resize: none;
 }
+
+body.form .select-content .select-calendar {
+  margin: 30px 0 20px;
+}
+
+body.form .select-content .select-calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+body.form .select-content .select-calendar table tr {
+  width: 100%;
+}
+
+body.form .select-content .select-calendar table tr th, body.form .select-content .select-calendar table tr td {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 28px;
+  font-weight: 700;
+  border: 1px solid #000000;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .select-content .select-calendar table tr th, body.form .select-content .select-calendar table tr td {
+    font-size: 20px;
+  }
+}
+
+body.form .select-content .select-calendar table thead {
+  width: 100%;
+}
+
+body.form .select-content .select-calendar table thead tr {
+  width: 100%;
+}
+
+body.form .select-content .select-calendar table thead tr th:first-child {
+  color: red;
+  background-color: #ff7bac;
+}
+
+body.form .select-content .select-calendar table thead tr th:last-child {
+  color: #004989;
+  background-color: #3fa9f5;
+}
+
+body.form .select-content .select-calendar table tbody {
+  width: 100%;
+}
+
+body.form .select-content .select-calendar table tbody table {
+  width: 100%;
+}
+
+body.form .select-content .select-calendar table tbody table tr {
+  width: 100%;
+}
+
+body.form .select-content .select-calendar table tbody table tr td {
+  cursor: pointer;
+}
+
+body.form .select-content .select-calendar table tbody table tr td:first-child {
+  color: red;
+  background-color: #ff7bac;
+}
+
+body.form .select-content .select-calendar table tbody table tr td:last-child {
+  color: #004989;
+  background-color: #3fa9f5;
+}
+
+body.form .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame {
+  position: relative;
+}
+
+body.form .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-top {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 95px;
+}
+
+body.form .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-top .fc-daygrid-day-number {
+  z-index: 1;
+}
+
+body.form .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-bg {
+  z-index: 0;
+}
+
+body.form .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-bg .fc-highlight {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c6c6c6;
+}
+
+body.form .select-content .select-calendar table tbody table tr td.fc-day-past, body.form .select-content .select-calendar table tbody table tr td.fc-day-today {
+  color: #e6e6e6;
+  cursor: initial;
+}
+
+body.form .select-content .select-calendar table tbody table tr td.fc-day.selected {
+  background-color: #c6c6c6;
+}
+
+body.form .select-content .select-calendar table .fc-scrollgrid-sync-table {
+  width: 100% !important;
+}
+
+body.form .select-content .select-calendar table .fc-col-header {
+  width: 100% !important;
+}
+
+body.form .select-content .select-calendar table .fc-daygrid-body {
+  width: 100% !important;
+}
+
+body.form .select-content .select-calendar .fc-header-toolbar {
+  position: relative;
+}
+
+body.form .select-content .select-calendar .fc-header-toolbar .fc-toolbar-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .select-content .select-calendar .fc-header-toolbar .fc-toolbar-title {
+    font-size: 28px;
+  }
+}
+
+body.form .select-content .select-calendar .fc-header-toolbar .fc-prev-button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .select-content .select-calendar .fc-header-toolbar .fc-prev-button {
+    font-size: 20px;
+  }
+}
+
+body.form .select-content .select-calendar .fc-header-toolbar .fc-prev-button:before {
+  content: '<先月';
+}
+
+body.form .select-content .select-calendar .fc-header-toolbar .fc-next-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .select-content .select-calendar .fc-header-toolbar .fc-next-button {
+    font-size: 20px;
+  }
+}
+
+body.form .select-content .select-calendar .fc-header-toolbar .fc-next-button:before {
+  content: '次月>';
+}
+
+body.form .select-content .select-calendar .fc-header-toolbar .fc-today-button {
+  display: none;
+}
+
+body.form .select-content .select-calendar .fc-header-toolbar .fc-toolbar-chunk:first-child {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+body.form .select-content .select-calendar .fc-header-toolbar .fc-toolbar-chunk:last-child {
+  display: none;
+}
+
+body.form .select-content .select-calendar .fc-view-harness {
+  height: auto !important;
+}
+
+body.form .select-content .select-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .select-content .select-time {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body.form .select-content .select-time {
+    font-size: 14px;
+  }
+}
+
+body.form .select-content .select-time label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+body.form .select-content .select-time label input[type=radio] {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .select-content .select-time label input[type=radio] {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body.form .select-content .select-time label input[type=radio] {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+body.form .select-content .select-time label:nth-child(1) {
+  margin-right: 20px;
+}

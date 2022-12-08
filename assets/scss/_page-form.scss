@@ -723,5 +723,242 @@ body.form {
                 resize: none;
             }
         }
+
+        .select-calendar {
+            margin: 30px 0 20px;
+    
+            table {
+                width: 100%;
+                border-collapse: collapse;
+    
+                tr {
+                    width: 100%;
+    
+                    th, td {
+                        text-align: center;
+                        vertical-align: middle;
+                        font-size: 28px;
+                        font-weight: $fw-bold;
+                        border: 1px solid #000000;
+    
+                        @media only screen and (max-width: 768px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                
+                thead {
+                    width: 100%;
+
+                    tr {
+                        width: 100%;
+
+                        th {
+                            &:first-child {
+                                color: rgba(255, 0, 0, 1.0);
+                                background-color: rgba(255, 123, 172, 1.0);
+                            }
+        
+                            &:last-child {
+                                color: rgba(0, 73, 137, 1.0);
+                                background-color: rgba(63, 169, 245, 1.0);
+                            }
+                        }
+                    }
+                }
+    
+                tbody {
+                    width: 100%;
+
+                    table {
+                        width: 100%;
+
+                        tr {
+                            width: 100%;
+
+                            td {
+                                cursor: pointer;
+    
+                                &:first-child {
+                                    color: rgba(255, 0, 0, 1.0);
+                                    background-color: rgba(255, 123, 172, 1.0);
+                                }
+            
+                                &:last-child {
+                                    color: rgba(0, 73, 137, 1.0);
+                                    background-color: rgba(63, 169, 245, 1.0);
+                                }
+    
+                                
+                                .fc-daygrid-day-frame {
+                                    position: relative;
+    
+                                    .fc-daygrid-day-top {
+                                        position: relative;
+                                        @include flex-center;
+                                        height: 95px;
+    
+                                        .fc-daygrid-day-number {
+                                            z-index: 1;
+                                        }
+                                    }
+    
+                                    .fc-daygrid-day-bg {
+                                        z-index: 0;
+    
+                                        .fc-highlight {
+                                            position: absolute;
+                                            left: 0;
+                                            top: 0;
+                                            right: 0;
+                                            bottom: 0;
+                                            background-color: #c6c6c6;
+                                        }
+                                    }
+                                }
+    
+                                &.fc-day-past, &.fc-day-today {
+                                    color: #e6e6e6;
+                                    cursor: initial;
+                                }
+    
+                                &.fc-day {
+                                    &.selected {
+                                        background-color: #c6c6c6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .fc-scrollgrid-sync-table {
+                    width: 100% !important;
+                }
+
+                .fc-col-header {
+                    width: 100% !important;
+                }
+
+                .fc-daygrid-body {
+                    width: 100% !important;
+                }
+            }
+    
+            .fc-header-toolbar {
+                position: relative;
+    
+                .fc-toolbar-title {
+                    text-align: center;
+                    font-size: 48px;
+                    font-weight: $fw-bold;
+    
+                    @media only screen and (max-width: 768px) {
+                        font-size: 28px;
+                    }
+                }
+    
+                .fc-prev-button {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    font-size: 28px;
+                    font-weight: $fw-bold;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+    
+                    @media only screen and (max-width: 768px) {
+                        font-size: 20px;
+                    }
+    
+                    &:before {
+                        content: '<先月';
+                    }
+                }
+    
+                .fc-next-button {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    font-size: 28px;
+                    font-weight: $fw-bold;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+    
+                    @media only screen and (max-width: 768px) {
+                        font-size: 20px;
+                    }
+    
+                    &:before {
+                        content: '次月>';
+                    }
+                }
+    
+                .fc-today-button {
+                    display: none;
+                }
+    
+                .fc-toolbar-chunk {
+                    &:first-child {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                    }
+    
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+    
+            .fc-view-harness {
+                height: auto !important
+            }
+        }
+    
+        .select-time {
+            @include flex-center;
+            margin: 0 0 20px;
+            font-size: 28px;
+            font-weight: $fw-bold;
+    
+            @media only screen and (max-width: 768px) {
+                font-size: 20px;
+            }
+    
+            @media only screen and (max-width: 480px) {
+                font-size: 14px;
+            }
+    
+            label {
+                @include flex-center-v;
+                cursor: pointer;
+    
+                input[type=radio] {
+                    width: 28px;
+                    height: 28px;
+                    cursor: pointer;
+    
+                    @media only screen and (max-width: 768px) {
+                        width: 20px;
+                        height: 20px;
+                    }
+    
+                    @media only screen and (max-width: 768px) {
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+    
+                &:nth-child(1) {
+                    margin-right: 20px;
+                }
+            }
+        }
     }
 }

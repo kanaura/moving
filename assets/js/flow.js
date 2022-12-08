@@ -46,6 +46,13 @@ $(document).ready(function() {
         } else {
             $('.option-select-content').hide();
         }
+
+        if (flow_step == 3) {
+            $('.date-select-content').show();
+            $('.btn-default').text('入力内容を確認');
+        } else {
+            $('.date-select-content').hide();
+        }
     }
 
     $('.btn-default').on('click', function() {

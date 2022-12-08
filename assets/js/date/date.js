@@ -23,7 +23,7 @@ $(function() {
             console.log(start);
             $('#date').val(start.startStr);
             // return false;
-        }
+        }, 
     });
 
     $('body').on('click', '.fc-daygrid-day', function() {
@@ -56,13 +56,15 @@ $(function() {
     });
 
     $('.btn-clear').on('click', function() {
-        $('.fc-daygrid-day').each(function(index) {
-            $(this).removeClass('selected');
-        });
+        if (flow_step == 3) {
+            $('.fc-daygrid-day').each(function(index) {
+                $(this).removeClass('selected');
+            });
 
-        date = $('#date').val('');
+            date = $('#date').val('');
 
-        $('input[name=time]').prop('checked', false);
+            $('input[name=time]').prop('checked', false);
+        }
     });
 
     calendar.render();
