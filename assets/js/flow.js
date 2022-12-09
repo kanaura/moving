@@ -1,4 +1,67 @@
 /* javascriptのコードを記載 */
+$price_goods = [
+    [
+        [ 20000, 30000, 30000 , 70000, 0, 0, 0 ], 
+        [ 36000, 45455, 45455, 70000, 113636, 122727, 135000 ], 
+        [ 40000, 50000, 50000, 74545, 118182, 127273, 140000 ], 
+        [ 140000, 140000, 140000, 155000, 227273, 245455, 336364 ], 
+    ], 
+    [
+        [ 30000, 40000, 45000, 70000, 0, 0, 0 ], 
+        [ 45455, 45455, 55455, 70000, 113636, 122727, 144545 ], 
+        [ 50000, 50000, 60000, 74545, 128182, 127273, 149091 ], 
+        [ 140000, 140000, 140000, 155000, 227273, 245455, 336364 ], 
+    ], 
+    [
+        [ 30000, 45000, 40000, 80000, 0, 0, 0 ], 
+        [ 45455, 55455, 45455, 95455, 123636, 132727, 144545 ], 
+        [ 50000, 60000, 50000, 100000, 128182, 136364, 149091 ], 
+        [ 140000, 140000, 140000, 155000, 227273, 245455, 336364 ], 
+    ], 
+    [
+        [ 70000, 70000, 70000, 100000, 0, 0, 0 ], 
+        [ 70000, 70000, 95455, 145455, 168182, 122727, 254545 ], 
+        [ 74545, 74545, 100000, 150000, 171818, 127273, 260000 ], 
+        [ 155000, 155000, 155000, 155000, 0, 0, 0 ], 
+    ], 
+];
+
+function get_area_idx($pref_id, $city_id) {
+    $result = -1;
+    if ($pref_id == 38) {
+        if ($city_id == 1 || $city_id == 2 || $city_id == 3 || $city_id == 7 || $city_id == 14 || $city_id == 17) {
+            $result = 0;
+        } else if ($city_id == 0 || $city_id == 6 || $city_id == 11 || $city_id == 12 || $city_id == 15) {
+            $result = 1;
+        } else if ($city_id == 4 || $city_id == 5 || $city_id == 8 || $city_id == 9 || $city_id == 10 || $city_id == 13 || $city_id == 16 || $city_id == 18 || $city_id == 19) {
+            $result = 2;
+        }
+    } else if ($pref_id == 37 || $pref_id == 36 || $pref_id == 39) {
+        $result = 3;
+    } else if ($pref_id == 34 || $pref_id == 33 || $pref_id == 35 || $pref_id == 31 || $pref_id == 32) {
+        $result = 4;
+    } else if ($pref_id == 27 || $pref_id == 26 || $pref_id == 28 || $pref_id == 25 || $pref_id == 29 || $pref_id == 30 || $pref_id == 24) {
+        $result = 5;
+    } else if ($pref_id == 40 || $pref_id == 41 || $pref_id == 42 || $pref_id == 43 || $pref_id == 44 || $pref_id == 45 || $pref_id == 46) {
+        $result = 6;
+    }
+    return $result;
+}
+
+function get_truck_idx($total_cm3) {
+    $result = -1;
+    if ($total_cm3 < 5000000) {
+        $result = 0;
+    } else if ($total_cm3 < 10000000) {
+        $result = 1;
+    } else if ($total_cm3 < 16000000) {
+        $result = 2;
+    } else if ($total_cm3 < 16000000) {
+        $result = 3;
+    }
+    return $result;
+}
+
 $(document).ready(function() {
     flow_step = 0;
     console.log(flow_step);
@@ -64,6 +127,16 @@ $(document).ready(function() {
             $('.btn-default').text('お見積り');
         } else {
             $('.confirm-select-content').hide();
+        }
+
+        if (flow_step == 5) {
+            // お見積り金額
+            $('.btn-clear').hide();
+
+            $('.price-select-content').show();
+            $('.btn-default').text('この内容で仮申込をする');
+        } else {
+            $('.price-select-content').hide();
         }
     }
 
@@ -141,7 +214,45 @@ $(document).ready(function() {
             var message = $('textarea[name=message]').val();
             $('textarea[name=message_confirm]').val(message);
         } else if (flow_step == 4) {
-            console.log(flow_step);
+            p1 = $('select#select_prefecture_01 option:selected').val();
+            c1 = $('select#select_city_01 option:selected').val();
+            $area_01_id = get_area_idx(p1, c1);
+            p2 = $('select#select_prefecture_02 option:selected').val();
+            c2 = $('select#select_city_02 option:selected').val();
+            $area_02_id = get_area_idx(p2, c2);
+
+            $truck_id = get_truck_idx($('input[name=total_cm3]').val());
+
+            $price_good = $price_goods[$area_01_id][$truck_id][$area_02_id];
+
+            $price_option = 0;
+            $('input.option-cnt').each(function(index) {
+                $cnt = $(this).val();
+                $price = $(this).parent().find('.price').val();
+                if ($cnt != 0) {
+                    $price_option += ($price * $cnt);
+                }
+            });
+
+            $price_tax = parseInt(($price_good + $price_option) * 0.1);
+
+            $price_total = $price_good + $price_option + $price_tax;
+
+            console.log($price_good);
+            console.log($price_option);
+            console.log($price_tax);
+            console.log($price_total);
+
+            $('#price_total_head').text(new Intl.NumberFormat('en-US').format($price_total));
+
+            $('#price_good').text(new Intl.NumberFormat('en-US').format($price_good));
+            $('input[name=price_good]').val(new Intl.NumberFormat('en-US').format($price_good));
+            $('#price_option').text(new Intl.NumberFormat('en-US').format($price_option));
+            $('input[name=price_option]').val(new Intl.NumberFormat('en-US').format($price_option));
+            $('#price_tax').text(new Intl.NumberFormat('en-US').format($price_tax));
+            $('input[name=price_tax]').val(new Intl.NumberFormat('en-US').format($price_tax));
+            $('#price_total').text(new Intl.NumberFormat('en-US').format($price_total));
+            $('input[name=price_total]').val(new Intl.NumberFormat('en-US').format($price_total));
         }
 
         flow_step++;

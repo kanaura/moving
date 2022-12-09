@@ -33,6 +33,7 @@ $(function() {
         $('#total-m3').val(show_total);
 
         $('#calc-total-confirm').text(show_total);
+        $('#calc-total-confirm-02').text(show_total);
     }
 
     $('.dn').on('click', function() {
