@@ -330,7 +330,7 @@ include_once('./global.php');
                         <p class="select-body-ttl ttl-blue-wide">お問い合わせ・要望</p>
 
                         <div class="select-message">
-                            <textarea rows="10" name="message"></textarea>
+                            <textarea rows="4" name="message"></textarea>
                         </div>
                     </div>
                 </div>
@@ -376,9 +376,14 @@ include_once('./global.php');
                         </div>
 
                         <p class="select-body-ttl ttl-blue-wide">お引越予定日</p>
-                            <div class="select-info-date-wrapper">
-                                <p id="select-info-date" class="select-info-date"></p>
-                            </div>
+                        <div class="select-info-date-wrapper">
+                            <p id="select-info-date" class="select-info-date"></p>
+                        </div>
+
+                        <p class="select-body-ttl ttl-blue-wide">お問い合わせ・ご要望</p>
+                        <div class="select-message">
+                            <textarea rows="4" name="message_confirm" readonly></textarea>
+                        </div>
                     </div>
                 </div>
 

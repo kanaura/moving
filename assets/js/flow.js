@@ -127,6 +127,11 @@ $(document).ready(function() {
             var time_str = $('input[name=time]').val();
             dt_str = dt_str + ((time_str == 'am') ? '午前' : '午後');
             $('#select-info-date').text(dt_str);
+
+            var message = $('textarea[name=message]').val();
+            $('textarea[name=message_confirm]').val(message);
+        } else if (flow_step == 4) {
+            console.log(flow_step);
         }
 
         flow_step++;
