@@ -125,6 +125,11 @@ $(document).ready(function() {
             $('#confirm-option-table').html(tbl_content);
         } else if (flow_step == 3) {
             var date_str = $('input[name=date]').val();
+            if (date_str == '') {
+                alert('お引越しの予定日を選択してください！');
+                return;
+            }
+
             var date_str_y = date_str.substring(0, 4);
             var date_str_m = date_str.substring(5, 7);
             var date_str_d = date_str.substring(8, 10);
