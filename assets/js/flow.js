@@ -102,6 +102,11 @@ $(document).ready(function() {
                 }
             });
 
+            if (tbl_content == '') {
+                alert('家財を選択してください！');
+                return;
+            }
+
             $('#confirm-good-table').html(tbl_content);
         } else if (flow_step == 2) {
             $('#confirm-option-table').empty();
