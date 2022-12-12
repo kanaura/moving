@@ -10,20 +10,144 @@ include_once('./head.php');
 ?>
 
 <?php
+if (isset($_POST['sel_pref_01'])) {
+    $_SESSION['sel_pref_01'] = $_POST['sel_pref_01'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['sel_city_01'])) {
+    $_SESSION['sel_city_01'] = $_POST['sel_city_01'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['sel_pref_02'])) {
+    $_SESSION['sel_pref_02'] = $_POST['sel_pref_02'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['sel_city_02'])) {
+    $_SESSION['sel_city_02'] = $_POST['sel_city_02'];
+} else {
+    header('Location: ' . './');
+}
+
 if (isset($_POST['price_good'])) {
     $_SESSION['price_good'] = $_POST['price_good'];
+} else {
+    header('Location: ' . './');
 }
+
+if (isset($_POST['total_m3'])) {
+    $_SESSION['total_m3'] = $_POST['total_m3'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['total_cm3'])) {
+    $_SESSION['total_cm3'] = $_POST['total_cm3'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['goods_ttl'])) {
+    $_SESSION['goods_ttl'] = $_POST['goods_ttl'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['goods_cnt'])) {
+    $_SESSION['goods_cnt'] = $_POST['goods_cnt'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['goods_size'])) {
+    $_SESSION['goods_size'] = $_POST['goods_size'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['free_ttl'])) {
+    $_SESSION['free_ttl'] = $_POST['free_ttl'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['free_cnt'])) {
+    $_SESSION['free_cnt'] = $_POST['free_cnt'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['free_size'])) {
+    $_SESSION['free_size'] = $_POST['free_size'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['free_w'])) {
+    $_SESSION['free_w'] = $_POST['free_w'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['free_h'])) {
+    $_SESSION['free_h'] = $_POST['free_h'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['free_d'])) {
+    $_SESSION['free_d'] = $_POST['free_d'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['options_ttl'])) {
+    $_SESSION['options_ttl'] = $_POST['options_ttl'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['options_cnt'])) {
+    $_SESSION['options_cnt'] = $_POST['options_cnt'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['options_size'])) {
+    $_SESSION['options_size'] = $_POST['options_size'];
+} else {
+    header('Location: ' . './');
+}
+
+if (isset($_POST['options_price'])) {
+    $_SESSION['options_price'] = $_POST['options_price'];
+} else {
+    header('Location: ' . './');
+}
+
+
 
 if (isset($_POST['price_option'])) {
     $_SESSION['price_option'] = $_POST['price_option'];
+} else {
+    header('Location: ' . './');
 }
 
 if (isset($_POST['price_tax'])) {
     $_SESSION['price_tax'] = $_POST['price_tax'];
+} else {
+    header('Location: ' . './');
 }
 
 if (isset($_POST['price_total'])) {
     $_SESSION['price_total'] = $_POST['price_total'];
+} else {
+    header('Location: ' . './');
 }
 ?>
 
