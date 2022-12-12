@@ -59,6 +59,7 @@ function get_truck_idx($total_cm3) {
     } else if ($total_cm3 < 16000000) {
         $result = 3;
     }
+
     return $result;
 }
 

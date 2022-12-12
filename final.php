@@ -34,12 +34,6 @@ if (isset($_POST['sel_city_02'])) {
     header('Location: ' . './');
 }
 
-if (isset($_POST['price_good'])) {
-    $_SESSION['price_good'] = $_POST['price_good'];
-} else {
-    header('Location: ' . './');
-}
-
 if (isset($_POST['total_m3'])) {
     $_SESSION['total_m3'] = $_POST['total_m3'];
 } else {
@@ -130,7 +124,11 @@ if (isset($_POST['options_price'])) {
     header('Location: ' . './');
 }
 
-
+if (isset($_POST['price_good'])) {
+    $_SESSION['price_good'] = $_POST['price_good'];
+} else {
+    header('Location: ' . './');
+}
 
 if (isset($_POST['price_option'])) {
     $_SESSION['price_option'] = $_POST['price_option'];

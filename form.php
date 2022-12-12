@@ -15,7 +15,6 @@ include_once('./global.php');
             <div class="main-figure">
                 <img src="./assets/img/main.png" alt="" />
             </div>
-
             <div id="select-content-head" class="select-content" style="display: none;">
                 <div class="select-head">
                     <div class="select-head-l">
@@ -42,15 +41,15 @@ include_once('./global.php');
                         <p class="select-head-r-ttl">現在の家財</p>
                         <p class="select-head-cur-value">
                             <span id="calc-total">0.0</span>立米
-                            <input id="total-base" type="hidden" name="total_base" value="0" />
-                            <input id="total-m3" type="hidden" name="total_m3" value="0" />
-                            <input id="total-cm3" type="hidden" name="total_cm3" value="0" />
                         </p>
                     </div>
                 </div>
             </div>
 
             <form id="form-select" action="./final.php" method="POST">
+                <input id="total-base" type="hidden" name="total_base" value="0" />
+                <input id="total-m3" type="hidden" name="total_m3" value="0" />
+                <input id="total-cm3" type="hidden" name="total_cm3" value="0" />
                 <div class="address-content">
                     <div class="address-select-block">
                         <p class="address-select-block-ttl">現住所</p>

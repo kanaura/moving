@@ -24,7 +24,7 @@ include_once('./head.php');
                     今しばらくお待ちください。
                 </p>
             </div>
-            <a class="btn-default" href="./address.php">ホームページへ</a>
+            <a class="btn-default" href="./form.php">ホームページへ</a>
         </div>
     </div>
 
