@@ -598,39 +598,39 @@ body.home #popup .popup-body .popup-figure img {
 }
 
 /* フォームのスタイル */
-body.form .address-content {
+body.form-select .address-content {
   width: 845px;
   margin: 0 auto;
 }
 
 @media only screen and (max-width: 992px) {
-  body.form .address-content {
+  body.form-select .address-content {
     width: 100%;
   }
 }
 
-body.form .address-content .address-select-block {
+body.form-select .address-content .address-select-block {
   margin: 0 0 24px;
 }
 
-body.form .address-content .address-select-block .address-select-block-ttl {
+body.form-select .address-content .address-select-block .address-select-block-ttl {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.8;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .address-content .address-select-block .address-select-block-ttl {
+  body.form-select .address-content .address-select-block .address-select-block-ttl {
     font-size: 20px;
   }
 }
 
-body.form .address-content .address-select-block .address-select-wrapper {
+body.form-select .address-content .address-select-block .address-select-wrapper {
   position: relative;
   margin: 0 0 16px;
 }
 
-body.form .address-content .address-select-block .address-select-wrapper select {
+body.form-select .address-content .address-select-block .address-select-wrapper select {
   width: 100%;
   height: 75px;
   padding: 0 35px;
@@ -643,18 +643,18 @@ body.form .address-content .address-select-block .address-select-wrapper select 
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .address-content .address-select-block .address-select-wrapper select {
+  body.form-select .address-content .address-select-block .address-select-wrapper select {
     height: auto;
     padding: 10px;
     font-size: 20px;
   }
 }
 
-body.form .address-content .txt-case-no-address {
+body.form-select .address-content .txt-case-no-address {
   margin: 0 0 32px;
 }
 
-body.form .address-lead {
+body.form-select .address-lead {
   position: relative;
   width: 845px;
   margin: 0 auto;
@@ -663,12 +663,12 @@ body.form .address-lead {
 }
 
 @media only screen and (max-width: 992px) {
-  body.form .address-lead {
+  body.form-select .address-lead {
     width: 100%;
   }
 }
 
-body.form .address-lead .address-lead-head {
+body.form-select .address-lead .address-lead-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,13 +689,13 @@ body.form .address-lead .address-lead-head {
 }
 
 @media only screen and (max-width: 992px) {
-  body.form .address-lead .address-lead-head {
+  body.form-select .address-lead .address-lead-head {
     font-size: 24px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .address-lead .address-lead-head {
+  body.form-select .address-lead .address-lead-head {
     height: auto;
     line-height: 1.3;
     padding: 20px;
@@ -703,17 +703,17 @@ body.form .address-lead .address-lead-head {
   }
 }
 
-body.form .address-lead .address-lead-body {
+body.form-select .address-lead .address-lead-body {
   padding: 10px 24px 10px 200px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .address-lead .address-lead-body {
+  body.form-select .address-lead .address-lead-body {
     padding: 20px;
   }
 }
 
-body.form .address-lead .address-lead-body .address-lead-btn-list {
+body.form-select .address-lead .address-lead-body .address-lead-btn-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,13 +724,13 @@ body.form .address-lead .address-lead-body .address-lead-btn-list {
 }
 
 @media only screen and (max-width: 992px) {
-  body.form .address-lead .address-lead-body .address-lead-btn-list {
+  body.form-select .address-lead .address-lead-body .address-lead-btn-list {
     display: block;
     margin: 0;
   }
 }
 
-body.form .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn {
+body.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -752,39 +752,39 @@ body.form .address-lead .address-lead-body .address-lead-btn-list .address-lead-
   transition: 0.3s ease all;
 }
 
-body.form .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:hover {
+body.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:hover {
   opacity: 0.7;
 }
 
 @media only screen and (max-width: 992px) {
-  body.form .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn {
+  body.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn {
     width: 100%;
     margin: 0 0 20px;
   }
 }
 
-body.form .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:nth-child(1) {
+body.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:nth-child(1) {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #57d852), color-stop(73%, #009245));
   background: linear-gradient(180deg, #57d852 31%, #009245 73%);
 }
 
-body.form .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:nth-child(2) {
+body.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:nth-child(2) {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, cyan), color-stop(73%, #2abada));
   background: linear-gradient(180deg, cyan 31%, #2abada 73%);
 }
 
-body.form .address-lead .address-lead-body .address-lead-txt {
+body.form-select .address-lead .address-lead-body .address-lead-txt {
   margin: 8px 0 0;
 }
 
-body.form .address-lead .address-lead-deco {
+body.form-select .address-lead .address-lead-deco {
   position: absolute;
   left: -84px;
   bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .address-lead .address-lead-deco {
+  body.form-select .address-lead .address-lead-deco {
     position: relative;
     left: unset;
     bottom: unset;
@@ -800,7 +800,7 @@ body.form .address-lead .address-lead-deco {
   }
 }
 
-body.form .select-content .select-head {
+body.form-select .select-content .select-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,24 +808,24 @@ body.form .select-content .select-head {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-head {
+  body.form-select .select-content .select-head {
     display: block;
     margin: 20px 0;
   }
 }
 
-body.form .select-content .select-head .select-head-l {
+body.form-select .select-content .select-head .select-head-l {
   width: calc(100% - 185px);
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-head .select-head-l {
+  body.form-select .select-content .select-head .select-head-l {
     width: 100%;
     margin: 0 0 20px;
   }
 }
 
-body.form .select-content .select-head .select-head-l .select-head-l-ttl {
+body.form-select .select-content .select-head .select-head-l .select-head-l-ttl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -838,25 +838,25 @@ body.form .select-content .select-head .select-head-l .select-head-l-ttl {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-head .select-head-l .select-head-l-ttl {
+  body.form-select .select-content .select-head .select-head-l .select-head-l-ttl {
     display: block;
   }
 }
 
-body.form .select-content .select-head .select-head-l .select-head-l-ttl span {
+body.form-select .select-content .select-head .select-head-l .select-head-l-ttl span {
   margin-right: 16px;
   font-size: 28px;
   font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-head .select-head-l .select-head-l-ttl span {
+  body.form-select .select-content .select-head .select-head-l .select-head-l-ttl span {
     display: block;
     font-size: 24px;
   }
 }
 
-body.form .select-content .select-head .select-head-l .select-head-bar-list {
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -865,13 +865,13 @@ body.form .select-content .select-head .select-head-l .select-head-bar-list {
           align-items: center;
 }
 
-body.form .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item {
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item {
   position: relative;
   width: 25%;
   height: 68px;
 }
 
-body.form .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item span {
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item span {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -881,78 +881,78 @@ body.form .select-content .select-head .select-head-l .select-head-bar-list .sel
   font-weight: 700;
 }
 
-body.form .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(1) {
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(1) {
   background-color: cyan;
 }
 
-body.form .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(1) span {
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(1) span {
   color: #004989;
 }
 
-body.form .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(2) {
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(2) {
   background-color: #d9e021;
 }
 
-body.form .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(2) span {
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(2) span {
   color: #009245;
 }
 
-body.form .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(3) {
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(3) {
   background-color: #fbb03b;
 }
 
-body.form .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(3) span {
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(3) span {
   color: #f15a24;
 }
 
-body.form .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(4) {
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(4) {
   background-color: #ff7bac;
 }
 
-body.form .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(4) span {
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(4) span {
   color: #c1272d;
 }
 
-body.form .select-content .select-head .select-head-r {
+body.form-select .select-content .select-head .select-head-r {
   width: 185px;
   text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-head .select-head-r {
+  body.form-select .select-content .select-head .select-head-r {
     margin: 0 auto;
   }
 }
 
-body.form .select-content .select-head .select-head-r .select-head-r-ttl {
+body.form-select .select-content .select-head .select-head-r .select-head-r-ttl {
   margin: 0 0 7px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.8;
 }
 
-body.form .select-content .select-head .select-head-r .select-head-cur-value {
+body.form-select .select-content .select-head .select-head-r .select-head-cur-value {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.8;
 }
 
-body.form .select-content .select-head .select-head-r .select-head-cur-value span {
+body.form-select .select-content .select-head .select-head-r .select-head-cur-value span {
   font-size: 68px;
   line-height: 1.0;
   color: red;
 }
 
-body.form .select-content .select-body {
+body.form-select .select-content .select-body {
   margin: 0 0 20px;
   padding: 28px 0 0;
 }
 
-body.form .select-content .select-body .select-body-ttl {
+body.form-select .select-content .select-body .select-body-ttl {
   margin-bottom: 18px;
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-head {
+body.form-select .select-content .select-body .select-list .select-item .select-item-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -972,103 +972,103 @@ body.form .select-content .select-body .select-list .select-item .select-item-he
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-head {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-head {
     font-size: 24px;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body {
   padding: 10px 0;
   display: none;
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table {
   width: 100%;
   border-collapse: collapse;
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr {
   width: 100%;
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td, body.form .select-content .select-body .select-list .select-item .select-item-body table tr th {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th {
   height: 75px;
   border: 1px solid #000000;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td, body.form .select-content .select-body .select-list .select-item .select-item-body table tr th {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th {
     height: auto;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr th {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th {
   padding: 0 24px;
   text-align: center;
   vertical-align: top;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr th {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th {
     padding: 0 10px;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr th img {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th img {
   margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr th img {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th img {
     width: auto;
     height: 100px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr th img {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th img {
     width: 100%;
     height: auto;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td {
   position: relative;
   font-size: 28px;
   font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td {
     font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td {
     font-size: 12px;
     font-weight: 400;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
   position: relative;
   padding: 24px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
     padding: 20px 10px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
     padding: 10px 80px 10px 5px;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1079,7 +1079,7 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size {
     right: 0;
     width: 100%;
     height: 100%;
@@ -1088,7 +1088,7 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size:before {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size:before {
   content: '';
   position: absolute;
   top: 50%;
@@ -1103,25 +1103,25 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size:before {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size:before {
     right: 5px;
     border-width: 10px 5px 0 5px;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size.active:before {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size.active:before {
   border-width: 0 10px 20px 10px;
   border-color: transparent transparent #000000 transparent;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size.active:before {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size.active:before {
     right: 5px;
     border-width: 0 5px 10px 5px;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1138,7 +1138,7 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl {
     min-width: 60px;
     padding: 5px;
     right: 5px;
@@ -1147,7 +1147,7 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up, body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
   position: relative;
   width: 15px;
   height: 15px;
@@ -1155,19 +1155,19 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up, body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
     width: 8px;
     height: 8px;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up {
   position: absolute;
   right: 10px;
   top: 7px;
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up:before {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up:before {
   content: '';
   position: absolute;
   width: 0;
@@ -1178,18 +1178,18 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up:before {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up:before {
     border-width: 0 3px 7px 3px;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
   position: absolute;
   right: 10px;
   bottom: 7px;
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn:before {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn:before {
   content: '';
   position: absolute;
   width: 0;
@@ -1200,17 +1200,17 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn:before {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn:before {
     border-width: 7px 3px 0 3px;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl.free {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl.free {
   border: none;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl.free {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl.free {
     position: relative;
     top: unset;
     right: unset;
@@ -1221,7 +1221,7 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1231,7 +1231,7 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row {
     width: calc(100% - 80px);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1239,7 +1239,7 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
   width: 140px;
   height: 56px;
   font-size: 28px;
@@ -1251,7 +1251,7 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
     margin: 0;
     padding: 10px;
     font-size: 16px;
@@ -1259,7 +1259,7 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
     width: 33%;
     height: 28px;
     margin: 0 4px;
@@ -1267,57 +1267,57 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-webkit-input-placeholder, body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-webkit-input-placeholder {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-webkit-input-placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-webkit-input-placeholder {
   color: transparent;
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]:-ms-input-placeholder, body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]:-ms-input-placeholder {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]:-ms-input-placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]:-ms-input-placeholder {
   color: transparent;
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-ms-input-placeholder, body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-ms-input-placeholder {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-ms-input-placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-ms-input-placeholder {
   color: transparent;
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::placeholder, body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::placeholder {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::placeholder {
   color: transparent;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-webkit-input-placeholder, body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-webkit-input-placeholder {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-webkit-input-placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-webkit-input-placeholder {
     color: #cccccc;
   }
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]:-ms-input-placeholder, body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]:-ms-input-placeholder {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]:-ms-input-placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]:-ms-input-placeholder {
     color: #cccccc;
   }
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-ms-input-placeholder, body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-ms-input-placeholder {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-ms-input-placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-ms-input-placeholder {
     color: #cccccc;
   }
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::placeholder, body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::placeholder {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::placeholder {
     color: #cccccc;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row span {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row span {
     display: none;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item {
     padding: 10px 5px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item select {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item select {
     position: relative;
     top: unset;
     right: unset;
@@ -1327,46 +1327,46 @@ body.form .select-content .select-body .select-list .select-item .select-item-bo
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td ul li {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td ul li {
   padding: 0 0 0 56px;
   border-top: 1px solid #000000;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table tr td ul li {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td ul li {
     padding: 0 0 0 10px;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td ul li.gray {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td ul li.gray {
   background-color: #e6e6e6;
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table tr td ul.sub-item-list {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td ul.sub-item-list {
   display: none;
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table.has-image tr th {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table.has-image tr th {
   width: 135px;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table.has-image tr th {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table.has-image tr th {
     width: 64px;
   }
 }
 
-body.form .select-content .select-body .select-list .select-item .select-item-body table.has-image tr td {
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table.has-image tr td {
   width: calc(100% - 135px);
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-body .select-list .select-item .select-item-body table.has-image tr td {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table.has-image tr td {
     width: calc(100% - 64px);
   }
 }
 
-body.form .select-content .select-standalone {
+body.form-select .select-content .select-standalone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1376,37 +1376,37 @@ body.form .select-content .select-standalone {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-standalone {
+  body.form-select .select-content .select-standalone {
     display: block;
     margin: 20px 0;
   }
 }
 
-body.form .select-content .select-standalone .standalone-icon {
+body.form-select .select-content .select-standalone .standalone-icon {
   width: 219px;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-standalone .standalone-icon {
+  body.form-select .select-content .select-standalone .standalone-icon {
     margin: 0 auto 20px;
   }
 }
 
-body.form .select-content .select-standalone .standalone-info {
+body.form-select .select-content .select-standalone .standalone-info {
   width: calc(100% - 219px);
   padding: 0 0 0 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-standalone .standalone-info {
+  body.form-select .select-content .select-standalone .standalone-info {
     width: 100%;
     margin: 0 0 20px;
     padding: 0;
   }
 }
 
-body.form .select-content .select-standalone .standalone-info .standalone-info-ttl {
+body.form-select .select-content .select-standalone .standalone-info .standalone-info-ttl {
   margin: 0 0 16px;
   font-size: 42px;
   font-weight: 700;
@@ -1414,25 +1414,25 @@ body.form .select-content .select-standalone .standalone-info .standalone-info-t
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-standalone .standalone-info .standalone-info-ttl {
+  body.form-select .select-content .select-standalone .standalone-info .standalone-info-ttl {
     text-align: center;
     font-size: 24px;
   }
 }
 
-body.form .select-content .select-standalone .standalone-info .standalone-info-txt {
+body.form-select .select-content .select-standalone .standalone-info .standalone-info-txt {
   font-size: 27px;
   font-weight: 400;
   line-height: 1.33;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-standalone .standalone-info .standalone-info-txt {
+  body.form-select .select-content .select-standalone .standalone-info .standalone-info-txt {
     font-size: 16px;
   }
 }
 
-body.form .select-content .select-standalone .standalone-desc {
+body.form-select .select-content .select-standalone .standalone-desc {
   position: relative;
   width: 100%;
   margin: 20px 0 0;
@@ -1444,21 +1444,21 @@ body.form .select-content .select-standalone .standalone-desc {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-standalone .standalone-desc {
+  body.form-select .select-content .select-standalone .standalone-desc {
     margin: 0 0 20px;
     padding: 0 0 0 20px;
     font-size: 16px;
   }
 }
 
-body.form .select-content .select-standalone .standalone-desc::before {
+body.form-select .select-content .select-standalone .standalone-desc::before {
   position: absolute;
   content: '※';
   left: 0;
   top: 0;
 }
 
-body.form .select-content .select-object {
+body.form-select .select-content .select-object {
   position: relative;
   padding: 30px 64px 10px;
   border: 4px solid #ed1c24;
@@ -1466,14 +1466,14 @@ body.form .select-content .select-object {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-object {
+  body.form-select .select-content .select-object {
     margin: 40px 0 0;
     padding: 40px 20px 20px;
     border-width: 2px;
   }
 }
 
-body.form .select-content .select-object .select-object-ttl {
+body.form-select .select-content .select-object .select-object-ttl {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1483,12 +1483,12 @@ body.form .select-content .select-object .select-object-ttl {
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-object .select-object-ttl {
+  body.form-select .select-content .select-object .select-object-ttl {
     width: 80%;
   }
 }
 
-body.form .select-content .select-object .select-object-ttl span {
+body.form-select .select-content .select-object .select-object-ttl span {
   padding: 0 20px;
   font-size: 28px;
   font-weight: 700;
@@ -1497,7 +1497,7 @@ body.form .select-content .select-object .select-object-ttl span {
   background-color: #ffffff;
 }
 
-body.form .select-content .select-message textarea {
+body.form-select .select-content .select-message textarea {
   width: 100%;
   padding: 20px 10px;
   font-size: 21px;
@@ -1508,20 +1508,20 @@ body.form .select-content .select-message textarea {
   resize: none;
 }
 
-body.form .select-content .select-calendar {
+body.form-select .select-content .select-calendar {
   margin: 30px 0 20px;
 }
 
-body.form .select-content .select-calendar table {
+body.form-select .select-content .select-calendar table {
   width: 100%;
   border-collapse: collapse;
 }
 
-body.form .select-content .select-calendar table tr {
+body.form-select .select-content .select-calendar table tr {
   width: 100%;
 }
 
-body.form .select-content .select-calendar table tr th, body.form .select-content .select-calendar table tr td {
+body.form-select .select-content .select-calendar table tr th, body.form-select .select-content .select-calendar table tr td {
   text-align: center;
   vertical-align: middle;
   font-size: 28px;
@@ -1530,60 +1530,60 @@ body.form .select-content .select-calendar table tr th, body.form .select-conten
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-calendar table tr th, body.form .select-content .select-calendar table tr td {
+  body.form-select .select-content .select-calendar table tr th, body.form-select .select-content .select-calendar table tr td {
     font-size: 20px;
   }
 }
 
-body.form .select-content .select-calendar table thead {
+body.form-select .select-content .select-calendar table thead {
   width: 100%;
 }
 
-body.form .select-content .select-calendar table thead tr {
+body.form-select .select-content .select-calendar table thead tr {
   width: 100%;
 }
 
-body.form .select-content .select-calendar table thead tr th:first-child {
+body.form-select .select-content .select-calendar table thead tr th:first-child {
   color: red;
   background-color: #ff7bac;
 }
 
-body.form .select-content .select-calendar table thead tr th:last-child {
+body.form-select .select-content .select-calendar table thead tr th:last-child {
   color: #004989;
   background-color: #3fa9f5;
 }
 
-body.form .select-content .select-calendar table tbody {
+body.form-select .select-content .select-calendar table tbody {
   width: 100%;
 }
 
-body.form .select-content .select-calendar table tbody table {
+body.form-select .select-content .select-calendar table tbody table {
   width: 100%;
 }
 
-body.form .select-content .select-calendar table tbody table tr {
+body.form-select .select-content .select-calendar table tbody table tr {
   width: 100%;
 }
 
-body.form .select-content .select-calendar table tbody table tr td {
+body.form-select .select-content .select-calendar table tbody table tr td {
   cursor: pointer;
 }
 
-body.form .select-content .select-calendar table tbody table tr td:first-child {
+body.form-select .select-content .select-calendar table tbody table tr td:first-child {
   color: red;
   background-color: #ff7bac;
 }
 
-body.form .select-content .select-calendar table tbody table tr td:last-child {
+body.form-select .select-content .select-calendar table tbody table tr td:last-child {
   color: #004989;
   background-color: #3fa9f5;
 }
 
-body.form .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame {
+body.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame {
   position: relative;
 }
 
-body.form .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-top {
+body.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-top {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1597,15 +1597,15 @@ body.form .select-content .select-calendar table tbody table tr td .fc-daygrid-d
   height: 95px;
 }
 
-body.form .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-top .fc-daygrid-day-number {
+body.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-top .fc-daygrid-day-number {
   z-index: 1;
 }
 
-body.form .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-bg {
+body.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-bg {
   z-index: 0;
 }
 
-body.form .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-bg .fc-highlight {
+body.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-bg .fc-highlight {
   position: absolute;
   left: 0;
   top: 0;
@@ -1614,44 +1614,44 @@ body.form .select-content .select-calendar table tbody table tr td .fc-daygrid-d
   background-color: #c6c6c6;
 }
 
-body.form .select-content .select-calendar table tbody table tr td.fc-day-past, body.form .select-content .select-calendar table tbody table tr td.fc-day-today {
+body.form-select .select-content .select-calendar table tbody table tr td.fc-day-past, body.form-select .select-content .select-calendar table tbody table tr td.fc-day-today {
   color: #e6e6e6;
   cursor: initial;
 }
 
-body.form .select-content .select-calendar table tbody table tr td.fc-day.selected {
+body.form-select .select-content .select-calendar table tbody table tr td.fc-day.selected {
   background-color: #c6c6c6;
 }
 
-body.form .select-content .select-calendar table .fc-scrollgrid-sync-table {
+body.form-select .select-content .select-calendar table .fc-scrollgrid-sync-table {
   width: 100% !important;
 }
 
-body.form .select-content .select-calendar table .fc-col-header {
+body.form-select .select-content .select-calendar table .fc-col-header {
   width: 100% !important;
 }
 
-body.form .select-content .select-calendar table .fc-daygrid-body {
+body.form-select .select-content .select-calendar table .fc-daygrid-body {
   width: 100% !important;
 }
 
-body.form .select-content .select-calendar .fc-header-toolbar {
+body.form-select .select-content .select-calendar .fc-header-toolbar {
   position: relative;
 }
 
-body.form .select-content .select-calendar .fc-header-toolbar .fc-toolbar-title {
+body.form-select .select-content .select-calendar .fc-header-toolbar .fc-toolbar-title {
   text-align: center;
   font-size: 48px;
   font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-calendar .fc-header-toolbar .fc-toolbar-title {
+  body.form-select .select-content .select-calendar .fc-header-toolbar .fc-toolbar-title {
     font-size: 28px;
   }
 }
 
-body.form .select-content .select-calendar .fc-header-toolbar .fc-prev-button {
+body.form-select .select-content .select-calendar .fc-header-toolbar .fc-prev-button {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1664,16 +1664,16 @@ body.form .select-content .select-calendar .fc-header-toolbar .fc-prev-button {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-calendar .fc-header-toolbar .fc-prev-button {
+  body.form-select .select-content .select-calendar .fc-header-toolbar .fc-prev-button {
     font-size: 20px;
   }
 }
 
-body.form .select-content .select-calendar .fc-header-toolbar .fc-prev-button:before {
+body.form-select .select-content .select-calendar .fc-header-toolbar .fc-prev-button:before {
   content: '<先月';
 }
 
-body.form .select-content .select-calendar .fc-header-toolbar .fc-next-button {
+body.form-select .select-content .select-calendar .fc-header-toolbar .fc-next-button {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1686,35 +1686,35 @@ body.form .select-content .select-calendar .fc-header-toolbar .fc-next-button {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-calendar .fc-header-toolbar .fc-next-button {
+  body.form-select .select-content .select-calendar .fc-header-toolbar .fc-next-button {
     font-size: 20px;
   }
 }
 
-body.form .select-content .select-calendar .fc-header-toolbar .fc-next-button:before {
+body.form-select .select-content .select-calendar .fc-header-toolbar .fc-next-button:before {
   content: '次月>';
 }
 
-body.form .select-content .select-calendar .fc-header-toolbar .fc-today-button {
+body.form-select .select-content .select-calendar .fc-header-toolbar .fc-today-button {
   display: none;
 }
 
-body.form .select-content .select-calendar .fc-header-toolbar .fc-toolbar-chunk:first-child {
+body.form-select .select-content .select-calendar .fc-header-toolbar .fc-toolbar-chunk:first-child {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 }
 
-body.form .select-content .select-calendar .fc-header-toolbar .fc-toolbar-chunk:last-child {
+body.form-select .select-content .select-calendar .fc-header-toolbar .fc-toolbar-chunk:last-child {
   display: none;
 }
 
-body.form .select-content .select-calendar .fc-view-harness {
+body.form-select .select-content .select-calendar .fc-view-harness {
   height: auto !important;
 }
 
-body.form .select-content .select-time {
+body.form-select .select-content .select-time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1730,18 +1730,18 @@ body.form .select-content .select-time {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-time {
+  body.form-select .select-content .select-time {
     font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .select-content .select-time {
+  body.form-select .select-content .select-time {
     font-size: 14px;
   }
 }
 
-body.form .select-content .select-time label {
+body.form-select .select-content .select-time label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1751,31 +1751,31 @@ body.form .select-content .select-time label {
   cursor: pointer;
 }
 
-body.form .select-content .select-time label input[type=radio] {
+body.form-select .select-content .select-time label input[type=radio] {
   width: 28px;
   height: 28px;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-time label input[type=radio] {
+  body.form-select .select-content .select-time label input[type=radio] {
     width: 20px;
     height: 20px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-time label input[type=radio] {
+  body.form-select .select-content .select-time label input[type=radio] {
     width: 14px;
     height: 14px;
   }
 }
 
-body.form .select-content .select-time label:nth-child(1) {
+body.form-select .select-content .select-time label:nth-child(1) {
   margin-right: 20px;
 }
 
-body.form .select-content .select-overview {
+body.form-select .select-content .select-overview {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1792,35 +1792,35 @@ body.form .select-content .select-overview {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-overview {
+  body.form-select .select-content .select-overview {
     display: block;
   }
 }
 
-body.form .select-content .select-overview span.small {
+body.form-select .select-content .select-overview span.small {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.3;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-overview span.small {
+  body.form-select .select-content .select-overview span.small {
     font-size: 20px;
   }
 }
 
-body.form .select-content .select-overview span.medium {
+body.form-select .select-content .select-overview span.medium {
   font-size: 66px;
   font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-overview span.medium {
+  body.form-select .select-content .select-overview span.medium {
     font-size: 28px;
   }
 }
 
-body.form .select-content .select-overview span.large {
+body.form-select .select-content .select-overview span.large {
   font-size: 179px;
   font-weight: 700;
   line-height: 1.0;
@@ -1828,36 +1828,36 @@ body.form .select-content .select-overview span.large {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-overview span.large {
+  body.form-select .select-content .select-overview span.large {
     font-size: 80px;
   }
 }
 
-body.form .select-content .select-overview span.right {
+body.form-select .select-content .select-overview span.right {
   text-align: right;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-overview span.right {
+  body.form-select .select-content .select-overview span.right {
     text-align: left;
     display: block;
   }
 }
 
-body.form .select-content .select-info-table {
+body.form-select .select-content .select-info-table {
   margin: 0 0 20px;
 }
 
-body.form .select-content .select-info-table table {
+body.form-select .select-content .select-info-table table {
   width: 100%;
   border-collapse: collapse;
 }
 
-body.form .select-content .select-info-table table tr {
+body.form-select .select-content .select-info-table table tr {
   width: 100%;
 }
 
-body.form .select-content .select-info-table table tr td {
+body.form-select .select-content .select-info-table table tr td {
   padding: 10px 25px;
   font-size: 28px;
   font-weight: 700;
@@ -1866,36 +1866,36 @@ body.form .select-content .select-info-table table tr td {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-info-table table tr td {
+  body.form-select .select-content .select-info-table table tr td {
     font-size: 16px;
   }
 }
 
-body.form .select-content .select-info-table table tr td.sht {
+body.form-select .select-content .select-info-table table tr td.sht {
   width: 240px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-info-table table tr td.sht {
+  body.form-select .select-content .select-info-table table tr td.sht {
     width: 100px;
   }
 }
 
-body.form .select-content .select-info-table table tr td.lng {
+body.form-select .select-content .select-info-table table tr td.lng {
   width: calc(100% - 240px);
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-info-table table tr td.lng {
+  body.form-select .select-content .select-info-table table tr td.lng {
     width: calc(100% - 100px);
   }
 }
 
-body.form .select-content .select-info-table table tr:nth-child(even) {
+body.form-select .select-content .select-info-table table tr:nth-child(even) {
   background-color: #e6e6e6;
 }
 
-body.form .select-content .select-info-date-wrapper {
+body.form-select .select-content .select-info-date-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1909,31 +1909,31 @@ body.form .select-content .select-info-date-wrapper {
   height: 104px;
 }
 
-body.form .select-content .select-info-date-wrapper .select-info-date {
+body.form-select .select-content .select-info-date-wrapper .select-info-date {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.7;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .select-info-date-wrapper .select-info-date {
+  body.form-select .select-content .select-info-date-wrapper .select-info-date {
     font-size: 20px;
   }
 }
 
-body.form .select-content .price-body {
+body.form-select .select-content .price-body {
   margin: 0 0 190px;
   padding: 0 80px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .price-body {
+  body.form-select .select-content .price-body {
     margin: 0 0 40px;
     padding: 0;
   }
 }
 
-body.form .select-content .price-body .price-wrapper {
+body.form-select .select-content .price-body .price-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1950,49 +1950,49 @@ body.form .select-content .price-body .price-wrapper {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .price-body .price-wrapper {
+  body.form-select .select-content .price-body .price-wrapper {
     height: auto;
     padding: 20px 10px;
   }
 }
 
-body.form .select-content .price-body .price-wrapper .price {
+body.form-select .select-content .price-body .price-wrapper .price {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.75;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .price-body .price-wrapper .price {
+  body.form-select .select-content .price-body .price-wrapper .price {
     font-size: 20px;
   }
 }
 
-body.form .select-content .price-body .price-wrapper .price span {
+body.form-select .select-content .price-body .price-wrapper .price span {
   font-size: 80px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .price-body .price-wrapper .price span {
+  body.form-select .select-content .price-body .price-wrapper .price span {
     font-size: 28px;
   }
 }
 
-body.form .select-content .price-body .price-table {
+body.form-select .select-content .price-body .price-table {
   margin: 0 0 36px;
 }
 
-body.form .select-content .price-body .price-table table {
+body.form-select .select-content .price-body .price-table table {
   width: 100%;
   border-collapse: collapse;
   margin: 0 0 36px;
 }
 
-body.form .select-content .price-body .price-table table tr {
+body.form-select .select-content .price-body .price-table table tr {
   width: 100%;
 }
 
-body.form .select-content .price-body .price-table table tr td, body.form .select-content .price-body .price-table table tr th {
+body.form-select .select-content .price-body .price-table table tr td, body.form-select .select-content .price-body .price-table table tr th {
   width: 50%;
   padding: 30px;
   text-align: center;
@@ -2002,21 +2002,21 @@ body.form .select-content .price-body .price-table table tr td, body.form .selec
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .price-body .price-table table tr td, body.form .select-content .price-body .price-table table tr th {
+  body.form-select .select-content .price-body .price-table table tr td, body.form-select .select-content .price-body .price-table table tr th {
     padding: 10px;
     font-size: 20px;
   }
 }
 
-body.form .select-content .price-body .price-table table tr th {
+body.form-select .select-content .price-body .price-table table tr th {
   background-color: #adffff;
 }
 
-body.form .select-content .price-body .price-table table tr:last-child td {
+body.form-select .select-content .price-body .price-table table tr:last-child td {
   background-color: #adffff;
 }
 
-body.form .select-content .attention .attention-head {
+body.form-select .select-content .attention .attention-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2036,12 +2036,12 @@ body.form .select-content .attention .attention-head {
   background: linear-gradient(180deg, #ffb749 31%, #ff6d00 73%);
 }
 
-body.form .select-content .attention .attention-body {
+body.form-select .select-content .attention .attention-body {
   padding: 20px 24px 40px;
   background-color: #fff29d;
 }
 
-body.form .select-content .attention .attention-body .attention-txt {
+body.form-select .select-content .attention .attention-body .attention-txt {
   margin: 0 0 40px;
   font-size: 21px;
   font-weight: 400;
@@ -2049,12 +2049,12 @@ body.form .select-content .attention .attention-body .attention-txt {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .attention .attention-body .attention-txt {
+  body.form-select .select-content .attention .attention-body .attention-txt {
     font-size: 16px;
   }
 }
 
-body.form .select-content .attention .attention-body .attention-agree {
+body.form-select .select-content .attention .attention-body .attention-agree {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2066,7 +2066,7 @@ body.form .select-content .attention .attention-body .attention-agree {
           justify-content: center;
 }
 
-body.form .select-content .attention .attention-body .attention-agree .chk-wrapper {
+body.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2075,7 +2075,7 @@ body.form .select-content .attention .attention-body .attention-agree .chk-wrapp
           align-items: center;
 }
 
-body.form .select-content .attention .attention-body .attention-agree .chk-wrapper input[type=checkbox] {
+body.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper input[type=checkbox] {
   width: 36px;
   height: 36px;
   border: 2px solid #000000;
@@ -2083,13 +2083,13 @@ body.form .select-content .attention .attention-body .attention-agree .chk-wrapp
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .attention .attention-body .attention-agree .chk-wrapper input[type=checkbox] {
+  body.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper input[type=checkbox] {
     width: 20px;
     height: 20px;
   }
 }
 
-body.form .select-content .attention .attention-body .attention-agree .chk-wrapper label {
+body.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper label {
   padding: 0 0 0 18px;
   font-size: 38px;
   font-weight: 700;
@@ -2098,7 +2098,7 @@ body.form .select-content .attention .attention-body .attention-agree .chk-wrapp
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .select-content .attention .attention-body .attention-agree .chk-wrapper label {
+  body.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper label {
     font-size: 20px;
   }
 }

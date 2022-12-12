@@ -253,6 +253,14 @@ $(document).ready(function() {
             $('input[name=price_tax]').val(new Intl.NumberFormat('en-US').format($price_tax));
             $('#price_total').text(new Intl.NumberFormat('en-US').format($price_total));
             $('input[name=price_total]').val(new Intl.NumberFormat('en-US').format($price_total));
+        } else if (flow_step == 5) {
+            if (!$('#chk-agree').is(':checked')) {
+                alert('「同意します」をチェックしてください。');
+                return false;
+            }
+
+            $('#form-select').submit();
+            return false;
         }
 
         flow_step++;

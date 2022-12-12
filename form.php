@@ -7,7 +7,7 @@ include_once('./head.php');
 include_once('./global.php');
 ?>
 
-<body class="form">
+<body class="form-select">
     <?php include_once('./header.php'); ?>
 
     <div class="wrap">
@@ -50,7 +50,7 @@ include_once('./global.php');
                 </div>
             </div>
 
-            <form action="./goods.php" method="POST">
+            <form id="form-select" action="./final.php" method="POST">
                 <div class="address-content">
                     <div class="address-select-block">
                         <p class="address-select-block-ttl">現住所</p>
