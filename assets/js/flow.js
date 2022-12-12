@@ -148,6 +148,25 @@ $(document).ready(function() {
             p2 = $('select#select_prefecture_02 option:selected').text();
             c2 = $('select#select_city_02 option:selected').text();
             $('#confirm-addr-target').text(p2 + ' ' + c2);
+
+            p1 = $('select#select_prefecture_01 option:selected').val();
+            c1 = $('select#select_city_01 option:selected').val();
+            $area_01_id = get_area_idx(p1, c1);
+            p2 = $('select#select_prefecture_02 option:selected').val();
+            c2 = $('select#select_city_02 option:selected').val();
+            $area_02_id = get_area_idx(p2, c2);
+
+            console.log($area_01_id);
+            if (!($area_01_id >= 0 && $area_01_id <= 3)) {
+                window.location.href = './exception.php';
+                return false;
+            }
+
+            console.log($area_02_id);
+            if (!($area_02_id >= 0 && $area_02_id <= 6)) {
+                window.location.href = './exception.php';
+                return false;
+            }
         } else if (flow_step == 1) {
             $('#confirm-good-table').empty();
 
@@ -237,11 +256,6 @@ $(document).ready(function() {
             $price_tax = parseInt(($price_good + $price_option) * 0.1);
 
             $price_total = $price_good + $price_option + $price_tax;
-
-            console.log($price_good);
-            console.log($price_option);
-            console.log($price_tax);
-            console.log($price_total);
 
             $('#price_total_head').text(new Intl.NumberFormat('en-US').format($price_total));
 
