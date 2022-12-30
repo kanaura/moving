@@ -32,10 +32,29 @@ body.form {
             }
 
             .form-item-name {
+                position: relative;
                 margin: 0 0 16px;
                 font-size: 21px;
                 font-weight: $fw-normal;
                 line-height: 1.7;
+
+                &.required {
+                    p {
+                        display: inline-block;
+                        position: relative;
+
+                        &:after {
+                            content: '※必須';
+                            position: absolute;
+                            top: 50%;
+                            right: -70px;
+                            transform: translateY(-50%);
+                            font-weight: normal;
+                            font-size: 80%;
+                            color: red;
+                        }
+                    }
+                }
 
                 span {
                     margin: 0 0 0 10px;
@@ -58,6 +77,16 @@ body.form {
 
                     @media only screen and (max-width: 768px) {
                         width: 100%;
+                    }
+
+                    &.required {
+                        p {
+                            &:after {
+                                right: unset;
+                                left: 85px;
+                                white-space: nowrap;
+                            }
+                        }
                     }
                 }
             }

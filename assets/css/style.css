@@ -2144,10 +2144,28 @@ body.form .form-list .form-row {
 }
 
 body.form .form-list .form-row .form-item-name {
+  position: relative;
   margin: 0 0 16px;
   font-size: 21px;
   font-weight: 400;
   line-height: 1.7;
+}
+
+body.form .form-list .form-row .form-item-name.required p {
+  display: inline-block;
+  position: relative;
+}
+
+body.form .form-list .form-row .form-item-name.required p:after {
+  content: '※必須';
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-weight: normal;
+  font-size: 80%;
+  color: red;
 }
 
 body.form .form-list .form-row .form-item-name span {
@@ -2174,6 +2192,12 @@ body.form .form-list .form-row .form-item-name.small {
   body.form .form-list .form-row .form-item-name.small {
     width: 100%;
   }
+}
+
+body.form .form-list .form-row .form-item-name.small.required p:after {
+  right: unset;
+  left: 85px;
+  white-space: nowrap;
 }
 
 body.form .form-list .form-row .form-item-group {

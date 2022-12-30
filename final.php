@@ -158,40 +158,52 @@ if (isset($_POST['price_total'])) {
             <form action="./mail_send.php" method="POST">
                 <div class="form-list">
                     <div class="form-row">
-                        <div class="form-item-name bold">引越の種類</div>
+                        <div class="form-item-name bold required">
+                            <p>引越の種類</p>
+                        </div>
                         <div class="form-item-group full">
-                            <label class="radio"><input type="radio" name="final_moving_type" value="一戸建て" />一戸建て</label>
-                            <label class="radio"><input type="radio" name="final_moving_type" value="単身引越" />単身引越</label>
-                            <label class="radio"><input type="radio" name="final_moving_type" value="ファミリー" />ファミリー</label>
-                            <label class="radio"><input type="radio" name="final_moving_type" value="その他" />その他</label>
+                            <label class="radio"><input type="radio" name="final_moving_type" value="一戸建て" required />一戸建て</label>
+                            <label class="radio"><input type="radio" name="final_moving_type" value="単身引越" required />単身引越</label>
+                            <label class="radio"><input type="radio" name="final_moving_type" value="ファミリー" required />ファミリー</label>
+                            <label class="radio"><input type="radio" name="final_moving_type" value="その他" required />その他</label>
                         </div>
                     </div>
 
                     <div class="form-row">
-                        <div class="form-item-name bold">お名前</div>
+                        <div class="form-item-name bold required">
+                            <p>お名前</p>
+                        </div>
                         <div class="form-item-group full">
-                            <input type="text" name="final_name" value="" />
+                            <input type="text" name="final_name" value="" required />
                         </div>
                     </div>
 
                     <div class="form-row">
-                        <div class="form-item-name bold">ふりがな</div>
+                        <div class="form-item-name bold">
+                            <p>ふりがな</p>
+                        </div>
                         <div class="form-item-group full">
                             <input type="text" name="final_gana" value="" />
                         </div>
                     </div>
 
                     <div class="form-row">
-                        <div class="form-item-name bold">電話番号<span class="vertical">※半角　※ハイフンなし</span></div>
+                        <div class="form-item-name bold required">
+                            <p>電話番号</p>
+                            <span class="vertical">※半角　※ハイフンなし</span>
+                        </div>
                         <div class="form-item-group full">
-                            <input type="tel" name="final_tel" value="" />
+                            <input type="tel" name="final_tel" value="" required />
                         </div>
                     </div>
 
                     <div class="form-row">
-                        <div class="form-item-name bold">メールアドレス<span>※半角</span></div>
+                        <div class="form-item-name bold required">
+                            <p>メールアドレス</p>
+                            <span class="vertical">※半角</span>
+                        </div>
                         <div class="form-item-group full">
-                            <input type="email" name="final_email" value="" />
+                            <input type="email" name="final_email" value="" required />
                         </div>
                     </div>
                     
@@ -200,30 +212,38 @@ if (isset($_POST['price_total'])) {
                     <div class="form-block">
                         <p class="form-block-ttl"><span>現住所</span></p>
                         <div class="form-row">
-                            <div class="form-item-name small">郵便番号</div>
+                            <div class="form-item-name small required">
+                                <p>郵便番号</p>
+                            </div>
                             <div class="form-item-group">
-                                <input class="post-code" type="text" name="final_post_code_01" value="" />
+                                <input class="post-code" type="text" name="final_post_code_01" value="" required />
                                 <a class="form-btn" href="https://www.post.japanpost.jp/zipcode/" target="blank">検索</a>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-item-name small">住所</div>
+                            <div class="form-item-name small required">
+                                <p>住所</p>
+                            </div>
                             <div class="form-item-group">
-                                <input type="text" name="final_addr_01_01" value="" />
+                                <input type="text" name="final_addr_01_01" value="" required />
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-item-name small">建物名</div>
+                            <div class="form-item-name small">
+                                <p>建物名</p>
+                            </div>
                             <div class="form-item-group">
                                 <input type="text" name="final_addr_01_02" value="" />
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-item-name small">建物種類</div>
+                            <div class="form-item-name small required">
+                                <p>建物種類</p>
+                            </div>
                             <div class="form-item-group">
-                                <label class="radio"><input type="radio" name="final_addr_01_type" value="一戸建て" />一戸建て</label>
-                                <label class="radio"><input type="radio" name="final_addr_01_type" value="マンション" />マンション</label>
-                                <label class="radio"><input type="radio" name="final_addr_01_type" value="アパート・コーポ" />アパート・コーポ</label>
+                                <label class="radio"><input type="radio" name="final_addr_01_type" value="一戸建て" required />一戸建て</label>
+                                <label class="radio"><input type="radio" name="final_addr_01_type" value="マンション" required />マンション</label>
+                                <label class="radio"><input type="radio" name="final_addr_01_type" value="アパート・コーポ" required />アパート・コーポ</label>
                             </div>
                         </div>
                     </div>
@@ -231,30 +251,38 @@ if (isset($_POST['price_total'])) {
                     <div class="form-block">
                         <p class="form-block-ttl"><span>転居先</span></p>
                         <div class="form-row">
-                            <div class="form-item-name small">郵便番号</div>
+                            <div class="form-item-name small required">
+                                <p>郵便番号</p>
+                            </div>
                             <div class="form-item-group">
-                                <input class="post-code" type="text" name="final_post_code_02" value="" />
+                                <input class="post-code" type="text" name="final_post_code_02" value="" required />
                                 <a class="form-btn" href="https://www.post.japanpost.jp/zipcode/" target="blank">検索</a>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-item-name small">住所</div>
+                            <div class="form-item-name small required">
+                                <p>住所</p>
+                            </div>
                             <div class="form-item-group">
-                                <input type="text" name="final_addr_02_01" value="" />
+                                <input type="text" name="final_addr_02_01" value="" required />
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-item-name small">建物名</div>
+                            <div class="form-item-name small">
+                                <p>建物名</p>
+                            </div>
                             <div class="form-item-group">
                                 <input type="text" name="final_addr_02_02" value="" />
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-item-name small">建物種類</div>
+                            <div class="form-item-name small required">
+                                <p>建物種類</p>
+                            </div>
                             <div class="form-item-group">
-                                <label class="radio"><input type="radio" name="final_addr_02_type" value="一戸建て" />一戸建て</label>
-                                <label class="radio"><input type="radio" name="final_addr_02_type" value="マンション" />マンション</label>
-                                <label class="radio"><input type="radio" name="final_addr_02_type" value="アパート・コーポ" />アパート・コーポ</label>
+                                <label class="radio"><input type="radio" name="final_addr_02_type" value="一戸建て" required />一戸建て</label>
+                                <label class="radio"><input type="radio" name="final_addr_02_type" value="マンション" required />マンション</label>
+                                <label class="radio"><input type="radio" name="final_addr_02_type" value="アパート・コーポ" required />アパート・コーポ</label>
                             </div>
                         </div>
                     </div>
@@ -262,12 +290,14 @@ if (isset($_POST['price_total'])) {
                     <hr>
 
                     <div class="form-row">
-                        <div class="form-item-name bold">ご連絡方法</div>
+                        <div class="form-item-name bold required">
+                            <p>ご連絡方法</p>
+                        </div>
                         <div class="form-item-group full">
-                            <label class="radio"><input type="radio" name="final_contact_method" value="電話" />電話</label>
-                            <label class="radio"><input type="radio" name="final_contact_method" value="メール" />メール</label>
-                            <label class="radio"><input type="radio" name="final_contact_method" value="LINE" />LINE</label>
-                            <label class="radio"><input type="radio" name="final_contact_method" value="その他" />その他</label>
+                            <label class="radio"><input type="radio" name="final_contact_method" value="電話" required />電話</label>
+                            <label class="radio"><input type="radio" name="final_contact_method" value="メール" required />メール</label>
+                            <label class="radio"><input type="radio" name="final_contact_method" value="LINE" required />LINE</label>
+                            <label class="radio"><input type="radio" name="final_contact_method" value="その他" required />その他</label>
                         </div>
                     </div>
 
