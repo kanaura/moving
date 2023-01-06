@@ -167,7 +167,7 @@ if (isset($_POST['message'])) {
     <div class="wrap">
         <div class="content">
             <p class="form-page-ttl">お客様情報を入力ください。</form>
-            <form action="./mail_send.php" method="POST">
+            <form action="./mail_send.php" method="POST" enctype="multipart/form-data">
                 <div class="form-list">
                     <div class="form-row">
                         <div class="form-item-name bold required">

@@ -68,20 +68,59 @@ $message_common .= "\r\n";
 $message_common .= "\r\n";
 
 $mailto  = "info@hacovice.com";
-$option  = "From:<info@hacovice.com>" . "\r\n";
-$option  .= "Bcc:<info@sangodesign.jp>";
+
+$header = "Content-Type: multipart/mixed;boundary=\"__BOUNDARY__\"\r\n";
+$header .= "Return-Path: " . $mailto . " \r\n";
+$header .= "From: <info@hacovice.com>" . "\r\n";
+$header .= "Sender: <info@hacovice.com>" . "\r\n";
+$header .= "Bcc: <info@sangodesign.jp>\r\n";
+$header .= "Return-Path: " . $mailto . " \r\n";
 
 $title   = "お引越しの仮お申し込み入りました";
 $message = "非対面カンタンお見積りシステムより仮お申し込みを受け付けました。\r\n\r\n";
 $message = $message . $message_common;
 
-if (!mb_send_mail($mailto, $title, $message, $option)) {
+$body = "--__BOUNDARY__\r\n";
+$body .= "Content-Type: text/plain; charset=\"ISO-2022-JP\"\r\n\r\n";
+$body .= $message . "\r\n";
+$body .= "--__BOUNDARY__\r\n";
+
+if (!empty($_FILES['photo'])) {
+    if (($_FILES['photo']['name']!="")) {
+        $time_now = time();
+        $target_dir = "upload/" . $time_now . "/";
+        mkdir($target_dir);
+        $file = $_FILES['photo']['name'];
+        $path = pathinfo($file);
+        $filename = $path['filename'];
+        $ext = $path['extension'];
+        $temp_name = $_FILES['photo']['tmp_name'];
+        $path_filename_ext = $target_dir . $filename . "." . $ext;
+
+        move_uploaded_file($temp_name, $path_filename_ext);
+
+        $body .= "Content-Type: application/octet-stream; name=\"{$filename}.{$ext}\"\n";
+        $body .= "Content-Disposition: attachment; filename=\"{$filename}.{$ext}\"\n";
+        $body .= "Content-Transfer-Encoding: base64\n";
+        $body .= "\n";
+        $body .= chunk_split(base64_encode(file_get_contents($path_filename_ext)));
+        $body .= "--__BOUNDARY__\n";
+    }
+}
+
+if (!mb_send_mail($mailto, $title, $body, $header)) {
     // echo "送信失敗";
     header("Location: thanks.php?res=true");
     exit();
 }
 
 $mailto  = $_POST['final_email'];
+
+$header = "Content-Type: multipart/mixed;boundary=\"__BOUNDARY__\"\r\n";
+$header .= "Return-Path: " . $mailto . " \r\n";
+$header .= "From: <info@hacovice.com>" . "\r\n";
+$header .= "Sender: <info@hacovice.com>" . "\r\n";
+$header .= "Return-Path: " . $mailto . " \r\n";
 
 $title   = "お引越しの仮お申し込みありがとうございます【株式会社ハコビス】";
 $message = "※このメールは自動返信メールです。\r\n";
@@ -109,9 +148,23 @@ $message .= "新広島ビルディング 2階\r\n";
 $message .= "TEL 082-512-2257\r\n\r\n";
 $message .= "https://www.hacovice.com/company/\r\n";
 
-$option  = "From:<info@hacovice.com>";
+$body = "--__BOUNDARY__\r\n";
+$body .= "Content-Type: text/plain; charset=\"ISO-2022-JP\"\r\n\r\n";
+$body .= $message . "\r\n";
+$body .= "--__BOUNDARY__\r\n";
 
-if (mb_send_mail($mailto, $title, $message, $option)) {
+if (!empty($_FILES['photo'])) {
+    if (($_FILES['photo']['name']!="")) {
+        $body .= "Content-Type: application/octet-stream; name=\"{$filename}.{$ext}\"\n";
+        $body .= "Content-Disposition: attachment; filename=\"{$filename}.{$ext}\"\n";
+        $body .= "Content-Transfer-Encoding: base64\n";
+        $body .= "\n";
+        $body .= chunk_split(base64_encode(file_get_contents($path_filename_ext)));
+        $body .= "--__BOUNDARY__\n";
+    }
+}
+
+if (mb_send_mail($mailto, $title, $body, $header)) {
     // echo "送信成功";
     header("Location: thanks.php?res=true");
     exit();
