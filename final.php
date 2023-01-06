@@ -304,6 +304,26 @@ if (isset($_POST['price_total'])) {
                     <p class="form-desc">
                         LINEでのご連絡をご希望の方はコチラから「ハコビス公式LINE」を友達登録していただき、フルネームでお名前を入力して送信をお願いします。
                     </p>
+
+                    <hr>
+
+                    <div class="form-row">
+                        <div class="form-item-name bold">
+                            <p>
+                                添付画像
+                            </p>
+                            <span class="vertical" style="margin-top: 0;">※10MB以内</span>
+                        </div>
+                        <div class="form-item-group full">
+                            <p class="form-desc no-star">
+                                可能であれば家財の写真を添付して送っていただけますと幸いです。
+                            </p>
+                            <div class="form-item-image">
+                                <input id="kazai-image" type="file" name="photo" onChange="imgPreView(event)" />
+                            </div>
+                            <div id="preview"></div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="bottom-btn-list">
@@ -314,5 +334,35 @@ if (isset($_POST['price_total'])) {
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script>
+        function imgPreView(event) {
+            event.preventDefault();
+
+            var file = event.target.files[0];
+            console.log(event.target.files[0].size);
+            if (event.target.files[0].size > (1024 * 1024 * 10)) {
+                // event.targets.value = "";
+                $('#kazai-image').val('');
+                alert('画像は10MB以内でアップロードしてください！');
+                return;
+            }
+            var reader = new FileReader();
+            var preview = document.getElementById("preview");
+            var previewImage = document.getElementById("previewImage");
+            
+            if (previewImage != null) {
+                preview.removeChild(previewImage);
+            }
+            
+            reader.onload = function(event) {
+                var img = document.createElement("img");
+                img.setAttribute("src", reader.result);
+                img.setAttribute("id", "previewImage");
+                preview.appendChild(img);
+            };
+            
+            reader.readAsDataURL(file);
+        }
+    </script>
 </body>
 </html>

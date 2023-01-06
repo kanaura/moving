@@ -223,6 +223,19 @@ body.form {
                 left: 0;
                 top: 0;
             }
+
+            &.no-star {
+                padding: 0;
+
+                &:before {
+                    content: none;
+                }
+            }
+        }
+
+        .form-item-image {
+            width: 100%;
+            margin: 0 0 20px;
         }
 
         hr {

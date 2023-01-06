@@ -2370,6 +2370,19 @@ body.form .form-list .form-desc:before {
   top: 0;
 }
 
+body.form .form-list .form-desc.no-star {
+  padding: 0;
+}
+
+body.form .form-list .form-desc.no-star:before {
+  content: none;
+}
+
+body.form .form-list .form-item-image {
+  width: 100%;
+  margin: 0 0 20px;
+}
+
 body.form .form-list hr {
   margin: 20px -20px;
 }
