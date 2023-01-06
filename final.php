@@ -147,6 +147,18 @@ if (isset($_POST['price_total'])) {
 } else {
     header('Location: ' . './');
 }
+
+if (isset($_POST['date'])) {
+    $_SESSION['date'] = $_POST['date'];
+}
+
+if (isset($_POST['time'])) {
+    $_SESSION['time'] = $_POST['time'];
+}
+
+if (isset($_POST['message'])) {
+    $_SESSION['message'] = $_POST['message'];
+}
 ?>
 
 <body class="final form">
