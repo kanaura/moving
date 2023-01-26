@@ -274,7 +274,7 @@ $goods = [
             [
                 'idx'    => 10, 
                 'ttl' => 'ファンヒーター',
-                'img' => 'kaden/pensutando.png', 
+                'img' => 'kaden/pan-heater.jpg', 
                 'len_01' => 50, 
                 'len_02' => 40, 
                 'len_03' => 30, 
