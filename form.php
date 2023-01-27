@@ -126,7 +126,7 @@ include_once('./global.php');
                                                                             <?php else : ?>
                                                                             <select class="item-ctrl num good single single-<?=$sub_item['idx'];?>">
                                                                             <?php endif; ?>
-                                                                                <?php for ($cnt = 0; $cnt <= 50; $cnt++) : ?>
+                                                                                <?php for ($cnt = 0; $cnt <= $sub_item['cnt_max']; $cnt++) : ?>
                                                                                 <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
                                                                                 <?php endfor; ?>
                                                                             </select>
@@ -145,7 +145,7 @@ include_once('./global.php');
                                                                 <?php else : ?>
                                                                 <select class="item-ctrl num  good single single-<?=$item['idx'];?>">
                                                                 <?php endif; ?>
-                                                                    <?php for ($cnt = 0; $cnt <= 50; $cnt++) : ?>
+                                                                    <?php for ($cnt = 0; $cnt <= $item['cnt_max']; $cnt++) : ?>
                                                                     <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
                                                                     <?php endfor; ?>
                                                                 </select>
@@ -183,7 +183,7 @@ include_once('./global.php');
                                                         </div>
                                                         <div class="item-ctrl free">
                                                             <select class="item-ctrl num good">
-                                                                <?php for ($cnt = 0; $cnt <= 50; $cnt++) : ?>
+                                                                <?php for ($cnt = 0; $cnt <= 10; $cnt++) : ?>
                                                                 <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
                                                                 <?php endfor; ?>
                                                             </select>
@@ -268,7 +268,7 @@ include_once('./global.php');
                                                                 <div class="item-name">
                                                                     <?=$sub_item['ttl'];?>
                                                                     <select class="item-ctrl num">
-                                                                        <?php for ($cnt = 0; $cnt <= 50; $cnt++) : ?>
+                                                                        <?php for ($cnt = 0; $cnt <= $sub_item['cnt_max']; $cnt++) : ?>
                                                                         <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
                                                                         <?php endfor; ?>
                                                                     </select>
@@ -284,7 +284,7 @@ include_once('./global.php');
                                                     <div class="item-name">
                                                         <?=$item['ttl'];?>
                                                         <select class="item-ctrl num">
-                                                            <?php for ($cnt = 0; $cnt <= 50; $cnt++) : ?>
+                                                            <?php for ($cnt = 0; $cnt <= $item['cnt_max']; $cnt++) : ?>
                                                             <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
                                                             <?php endfor; ?>
                                                         </select>

@@ -160,6 +160,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 100, 
                         'size'   => 250000,
+                        'cnt_max' => 10, 
                         'single' => true,
                     ], 
                     [
@@ -170,6 +171,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 160, 
                         'size'   => 576000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -180,6 +182,7 @@ $goods = [
                         'len_02' => 65, 
                         'len_03' => 180, 
                         'size'   => 702000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -190,6 +193,7 @@ $goods = [
                         'len_02' => 75, 
                         'len_03' => 180, 
                         'size'   => 877500,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -207,6 +211,7 @@ $goods = [
                         'len_02' => 55, 
                         'len_03' => 85, 
                         'size'   => 257125,
+                        'cnt_max' => 10, 
                         'single' => true,
                     ], 
                     [
@@ -217,6 +222,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 90, 
                         'size'   => 324000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -227,6 +233,7 @@ $goods = [
                         'len_02' => 70, 
                         'len_03' => 110, 
                         'size'   => 462000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -240,6 +247,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 30, 
                 'size'   => 60000, 
+                'cnt_max' => 10, 
                 'single' => true,
                 'items' => []
             ],
@@ -256,6 +264,7 @@ $goods = [
                         'len_02' => 30, 
                         'len_03' => 90, 
                         'size'   => 216000,
+                        'cnt_max' => 10, 
                         'single' => true,
                     ], 
                     [
@@ -266,6 +275,7 @@ $goods = [
                         'len_02' => 30, 
                         'len_03' => 100, 
                         'size'   => 240000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -279,6 +289,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 30, 
                 'size'   => 60000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -295,6 +306,7 @@ $goods = [
                         'len_02' => 75, 
                         'len_03' => 40, 
                         'size'   => 225000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -305,6 +317,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 40, 
                         'size'   => 240000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -318,6 +331,7 @@ $goods = [
                 'len_02' => 60, 
                 'len_03' => 30, 
                 'size'   => 108000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -330,6 +344,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 150, 
                 'size'   => 240000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -342,6 +357,7 @@ $goods = [
                 'len_02' => 30, 
                 'len_03' => 90, 
                 'size'   => 81000, 
+                'cnt_max' => 10, 
                 'single' => true,
                 'items' => []
             ],
@@ -354,6 +370,7 @@ $goods = [
                 'len_02' => 30, 
                 'len_03' => 70, 
                 'size'   => 84000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -366,6 +383,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 25, 
                 'size'   => 55000, 
+                'cnt_max' => 10, 
                 'single' => true,
                 'items' => []
             ],
@@ -378,6 +396,7 @@ $goods = [
                 'len_02' => 25, 
                 'len_03' => 30, 
                 'size'   => 26250, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -390,6 +409,7 @@ $goods = [
                 'len_02' => 35, 
                 'len_03' => 20, 
                 'size'   => 17500, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -402,6 +422,7 @@ $goods = [
                 'len_02' => 30, 
                 'len_03' => 25, 
                 'size'   => 15000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -414,6 +435,7 @@ $goods = [
                 'len_02' => 50, 
                 'len_03' => 30, 
                 'size'   => 75000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -426,6 +448,7 @@ $goods = [
                 'len_02' => 30, 
                 'len_03' => 20, 
                 'size'   => 12000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -438,6 +461,7 @@ $goods = [
                 'len_02' => 45, 
                 'len_03' => 20, 
                 'size'   => 65700, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -454,6 +478,7 @@ $goods = [
                         'len_02' => 20, 
                         'len_03' => 40, 
                         'size'   => 24000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -464,6 +489,7 @@ $goods = [
                         'len_02' => 20, 
                         'len_03' => 40, 
                         'size'   => 24000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -477,6 +503,7 @@ $goods = [
                 'len_02' => 20, 
                 'len_03' => 30, 
                 'size'   => 30000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -498,6 +525,7 @@ $goods = [
                         'len_02' => 70, 
                         'len_03' => 210, 
                         'size'   => 1470000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -508,6 +536,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 210, 
                         'size'   => 1764000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -518,6 +547,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 210, 
                         'size'   => 2016000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -535,6 +565,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 100, 
                         'size'   => 500000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -545,6 +576,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 130, 
                         'size'   => 936000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -562,6 +594,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 60, 
                         'size'   => 396000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -572,6 +605,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 110, 
                         'size'   => 726000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -582,6 +616,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 150, 
                         'size'   => 990000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -599,6 +634,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 210, 
                         'size'   => 1260000,
+                        'cnt_max' => 10, 
                         'single' => true,
                     ], 
                     [
@@ -609,6 +645,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 210, 
                         'size'   => 1312500,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -619,6 +656,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 210, 
                         'size'   => 1732500,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -629,6 +667,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 210, 
                         'size'   => 1890000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -639,6 +678,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 110, 
                         'size'   => 687500,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -656,6 +696,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 200, 
                         'size'   => 1000000,
+                        'cnt_max' => 10, 
                         'single' => true,
                     ], 
                     [
@@ -666,6 +707,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 200, 
                         'size'   => 1200000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -676,6 +718,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 200, 
                         'size'   => 1400000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -686,6 +729,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 200, 
                         'size'   => 1600000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -696,6 +740,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 70, 
                         'size'   => 420000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -713,6 +758,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 180, 
                         'size'   => 648000,
+                        'cnt_max' => 10, 
                         'single' => true,
                     ], 
                     [
@@ -723,6 +769,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 180, 
                         'size'   => 972000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -733,6 +780,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 180, 
                         'size'   => 1944000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -746,6 +794,7 @@ $goods = [
                 'len_02' => 50, 
                 'len_03' => 50, 
                 'size'   => 225000, 
+                'cnt_max' => 10, 
                 'single' => true,
                 'items' => []
             ],
@@ -758,6 +807,7 @@ $goods = [
                 'len_02' => 190, 
                 'len_03' => 20, 
                 'size'   => 114000, 
+                'cnt_max' => 10, 
                 'single' => true,
                 'items' => [],
             ],
@@ -774,6 +824,7 @@ $goods = [
                         'len_02' => 45, 
                         'len_03' => 80, 
                         'size'   => 216000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -784,6 +835,7 @@ $goods = [
                         'len_02' => 45, 
                         'len_03' => 80, 
                         'size'   => 324000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -794,6 +846,7 @@ $goods = [
                         'len_02' => 45, 
                         'len_03' => 80, 
                         'size'   => 432000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -811,6 +864,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 100, 
                         'size'   => 350000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -821,6 +875,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 150, 
                         'size'   => 525000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -831,6 +886,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 180, 
                         'size'   => 630000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -844,6 +900,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 40, 
                 'size'   => 576000, 
+                'cnt_max' => 10, 
                 'single' => true,
                 'items' => []
             ],
@@ -860,6 +917,7 @@ $goods = [
                         'len_02' => 75, 
                         'len_03' => 75, 
                         'size'   => 618750,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -870,6 +928,7 @@ $goods = [
                         'len_02' => 70, 
                         'len_03' => 75, 
                         'size'   => 262500,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -883,6 +942,7 @@ $goods = [
                 'len_02' => 60, 
                 'len_03' => 95, 
                 'size'   => 228000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -899,6 +959,7 @@ $goods = [
                         'len_02' => 90, 
                         'len_03' => 50, 
                         'size'   => 648000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -909,6 +970,7 @@ $goods = [
                         'len_02' => 80, 
                         'len_03' => 90, 
                         'size'   => 1080000,
+                        'cnt_max' => 10, 
                         'single' => true,
                     ], 
                     [
@@ -919,6 +981,7 @@ $goods = [
                         'len_02' => 80, 
                         'len_03' => 90, 
                         'size'   => 1728000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -929,6 +992,7 @@ $goods = [
                         'len_02' => 160, 
                         'len_03' => 180, 
                         'size'   => 11232000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -939,6 +1003,7 @@ $goods = [
                         'len_02' => 80, 
                         'len_03' => 40, 
                         'size'   => 256000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -956,6 +1021,7 @@ $goods = [
                         'len_02' => 75, 
                         'len_03' => 55, 
                         'size'   => 412500,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -966,6 +1032,7 @@ $goods = [
                         'len_02' => 70, 
                         'len_03' => 55, 
                         'size'   => 616000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -983,6 +1050,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 185, 
                         'size'   => 832500,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -993,6 +1061,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 185, 
                         'size'   => 1110000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1003,6 +1072,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 185, 
                         'size'   => 1387500,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -1016,6 +1086,7 @@ $goods = [
                 'len_02' => 50, 
                 'len_03' => 190, 
                 'size'   => 855000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -1032,6 +1103,7 @@ $goods = [
                         'len_02' => 80, 
                         'len_03' => 110, 
                         'size'   => 792000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1042,6 +1114,7 @@ $goods = [
                         'len_02' => 80, 
                         'len_03' => 110, 
                         'size'   => 1056000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1052,6 +1125,7 @@ $goods = [
                         'len_02' => 80, 
                         'len_03' => 110, 
                         'size'   => 1408000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -1065,6 +1139,7 @@ $goods = [
                 'len_02' => 50, 
                 'len_03' => 90, 
                 'size'   => 180000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1081,6 +1156,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 50, 
                         'size'   => 300000,
+                        'cnt_max' => 10, 
                         'single' => true,
                     ], 
                     [
@@ -1091,6 +1167,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 50, 
                         'size'   => 375000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -1104,6 +1181,7 @@ $goods = [
                 'len_02' => 25, 
                 'len_03' => 25, 
                 'size'   => 218750, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -1116,6 +1194,7 @@ $goods = [
                 'len_02' => 35, 
                 'len_03' => 165, 
                 'size'   => 231000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -1128,6 +1207,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 160, 
                 'size'   => 512000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -1140,6 +1220,7 @@ $goods = [
                 'len_02' => 50, 
                 'len_03' => 100, 
                 'size'   => 250000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -1161,6 +1242,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 50, 
                         'size'   => 150000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1171,6 +1253,7 @@ $goods = [
                         'len_02' => 80, 
                         'len_03' => 80, 
                         'size'   => 512000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1181,6 +1264,7 @@ $goods = [
                         'len_02' => 100, 
                         'len_03' => 100, 
                         'size'   => 1000000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -1198,6 +1282,7 @@ $goods = [
                         'len_02' => 40, 
                         'len_03' => 40, 
                         'size'   => 112000,
+                        'cnt_max' => 10, 
                         'single' => true,
                     ], 
                     [
@@ -1208,6 +1293,7 @@ $goods = [
                         'len_02' => 40, 
                         'len_03' => 60, 
                         'size'   => 264000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1218,6 +1304,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 80, 
                         'size'   => 720000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -1235,6 +1322,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 50, 
                         'size'   => 225000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1245,6 +1333,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 50, 
                         'size'   => 300000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1255,6 +1344,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 50, 
                         'size'   => 400000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -1268,6 +1358,7 @@ $goods = [
                 'len_02' => 60, 
                 'len_03' => 180, 
                 'size'   => 1944000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1280,6 +1371,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 40, 
                 'size'   => 80000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1292,6 +1384,7 @@ $goods = [
                 'len_02' => 50, 
                 'len_03' => 110, 
                 'size'   => 330000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1304,6 +1397,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 30, 
                 'size'   => 60000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1316,6 +1410,7 @@ $goods = [
                 'len_02' => 4, 
                 'len_03' => 20, 
                 'size'   => 3200, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -1328,6 +1423,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 70, 
                 'size'   => 112000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -1340,6 +1436,7 @@ $goods = [
                 'len_02' => 30, 
                 'len_03' => 40, 
                 'size'   => 12000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ],
@@ -1361,6 +1458,7 @@ $goods = [
                         'len_02' => 45, 
                         'len_03' => 25, 
                         'size'   => 73125,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1371,6 +1469,7 @@ $goods = [
                         'len_02' => 45, 
                         'len_03' => 50, 
                         'size'   => 146250,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1381,6 +1480,7 @@ $goods = [
                         'len_02' => 45, 
                         'len_03' => 80, 
                         'size'   => 234000,
+                        'cnt_max' => 10, 
                         'single' => true,
                     ], 
                 ]
@@ -1398,6 +1498,7 @@ $goods = [
                         'len_02' => 30, 
                         'len_03' => 35, 
                         'size'   => 47250,
+                        'cnt_max' => 10, 
                         'single' => true,
                     ], 
                     [
@@ -1408,6 +1509,7 @@ $goods = [
                         'len_02' => 60, 
                         'len_03' => 35, 
                         'size'   => 94500,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1418,6 +1520,7 @@ $goods = [
                         'len_02' => 90, 
                         'len_03' => 35, 
                         'size'   => 141750,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -1435,6 +1538,7 @@ $goods = [
                         'len_02' => 90, 
                         'len_03' => 30, 
                         'size'   => 243000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1445,6 +1549,7 @@ $goods = [
                         'len_02' => 90, 
                         'len_03' => 30, 
                         'size'   => 324000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -1458,6 +1563,7 @@ $goods = [
                 'len_02' => 90, 
                 'len_03' => 50, 
                 'size'   => 270000, 
+                'cnt_max' => 10, 
                 'single' => true,
                 'items' => []
             ], 
@@ -1470,6 +1576,7 @@ $goods = [
                 'len_02' => 20, 
                 'len_03' => 150, 
                 'size'   => 60000, 
+                'cnt_max' => 10, 
                 'single' => true,
                 'items' => []
             ], 
@@ -1482,6 +1589,7 @@ $goods = [
                 'len_02' => 60, 
                 'len_03' => 30, 
                 'size'   => 108000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1494,6 +1602,7 @@ $goods = [
                 'len_02' => 20, 
                 'len_03' => 60, 
                 'size'   => 48000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1506,6 +1615,7 @@ $goods = [
                 'len_02' => 30, 
                 'len_03' => 30, 
                 'size'   => 36000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1518,6 +1628,7 @@ $goods = [
                 'len_02' => 15, 
                 'len_03' => 4, 
                 'size'   => 900, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1530,6 +1641,7 @@ $goods = [
                 'len_02' => 30, 
                 'len_03' => 40, 
                 'size'   => 24000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1542,6 +1654,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 40, 
                 'size'   => 64000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1554,6 +1667,7 @@ $goods = [
                 'len_02' => 60, 
                 'len_03' => 10, 
                 'size'   => 36000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1566,6 +1680,7 @@ $goods = [
                 'len_02' => 50, 
                 'len_03' => 100, 
                 'size'   => 250000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1578,6 +1693,7 @@ $goods = [
                 'len_02' => 60, 
                 'len_03' => 90, 
                 'size'   => 378000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1595,6 +1711,7 @@ $goods = [
                 'len_02' => 55, 
                 'len_03' => 10, 
                 'size'   => 41250, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1607,6 +1724,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 70, 
                 'size'   => 56000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1619,6 +1737,7 @@ $goods = [
                 'len_02' => 50, 
                 'len_03' => 180, 
                 'size'   => 900000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1631,6 +1750,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 20, 
                 'size'   => 32000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1643,6 +1763,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 30, 
                 'size'   => 48000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1659,6 +1780,7 @@ $goods = [
                         'len_02' => 40, 
                         'len_03' => 140, 
                         'size'   => 280000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1669,6 +1791,7 @@ $goods = [
                         'len_02' => 40, 
                         'len_03' => 170, 
                         'size'   => 340000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -1687,6 +1810,7 @@ $goods = [
                 'len_02' => 12, 
                 'len_03' => 40, 
                 'size'   => 14400, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1699,6 +1823,7 @@ $goods = [
                 'len_02' => 40, 
                 'len_03' => 130, 
                 'size'   => 156000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1711,6 +1836,7 @@ $goods = [
                 'len_02' => 150, 
                 'len_03' => 60, 
                 'size'   => 990000, 
+                'cnt_max' => 10, 
                 'single' => false,
                 'items' => []
             ], 
@@ -1732,6 +1858,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 110, 
                         'size'   => 880000,
+                        'cnt_max' => 10, 
                         'single' => true,
                     ], 
                     [
@@ -1742,6 +1869,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 90, 
                         'size'   => 450000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                     [
@@ -1752,6 +1880,7 @@ $goods = [
                         'len_02' => 50, 
                         'len_03' => 110, 
                         'size'   => 440000,
+                        'cnt_max' => 10, 
                         'single' => false,
                     ], 
                 ]
@@ -1774,6 +1903,7 @@ $goods = [
                         'len_02' => 40, 
                         'len_03' => 35, 
                         'size'   => 77000, 
+                        'cnt_max' => 50, 
                         'single' => true
                     ], 
                     [
@@ -1784,6 +1914,7 @@ $goods = [
                         'len_02' => 30, 
                         'len_03' => 40, 
                         'size'   => 63000,
+                        'cnt_max' => 50, 
                         'single' => false
                     ], 
                 ]
@@ -1802,6 +1933,7 @@ $options = [
                 'ttl' => 'テレビ設置',
                 'size'   => 2273, 
                 'price'  => 2000,
+                'cnt_max' => 10, 
                 'items' => []
             ],
             // 録画機器設置
@@ -1810,6 +1942,7 @@ $options = [
                 'ttl' => '録画機器設置',
                 'size'   => 2273, 
                 'price'  => 2000,
+                'cnt_max' => 10, 
                 'items' => []
             ],
             // 洗濯機設置
@@ -1822,6 +1955,7 @@ $options = [
                         'full_ttl'    => '洗濯機設置 [縦型]', 
                         'size'   => 3500,
                         'price'  => 3500,
+                        'cnt_max' => 10, 
                     ],
                     [
                         'idx'    => 3, 
@@ -1829,6 +1963,7 @@ $options = [
                         'full_ttl'    => '洗濯機設置 [ドラム式]', 
                         'size'   => 5000,
                         'price'  => 5000,
+                        'cnt_max' => 10, 
                     ],
                     [
                         'idx'    => 4, 
@@ -1836,6 +1971,7 @@ $options = [
                         'full_ttl'    => '洗濯機設置 [二層式]', 
                         'size'   => 3500,
                         'price'  => 3500,
+                        'cnt_max' => 10, 
                     ],
                 ],
             ],
@@ -1849,6 +1985,7 @@ $options = [
                         'full_ttl'    => 'エアコン標準移設 [～2.8KW]', 
                         'size'   => 15000,
                         'price'  => 15000,
+                        'cnt_max' => 10, 
                     ],
                     [
                         'idx'    => 6, 
@@ -1856,6 +1993,7 @@ $options = [
                         'full_ttl'    => 'エアコン標準移設 [3.6KW・4.0KW]', 
                         'size'   => 17000,
                         'price'  => 17000,
+                        'cnt_max' => 10, 
                     ],
                     [
                         'idx'    => 7, 
@@ -1863,6 +2001,7 @@ $options = [
                         'full_ttl'    => 'エアコン標準移設 [5.6KW]', 
                         'size'   => 19000,
                         'price'  => 19000,
+                        'cnt_max' => 10, 
                     ],
                     [
                         'idx'    => 8, 
@@ -1870,6 +2009,7 @@ $options = [
                         'full_ttl'    => 'エアコン標準移設 [6.3KW]', 
                         'size'   => 21000,
                         'price'  => 21000,
+                        'cnt_max' => 10, 
                     ],
                 ],
             ],
@@ -1879,6 +2019,7 @@ $options = [
                 'ttl' => '照明取外・取付',
                 'size'   => 1000, 
                 'price'  => 1000,
+                'cnt_max' => 10, 
                 'items' => []
             ],
             // 大型冷蔵庫運搬料
@@ -1887,6 +2028,7 @@ $options = [
                 'ttl' => '大型冷蔵庫運搬料',
                 'size'   => 4000, 
                 'price'  => 4000,
+                'cnt_max' => 10, 
                 'items' => []
             ],
         ]
@@ -1904,6 +2046,7 @@ $options = [
                         'full_ttl'    => 'ベッド解体・組立 [引出なし]', 
                         'size'   => 2500,
                         'price'  => 2500,
+                        'cnt_max' => 10, 
                     ],
                     [
                         'idx'    => 12, 
@@ -1911,6 +2054,7 @@ $options = [
                         'full_ttl'    => 'ベッド解体・組立 [引出あり]', 
                         'size'   => 3500,
                         'price'  => 3500,
+                        'cnt_max' => 10, 
                     ],
                     [
                         'idx'    => 13, 
@@ -1918,6 +2062,7 @@ $options = [
                         'full_ttl'    => 'ベッド解体・組立 [2段]', 
                         'size'   => 4500,
                         'price'  => 4500,
+                        'cnt_max' => 10, 
                     ],
                     [
                         'idx'    => 14, 
@@ -1925,6 +2070,7 @@ $options = [
                         'full_ttl'    => 'ベッド解体・組立 [油圧式]', 
                         'size'   => 7000,
                         'price'  => 7000,
+                        'cnt_max' => 10, 
                     ],
                 ],
             ],
@@ -1940,6 +2086,7 @@ $options = [
                 'full_ttl'    => '自動お掃除機能あり [自動お掃除機能あり]', 
                 'size'   => 18000,
                 'price'  => 12000,
+                'cnt_max' => 10, 
                 'items' => []
             ],
             // 自動お掃除機能なし
@@ -1949,6 +2096,7 @@ $options = [
                 'full_ttl'    => '自動お掃除機能あり [自動お掃除機能なし]', 
                 'size'   => 12000,
                 'price'  => 12000, 
+                'cnt_max' => 10, 
                 'items' => []
             ],
         ]
@@ -1968,6 +2116,7 @@ $options = [
                 'full_ttl'    => 'マットレス処分 [シングル（スプリング入り）]', 
                 'size'   => 6000, 
                 'price'  => 6000,
+                'cnt_max' => 10, 
                 'items' => []
             ],
             // セミダブル（スプリング入り）
@@ -1977,6 +2126,7 @@ $options = [
                 'full_ttl'    => 'マットレス処分 [セミダブル（スプリング入り）]', 
                 'size'   => 7000, 
                 'price'  => 7000,
+                'cnt_max' => 10, 
                 'items' => []
             ],
             // ダブル（スプリング入り）
@@ -1986,6 +2136,7 @@ $options = [
                 'full_ttl'    => 'マットレス処分 [ダブル（スプリング入り）]', 
                 'size'   => 8000,
                 'price'  => 8000, 
+                'cnt_max' => 10, 
                 'items' => []
             ],
             // クイーン（スプリング入り）
@@ -1995,6 +2146,7 @@ $options = [
                 'full_ttl'    => 'マットレス処分 [クイーン（スプリング入り）]', 
                 'size'   => 10000, 
                 'price'  => 10000,
+                'cnt_max' => 10, 
                 'items' => []
             ],
             // 折り畳み 薄型S（スプリングなし）
@@ -2004,6 +2156,7 @@ $options = [
                 'full_ttl'    => 'マットレス処分 [折り畳み 薄型S（スプリングなし）]', 
                 'size'   => 1000, 
                 'price'  => 1000,
+                'cnt_max' => 10, 
                 'items' => []
             ],
             // 折り畳み 薄型S（スプリングなし）
@@ -2013,6 +2166,7 @@ $options = [
                 'full_ttl'    => 'マットレス処分 [折り畳み 薄型S（スプリングなし）]', 
                 'size'   => 1000, 
                 'price'  => 1000,
+                'cnt_max' => 10, 
                 'items' => []
             ],
             // 高・低反発S（スプリングなし）
@@ -2022,6 +2176,7 @@ $options = [
                 'full_ttl'    => 'マットレス処分 [高・低反発S（スプリングなし）]', 
                 'size'   => 3000, 
                 'price'  => 3000,
+                'cnt_max' => 10, 
                 'items' => []
             ],
             // 高・低反発SW〜（スプリングなし）
@@ -2031,6 +2186,7 @@ $options = [
                 'full_ttl'    => 'マットレス処分 [高・低反発SW〜（スプリングなし）]', 
                 'size'   => 4000, 
                 'price'  => 4000,
+                'cnt_max' => 10, 
                 'items' => []
             ],
         ]
