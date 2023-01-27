@@ -142,6 +142,10 @@ $(document).ready(function() {
     }
 
     $('.btn-default').on('click', function() {
+        $('body, html').animate({
+            scrollTop: 0
+        }, 0);
+
         if (flow_step == 0) {
             p1 = $('select#select_prefecture_01 option:selected').text();
             c1 = $('select#select_city_01 option:selected').text();
