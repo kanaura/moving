@@ -64,6 +64,8 @@ $(function() {
             date = $('#date').val('');
 
             $('input[name=time]').prop('checked', false);
+
+            $('textarea[name=message]').val('');
         }
     });
 

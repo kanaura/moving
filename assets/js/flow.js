@@ -70,6 +70,10 @@ $(document).ready(function() {
     refresh_form();
 
     function refresh_form() {
+        $('body, html').animate({
+            scrollTop: 0
+        }, 0);
+        
         if (flow_step == 0) {
             // 住所の選択
             $('.main-figure').show();
@@ -142,10 +146,6 @@ $(document).ready(function() {
     }
 
     $('.btn-default').on('click', function() {
-        $('body, html').animate({
-            scrollTop: 0
-        }, 0);
-
         if (flow_step == 0) {
             p1 = $('select#select_prefecture_01 option:selected').text();
             c1 = $('select#select_city_01 option:selected').text();
@@ -231,7 +231,11 @@ $(document).ready(function() {
             var date_str_m = date_str.substring(5, 7);
             var date_str_d = date_str.substring(8, 10);
             dt_str = date_str_y + '年 ' + date_str_m + '月 ' + date_str_d + '日 ';
-            var time_str = $('input[name=time]').val();
+            var time_str = $('input[name=time]:checked').val();
+            if (time_str == undefined || time_str == null || time_str == '') {
+                alert('お引越しの時間帯を選択してください！');
+                return;
+            }
             dt_str = dt_str + ((time_str == 'am') ? '午前' : '午後');
             $('#select-info-date').text(dt_str);
 
