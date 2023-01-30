@@ -166,7 +166,7 @@ include_once('./global.php');
                                 <div class="select-item-body">
                                     <table>
                                         <tbody>
-                                            <?php for ($i = 0; $i < 5; $i++) : ?>
+                                            <?php for ($i = 0; $i < 10; $i++) : ?>
                                             <tr>
                                                 <td>
                                                     <div class="item-name free-item">
