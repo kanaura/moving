@@ -85,28 +85,28 @@ $body .= "Content-Type: text/plain; charset=\"ISO-2022-JP\"\r\n\r\n";
 $body .= $message . "\r\n";
 $body .= "--__BOUNDARY__\r\n";
 
-if (!empty($_FILES['photo'])) {
-    if (($_FILES['photo']['name']!="")) {
-        $time_now = time();
-        $target_dir = "upload/" . $time_now . "/";
-        mkdir($target_dir);
-        $file = $_FILES['photo']['name'];
-        $path = pathinfo($file);
-        $filename = $path['filename'];
-        $ext = $path['extension'];
-        $temp_name = $_FILES['photo']['tmp_name'];
-        $path_filename_ext = $target_dir . $filename . "." . $ext;
+// if (!empty($_FILES['photo'])) {
+//     if (($_FILES['photo']['name']!="")) {
+//         $time_now = time();
+//         $target_dir = "upload/" . $time_now . "/";
+//         mkdir($target_dir);
+//         $file = $_FILES['photo']['name'];
+//         $path = pathinfo($file);
+//         $filename = $path['filename'];
+//         $ext = $path['extension'];
+//         $temp_name = $_FILES['photo']['tmp_name'];
+//         $path_filename_ext = $target_dir . $filename . "." . $ext;
 
-        move_uploaded_file($temp_name, $path_filename_ext);
+//         move_uploaded_file($temp_name, $path_filename_ext);
 
-        $body .= "Content-Type: application/octet-stream; name=\"{$filename}.{$ext}\"\n";
-        $body .= "Content-Disposition: attachment; filename=\"{$filename}.{$ext}\"\n";
-        $body .= "Content-Transfer-Encoding: base64\n";
-        $body .= "\n";
-        $body .= chunk_split(base64_encode(file_get_contents($path_filename_ext)));
-        $body .= "--__BOUNDARY__\n";
-    }
-}
+//         $body .= "Content-Type: application/octet-stream; name=\"{$filename}.{$ext}\"\n";
+//         $body .= "Content-Disposition: attachment; filename=\"{$filename}.{$ext}\"\n";
+//         $body .= "Content-Transfer-Encoding: base64\n";
+//         $body .= "\n";
+//         $body .= chunk_split(base64_encode(file_get_contents($path_filename_ext)));
+//         $body .= "--__BOUNDARY__\n";
+//     }
+// }
 
 if (!mb_send_mail($mailto, $title, $body, $header)) {
     // echo "送信失敗";
@@ -153,16 +153,16 @@ $body .= "Content-Type: text/plain; charset=\"ISO-2022-JP\"\r\n\r\n";
 $body .= $message . "\r\n";
 $body .= "--__BOUNDARY__\r\n";
 
-if (!empty($_FILES['photo'])) {
-    if (($_FILES['photo']['name']!="")) {
-        $body .= "Content-Type: application/octet-stream; name=\"{$filename}.{$ext}\"\n";
-        $body .= "Content-Disposition: attachment; filename=\"{$filename}.{$ext}\"\n";
-        $body .= "Content-Transfer-Encoding: base64\n";
-        $body .= "\n";
-        $body .= chunk_split(base64_encode(file_get_contents($path_filename_ext)));
-        $body .= "--__BOUNDARY__\n";
-    }
-}
+// if (!empty($_FILES['photo'])) {
+//     if (($_FILES['photo']['name']!="")) {
+//         $body .= "Content-Type: application/octet-stream; name=\"{$filename}.{$ext}\"\n";
+//         $body .= "Content-Disposition: attachment; filename=\"{$filename}.{$ext}\"\n";
+//         $body .= "Content-Transfer-Encoding: base64\n";
+//         $body .= "\n";
+//         $body .= chunk_split(base64_encode(file_get_contents($path_filename_ext)));
+//         $body .= "--__BOUNDARY__\n";
+//     }
+// }
 
 if (mb_send_mail($mailto, $title, $body, $header)) {
     // echo "送信成功";
