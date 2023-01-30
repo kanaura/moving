@@ -121,6 +121,8 @@ $(function() {
 
         refresh_total();
 
+        alert('単身楽チョイスが選択されました');
+
         return false;
     });
 
