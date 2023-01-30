@@ -228,7 +228,7 @@ if (isset($_POST['message'])) {
                                 <p>郵便番号</p>
                             </div>
                             <div class="form-item-group">
-                                <input class="post-code" type="text" name="final_post_code_01" value="" required />
+                                <input id="post-code-01" class="post-code" type="text" name="final_post_code_01" value="" onkeyup="$('#post-code-01').zip2addr('#final-addr-01')" required />
                                 <a class="form-btn" href="https://www.post.japanpost.jp/zipcode/" target="blank">検索</a>
                             </div>
                         </div>
@@ -237,7 +237,7 @@ if (isset($_POST['message'])) {
                                 <p>住所</p>
                             </div>
                             <div class="form-item-group">
-                                <input type="text" name="final_addr_01_01" value="" required />
+                                <input id="final-addr-01" type="text" name="final_addr_01_01" value="" required />
                             </div>
                         </div>
                         <div class="form-row">
@@ -267,7 +267,7 @@ if (isset($_POST['message'])) {
                                 <p>郵便番号</p>
                             </div>
                             <div class="form-item-group">
-                                <input class="post-code" type="text" name="final_post_code_02" value="" required />
+                                <input id="post-code-02" class="post-code" type="text" name="final_post_code_02" value="" onkeyup="$('#post-code-02').zip2addr('#final-addr-02')" required />
                                 <a class="form-btn" href="https://www.post.japanpost.jp/zipcode/" target="blank">検索</a>
                             </div>
                         </div>
@@ -276,7 +276,7 @@ if (isset($_POST['message'])) {
                                 <p>住所</p>
                             </div>
                             <div class="form-item-group">
-                                <input type="text" name="final_addr_02_01" value="" required />
+                                <input id="final-addr-02" type="text" name="final_addr_02_01" value="" required />
                             </div>
                         </div>
                         <div class="form-row">

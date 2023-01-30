@@ -15,4 +15,5 @@
 
     <!-- javascript -->
     <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/jquery/jquery.zip2addr.js"></script>
 </head>
