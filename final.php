@@ -320,7 +320,7 @@ if (isset($_POST['message'])) {
                 </div>
 
                 <div class="bottom-btn-list">
-                    <button type="submit" class="btn btn-default">仮申し込みする</button>
+                    <button type="submit" class="btn btn-default">仮申込する</button>
                 </div>
             </form>
         </div>

@@ -13,7 +13,7 @@ include_once('./head.php');
                 <img src="./assets/img/main.png" alt="" />
             </div>
             <a class="btn-default" href="./form.php">お見積りスタート</a>
-            <div id="btn-lead" class="btn-lead">お見積り、仮お申し込みまでの流れ</div>
+            <div id="btn-lead" class="btn-lead">お見積り、仮申込までの流れ</div>
             <div class="lead">
                 <p class="txt txt-has-star">
                     インターネットの通信環境によっては都道府県を選択後、自動で市区町村が表示されない場合がございます。その場合、お手数ですが都道府県を選択後、少し時間をおいてから市区町村を選択して下さい。
@@ -34,7 +34,7 @@ include_once('./head.php');
     <div id="popup" class="popup">
         <div id="popup-bg" class="popup-bg"></div>
         <div class="popup-body">
-            <p class="popup-body-ttl">お見積り、仮お申し込みまでの<br class="br-992">カンタン4ステップ</p>
+            <p class="popup-body-ttl">お見積り、仮申込までの<br class="br-992">カンタン4ステップ</p>
             <div class="popup-block">
                 <p class="popup-block-ttl">1.「現住所」と「転居先」を選択。</p>
                 <p class="popup-block-txt">
@@ -61,13 +61,13 @@ include_once('./head.php');
             <div class="popup-block">
                 <p class="popup-block-ttl">
                     4.「お見積り金額」の確認▶︎<br>
-                    　　　　　　　「仮お申し込み」。
+                    　　　　　　　「仮申込」。
                 </p>
                 <p class="popup-block-txt">
                     ご入力いただいた情報からお見積り金額の<br>
                     概算が表示されます。<br>
                     ご確認後、「お客様情報」を入力して<br>
-                    「仮お申し込み」ボタンを押して完了です。。<br>
+                    「仮申込」ボタンを押して完了です。。<br>
                     追って、弊社より折り返しご連絡させていただきます。
                 </p>
             </div>

@@ -16,10 +16,10 @@ include_once('./head.php');
             </div>
             <div class="lead">
                 <p style="margin: 0 0 20px; font-size: 28px; font-weight: bold; text-align: center;">
-                    仮お申し込みが完了いたしました
+                    仮申込が完了いたしました
                 </p>
                 <p class="txt" style="text-align: center;">
-                    仮お申し込みありがとうございます。<br>
+                    仮申込ありがとうございます。<br>
                     担当者より、あらためてご連絡させていただきますので、<br>
                     今しばらくお待ちください。
                 </p>

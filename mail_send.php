@@ -76,8 +76,8 @@ $header .= "Sender: <info@hacovice.com>" . "\r\n";
 $header .= "Bcc: <info@sangodesign.jp>\r\n";
 $header .= "Return-Path: " . $mailto . " \r\n";
 
-$title   = "お引越しの仮お申し込み入りました";
-$message = "非対面カンタンお見積りシステムより仮お申し込みを受け付けました。\r\n\r\n";
+$title   = "お引越しの仮申込入りました";
+$message = "非対面カンタンお見積りシステムより仮申込を受け付けました。\r\n\r\n";
 $message = $message . $message_common;
 
 $body = "--__BOUNDARY__\r\n";
@@ -122,10 +122,10 @@ $header .= "From: <info@hacovice.com>" . "\r\n";
 $header .= "Sender: <info@hacovice.com>" . "\r\n";
 $header .= "Return-Path: " . $mailto . " \r\n";
 
-$title   = "お引越しの仮お申し込みありがとうございます【株式会社ハコビス】";
+$title   = "お引越しの仮申込ありがとうございます【株式会社ハコビス】";
 $message = "※このメールは自動返信メールです。\r\n";
 $message .= "この度は、株式会社ハコビスに\r\n";
-$message .= "お引越しの仮お申し込みをいただき\r\n";
+$message .= "お引越しの仮申込をいただき\r\n";
 $message .= "誠にありがとうございます。\r\n\r\n";
 $message .= "お申し込みいただい内容は次の通りです。\r\n";
 $message .= "担当者より、あらためてご連絡させていただきますので、\r\n";

@@ -186,7 +186,7 @@ include_once('./head.php');
             </form>
 
             <div class="bottom-btn-list">
-                <a class="btn btn-default" href="./select-price.php">仮申し込みする</a>
+                <a class="btn btn-default" href="./select-price.php">仮申込する</a>
             </div>
         </div>
     </div>
