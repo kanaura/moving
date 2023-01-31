@@ -478,6 +478,7 @@ body.form-select {
     
                                             &.free {
                                                 border: none;
+                                                right: 0;
     
                                                 @media only screen and (max-width: 480px) {
                                                     position: relative;
@@ -537,14 +538,42 @@ body.form-select {
                                             }
                                         }
     
-                                        &.free-item {
-                                            display: flex;
-    
+                                        &.free-item {    
                                             @media only screen and (max-width: 480px) {
                                                 padding: 10px 5px;
                                             }
+
+                                            .free-item-up {
+                                                margin: 0 0 20px;
+
+                                                @media only screen and (max-width: 480px) {
+                                                    margin: 0 0 5px;
+                                                }
+
+                                                input {
+                                                    width: 100%;
+                                                    height: 56px;
+                                                    padding: 0 10px;
+                                                    font-size: 28px;
+                                                    border: 1px solid #000000;
+                                                    border-radius: 6px;
+                                                    outline: none;
+
+                                                    @media only screen and (max-width: 480px) {
+                                                        height: 28px;
+                                                        font-size: 12px;
+                                                    }
+                                                }
+                                            }
+
+                                            .free-item-bt {
+                                                position: relative;
+                                                display: flex;
+                                            }
     
                                             select {
+                                                right: 0;
+
                                                 @media only screen and (max-width: 480px) {
                                                     position: relative;
                                                     top: unset;

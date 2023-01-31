@@ -87,6 +87,10 @@ $(function() {
             $('.good-select-content .input-free').each(function(index) {
                 $(this).val(0);
             });
+
+            $('.good-select-content .input-free-name').each(function(index) {
+                $(this).val('');
+            });
         } else if (flow_step == 2) {
             $('.option-select-content .item-ctrl.num').each(function(index) {
                 $(this).val(0);
@@ -158,7 +162,6 @@ $(function() {
         // if(isNaN(value)){ $(this).val(0); }
 
         free_w = parseInt($(this).parent().parent().find('.input-free-w').val());
-        console.log(free_w);
         free_h = parseInt($(this).parent().parent().find('.input-free-h').val());
         free_d = parseInt($(this).parent().parent().find('.input-free-d').val());
         free_size = free_w * free_h * free_d;

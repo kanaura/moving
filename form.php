@@ -170,26 +170,30 @@ include_once('./global.php');
                                             <tr>
                                                 <td>
                                                     <div class="item-name free-item">
-                                                        <div class="free-row">
-                                                            <span>縦</span>
-                                                            <input type="number" class="input-free input-free-w" placeholder="縦(cm)" min="0" max="500" name="free_w[<?=$i;?>]" value="0" />
-                                                            <span>cm ×&nbsp;</span><br class="br-768">
-                                                            <span>横</span>
-                                                            <input type="number" class="input-free input-free-h" placeholder="横(cm)" min="0" max="500" name="free_h[<?=$i;?>]" value="0" />
-                                                            <span>cm ×&nbsp;</span><br class="br-768">
-                                                            <span>高さ</span>
-                                                            <input type="number" class="input-free input-free-d" placeholder="高(cm)" min="0" max="500" name="free_d[<?=$i;?>]" value="0" />
-                                                            <span>cm</span>
+                                                        <div class="free-item-up">
+                                                            <input type="text" class="input-free input-free-name" placeholder="家財名を入力してください。" name="free_ttl[<?=$i;?>]" value="" />
                                                         </div>
-                                                        <div class="item-ctrl free">
-                                                            <select class="item-ctrl num good">
-                                                                <?php for ($cnt = 0; $cnt <= 10; $cnt++) : ?>
-                                                                <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
-                                                                <?php endfor; ?>
-                                                            </select>
-                                                            <input type="hidden" class="ttl free free-ttl" name="free_ttl[<?=$i;?>]" value="フリー<?=$i+1;?>" />
-                                                            <input type="hidden" class="cnt free free-cnt" name="free_cnt[<?=$i;?>]" value="0" />
-                                                            <input type="hidden" class="size free free-size" name="free_size[<?=$i;?>]" value="0" />
+                                                        <div class="free-item-bt">
+                                                            <div class="free-row">
+                                                                <span>縦</span>
+                                                                <input type="number" class="input-free input-free-w" placeholder="縦(cm)" min="0" max="500" name="free_w[<?=$i;?>]" value="0" />
+                                                                <span>cm ×&nbsp;</span><br class="br-768">
+                                                                <span>横</span>
+                                                                <input type="number" class="input-free input-free-h" placeholder="横(cm)" min="0" max="500" name="free_h[<?=$i;?>]" value="0" />
+                                                                <span>cm ×&nbsp;</span><br class="br-768">
+                                                                <span>高さ</span>
+                                                                <input type="number" class="input-free input-free-d" placeholder="高(cm)" min="0" max="500" name="free_d[<?=$i;?>]" value="0" />
+                                                                <span>cm</span>
+                                                            </div>
+                                                            <div class="item-ctrl free">
+                                                                <select class="item-ctrl num good">
+                                                                    <?php for ($cnt = 0; $cnt <= 10; $cnt++) : ?>
+                                                                    <option value="<?=$cnt;?>"><?=$cnt;?>台</option>
+                                                                    <?php endfor; ?>
+                                                                </select>
+                                                                <input type="hidden" class="cnt free free-cnt" name="free_cnt[<?=$i;?>]" value="0" />
+                                                                <input type="hidden" class="size free free-size" name="free_size[<?=$i;?>]" value="0" />
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </td>

@@ -1208,6 +1208,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 
 body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl.free {
   border: none;
+  right: 0;
 }
 
 @media only screen and (max-width: 480px) {
@@ -1305,16 +1306,48 @@ body.form-select .select-content .select-body .select-list .select-item .select-
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item {
+@media only screen and (max-width: 480px) {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item {
+    padding: 10px 5px;
+  }
+}
+
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-up {
+  margin: 0 0 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-up {
+    margin: 0 0 5px;
+  }
+}
+
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-up input {
+  width: 100%;
+  height: 56px;
+  padding: 0 10px;
+  font-size: 28px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  outline: none;
+}
+
+@media only screen and (max-width: 480px) {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-up input {
+    height: 28px;
+    font-size: 12px;
+  }
+}
+
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-bt {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-@media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item {
-    padding: 10px 5px;
-  }
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item select {
+  right: 0;
 }
 
 @media only screen and (max-width: 480px) {
