@@ -388,21 +388,21 @@ $goods = [
                 'items' => []
             ],
             // オーブントースター
-            [
-                'idx'    => 18, 
-                'ttl' => 'オーブントースター',
-                'img' => '/kaden/oven-toaster.jpg', 
-                'len_01' => 35, 
-                'len_02' => 25, 
-                'len_03' => 30, 
-                'size'   => 26250, 
-                'cnt_max' => 10, 
-                'single' => false,
-                'items' => []
-            ],
+            // [
+            //     'idx'    => 18, 
+            //     'ttl' => 'オーブントースター',
+            //     'img' => '/kaden/oven-toaster.jpg', 
+            //     'len_01' => 35, 
+            //     'len_02' => 25, 
+            //     'len_03' => 30, 
+            //     'size'   => 26250, 
+            //     'cnt_max' => 10, 
+            //     'single' => false,
+            //     'items' => []
+            // ],
             // 炊飯器
             [
-                'idx'    => 19, 
+                'idx'    => 18, 
                 'ttl' => '炊飯器',
                 'img' => '/kaden/rice-cooker.jpg', 
                 'len_01' => 25, 
@@ -415,7 +415,7 @@ $goods = [
             ],
             // ポット
             [
-                'idx'    => 20, 
+                'idx'    => 19, 
                 'ttl' => 'ポット',
                 'img' => '/kaden/pot.jpg', 
                 'len_01' => 20, 
@@ -428,7 +428,7 @@ $goods = [
             ],
             // 照明器具
             [
-                'idx'    => 21, 
+                'idx'    => 20, 
                 'ttl' => '照明器具',
                 'img' => 'kaden/siiringulight.png', 
                 'len_01' => 50, 
@@ -441,7 +441,7 @@ $goods = [
             ],
             // アイロン
             [
-                'idx'    => 22, 
+                'idx'    => 21, 
                 'ttl' => 'アイロン',
                 'img' => '/kaden/iron.jpg', 
                 'len_01' => 20, 
@@ -454,7 +454,7 @@ $goods = [
             ],
             // アイロン台
             [
-                'idx'    => 23, 
+                'idx'    => 22, 
                 'ttl' => 'アイロン台',
                 'img' => '/kaden/iron-board.jpg', 
                 'len_01' => 73, 
@@ -471,7 +471,7 @@ $goods = [
                 'img' => '/kaden/electric-stove.jpg', 
                 'items' => [
                     [
-                        'idx'    => 24, 
+                        'idx'    => 23, 
                         'ttl'    => '電気ストーブ(小)', 
                         'full_ttl'    => '電気ストーブ(小)', 
                         'len_01' => 30, 
@@ -482,7 +482,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 25, 
+                        'idx'    => 24, 
                         'ttl'    => '電気ストーブ(大)', 
                         'full_ttl'    => '電気ストーブ(大)', 
                         'len_01' => 30, 
@@ -496,7 +496,7 @@ $goods = [
             ],
             // ミシン
             [
-                'idx'    => 26, 
+                'idx'    => 25, 
                 'ttl' => 'ミシン',
                 'img' => '/kaden/sewing-machine.jpg', 
                 'len_01' => 50, 
@@ -518,7 +518,7 @@ $goods = [
                 'img' => 'kagu/youdansu.png', 
                 'items' => [
                     [
-                        'idx'    => 27, 
+                        'idx'    => 26, 
                         'ttl'    => '扉2枚タイプ', 
                         'full_ttl'    => '洋タンス [扉2枚タイプ]', 
                         'len_01' => 100, 
@@ -529,7 +529,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 28, 
+                        'idx'    => 27, 
                         'ttl'    => '扉3枚タイプ', 
                         'full_ttl'    => '洋タンス [扉3枚タイプ]', 
                         'len_01' => 140, 
@@ -540,7 +540,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 29, 
+                        'idx'    => 28, 
                         'ttl'    => '扉4枚タイプ', 
                         'full_ttl'    => '洋タンス [扉4枚タイプ]', 
                         'len_01' => 160, 
@@ -558,7 +558,7 @@ $goods = [
                 'img' => 'kagu/wadansu.jpg', 
                 'items' => [
                     [
-                        'idx'    => 30, 
+                        'idx'    => 29, 
                         'ttl'    => 'W100', 
                         'full_ttl'    => '和ダンス・5段引き出し [W100]', 
                         'len_01' => 100, 
@@ -569,7 +569,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 31, 
+                        'idx'    => 30, 
                         'ttl'    => 'W120', 
                         'full_ttl'    => '和ダンス・5段引き出し [W120]', 
                         'len_01' => 120, 
@@ -587,7 +587,7 @@ $goods = [
                 'img' => 'kagu/seiridansu.png', 
                 'items' => [
                     [
-                        'idx'    => 32, 
+                        'idx'    => 31, 
                         'ttl'    => '引出3段以下', 
                         'full_ttl'    => '整理ダンス [引出3段以下]', 
                         'len_01' => 110, 
@@ -598,7 +598,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 33, 
+                        'idx'    => 32, 
                         'ttl'    => '引出5段以下', 
                         'full_ttl'    => '整理ダンス [引出5段以下]', 
                         'len_01' => 110, 
@@ -609,7 +609,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 34, 
+                        'idx'    => 33, 
                         'ttl'    => '引出6段以上', 
                         'full_ttl'    => '整理ダンス [引出6段以上]', 
                         'len_01' => 110, 
@@ -627,7 +627,7 @@ $goods = [
                 'img' => 'kagu/bed.png', 
                 'items' => [
                     [
-                        'idx'    => 35, 
+                        'idx'    => 34, 
                         'ttl'    => 'シングル', 
                         'full_ttl'    => 'ベッド [シングル]', 
                         'len_01' => 120, 
@@ -638,7 +638,7 @@ $goods = [
                         'single' => true,
                     ], 
                     [
-                        'idx'    => 36, 
+                        'idx'    => 35, 
                         'ttl'    => 'セミダブル', 
                         'full_ttl'    => 'ベッド [セミダブル]', 
                         'len_01' => 125, 
@@ -649,7 +649,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 37, 
+                        'idx'    => 36, 
                         'ttl'    => 'ダブル', 
                         'full_ttl'    => 'ベッド [ダブル]', 
                         'len_01' => 165, 
@@ -660,7 +660,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 38, 
+                        'idx'    => 37, 
                         'ttl'    => 'クイーン', 
                         'full_ttl'    => 'ベッド [クイーン]', 
                         'len_01' => 180, 
@@ -671,7 +671,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 39, 
+                        'idx'    => 38, 
                         'ttl'    => 'ダブル二つ折り', 
                         'full_ttl'    => 'ベッド [ダブル二つ折り]', 
                         'len_01' => 125, 
@@ -689,7 +689,7 @@ $goods = [
                 'img' => 'kagu/mattoresu.jpg', 
                 'items' => [
                     [
-                        'idx'    => 40, 
+                        'idx'    => 39, 
                         'ttl'    => 'シングル', 
                         'full_ttl'    => 'マットレス [シングル]', 
                         'len_01' => 100, 
@@ -700,7 +700,7 @@ $goods = [
                         'single' => true,
                     ], 
                     [
-                        'idx'    => 41, 
+                        'idx'    => 40, 
                         'ttl'    => 'セミダブル', 
                         'full_ttl'    => 'マットレス [セミダブル]', 
                         'len_01' => 120, 
@@ -711,7 +711,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 42, 
+                        'idx'    => 41, 
                         'ttl'    => 'ダブル', 
                         'full_ttl'    => 'マットレス [ダブル]', 
                         'len_01' => 140, 
@@ -722,7 +722,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 43, 
+                        'idx'    => 42, 
                         'ttl'    => 'クイーン', 
                         'full_ttl'    => 'マットレス [クイーン]', 
                         'len_01' => 160, 
@@ -733,7 +733,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 44, 
+                        'idx'    => 43, 
                         'ttl'    => '折り畳み', 
                         'full_ttl'    => 'マットレス [折り畳み]', 
                         'len_01' => 100, 
@@ -751,7 +751,7 @@ $goods = [
                 'img' => 'kagu/metal-rack.jpg', 
                 'items' => [
                     [
-                        'idx'    => 45, 
+                        'idx'    => 44, 
                         'ttl'    => '横幅60以下', 
                         'full_ttl'    => 'メタルラック（分解可） [横幅60以下]', 
                         'len_01' => 60, 
@@ -762,7 +762,7 @@ $goods = [
                         'single' => true,
                     ], 
                     [
-                        'idx'    => 46, 
+                        'idx'    => 45, 
                         'ttl'    => '横幅90以下', 
                         'full_ttl'    => 'メタルラック（分解可） [横幅90以下]', 
                         'len_01' => 90, 
@@ -773,7 +773,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 47, 
+                        'idx'    => 46, 
                         'ttl'    => '横幅120以上', 
                         'full_ttl'    => 'メタルラック（分解可） [横幅120以上]', 
                         'len_01' => 180, 
@@ -786,21 +786,21 @@ $goods = [
                 ]
             ],
             // ローボード
-            [
-                'idx'    => 48, 
-                'ttl' => 'ローボード',
-                'img' => 'kagu/ro-bord.png', 
-                'len_01' => 90, 
-                'len_02' => 50, 
-                'len_03' => 50, 
-                'size'   => 225000, 
-                'cnt_max' => 10, 
-                'single' => true,
-                'items' => []
-            ],
+            // [
+            //     'idx'    => 48, 
+            //     'ttl' => 'ローボード',
+            //     'img' => 'kagu/ro-bord.png', 
+            //     'len_01' => 90, 
+            //     'len_02' => 50, 
+            //     'len_03' => 50, 
+            //     'size'   => 225000, 
+            //     'cnt_max' => 10, 
+            //     'single' => true,
+            //     'items' => []
+            // ],
             // 姿見
             [
-                'idx'    => 49, 
+                'idx'    => 47, 
                 'ttl' => '姿見',
                 'img' => 'kagu/sugatami.png', 
                 'len_01' => 30, 
@@ -817,7 +817,7 @@ $goods = [
                 'img' => 'kagu/doressa-.png', 
                 'items' => [
                     [
-                        'idx'    => 50, 
+                        'idx'    => 48, 
                         'ttl'    => '横幅60以下', 
                         'full_ttl'    => 'ドレッサー [横幅60以下]', 
                         'len_01' => 60, 
@@ -828,7 +828,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 51, 
+                        'idx'    => 49, 
                         'ttl'    => '横幅90以下', 
                         'full_ttl'    => 'ドレッサー [横幅90以下]', 
                         'len_01' => 90, 
@@ -839,7 +839,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 52, 
+                        'idx'    => 50, 
                         'ttl'    => '横幅91以上', 
                         'full_ttl'    => 'ドレッサー [横幅91以上]', 
                         'len_01' => 120, 
@@ -857,7 +857,7 @@ $goods = [
                 'img' => 'kagu/hondana.png', 
                 'items' => [
                     [
-                        'idx'    => 53, 
+                        'idx'    => 51, 
                         'ttl'    => '100cm以下', 
                         'full_ttl'    => '本棚 [100cm以下]', 
                         'len_01' => 70, 
@@ -868,7 +868,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 54, 
+                        'idx'    => 52, 
                         'ttl'    => '150cm以下', 
                         'full_ttl'    => '本棚 [150cm以下]', 
                         'len_01' => 70, 
@@ -879,7 +879,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 55, 
+                        'idx'    => 53, 
                         'ttl'    => '180cm以下', 
                         'full_ttl'    => '本棚 [180cm以下]', 
                         'len_01' => 70, 
@@ -893,7 +893,7 @@ $goods = [
             ],
             // カーペット（6畳まで）
             [
-                'idx'    => 56, 
+                'idx'    => 54, 
                 'ttl' => 'カーペット（6畳まで）',
                 'img' => 'kagu/karpet.png', 
                 'len_01' => 360, 
@@ -910,7 +910,7 @@ $goods = [
                 'img' => 'kagu/gakusyudukue.jpg', 
                 'items' => [
                     [
-                        'idx'    => 57, 
+                        'idx'    => 55, 
                         'ttl'    => '本体のみ', 
                         'full_ttl'    => '学習机 [本体のみ]', 
                         'len_01' => 110, 
@@ -921,7 +921,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 58, 
+                        'idx'    => 56, 
                         'ttl'    => '脇棚', 
                         'full_ttl'    => '学習机 [脇棚]', 
                         'len_01' => 50, 
@@ -935,7 +935,7 @@ $goods = [
             ],
             // 机用椅子
             [
-                'idx'    => 59, 
+                'idx'    => 57, 
                 'ttl' => '机用椅子',
                 'img' => 'kagu/tukueyouisu.jpg', 
                 'len_01' => 40, 
@@ -952,7 +952,7 @@ $goods = [
                 'img' => 'kagu/sofa.png', 
                 'items' => [
                     [
-                        'idx'    => 60, 
+                        'idx'    => 58, 
                         'ttl'    => '1人掛け', 
                         'full_ttl'    => 'ソファー [1人掛け]', 
                         'len_01' => 80, 
@@ -963,7 +963,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 61, 
+                        'idx'    => 59, 
                         'ttl'    => '2人掛け', 
                         'full_ttl'    => 'ソファー [2人掛け]', 
                         'len_01' => 150, 
@@ -974,7 +974,7 @@ $goods = [
                         'single' => true,
                     ], 
                     [
-                        'idx'    => 62, 
+                        'idx'    => 60, 
                         'ttl'    => '3人掛け', 
                         'full_ttl'    => 'ソファー [3人掛け]', 
                         'len_01' => 240, 
@@ -985,7 +985,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 63, 
+                        'idx'    => 61, 
                         'ttl'    => 'L字型', 
                         'full_ttl'    => 'ソファー [L字型]', 
                         'len_01' => 390, 
@@ -996,7 +996,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 64, 
+                        'idx'    => 62, 
                         'ttl'    => 'オットマン', 
                         'full_ttl'    => 'ソファー [オットマン]', 
                         'len_01' => 80, 
@@ -1009,41 +1009,41 @@ $goods = [
                 ]
             ],
             // リビングテーブル
-            [
-                'ttl' => 'リビングテーブル',
-                'img' => 'kagu/ribingute-buru.png', 
-                'items' => [
-                    [
-                        'idx'    => 65, 
-                        'ttl'    => '横幅100cmまで', 
-                        'full_ttl'    => 'リビングテーブル [横幅100cmまで]', 
-                        'len_01' => 100, 
-                        'len_02' => 75, 
-                        'len_03' => 55, 
-                        'size'   => 412500,
-                        'cnt_max' => 10, 
-                        'single' => false,
-                    ], 
-                    [
-                        'idx'    => 66, 
-                        'ttl'    => '横幅100cm以上', 
-                        'full_ttl'    => 'リビングテーブル [横幅100cm以上]', 
-                        'len_01' => 160, 
-                        'len_02' => 70, 
-                        'len_03' => 55, 
-                        'size'   => 616000,
-                        'cnt_max' => 10, 
-                        'single' => false,
-                    ], 
-                ]
-            ],
+            // [
+            //     'ttl' => 'リビングテーブル',
+            //     'img' => 'kagu/ribingute-buru.png', 
+            //     'items' => [
+            //         [
+            //             'idx'    => 65, 
+            //             'ttl'    => '横幅100cmまで', 
+            //             'full_ttl'    => 'リビングテーブル [横幅100cmまで]', 
+            //             'len_01' => 100, 
+            //             'len_02' => 75, 
+            //             'len_03' => 55, 
+            //             'size'   => 412500,
+            //             'cnt_max' => 10, 
+            //             'single' => false,
+            //         ], 
+            //         [
+            //             'idx'    => 66, 
+            //             'ttl'    => '横幅100cm以上', 
+            //             'full_ttl'    => 'リビングテーブル [横幅100cm以上]', 
+            //             'len_01' => 160, 
+            //             'len_02' => 70, 
+            //             'len_03' => 55, 
+            //             'size'   => 616000,
+            //             'cnt_max' => 10, 
+            //             'single' => false,
+            //         ], 
+            //     ]
+            // ],
             // 食器棚（分解可能）
             [
                 'ttl' => '食器棚（分解可能）',
                 'img' => 'kagu/syokkidana.png', 
                 'items' => [
                     [
-                        'idx'    => 67, 
+                        'idx'    => 63, 
                         'ttl'    => '横幅90cm以下', 
                         'full_ttl'    => '食器棚（分解可能） [横幅90cm以下]', 
                         'len_01' => 90, 
@@ -1054,7 +1054,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 68, 
+                        'idx'    => 64, 
                         'ttl'    => '横幅120cm以下', 
                         'full_ttl'    => '食器棚（分解可能） [横幅120cm以下]', 
                         'len_01' => 120, 
@@ -1065,7 +1065,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 69, 
+                        'idx'    => 65, 
                         'ttl'    => '横幅121cm以上', 
                         'full_ttl'    => '食器棚（分解可能） [横幅121cm以上]', 
                         'len_01' => 150, 
@@ -1079,7 +1079,7 @@ $goods = [
             ],
             // 食器棚（分解不可）
             [
-                'idx'    => 70, 
+                'idx'    => 66, 
                 'ttl' => '食器棚（分解不可）',
                 'img' => 'kagu/syokkidana2.png', 
                 'len_01' => 90, 
@@ -1096,7 +1096,7 @@ $goods = [
                 'img' => 'kagu/syokutakute-buru.png', 
                 'items' => [
                     [
-                        'idx'    => 71, 
+                        'idx'    => 67, 
                         'ttl'    => '横幅90cm以下', 
                         'full_ttl'    => '食卓テーブル [横幅90cm以下]', 
                         'len_01' => 90, 
@@ -1107,7 +1107,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 72, 
+                        'idx'    => 68, 
                         'ttl'    => '横幅120cm以下', 
                         'full_ttl'    => '食卓テーブル [横幅120cm以下]', 
                         'len_01' => 120, 
@@ -1118,7 +1118,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 73, 
+                        'idx'    => 69, 
                         'ttl'    => '横幅121cm以上', 
                         'full_ttl'    => '食卓テーブル [横幅121cm以上]', 
                         'len_01' => 160, 
@@ -1132,7 +1132,7 @@ $goods = [
             ],
             // 椅子
             [
-                'idx'    => 74, 
+                'idx'    => 70, 
                 'ttl' => '椅子',
                 'img' => 'kagu/isu.png', 
                 'len_01' => 40, 
@@ -1149,7 +1149,7 @@ $goods = [
                 'img' => 'kagu/ro-te-buru.jpg', 
                 'items' => [
                     [
-                        'idx'    => 75, 
+                        'idx'    => 71, 
                         'ttl'    => '横幅120cm以下', 
                         'full_ttl'    => 'ローテーブル [横幅120cm以下]', 
                         'len_01' => 120, 
@@ -1160,7 +1160,7 @@ $goods = [
                         'single' => true,
                     ], 
                     [
-                        'idx'    => 76, 
+                        'idx'    => 72, 
                         'ttl'    => '横幅121cm以上', 
                         'full_ttl'    => 'ローテーブル [横幅121cm以上]', 
                         'len_01' => 150, 
@@ -1174,7 +1174,7 @@ $goods = [
             ],
             // カーペット(丸巻き)
             [
-                'idx'    => 77, 
+                'idx'    => 73, 
                 'ttl' => 'カーペット(丸巻き)',
                 'img' => '/kagu/carpet.jpg', 
                 'len_01' => 350, 
@@ -1187,7 +1187,7 @@ $goods = [
             ],
             // 飾り棚（ガラス）
             [
-                'idx'    => 78, 
+                'idx'    => 74, 
                 'ttl' => '飾り棚（ガラス）',
                 'img' => '/kagu/show-case.jpg', 
                 'len_01' => 40, 
@@ -1199,21 +1199,49 @@ $goods = [
                 'items' => []
             ],
             // ハンガーパイプ
+            // [
+            //     'idx'    => 79, 
+            //     'ttl' => 'ハンガーパイプ',
+            //     'img' => '/kagu/pipe-hanger.jpg', 
+            //     'len_01' => 80, 
+            //     'len_02' => 40, 
+            //     'len_03' => 160, 
+            //     'size'   => 512000, 
+            //     'cnt_max' => 10, 
+            //     'single' => false,
+            //     'items' => []
+            // ],
             [
-                'idx'    => 79, 
-                'ttl' => 'ハンガーパイプ',
-                'img' => '/kagu/pipe-hanger.jpg', 
-                'len_01' => 80, 
-                'len_02' => 40, 
-                'len_03' => 160, 
-                'size'   => 512000, 
-                'cnt_max' => 10, 
-                'single' => false,
-                'items' => []
+                'ttl' => 'パイプハンガー',
+                'img' => 'kagu/pipe-hanger.jpg', 
+                'items' => [
+                    [
+                        'idx'    => 75, 
+                        'ttl'    => '小', 
+                        'full_ttl'    => 'パイプハンガー [小]', 
+                        'len_01' => 90, 
+                        'len_02' => 90, 
+                        'len_03' => 30, 
+                        'size'   => 243000,
+                        'cnt_max' => 10, 
+                        'single' => false,
+                    ], 
+                    [
+                        'idx'    => 76, 
+                        'ttl'    => '大', 
+                        'full_ttl'    => 'パイプハンガー [大]', 
+                        'len_01' => 120, 
+                        'len_02' => 90, 
+                        'len_03' => 30, 
+                        'size'   => 324000,
+                        'cnt_max' => 10, 
+                        'single' => false,
+                    ], 
+                ]
             ],
             // ハンガーボックス
             [
-                'idx'    => 80, 
+                'idx'    => 77, 
                 'ttl' => 'ハンガーボックス',
                 'img' => '/kagu/hanger-box.jpg', 
                 'len_01' => 50, 
@@ -1235,7 +1263,7 @@ $goods = [
                 'img' => 'avpc/buraunkan.jpg', 
                 'items' => [
                     [
-                        'idx'    => 81, 
+                        'idx'    => 78, 
                         'ttl'    => '21未満', 
                         'full_ttl'    => 'ブラウン管テレビ [21未満]', 
                         'len_01' => 50, 
@@ -1246,7 +1274,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 82, 
+                        'idx'    => 79, 
                         'ttl'    => '21以上50未満', 
                         'full_ttl'    => 'ブラウン管テレビ [21以上50未満]', 
                         'len_01' => 80, 
@@ -1257,7 +1285,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 83, 
+                        'idx'    => 80, 
                         'ttl'    => '50以上', 
                         'full_ttl'    => 'ブラウン管テレビ [50以上]', 
                         'len_01' => 100, 
@@ -1275,7 +1303,7 @@ $goods = [
                 'img' => 'avpc/tv.png', 
                 'items' => [
                     [
-                        'idx'    => 84, 
+                        'idx'    => 81, 
                         'ttl'    => '32未満', 
                         'full_ttl'    => '液晶テレビ [32未満]', 
                         'len_01' => 70, 
@@ -1286,7 +1314,7 @@ $goods = [
                         'single' => true,
                     ], 
                     [
-                        'idx'    => 85, 
+                        'idx'    => 82, 
                         'ttl'    => '32以上50未満', 
                         'full_ttl'    => '液晶テレビ [32以上50未満]', 
                         'len_01' => 110, 
@@ -1297,7 +1325,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 86, 
+                        'idx'    => 83, 
                         'ttl'    => '50以上', 
                         'full_ttl'    => '液晶テレビ [50以上]', 
                         'len_01' => 150, 
@@ -1309,15 +1337,15 @@ $goods = [
                     ], 
                 ]
             ], 
-            // テレビ台（ロータイプ）
+            // テレビ台（ローボード）
             [
-                'ttl' => 'テレビ台（ロータイプ）',
+                'ttl' => 'テレビ台（ローボード）',
                 'img' => 'avpc/tv-dai.png', 
                 'items' => [
                     [
-                        'idx'    => 87, 
+                        'idx'    => 84, 
                         'ttl'    => '横幅90cm以下', 
-                        'full_ttl'    => 'テレビ台（ロータイプ） [横幅90cm以下]', 
+                        'full_ttl'    => 'テレビ台（ローボード） [横幅90cm以下]', 
                         'len_01' => 90, 
                         'len_02' => 50, 
                         'len_03' => 50, 
@@ -1326,9 +1354,9 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 88, 
+                        'idx'    => 85, 
                         'ttl'    => '横幅120cm以下', 
-                        'full_ttl'    => 'テレビ台（ロータイプ） [横幅120cm以下]', 
+                        'full_ttl'    => 'テレビ台（ローボード） [横幅120cm以下]', 
                         'len_01' => 120, 
                         'len_02' => 50, 
                         'len_03' => 50, 
@@ -1337,9 +1365,9 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 89, 
+                        'idx'    => 86, 
                         'ttl'    => '横幅121cm以上', 
-                        'full_ttl'    => 'テレビ台（ロータイプ） [横幅121cm以上]', 
+                        'full_ttl'    => 'テレビ台（ローボード） [横幅121cm以上]', 
                         'len_01' => 160, 
                         'len_02' => 50, 
                         'len_03' => 50, 
@@ -1351,7 +1379,7 @@ $goods = [
             ], 
             // テレビ台（特大）
             [
-                'idx'    => 90, 
+                'idx'    => 87, 
                 'ttl' => 'テレビ台（特大）',
                 'img' => 'avpc/tv-dai-tokudai.jpg', 
                 'len_01' => 180, 
@@ -1364,7 +1392,7 @@ $goods = [
             ], 
             // デスクトップパソコン
             [
-                'idx'    => 91, 
+                'idx'    => 88, 
                 'ttl' => 'デスクトップパソコン',
                 'img' => 'avpc/pc.png', 
                 'len_01' => 50, 
@@ -1377,7 +1405,7 @@ $goods = [
             ], 
             // パソコンラック
             [
-                'idx'    => 92, 
+                'idx'    => 89, 
                 'ttl' => 'パソコンラック',
                 'img' => 'avpc/pc-rack.png', 
                 'len_01' => 60, 
@@ -1390,7 +1418,7 @@ $goods = [
             ], 
             // プリンター
             [
-                'idx'    => 93, 
+                'idx'    => 90, 
                 'ttl' => 'プリンター',
                 'img' => 'avpc/purinter.jpg', 
                 'len_01' => 50, 
@@ -1403,7 +1431,7 @@ $goods = [
             ], 
             // ＢＤレコーダー
             [
-                'idx'    => 94, 
+                'idx'    => 91, 
                 'ttl' => 'ＢＤレコーダー',
                 'img' => 'avpc/bc-recorder.jpg', 
                 'len_01' => 40, 
@@ -1416,7 +1444,7 @@ $goods = [
             ],
             // スピーカー
             [
-                'idx'    => 95, 
+                'idx'    => 92, 
                 'ttl' => 'スピーカー',
                 'img' => 'avpc/speaker.jpg', 
                 'len_01' => 40, 
@@ -1429,7 +1457,7 @@ $goods = [
             ],
             // 据置ゲーム機
             [
-                'idx'    => 96, 
+                'idx'    => 93, 
                 'ttl' => '据置ゲーム機',
                 'img' => 'avpc/game-player.jpg', 
                 'len_01' => 10, 
@@ -1451,7 +1479,7 @@ $goods = [
                 'img' => 'seikatuyouhin/isyoucase.png', 
                 'items' => [
                     [
-                        'idx'    => 97, 
+                        'idx'    => 94, 
                         'ttl'    => '1段', 
                         'full_ttl'    => '衣装ケース [1段]', 
                         'len_01' => 60, 
@@ -1462,7 +1490,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 98, 
+                        'idx'    => 95, 
                         'ttl'    => '2段', 
                         'full_ttl'    => '衣装ケース [2段]', 
                         'len_01' => 65, 
@@ -1473,7 +1501,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 99, 
+                        'idx'    => 96, 
                         'ttl'    => '3段以上', 
                         'full_ttl'    => '衣装ケース [3段以上]', 
                         'len_01' => 65, 
@@ -1491,7 +1519,7 @@ $goods = [
                 'img' => 'seikatuyouhin/corolbox.png', 
                 'items' => [
                     [
-                        'idx'    => 100, 
+                        'idx'    => 97, 
                         'ttl'    => '1段', 
                         'full_ttl'    => 'カラーボックス [1段]', 
                         'len_01' => 45, 
@@ -1502,7 +1530,7 @@ $goods = [
                         'single' => true,
                     ], 
                     [
-                        'idx'    => 101, 
+                        'idx'    => 98, 
                         'ttl'    => '2段', 
                         'full_ttl'    => 'カラーボックス [2段]', 
                         'len_01' => 45, 
@@ -1513,7 +1541,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 102, 
+                        'idx'    => 99, 
                         'ttl'    => '3段以上', 
                         'full_ttl'    => 'カラーボックス [3段以上]', 
                         'len_01' => 45, 
@@ -1526,37 +1554,37 @@ $goods = [
                 ]
             ],
             // パイプハンガー
-            [
-                'ttl' => 'パイプハンガー',
-                'img' => 'seikatuyouhin/paipuhanger.png', 
-                'items' => [
-                    [
-                        'idx'    => 103, 
-                        'ttl'    => '小', 
-                        'full_ttl'    => 'パイプハンガー [小]', 
-                        'len_01' => 90, 
-                        'len_02' => 90, 
-                        'len_03' => 30, 
-                        'size'   => 243000,
-                        'cnt_max' => 10, 
-                        'single' => false,
-                    ], 
-                    [
-                        'idx'    => 104, 
-                        'ttl'    => '大', 
-                        'full_ttl'    => 'パイプハンガー [大]', 
-                        'len_01' => 120, 
-                        'len_02' => 90, 
-                        'len_03' => 30, 
-                        'size'   => 324000,
-                        'cnt_max' => 10, 
-                        'single' => false,
-                    ], 
-                ]
-            ],
+            // [
+            //     'ttl' => 'パイプハンガー',
+            //     'img' => 'seikatuyouhin/paipuhanger.png', 
+            //     'items' => [
+            //         [
+            //             'idx'    => 103, 
+            //             'ttl'    => '小', 
+            //             'full_ttl'    => 'パイプハンガー [小]', 
+            //             'len_01' => 90, 
+            //             'len_02' => 90, 
+            //             'len_03' => 30, 
+            //             'size'   => 243000,
+            //             'cnt_max' => 10, 
+            //             'single' => false,
+            //         ], 
+            //         [
+            //             'idx'    => 104, 
+            //             'ttl'    => '大', 
+            //             'full_ttl'    => 'パイプハンガー [大]', 
+            //             'len_01' => 120, 
+            //             'len_02' => 90, 
+            //             'len_03' => 30, 
+            //             'size'   => 324000,
+            //             'cnt_max' => 10, 
+            //             'single' => false,
+            //         ], 
+            //     ]
+            // ],
             // 布団一式
             [
-                'idx'    => 105, 
+                'idx'    => 100, 
                 'ttl' => '布団一式',
                 'img' => 'seikatuyouhin/huton.png', 
                 'len_01' => 60, 
@@ -1569,7 +1597,7 @@ $goods = [
             ], 
             // 物干し竿
             [
-                'idx'    => 106, 
+                'idx'    => 101, 
                 'ttl' => '物干し竿',
                 'img' => 'seikatuyouhin/monohosizao.png', 
                 'len_01' => 20, 
@@ -1582,7 +1610,7 @@ $goods = [
             ], 
             // スーツケース
             [
-                'idx'    => 107, 
+                'idx'    => 102, 
                 'ttl' => 'スーツケース',
                 'img' => 'seikatuyouhin/su-tucase.jpg', 
                 'len_01' => 60, 
@@ -1595,7 +1623,7 @@ $goods = [
             ], 
             // 2段脚立
             [
-                'idx'    => 108, 
+                'idx'    => 103, 
                 'ttl' => '2段脚立',
                 'img' => '/seikatuyouhin/2-step-stepladder.jpg', 
                 'len_01' => 40, 
@@ -1608,7 +1636,7 @@ $goods = [
             ], 
             // 金庫
             [
-                'idx'    => 109, 
+                'idx'    => 104, 
                 'ttl' => '金庫',
                 'img' => '/seikatuyouhin/safe.jpg', 
                 'len_01' => 40, 
@@ -1621,7 +1649,7 @@ $goods = [
             ], 
             // クッション
             [
-                'idx'    => 110, 
+                'idx'    => 105, 
                 'ttl' => 'クッション',
                 'img' => '/seikatuyouhin/cushion.jpg', 
                 'len_01' => 15, 
@@ -1634,7 +1662,7 @@ $goods = [
             ], 
             // ゴミ箱
             [
-                'idx'    => 111, 
+                'idx'    => 106, 
                 'ttl' => 'ゴミ箱',
                 'img' => '/seikatuyouhin/recycle-bin.jpg', 
                 'len_01' => 20, 
@@ -1647,7 +1675,7 @@ $goods = [
             ], 
             // 座椅子
             [
-                'idx'    => 112, 
+                'idx'    => 107, 
                 'ttl' => '座椅子',
                 'img' => '/seikatuyouhin/legless-chair.jpg', 
                 'len_01' => 40, 
@@ -1660,7 +1688,7 @@ $goods = [
             ], 
             // 座布団
             [
-                'idx'    => 113, 
+                'idx'    => 108, 
                 'ttl' => '座布団',
                 'img' => '/seikatuyouhin/japanese-cushion.jpg', 
                 'len_01' => 60, 
@@ -1673,7 +1701,7 @@ $goods = [
             ], 
             // ズボンプレッサー
             [
-                'idx'    => 114, 
+                'idx'    => 109, 
                 'ttl' => 'ズボンプレッサー',
                 'img' => '/seikatuyouhin/trouser-presser.jpg', 
                 'len_01' => 50, 
@@ -1686,7 +1714,7 @@ $goods = [
             ], 
             // ポータブルトイレ
             [
-                'idx'    => 115, 
+                'idx'    => 110, 
                 'ttl' => 'ポータブルトイレ',
                 'img' => '/seikatuyouhin/portable-toilet.jpg', 
                 'len_01' => 70, 
@@ -1704,7 +1732,7 @@ $goods = [
         'items' => [
             // ＩＨコンロ
             [
-                'idx'    => 116, 
+                'idx'    => 111, 
                 'ttl' => 'ＩＨコンロ',
                 'img' => '/kitchen/ih-stove.jpg', 
                 'len_01' => 75, 
@@ -1717,7 +1745,7 @@ $goods = [
             ], 
             // 米びつ
             [
-                'idx'    => 117, 
+                'idx'    => 112, 
                 'ttl' => '米びつ',
                 'img' => '/kitchen/rice-bin.jpg', 
                 'len_01' => 20, 
@@ -1730,7 +1758,7 @@ $goods = [
             ], 
             // 洗濯ラック
             [
-                'idx'    => 118, 
+                'idx'    => 113, 
                 'ttl' => '洗濯ラック',
                 'img' => '/kitchen/laundry-rack.jpg', 
                 'len_01' => 100, 
@@ -1743,9 +1771,9 @@ $goods = [
             ], 
             // トースター
             [
-                'idx'    => 119, 
-                'ttl' => 'トースター',
-                'img' => '/kitchen/toaster.jpg', 
+                'idx'    => 114, 
+                'ttl' => 'オーブントースタ',
+                'img' => '/kaden/oven-toaster.jpg', 
                 'len_01' => 40, 
                 'len_02' => 40, 
                 'len_03' => 20, 
@@ -1756,7 +1784,7 @@ $goods = [
             ], 
             // 風呂用の椅子
             [
-                'idx'    => 120, 
+                'idx'    => 115, 
                 'ttl' => '風呂用の椅子',
                 'img' => '/kitchen/chair-for-bath.jpg', 
                 'len_01' => 40, 
@@ -1773,7 +1801,7 @@ $goods = [
                 'img' => '/kitchen/microwave-stand.jpg', 
                 'items' => [
                     [
-                        'idx'    => 121, 
+                        'idx'    => 116, 
                         'ttl'    => 'レンジ台(小)', 
                         'full_ttl'    => 'レンジ台(小)', 
                         'len_01' => 50, 
@@ -1784,7 +1812,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 122, 
+                        'idx'    => 117, 
                         'ttl'    => 'レンジ台(大)', 
                         'full_ttl'    => 'レンジ台(大)', 
                         'len_01' => 50, 
@@ -1803,7 +1831,7 @@ $goods = [
         'items' => [
             // ギター
             [
-                'idx'    => 123, 
+                'idx'    => 118, 
                 'ttl' => 'ギター',
                 'img' => '/hobby/gituar.jpg', 
                 'len_01' => 30, 
@@ -1816,7 +1844,7 @@ $goods = [
             ], 
             // ゴルフバッグ
             [
-                'idx'    => 124, 
+                'idx'    => 119, 
                 'ttl' => 'ゴルフバッグ',
                 'img' => '/hobby/golf-bag.jpg', 
                 'len_01' => 30, 
@@ -1829,7 +1857,7 @@ $goods = [
             ], 
             // ベンチプレス
             [
-                'idx'    => 125, 
+                'idx'    => 120, 
                 'ttl' => 'ベンチプレス',
                 'img' => '/hobby/bench-press.jpg', 
                 'len_01' => 110, 
@@ -1851,7 +1879,7 @@ $goods = [
                 'img' => '/other/bicycle.jpg', 
                 'items' => [
                     [
-                        'idx'    => 126, 
+                        'idx'    => 121, 
                         'ttl'    => '大人用', 
                         'full_ttl'    => '自転車 [大人用]', 
                         'len_01' => 160, 
@@ -1862,7 +1890,7 @@ $goods = [
                         'single' => true,
                     ], 
                     [
-                        'idx'    => 127, 
+                        'idx'    => 122, 
                         'ttl'    => '子供用', 
                         'full_ttl'    => '自転車 [子供用]', 
                         'len_01' => 100, 
@@ -1873,7 +1901,7 @@ $goods = [
                         'single' => false,
                     ], 
                     [
-                        'idx'    => 128, 
+                        'idx'    => 123, 
                         'ttl'    => '折り畳み', 
                         'full_ttl'    => '自転車 [折り畳み]', 
                         'len_01' => 80, 
@@ -1896,18 +1924,7 @@ $goods = [
                 'img' => '/board/board.jpg', 
                 'items' => [
                     [
-                        'idx'    => 129, 
-                        'ttl'    => '大', 
-                        'full_ttl'    => 'ダンボール [大]', 
-                        'len_01' => 55, 
-                        'len_02' => 40, 
-                        'len_03' => 35, 
-                        'size'   => 77000, 
-                        'cnt_max' => 50, 
-                        'single' => true
-                    ], 
-                    [
-                        'idx'    => 130, 
+                        'idx'    => 124, 
                         'ttl'    => '小', 
                         'full_ttl'    => 'ダンボール [小]', 
                         'len_01' => 45, 
@@ -1916,6 +1933,17 @@ $goods = [
                         'size'   => 63000,
                         'cnt_max' => 50, 
                         'single' => false
+                    ], 
+                    [
+                        'idx'    => 125, 
+                        'ttl'    => '大', 
+                        'full_ttl'    => 'ダンボール [大]', 
+                        'len_01' => 55, 
+                        'len_02' => 40, 
+                        'len_03' => 35, 
+                        'size'   => 77000, 
+                        'cnt_max' => 50, 
+                        'single' => true
                     ], 
                 ]
             ],
