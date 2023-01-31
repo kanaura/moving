@@ -160,7 +160,7 @@ body.form-select {
             }
     
             .select-head-l {
-                width: calc(100% - 185px);
+                width: calc(100% - 275px);
     
                 @media only screen and (max-width: 768px) {
                     width: 100%;
@@ -196,9 +196,12 @@ body.form-select {
                         position: relative;
                         width: 25%;
                         height: 68px;
+                        text-align: center;
     
                         span {
                             @include absolute-center;
+                            width: 100%;
+                            padding: 0 4px;
                             font-size: 14px;
                             font-weight: $fw-bold;
                         }
@@ -239,7 +242,7 @@ body.form-select {
             }
     
             .select-head-r {
-                width: 185px;
+                width: 275px;
                 text-align: center;
     
                 @media only screen and (max-width: 768px) {

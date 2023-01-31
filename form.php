@@ -24,23 +24,23 @@ include_once('./global.php');
                         </p>
                         <div class="select-head-bar-list">
                             <div class="select-head-bar-item">
-                                <span>～5立米</span>
+                                <span>～5立米(m<sup>3</sup>)</span>
                             </div>
                             <div class="select-head-bar-item">
-                                <span>～10立米</span>
+                                <span>～10立米(m<sup>3</sup>)</span>
                             </div>
                             <div class="select-head-bar-item">
-                                <span>～16立米</span>
+                                <span>～16立米(m<sup>3</sup>)</span>
                             </div>
                             <div class="select-head-bar-item">
-                                <span>～23立米</span>
+                                <span>～23立米(m<sup>3</sup>)</span>
                             </div>
                         </div>
                     </div>
                     <div class="select-head-r">
                         <p class="select-head-r-ttl">現在の家財</p>
                         <p class="select-head-cur-value">
-                            <span id="calc-total">0.0</span>立米
+                            <span id="calc-total">0.0</span>立米(m<sup>3</sup>)
                         </p>
                     </div>
                 </div>
@@ -344,7 +344,7 @@ include_once('./global.php');
                         <p class="select-overview">
                             <span class="small right">この度のお客様の<br class="br-768-no">家財Lv.は</span>
                             <span class="large" id="calc-total-confirm">0</span>
-                            <span class="medium">立米</span>
+                            <span class="medium">立米(m<sup>3</sup>)</span>
                             <span class="small">です。</span>
                         </p>
 
@@ -396,7 +396,7 @@ include_once('./global.php');
                         <p class="select-overview">
                             <span class="small right">この度のお客様の<br class="br-768-no">家財Lv.は</span>
                             <span class="large" id="calc-total-confirm-02">0</span>
-                            <span class="medium">立米</span>
+                            <span class="medium">立米(m<sup>3</sup>)</span>
                             <span class="small">です。</span>
                         </p>
                     </div>

@@ -816,7 +816,7 @@ body.form-select .select-content .select-head {
 }
 
 body.form-select .select-content .select-head .select-head-l {
-  width: calc(100% - 185px);
+  width: calc(100% - 275px);
 }
 
 @media only screen and (max-width: 768px) {
@@ -870,6 +870,7 @@ body.form-select .select-content .select-head .select-head-l .select-head-bar-li
   position: relative;
   width: 25%;
   height: 68px;
+  text-align: center;
 }
 
 body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item span {
@@ -878,6 +879,8 @@ body.form-select .select-content .select-head .select-head-l .select-head-bar-li
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 4px;
   font-size: 14px;
   font-weight: 700;
 }
@@ -915,7 +918,7 @@ body.form-select .select-content .select-head .select-head-l .select-head-bar-li
 }
 
 body.form-select .select-content .select-head .select-head-r {
-  width: 185px;
+  width: 275px;
   text-align: center;
 }
 
