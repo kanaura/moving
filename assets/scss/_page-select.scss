@@ -392,6 +392,41 @@ body.form-select {
                                         @media only screen and (max-width: 480px) {
                                             padding: 10px 80px 10px 5px;
                                         }
+
+                                        span {
+                                            &.single-mark {
+                                                position: relative;
+
+                                                &:after {
+                                                    content: '単';
+                                                    @include absolute-center-y;
+                                                    right: -40px;
+                                                    @include flex-center;
+                                                    width: 36px;
+                                                    height: 36px;
+                                                    text-align: center;
+                                                    font-size: 24px;
+                                                    line-height: 1.0;
+                                                    color: #ffffff;
+                                                    border-radius: 4px;
+                                                    background: linear-gradient(180deg, rgba(237,121,110,1) 0%, rgba(232,53,34,1) 100%);
+
+                                                    @media only screen and (max-width: 768px) {
+                                                        right: -30px;
+                                                        width: 24px;
+                                                        height: 24px;
+                                                        font-size: 18px;
+                                                    }
+
+                                                    @media only screen and (max-width: 480px) {
+                                                        right: -24px;
+                                                        width: 16px;
+                                                        height: 16px;
+                                                        font-size: 12px;
+                                                    }
+                                                }
+                                            }
+                                        }
                                         
                                         .select-size {
                                             @include absolute-center-y;

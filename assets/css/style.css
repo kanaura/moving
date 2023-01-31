@@ -292,6 +292,65 @@ header .wrap .site-header .logo a:hover {
   top: 0;
 }
 
+.txt span.single-mark {
+  position: relative;
+  margin-right: 20px;
+}
+
+.txt span.single-mark:after {
+  content: '単';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.0;
+  color: #ffffff;
+  border-radius: 4px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ed796e), to(#e83522));
+  background: linear-gradient(180deg, #ed796e 0%, #e83522 100%);
+}
+
+@media only screen and (max-width: 768px) {
+  .txt span.single-mark:after {
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .txt span.single-mark:after {
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .txt span.single-mark {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .txt span.single-mark {
+    margin-right: 4px;
+  }
+}
+
 /* ----- MARGIN ----- */
 .mb-20 {
   margin-bottom: 20px !important;
@@ -1103,6 +1162,55 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 @media only screen and (max-width: 480px) {
   body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
     padding: 10px 80px 10px 5px;
+  }
+}
+
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name span.single-mark {
+  position: relative;
+}
+
+body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name span.single-mark:after {
+  content: '単';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.0;
+  color: #ffffff;
+  border-radius: 4px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ed796e), to(#e83522));
+  background: linear-gradient(180deg, #ed796e 0%, #e83522 100%);
+}
+
+@media only screen and (max-width: 768px) {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name span.single-mark:after {
+    right: -30px;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name span.single-mark:after {
+    right: -24px;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
   }
 }
 

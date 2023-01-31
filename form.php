@@ -109,7 +109,7 @@ include_once('./global.php');
                                                     <td>
                                                         <?php if (count($item['items'])) : ?>
                                                             <div class="item-name">
-                                                                <?=$item['ttl'];?>
+                                                                <span><?=$item['ttl'];?></span>
                                                                 <span class="select-size" data-target="option-sub-item-<?=$i;?><?=$j;?>">サイズ選択</span>
                                                             </div>
                                                             <ul id="option-sub-item-<?=$i;?><?=$j;?>" class="sub-item-list">
@@ -120,10 +120,11 @@ include_once('./global.php');
                                                                 ?>
                                                                     <li class="<?=$class;?>">
                                                                         <div class="item-name">
-                                                                            <?=$sub_item['ttl'];?>
                                                                             <?php if (!$sub_item['single']) : ?>
+                                                                            <span><?=$sub_item['ttl'];?></span>
                                                                             <select class="item-ctrl num good">
                                                                             <?php else : ?>
+                                                                            <span class="single-mark"><?=$sub_item['ttl'];?></span>
                                                                             <select class="item-ctrl num good single single-<?=$sub_item['idx'];?>">
                                                                             <?php endif; ?>
                                                                                 <?php for ($cnt = 0; $cnt <= $sub_item['cnt_max']; $cnt++) : ?>
@@ -139,10 +140,11 @@ include_once('./global.php');
                                                             </ul>
                                                         <?php else: ?>
                                                             <div class="item-name">
-                                                                <?=$item['ttl'];?>
                                                                 <?php if (!$item['single']) : ?>
+                                                                <span><?=$item['ttl'];?></span>
                                                                 <select class="item-ctrl num good">
                                                                 <?php else : ?>
+                                                                <span class="single-mark"><?=$item['ttl'];?></span>                                                                    
                                                                 <select class="item-ctrl num  good single single-<?=$item['idx'];?>">
                                                                 <?php endif; ?>
                                                                     <?php for ($cnt = 0; $cnt <= $item['cnt_max']; $cnt++) : ?>
@@ -208,6 +210,10 @@ include_once('./global.php');
 
                     <p class="txt txt-has-star">
                         リスト内に掲載のない家財がある場合は、上記の「フリー入力」バナーを開いて家財の寸法（縦・横・高さ）をご入力ください。
+                    </p>
+
+                    <p class="txt txt-has-star">
+                        <span class="single-mark">　</span>マークは単身楽チョイス対象家財です。
                     </p>
 
                     <div class="select-standalone">
