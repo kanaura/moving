@@ -88,6 +88,10 @@ include_once('./global.php');
                     <div class="select-body">
                         <p class="select-body-ttl ttl-blue-wide">家財を選ぶ</p>
 
+                        <p class="txt txt-has-star">
+                            <span class="single-mark">　</span>マークは単身楽チョイス対象家財です。
+                        </p>
+
                         <div class="select-list">
                             <div id="select-list-top"></div>
                             <?php 

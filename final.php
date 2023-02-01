@@ -316,7 +316,9 @@ if (isset($_POST['message'])) {
                     <p class="form-desc">
                         LINEでのご連絡をご希望の方はコチラから「ハコビス公式LINE」を友達登録していただき、フルネームでお名前を入力して送信をお願いします。
                     </p>
-                    <a href="https://lin.ee/Arq7MBy"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0"></a>
+                    <a href="https://lin.ee/Arq7MBy" target="_blank">
+                        <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
+                    </a>
                 </div>
 
                 <div class="bottom-btn-list">
