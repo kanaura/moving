@@ -13,7 +13,7 @@ include_once('./head.php');
     <?php include_once('./header.php'); ?>
 
     <div class="wrap">
-        <div class="content">
+        <div class="content final-content final form">
             <p class="form-page-ttl">お客様情報を入力ください。</form>
             <form>
                 <div class="form-list">

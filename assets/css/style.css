@@ -658,39 +658,39 @@ body.home #popup .popup-body .popup-figure img {
 }
 
 /* フォームのスタイル */
-body.form-select .address-content {
+.content.form-select .address-content {
   width: 845px;
   margin: 0 auto;
 }
 
 @media only screen and (max-width: 992px) {
-  body.form-select .address-content {
+  .content.form-select .address-content {
     width: 100%;
   }
 }
 
-body.form-select .address-content .address-select-block {
+.content.form-select .address-content .address-select-block {
   margin: 0 0 24px;
 }
 
-body.form-select .address-content .address-select-block .address-select-block-ttl {
+.content.form-select .address-content .address-select-block .address-select-block-ttl {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.8;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .address-content .address-select-block .address-select-block-ttl {
+  .content.form-select .address-content .address-select-block .address-select-block-ttl {
     font-size: 20px;
   }
 }
 
-body.form-select .address-content .address-select-block .address-select-wrapper {
+.content.form-select .address-content .address-select-block .address-select-wrapper {
   position: relative;
   margin: 0 0 16px;
 }
 
-body.form-select .address-content .address-select-block .address-select-wrapper select {
+.content.form-select .address-content .address-select-block .address-select-wrapper select {
   width: 100%;
   height: 75px;
   padding: 0 35px;
@@ -703,18 +703,18 @@ body.form-select .address-content .address-select-block .address-select-wrapper 
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .address-content .address-select-block .address-select-wrapper select {
+  .content.form-select .address-content .address-select-block .address-select-wrapper select {
     height: auto;
     padding: 10px;
     font-size: 20px;
   }
 }
 
-body.form-select .address-content .txt-case-no-address {
+.content.form-select .address-content .txt-case-no-address {
   margin: 0 0 32px;
 }
 
-body.form-select .address-lead {
+.content.form-select .address-lead {
   position: relative;
   width: 845px;
   margin: 0 auto;
@@ -723,12 +723,12 @@ body.form-select .address-lead {
 }
 
 @media only screen and (max-width: 992px) {
-  body.form-select .address-lead {
+  .content.form-select .address-lead {
     width: 100%;
   }
 }
 
-body.form-select .address-lead .address-lead-head {
+.content.form-select .address-lead .address-lead-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -749,13 +749,13 @@ body.form-select .address-lead .address-lead-head {
 }
 
 @media only screen and (max-width: 992px) {
-  body.form-select .address-lead .address-lead-head {
+  .content.form-select .address-lead .address-lead-head {
     font-size: 24px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .address-lead .address-lead-head {
+  .content.form-select .address-lead .address-lead-head {
     height: auto;
     line-height: 1.3;
     padding: 20px;
@@ -763,17 +763,17 @@ body.form-select .address-lead .address-lead-head {
   }
 }
 
-body.form-select .address-lead .address-lead-body {
+.content.form-select .address-lead .address-lead-body {
   padding: 10px 24px 10px 200px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .address-lead .address-lead-body {
+  .content.form-select .address-lead .address-lead-body {
     padding: 20px;
   }
 }
 
-body.form-select .address-lead .address-lead-body .address-lead-btn-list {
+.content.form-select .address-lead .address-lead-body .address-lead-btn-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -784,13 +784,13 @@ body.form-select .address-lead .address-lead-body .address-lead-btn-list {
 }
 
 @media only screen and (max-width: 992px) {
-  body.form-select .address-lead .address-lead-body .address-lead-btn-list {
+  .content.form-select .address-lead .address-lead-body .address-lead-btn-list {
     display: block;
     margin: 0;
   }
 }
 
-body.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn {
+.content.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -812,39 +812,39 @@ body.form-select .address-lead .address-lead-body .address-lead-btn-list .addres
   transition: 0.3s ease all;
 }
 
-body.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:hover {
+.content.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:hover {
   opacity: 0.7;
 }
 
 @media only screen and (max-width: 992px) {
-  body.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn {
+  .content.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn {
     width: 100%;
     margin: 0 0 20px;
   }
 }
 
-body.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:nth-child(1) {
+.content.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:nth-child(1) {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #57d852), color-stop(73%, #009245));
   background: linear-gradient(180deg, #57d852 31%, #009245 73%);
 }
 
-body.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:nth-child(2) {
+.content.form-select .address-lead .address-lead-body .address-lead-btn-list .address-lead-btn:nth-child(2) {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, cyan), color-stop(73%, #2abada));
   background: linear-gradient(180deg, cyan 31%, #2abada 73%);
 }
 
-body.form-select .address-lead .address-lead-body .address-lead-txt {
+.content.form-select .address-lead .address-lead-body .address-lead-txt {
   margin: 8px 0 0;
 }
 
-body.form-select .address-lead .address-lead-deco {
+.content.form-select .address-lead .address-lead-deco {
   position: absolute;
   left: -84px;
   bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .address-lead .address-lead-deco {
+  .content.form-select .address-lead .address-lead-deco {
     position: relative;
     left: unset;
     bottom: unset;
@@ -860,7 +860,7 @@ body.form-select .address-lead .address-lead-deco {
   }
 }
 
-body.form-select .select-content .select-head {
+.content.form-select .select-content .select-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -868,24 +868,24 @@ body.form-select .select-content .select-head {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-head {
+  .content.form-select .select-content .select-head {
     display: block;
     margin: 20px 0;
   }
 }
 
-body.form-select .select-content .select-head .select-head-l {
+.content.form-select .select-content .select-head .select-head-l {
   width: calc(100% - 285px);
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-head .select-head-l {
+  .content.form-select .select-content .select-head .select-head-l {
     width: 100%;
     margin: 0 0 20px;
   }
 }
 
-body.form-select .select-content .select-head .select-head-l .select-head-l-ttl {
+.content.form-select .select-content .select-head .select-head-l .select-head-l-ttl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,25 +898,25 @@ body.form-select .select-content .select-head .select-head-l .select-head-l-ttl 
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-head .select-head-l .select-head-l-ttl {
+  .content.form-select .select-content .select-head .select-head-l .select-head-l-ttl {
     display: block;
   }
 }
 
-body.form-select .select-content .select-head .select-head-l .select-head-l-ttl span {
+.content.form-select .select-content .select-head .select-head-l .select-head-l-ttl span {
   margin-right: 16px;
   font-size: 28px;
   font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-head .select-head-l .select-head-l-ttl span {
+  .content.form-select .select-content .select-head .select-head-l .select-head-l-ttl span {
     display: block;
     font-size: 24px;
   }
 }
 
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list {
+.content.form-select .select-content .select-head .select-head-l .select-head-bar-list {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -927,19 +927,19 @@ body.form-select .select-content .select-head .select-head-l .select-head-bar-li
   border: 2px solid #000000;
 }
 
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-list-bg {
+.content.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-list-bg {
   position: absolute;
   height: 100%;
 }
 
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item {
+.content.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item {
   position: relative;
   width: 25%;
   height: 68px;
   text-align: center;
 }
 
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:before {
+.content.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:before {
   content: '';
   position: absolute;
   right: 0;
@@ -949,7 +949,7 @@ body.form-select .select-content .select-head .select-head-l .select-head-bar-li
   background-color: #000000;
 }
 
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:after {
+.content.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:after {
   content: '';
   position: absolute;
   right: 0;
@@ -959,7 +959,7 @@ body.form-select .select-content .select-head .select-head-l .select-head-bar-li
   background-color: #000000;
 }
 
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item span {
+.content.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item span {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -971,54 +971,54 @@ body.form-select .select-content .select-head .select-head-l .select-head-bar-li
   font-weight: 700;
 }
 
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item.no-meter:before {
+.content.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item.no-meter:before {
   content: none;
 }
 
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item.no-meter:after {
+.content.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item.no-meter:after {
   content: none;
 }
 
-body.form-select .select-content .select-head .select-head-r {
+.content.form-select .select-content .select-head .select-head-r {
   width: 285px;
   text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-head .select-head-r {
+  .content.form-select .select-content .select-head .select-head-r {
     margin: 0 auto;
   }
 }
 
-body.form-select .select-content .select-head .select-head-r .select-head-r-ttl {
+.content.form-select .select-content .select-head .select-head-r .select-head-r-ttl {
   margin: 0 0 7px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.8;
 }
 
-body.form-select .select-content .select-head .select-head-r .select-head-cur-value {
+.content.form-select .select-content .select-head .select-head-r .select-head-cur-value {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.8;
 }
 
-body.form-select .select-content .select-head .select-head-r .select-head-cur-value span {
+.content.form-select .select-content .select-head .select-head-r .select-head-cur-value span {
   font-size: 68px;
   line-height: 1.0;
   color: red;
 }
 
-body.form-select .select-content .select-body {
+.content.form-select .select-content .select-body {
   margin: 0 0 20px;
   padding: 28px 0 0;
 }
 
-body.form-select .select-content .select-body .select-body-ttl {
+.content.form-select .select-content .select-body .select-body-ttl {
   margin-bottom: 18px;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-head {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-head {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1039,12 +1039,12 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-head {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-head {
     font-size: 24px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-head:before {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-head:before {
   content: '';
   position: absolute;
   top: 50%;
@@ -1059,120 +1059,120 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-head:before {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-head:before {
     right: 5px;
     border-width: 10px 5px 0 5px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-head.active:before {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-head.active:before {
   border-width: 0 10px 20px 10px;
   border-color: transparent transparent #ffffff transparent;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-head.active:before {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-head.active:before {
     right: 5px;
     border-width: 0 5px 10px 5px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body {
   padding: 10px 0;
   display: none;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table {
   width: 100%;
   border-collapse: collapse;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr {
   width: 100%;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td, .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th {
   height: 75px;
   border: 1px solid #000000;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td, .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th {
     height: auto;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th {
   padding: 0 24px;
   text-align: center;
   vertical-align: top;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th {
     padding: 0 10px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th img {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th img {
   margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th img {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th img {
     width: auto;
     height: 100px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th img {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr th img {
     width: 100%;
     height: auto;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td {
   position: relative;
   font-size: 28px;
   font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td {
     font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td {
     font-size: 12px;
     font-weight: 400;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
   position: relative;
   padding: 24px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
     padding: 20px 10px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name {
     padding: 10px 80px 10px 5px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name span.single-mark {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name span.single-mark {
   position: relative;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name span.single-mark:after {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name span.single-mark:after {
   content: '単';
   position: absolute;
   top: 50%;
@@ -1200,7 +1200,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name span.single-mark:after {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name span.single-mark:after {
     right: -30px;
     width: 24px;
     height: 24px;
@@ -1209,7 +1209,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name span.single-mark:after {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name span.single-mark:after {
     right: -24px;
     width: 16px;
     height: 16px;
@@ -1217,7 +1217,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1228,7 +1228,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size {
     right: 0;
     width: 100%;
     height: 100%;
@@ -1237,7 +1237,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size:before {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size:before {
   content: '';
   position: absolute;
   top: 50%;
@@ -1252,25 +1252,25 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size:before {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size:before {
     right: 5px;
     border-width: 10px 5px 0 5px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size.active:before {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size.active:before {
   border-width: 0 10px 20px 10px;
   border-color: transparent transparent #000000 transparent;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size.active:before {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .select-size.active:before {
     right: 5px;
     border-width: 0 5px 10px 5px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1287,7 +1287,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl {
     min-width: 60px;
     padding: 5px;
     right: 5px;
@@ -1296,7 +1296,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up, .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
   position: relative;
   width: 15px;
   height: 15px;
@@ -1304,19 +1304,19 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up, .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
     width: 8px;
     height: 8px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up {
   position: absolute;
   right: 10px;
   top: 7px;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up:before {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up:before {
   content: '';
   position: absolute;
   width: 0;
@@ -1327,18 +1327,18 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up:before {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .up:before {
     border-width: 0 3px 7px 3px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn {
   position: absolute;
   right: 10px;
   bottom: 7px;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn:before {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn:before {
   content: '';
   position: absolute;
   width: 0;
@@ -1349,18 +1349,18 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn:before {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl .dn:before {
     border-width: 7px 3px 0 3px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl.free {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl.free {
   border: none;
   right: 0;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl.free {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .item-ctrl.free {
     position: relative;
     top: unset;
     right: unset;
@@ -1371,7 +1371,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1381,7 +1381,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row {
     width: calc(100% - 80px);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1389,7 +1389,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
   width: 140px;
   height: 56px;
   font-size: 28px;
@@ -1401,7 +1401,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
     margin: 0;
     padding: 10px;
     font-size: 16px;
@@ -1409,7 +1409,7 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text], .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number] {
     width: 33%;
     height: 28px;
     margin: 0 4px;
@@ -1417,60 +1417,60 @@ body.form-select .select-content .select-body .select-list .select-item .select-
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-webkit-input-placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-webkit-input-placeholder {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-webkit-input-placeholder, .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-webkit-input-placeholder {
   color: transparent;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]:-ms-input-placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]:-ms-input-placeholder {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]:-ms-input-placeholder, .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]:-ms-input-placeholder {
   color: transparent;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-ms-input-placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-ms-input-placeholder {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-ms-input-placeholder, .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-ms-input-placeholder {
   color: transparent;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::placeholder {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::placeholder, .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::placeholder {
   color: transparent;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-webkit-input-placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-webkit-input-placeholder {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-webkit-input-placeholder, .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-webkit-input-placeholder {
     color: #cccccc;
   }
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]:-ms-input-placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]:-ms-input-placeholder {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]:-ms-input-placeholder, .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]:-ms-input-placeholder {
     color: #cccccc;
   }
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-ms-input-placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-ms-input-placeholder {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::-ms-input-placeholder, .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::-ms-input-placeholder {
     color: #cccccc;
   }
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::placeholder, body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::placeholder {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=text]::placeholder, .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row input[type=number]::placeholder {
     color: #cccccc;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row span {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name .free-row span {
     display: none;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item {
     padding: 10px 5px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-up {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-up {
   margin: 0 0 20px;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-up {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-up {
     margin: 0 0 5px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-up input {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-up input {
   width: 100%;
   height: 56px;
   padding: 0 10px;
@@ -1481,25 +1481,25 @@ body.form-select .select-content .select-body .select-list .select-item .select-
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-up input {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-up input {
     height: 28px;
     font-size: 12px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-bt {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item .free-item-bt {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item select {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item select {
   right: 0;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item select {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td .item-name.free-item select {
     position: relative;
     top: unset;
     right: unset;
@@ -1509,46 +1509,46 @@ body.form-select .select-content .select-body .select-list .select-item .select-
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td ul li {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td ul li {
   padding: 0 0 0 56px;
   border-top: 1px solid #000000;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td ul li {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td ul li {
     padding: 0 0 0 10px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td ul li.gray {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td ul li.gray {
   background-color: #e6e6e6;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td ul.sub-item-list {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table tr td ul.sub-item-list {
   display: none;
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table.has-image tr th {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table.has-image tr th {
   width: 135px;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table.has-image tr th {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table.has-image tr th {
     width: 64px;
   }
 }
 
-body.form-select .select-content .select-body .select-list .select-item .select-item-body table.has-image tr td {
+.content.form-select .select-content .select-body .select-list .select-item .select-item-body table.has-image tr td {
   width: calc(100% - 135px);
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-body .select-list .select-item .select-item-body table.has-image tr td {
+  .content.form-select .select-content .select-body .select-list .select-item .select-item-body table.has-image tr td {
     width: calc(100% - 64px);
   }
 }
 
-body.form-select .select-content .select-standalone {
+.content.form-select .select-content .select-standalone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1558,37 +1558,37 @@ body.form-select .select-content .select-standalone {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-standalone {
+  .content.form-select .select-content .select-standalone {
     display: block;
     margin: 20px 0;
   }
 }
 
-body.form-select .select-content .select-standalone .standalone-icon {
+.content.form-select .select-content .select-standalone .standalone-icon {
   width: 219px;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-standalone .standalone-icon {
+  .content.form-select .select-content .select-standalone .standalone-icon {
     margin: 0 auto 20px;
   }
 }
 
-body.form-select .select-content .select-standalone .standalone-info {
+.content.form-select .select-content .select-standalone .standalone-info {
   width: calc(100% - 219px);
   padding: 0 0 0 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-standalone .standalone-info {
+  .content.form-select .select-content .select-standalone .standalone-info {
     width: 100%;
     margin: 0 0 20px;
     padding: 0;
   }
 }
 
-body.form-select .select-content .select-standalone .standalone-info .standalone-info-ttl {
+.content.form-select .select-content .select-standalone .standalone-info .standalone-info-ttl {
   margin: 0 0 16px;
   font-size: 42px;
   font-weight: 700;
@@ -1596,25 +1596,25 @@ body.form-select .select-content .select-standalone .standalone-info .standalone
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-standalone .standalone-info .standalone-info-ttl {
+  .content.form-select .select-content .select-standalone .standalone-info .standalone-info-ttl {
     text-align: center;
     font-size: 24px;
   }
 }
 
-body.form-select .select-content .select-standalone .standalone-info .standalone-info-txt {
+.content.form-select .select-content .select-standalone .standalone-info .standalone-info-txt {
   font-size: 27px;
   font-weight: 400;
   line-height: 1.33;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-standalone .standalone-info .standalone-info-txt {
+  .content.form-select .select-content .select-standalone .standalone-info .standalone-info-txt {
     font-size: 16px;
   }
 }
 
-body.form-select .select-content .select-standalone .standalone-desc {
+.content.form-select .select-content .select-standalone .standalone-desc {
   position: relative;
   width: 100%;
   margin: 20px 0 0;
@@ -1626,21 +1626,21 @@ body.form-select .select-content .select-standalone .standalone-desc {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-standalone .standalone-desc {
+  .content.form-select .select-content .select-standalone .standalone-desc {
     margin: 0 0 20px;
     padding: 0 0 0 20px;
     font-size: 16px;
   }
 }
 
-body.form-select .select-content .select-standalone .standalone-desc::before {
+.content.form-select .select-content .select-standalone .standalone-desc::before {
   position: absolute;
   content: '※';
   left: 0;
   top: 0;
 }
 
-body.form-select .select-content .select-object {
+.content.form-select .select-content .select-object {
   position: relative;
   padding: 30px 64px 10px;
   border: 4px solid #ed1c24;
@@ -1648,14 +1648,14 @@ body.form-select .select-content .select-object {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-object {
+  .content.form-select .select-content .select-object {
     margin: 40px 0 0;
     padding: 40px 20px 20px;
     border-width: 2px;
   }
 }
 
-body.form-select .select-content .select-object .select-object-ttl {
+.content.form-select .select-content .select-object .select-object-ttl {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1665,12 +1665,12 @@ body.form-select .select-content .select-object .select-object-ttl {
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-object .select-object-ttl {
+  .content.form-select .select-content .select-object .select-object-ttl {
     width: 80%;
   }
 }
 
-body.form-select .select-content .select-object .select-object-ttl span {
+.content.form-select .select-content .select-object .select-object-ttl span {
   padding: 0 20px;
   font-size: 28px;
   font-weight: 700;
@@ -1679,7 +1679,7 @@ body.form-select .select-content .select-object .select-object-ttl span {
   background-color: #ffffff;
 }
 
-body.form-select .select-content .select-message textarea {
+.content.form-select .select-content .select-message textarea {
   width: 100%;
   padding: 20px 10px;
   font-size: 21px;
@@ -1690,20 +1690,20 @@ body.form-select .select-content .select-message textarea {
   resize: none;
 }
 
-body.form-select .select-content .select-calendar {
+.content.form-select .select-content .select-calendar {
   margin: 30px 0 20px;
 }
 
-body.form-select .select-content .select-calendar table {
+.content.form-select .select-content .select-calendar table {
   width: 100%;
   border-collapse: collapse;
 }
 
-body.form-select .select-content .select-calendar table tr {
+.content.form-select .select-content .select-calendar table tr {
   width: 100%;
 }
 
-body.form-select .select-content .select-calendar table tr th, body.form-select .select-content .select-calendar table tr td {
+.content.form-select .select-content .select-calendar table tr th, .content.form-select .select-content .select-calendar table tr td {
   text-align: center;
   vertical-align: middle;
   font-size: 28px;
@@ -1712,60 +1712,60 @@ body.form-select .select-content .select-calendar table tr th, body.form-select 
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-calendar table tr th, body.form-select .select-content .select-calendar table tr td {
+  .content.form-select .select-content .select-calendar table tr th, .content.form-select .select-content .select-calendar table tr td {
     font-size: 20px;
   }
 }
 
-body.form-select .select-content .select-calendar table thead {
+.content.form-select .select-content .select-calendar table thead {
   width: 100%;
 }
 
-body.form-select .select-content .select-calendar table thead tr {
+.content.form-select .select-content .select-calendar table thead tr {
   width: 100%;
 }
 
-body.form-select .select-content .select-calendar table thead tr th:first-child {
+.content.form-select .select-content .select-calendar table thead tr th:first-child {
   color: red;
   background-color: #ff7bac;
 }
 
-body.form-select .select-content .select-calendar table thead tr th:last-child {
+.content.form-select .select-content .select-calendar table thead tr th:last-child {
   color: #004989;
   background-color: #3fa9f5;
 }
 
-body.form-select .select-content .select-calendar table tbody {
+.content.form-select .select-content .select-calendar table tbody {
   width: 100%;
 }
 
-body.form-select .select-content .select-calendar table tbody table {
+.content.form-select .select-content .select-calendar table tbody table {
   width: 100%;
 }
 
-body.form-select .select-content .select-calendar table tbody table tr {
+.content.form-select .select-content .select-calendar table tbody table tr {
   width: 100%;
 }
 
-body.form-select .select-content .select-calendar table tbody table tr td {
+.content.form-select .select-content .select-calendar table tbody table tr td {
   cursor: pointer;
 }
 
-body.form-select .select-content .select-calendar table tbody table tr td:first-child {
+.content.form-select .select-content .select-calendar table tbody table tr td:first-child {
   color: red;
   background-color: #ff7bac;
 }
 
-body.form-select .select-content .select-calendar table tbody table tr td:last-child {
+.content.form-select .select-content .select-calendar table tbody table tr td:last-child {
   color: #004989;
   background-color: #3fa9f5;
 }
 
-body.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame {
+.content.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame {
   position: relative;
 }
 
-body.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-top {
+.content.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-top {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1779,15 +1779,15 @@ body.form-select .select-content .select-calendar table tbody table tr td .fc-da
   height: 95px;
 }
 
-body.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-top .fc-daygrid-day-number {
+.content.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-top .fc-daygrid-day-number {
   z-index: 1;
 }
 
-body.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-bg {
+.content.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-bg {
   z-index: 0;
 }
 
-body.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-bg .fc-highlight {
+.content.form-select .select-content .select-calendar table tbody table tr td .fc-daygrid-day-frame .fc-daygrid-day-bg .fc-highlight {
   position: absolute;
   left: 0;
   top: 0;
@@ -1796,44 +1796,44 @@ body.form-select .select-content .select-calendar table tbody table tr td .fc-da
   background-color: #c6c6c6;
 }
 
-body.form-select .select-content .select-calendar table tbody table tr td.fc-day-past, body.form-select .select-content .select-calendar table tbody table tr td.fc-day-today {
+.content.form-select .select-content .select-calendar table tbody table tr td.fc-day-past, .content.form-select .select-content .select-calendar table tbody table tr td.fc-day-today {
   color: #e6e6e6;
   cursor: initial;
 }
 
-body.form-select .select-content .select-calendar table tbody table tr td.fc-day.selected {
+.content.form-select .select-content .select-calendar table tbody table tr td.fc-day.selected {
   background-color: #c6c6c6;
 }
 
-body.form-select .select-content .select-calendar table .fc-scrollgrid-sync-table {
+.content.form-select .select-content .select-calendar table .fc-scrollgrid-sync-table {
   width: 100% !important;
 }
 
-body.form-select .select-content .select-calendar table .fc-col-header {
+.content.form-select .select-content .select-calendar table .fc-col-header {
   width: 100% !important;
 }
 
-body.form-select .select-content .select-calendar table .fc-daygrid-body {
+.content.form-select .select-content .select-calendar table .fc-daygrid-body {
   width: 100% !important;
 }
 
-body.form-select .select-content .select-calendar .fc-header-toolbar {
+.content.form-select .select-content .select-calendar .fc-header-toolbar {
   position: relative;
 }
 
-body.form-select .select-content .select-calendar .fc-header-toolbar .fc-toolbar-title {
+.content.form-select .select-content .select-calendar .fc-header-toolbar .fc-toolbar-title {
   text-align: center;
   font-size: 48px;
   font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-calendar .fc-header-toolbar .fc-toolbar-title {
+  .content.form-select .select-content .select-calendar .fc-header-toolbar .fc-toolbar-title {
     font-size: 28px;
   }
 }
 
-body.form-select .select-content .select-calendar .fc-header-toolbar .fc-prev-button {
+.content.form-select .select-content .select-calendar .fc-header-toolbar .fc-prev-button {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1846,16 +1846,16 @@ body.form-select .select-content .select-calendar .fc-header-toolbar .fc-prev-bu
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-calendar .fc-header-toolbar .fc-prev-button {
+  .content.form-select .select-content .select-calendar .fc-header-toolbar .fc-prev-button {
     font-size: 20px;
   }
 }
 
-body.form-select .select-content .select-calendar .fc-header-toolbar .fc-prev-button:before {
+.content.form-select .select-content .select-calendar .fc-header-toolbar .fc-prev-button:before {
   content: '<先月';
 }
 
-body.form-select .select-content .select-calendar .fc-header-toolbar .fc-next-button {
+.content.form-select .select-content .select-calendar .fc-header-toolbar .fc-next-button {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1868,35 +1868,35 @@ body.form-select .select-content .select-calendar .fc-header-toolbar .fc-next-bu
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-calendar .fc-header-toolbar .fc-next-button {
+  .content.form-select .select-content .select-calendar .fc-header-toolbar .fc-next-button {
     font-size: 20px;
   }
 }
 
-body.form-select .select-content .select-calendar .fc-header-toolbar .fc-next-button:before {
+.content.form-select .select-content .select-calendar .fc-header-toolbar .fc-next-button:before {
   content: '次月>';
 }
 
-body.form-select .select-content .select-calendar .fc-header-toolbar .fc-today-button {
+.content.form-select .select-content .select-calendar .fc-header-toolbar .fc-today-button {
   display: none;
 }
 
-body.form-select .select-content .select-calendar .fc-header-toolbar .fc-toolbar-chunk:first-child {
+.content.form-select .select-content .select-calendar .fc-header-toolbar .fc-toolbar-chunk:first-child {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 }
 
-body.form-select .select-content .select-calendar .fc-header-toolbar .fc-toolbar-chunk:last-child {
+.content.form-select .select-content .select-calendar .fc-header-toolbar .fc-toolbar-chunk:last-child {
   display: none;
 }
 
-body.form-select .select-content .select-calendar .fc-view-harness {
+.content.form-select .select-content .select-calendar .fc-view-harness {
   height: auto !important;
 }
 
-body.form-select .select-content .select-time {
+.content.form-select .select-content .select-time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1912,18 +1912,18 @@ body.form-select .select-content .select-time {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-time {
+  .content.form-select .select-content .select-time {
     font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  body.form-select .select-content .select-time {
+  .content.form-select .select-content .select-time {
     font-size: 14px;
   }
 }
 
-body.form-select .select-content .select-time label {
+.content.form-select .select-content .select-time label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1933,31 +1933,31 @@ body.form-select .select-content .select-time label {
   cursor: pointer;
 }
 
-body.form-select .select-content .select-time label input[type=radio] {
+.content.form-select .select-content .select-time label input[type=radio] {
   width: 28px;
   height: 28px;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-time label input[type=radio] {
+  .content.form-select .select-content .select-time label input[type=radio] {
     width: 20px;
     height: 20px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-time label input[type=radio] {
+  .content.form-select .select-content .select-time label input[type=radio] {
     width: 14px;
     height: 14px;
   }
 }
 
-body.form-select .select-content .select-time label:nth-child(1) {
+.content.form-select .select-content .select-time label:nth-child(1) {
   margin-right: 20px;
 }
 
-body.form-select .select-content .select-overview {
+.content.form-select .select-content .select-overview {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1974,35 +1974,35 @@ body.form-select .select-content .select-overview {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-overview {
+  .content.form-select .select-content .select-overview {
     display: block;
   }
 }
 
-body.form-select .select-content .select-overview span.small {
+.content.form-select .select-content .select-overview span.small {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.3;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-overview span.small {
+  .content.form-select .select-content .select-overview span.small {
     font-size: 20px;
   }
 }
 
-body.form-select .select-content .select-overview span.medium {
+.content.form-select .select-content .select-overview span.medium {
   font-size: 66px;
   font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-overview span.medium {
+  .content.form-select .select-content .select-overview span.medium {
     font-size: 28px;
   }
 }
 
-body.form-select .select-content .select-overview span.large {
+.content.form-select .select-content .select-overview span.large {
   font-size: 179px;
   font-weight: 700;
   line-height: 1.0;
@@ -2010,36 +2010,36 @@ body.form-select .select-content .select-overview span.large {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-overview span.large {
+  .content.form-select .select-content .select-overview span.large {
     font-size: 80px;
   }
 }
 
-body.form-select .select-content .select-overview span.right {
+.content.form-select .select-content .select-overview span.right {
   text-align: right;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-overview span.right {
+  .content.form-select .select-content .select-overview span.right {
     text-align: left;
     display: block;
   }
 }
 
-body.form-select .select-content .select-info-table {
+.content.form-select .select-content .select-info-table {
   margin: 0 0 20px;
 }
 
-body.form-select .select-content .select-info-table table {
+.content.form-select .select-content .select-info-table table {
   width: 100%;
   border-collapse: collapse;
 }
 
-body.form-select .select-content .select-info-table table tr {
+.content.form-select .select-content .select-info-table table tr {
   width: 100%;
 }
 
-body.form-select .select-content .select-info-table table tr td {
+.content.form-select .select-content .select-info-table table tr td {
   padding: 10px 25px;
   font-size: 28px;
   font-weight: 700;
@@ -2048,36 +2048,36 @@ body.form-select .select-content .select-info-table table tr td {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-info-table table tr td {
+  .content.form-select .select-content .select-info-table table tr td {
     font-size: 16px;
   }
 }
 
-body.form-select .select-content .select-info-table table tr td.sht {
+.content.form-select .select-content .select-info-table table tr td.sht {
   width: 240px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-info-table table tr td.sht {
+  .content.form-select .select-content .select-info-table table tr td.sht {
     width: 100px;
   }
 }
 
-body.form-select .select-content .select-info-table table tr td.lng {
+.content.form-select .select-content .select-info-table table tr td.lng {
   width: calc(100% - 240px);
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-info-table table tr td.lng {
+  .content.form-select .select-content .select-info-table table tr td.lng {
     width: calc(100% - 100px);
   }
 }
 
-body.form-select .select-content .select-info-table table tr:nth-child(even) {
+.content.form-select .select-content .select-info-table table tr:nth-child(even) {
   background-color: #e6e6e6;
 }
 
-body.form-select .select-content .select-info-date-wrapper {
+.content.form-select .select-content .select-info-date-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2091,31 +2091,31 @@ body.form-select .select-content .select-info-date-wrapper {
   height: 104px;
 }
 
-body.form-select .select-content .select-info-date-wrapper .select-info-date {
+.content.form-select .select-content .select-info-date-wrapper .select-info-date {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.7;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .select-info-date-wrapper .select-info-date {
+  .content.form-select .select-content .select-info-date-wrapper .select-info-date {
     font-size: 20px;
   }
 }
 
-body.form-select .select-content .price-body {
+.content.form-select .select-content .price-body {
   margin: 0 0 190px;
   padding: 0 80px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .price-body {
+  .content.form-select .select-content .price-body {
     margin: 0 0 40px;
     padding: 0;
   }
 }
 
-body.form-select .select-content .price-body .price-wrapper {
+.content.form-select .select-content .price-body .price-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2132,49 +2132,49 @@ body.form-select .select-content .price-body .price-wrapper {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .price-body .price-wrapper {
+  .content.form-select .select-content .price-body .price-wrapper {
     height: auto;
     padding: 20px 10px;
   }
 }
 
-body.form-select .select-content .price-body .price-wrapper .price {
+.content.form-select .select-content .price-body .price-wrapper .price {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.75;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .price-body .price-wrapper .price {
+  .content.form-select .select-content .price-body .price-wrapper .price {
     font-size: 20px;
   }
 }
 
-body.form-select .select-content .price-body .price-wrapper .price span {
+.content.form-select .select-content .price-body .price-wrapper .price span {
   font-size: 80px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .price-body .price-wrapper .price span {
+  .content.form-select .select-content .price-body .price-wrapper .price span {
     font-size: 28px;
   }
 }
 
-body.form-select .select-content .price-body .price-table {
+.content.form-select .select-content .price-body .price-table {
   margin: 0 0 36px;
 }
 
-body.form-select .select-content .price-body .price-table table {
+.content.form-select .select-content .price-body .price-table table {
   width: 100%;
   border-collapse: collapse;
   margin: 0 0 36px;
 }
 
-body.form-select .select-content .price-body .price-table table tr {
+.content.form-select .select-content .price-body .price-table table tr {
   width: 100%;
 }
 
-body.form-select .select-content .price-body .price-table table tr td, body.form-select .select-content .price-body .price-table table tr th {
+.content.form-select .select-content .price-body .price-table table tr td, .content.form-select .select-content .price-body .price-table table tr th {
   width: 50%;
   padding: 30px;
   text-align: center;
@@ -2184,21 +2184,21 @@ body.form-select .select-content .price-body .price-table table tr td, body.form
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .price-body .price-table table tr td, body.form-select .select-content .price-body .price-table table tr th {
+  .content.form-select .select-content .price-body .price-table table tr td, .content.form-select .select-content .price-body .price-table table tr th {
     padding: 10px;
     font-size: 20px;
   }
 }
 
-body.form-select .select-content .price-body .price-table table tr th {
+.content.form-select .select-content .price-body .price-table table tr th {
   background-color: #adffff;
 }
 
-body.form-select .select-content .price-body .price-table table tr:last-child td {
+.content.form-select .select-content .price-body .price-table table tr:last-child td {
   background-color: #adffff;
 }
 
-body.form-select .select-content .attention .attention-head {
+.content.form-select .select-content .attention .attention-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2218,12 +2218,12 @@ body.form-select .select-content .attention .attention-head {
   background: linear-gradient(180deg, #ffb749 31%, #ff6d00 73%);
 }
 
-body.form-select .select-content .attention .attention-body {
+.content.form-select .select-content .attention .attention-body {
   padding: 20px 24px 40px;
   background-color: #fff29d;
 }
 
-body.form-select .select-content .attention .attention-body .attention-txt {
+.content.form-select .select-content .attention .attention-body .attention-txt {
   margin: 0 0 40px;
   font-size: 21px;
   font-weight: 400;
@@ -2231,12 +2231,12 @@ body.form-select .select-content .attention .attention-body .attention-txt {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .attention .attention-body .attention-txt {
+  .content.form-select .select-content .attention .attention-body .attention-txt {
     font-size: 16px;
   }
 }
 
-body.form-select .select-content .attention .attention-body .attention-agree {
+.content.form-select .select-content .attention .attention-body .attention-agree {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2248,7 +2248,7 @@ body.form-select .select-content .attention .attention-body .attention-agree {
           justify-content: center;
 }
 
-body.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper {
+.content.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2257,7 +2257,7 @@ body.form-select .select-content .attention .attention-body .attention-agree .ch
           align-items: center;
 }
 
-body.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper input[type=checkbox] {
+.content.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper input[type=checkbox] {
   width: 36px;
   height: 36px;
   border: 2px solid #000000;
@@ -2265,13 +2265,13 @@ body.form-select .select-content .attention .attention-body .attention-agree .ch
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper input[type=checkbox] {
+  .content.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper input[type=checkbox] {
     width: 20px;
     height: 20px;
   }
 }
 
-body.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper label {
+.content.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper label {
   padding: 0 0 0 18px;
   font-size: 38px;
   font-weight: 700;
@@ -2280,13 +2280,12 @@ body.form-select .select-content .attention .attention-body .attention-agree .ch
 }
 
 @media only screen and (max-width: 768px) {
-  body.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper label {
+  .content.form-select .select-content .attention .attention-body .attention-agree .chk-wrapper label {
     font-size: 20px;
   }
 }
 
-/* 家財・オプション選択ページのスタイル */
-body.form .form-page-ttl {
+.final-content.form .form-page-ttl {
   margin: 20px 0;
   font-size: 28px;
   font-weight: 700;
@@ -2294,24 +2293,24 @@ body.form .form-page-ttl {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .form-page-ttl {
+  .final-content.form .form-page-ttl {
     font-size: 24px;
   }
 }
 
-body.form .form-list {
+.final-content.form .form-list {
   margin: 0 0 200px;
   padding: 0 128px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .form-list {
+  .final-content.form .form-list {
     margin: 0 0 80px;
     padding: 0;
   }
 }
 
-body.form .form-list .form-row {
+.final-content.form .form-list .form-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2320,12 +2319,12 @@ body.form .form-list .form-row {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .form-list .form-row {
+  .final-content.form .form-list .form-row {
     display: block;
   }
 }
 
-body.form .form-list .form-row .form-item-name {
+.final-content.form .form-list .form-row .form-item-name {
   position: relative;
   margin: 0 0 16px;
   font-size: 21px;
@@ -2333,12 +2332,12 @@ body.form .form-list .form-row .form-item-name {
   line-height: 1.7;
 }
 
-body.form .form-list .form-row .form-item-name.required p {
+.final-content.form .form-list .form-row .form-item-name.required p {
   display: inline-block;
   position: relative;
 }
 
-body.form .form-list .form-row .form-item-name.required p:after {
+.final-content.form .form-list .form-row .form-item-name.required p:after {
   content: '※必須';
   position: absolute;
   top: 50%;
@@ -2350,39 +2349,39 @@ body.form .form-list .form-row .form-item-name.required p:after {
   color: red;
 }
 
-body.form .form-list .form-row .form-item-name span {
+.final-content.form .form-list .form-row .form-item-name span {
   margin: 0 0 0 10px;
   font-size: 13px;
   font-weight: 400;
 }
 
-body.form .form-list .form-row .form-item-name span.vertical {
+.final-content.form .form-list .form-row .form-item-name span.vertical {
   display: block;
   margin: -10px 0 0;
 }
 
-body.form .form-list .form-row .form-item-name.bold {
+.final-content.form .form-list .form-row .form-item-name.bold {
   font-weight: 700;
 }
 
-body.form .form-list .form-row .form-item-name.small {
+.final-content.form .form-list .form-row .form-item-name.small {
   width: 160px;
   font-size: 18px;
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .form-list .form-row .form-item-name.small {
+  .final-content.form .form-list .form-row .form-item-name.small {
     width: 100%;
   }
 }
 
-body.form .form-list .form-row .form-item-name.small.required p:after {
+.final-content.form .form-list .form-row .form-item-name.small.required p:after {
   right: unset;
   left: 85px;
   white-space: nowrap;
 }
 
-body.form .form-list .form-row .form-item-group {
+.final-content.form .form-list .form-row .form-item-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2396,16 +2395,16 @@ body.form .form-list .form-row .form-item-group {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .form-list .form-row .form-item-group {
+  .final-content.form .form-list .form-row .form-item-group {
     width: 100%;
   }
 }
 
-body.form .form-list .form-row .form-item-group.full {
+.final-content.form .form-list .form-row .form-item-group.full {
   width: 100%;
 }
 
-body.form .form-list .form-row .form-item-group label {
+.final-content.form .form-list .form-row .form-item-group label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2419,17 +2418,17 @@ body.form .form-list .form-row .form-item-group label {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .form-list .form-row .form-item-group label {
+  .final-content.form .form-list .form-row .form-item-group label {
     width: 100%;
   }
 }
 
-body.form .form-list .form-row .form-item-group input[type=radio] {
+.final-content.form .form-list .form-row .form-item-group input[type=radio] {
   width: 20px;
   height: 20px;
 }
 
-body.form .form-list .form-row .form-item-group input[type=text], body.form .form-list .form-row .form-item-group input[type=email], body.form .form-list .form-row .form-item-group input[type=tel] {
+.final-content.form .form-list .form-row .form-item-group input[type=text], .final-content.form .form-list .form-row .form-item-group input[type=email], .final-content.form .form-list .form-row .form-item-group input[type=tel] {
   width: 100%;
   height: 32px;
   padding: 0 10px;
@@ -2439,25 +2438,25 @@ body.form .form-list .form-row .form-item-group input[type=text], body.form .for
   border: 1px solid #000000;
 }
 
-body.form .form-list .form-row .form-item-group input[type=text].post-code {
+.final-content.form .form-list .form-row .form-item-group input[type=text].post-code {
   width: auto;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .form-list .form-row .form-item-group input[type=text].post-code {
+  .final-content.form .form-list .form-row .form-item-group input[type=text].post-code {
     width: 100%;
   }
 }
 
-body.form .form-list .form-row .form-item-group input[type=text].date-01 {
+.final-content.form .form-list .form-row .form-item-group input[type=text].date-01 {
   width: 146px;
 }
 
-body.form .form-list .form-row .form-item-group input[type=text].date-02 {
+.final-content.form .form-list .form-row .form-item-group input[type=text].date-02 {
   width: 86px;
 }
 
-body.form .form-list .form-row .form-item-group textarea {
+.final-content.form .form-list .form-row .form-item-group textarea {
   width: 100%;
   padding: 20px 10px;
   font-size: 21px;
@@ -2468,7 +2467,7 @@ body.form .form-list .form-row .form-item-group textarea {
   resize: none;
 }
 
-body.form .form-list .form-row .form-item-group .form-btn {
+.final-content.form .form-list .form-row .form-item-group .form-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2489,21 +2488,21 @@ body.form .form-list .form-row .form-item-group .form-btn {
   transition: 0.3s ease all;
 }
 
-body.form .form-list .form-row .form-item-group .form-btn:hover {
+.final-content.form .form-list .form-row .form-item-group .form-btn:hover {
   opacity: 0.7;
 }
 
 @media only screen and (max-width: 480px) {
-  body.form .form-list .form-row .form-item-group .form-btn {
+  .final-content.form .form-list .form-row .form-item-group .form-btn {
     margin: 10px 0 0;
   }
 }
 
-body.form .form-list .form-block {
+.final-content.form .form-list .form-block {
   margin: 20px 0;
 }
 
-body.form .form-list .form-block .form-block-ttl {
+.final-content.form .form-list .form-block .form-block-ttl {
   position: relative;
   margin: 0 0 16px;
   font-size: 21px;
@@ -2511,7 +2510,7 @@ body.form .form-list .form-block .form-block-ttl {
   line-height: 1.7;
 }
 
-body.form .form-list .form-block .form-block-ttl span {
+.final-content.form .form-list .form-block .form-block-ttl span {
   position: relative;
   display: inline-block;
   padding-right: 20px;
@@ -2519,7 +2518,7 @@ body.form .form-list .form-block .form-block-ttl span {
   z-index: 1;
 }
 
-body.form .form-list .form-block .form-block-ttl:after {
+.final-content.form .form-list .form-block .form-block-ttl:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -2532,7 +2531,7 @@ body.form .form-list .form-block .form-block-ttl:after {
   z-index: 0;
 }
 
-body.form .form-list .form-desc {
+.final-content.form .form-list .form-desc {
   position: relative;
   padding: 0 0 0 20px;
   font-size: 21px;
@@ -2540,31 +2539,31 @@ body.form .form-list .form-desc {
 }
 
 @media only screen and (max-width: 768px) {
-  body.form .form-list .form-desc {
+  .final-content.form .form-list .form-desc {
     font-size: 16px;
   }
 }
 
-body.form .form-list .form-desc:before {
+.final-content.form .form-list .form-desc:before {
   content: '※';
   position: absolute;
   left: 0;
   top: 0;
 }
 
-body.form .form-list .form-desc.no-star {
+.final-content.form .form-list .form-desc.no-star {
   padding: 0;
 }
 
-body.form .form-list .form-desc.no-star:before {
+.final-content.form .form-list .form-desc.no-star:before {
   content: none;
 }
 
-body.form .form-list .form-item-image {
+.final-content.form .form-list .form-item-image {
   width: 100%;
   margin: 0 0 20px;
 }
 
-body.form .form-list hr {
+.final-content.form .form-list hr {
   margin: 20px -20px;
 }

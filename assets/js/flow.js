@@ -143,6 +143,16 @@ $(document).ready(function() {
         } else {
             $('.price-select-content').hide();
         }
+
+        if (flow_step == 6) {
+            // 最後の画面
+            $('.btn-clear').hide();
+
+            $('.final-content').show();
+            $('.btn-default').text('この内容で仮申込をする');
+        } else {
+            $('.final-content').hide();
+        }
     }
 
     $('.btn-default').on('click', function() {
@@ -283,8 +293,8 @@ $(document).ready(function() {
                 alert('「同意します」をチェックしてください。');
                 return false;
             }
-
-            $('#form-select').submit();
+        } else if (flow_step == 6) {
+            $('#form-mail-send').submit();
             return false;
         }
 
