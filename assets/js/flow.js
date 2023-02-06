@@ -186,14 +186,16 @@ $(document).ready(function() {
                 }
             });
 
-            $('input.free-ttl').each(function(index) {
-                var cnt = parseInt($(this).parent().find('.cnt').val());
-                var size_01 = parseInt($(this).parent().parent().find('.input-free-w').val());
-                var size_02 = parseInt($(this).parent().parent().find('.input-free-h').val());
-                var size_03 = parseInt($(this).parent().parent().find('.input-free-d').val());
+            $('input.free-cnt').each(function(index) {
+                var cnt = parseInt($(this).val());
                 if (cnt != 0) {
+                    var free_ttl = $(this).parent().parent().parent().find('.input-free-name').val()
+                    var size_01 = parseInt($(this).parent().parent().find('.input-free-w').val());
+                    var size_02 = parseInt($(this).parent().parent().find('.input-free-h').val());
+                    var size_03 = parseInt($(this).parent().parent().find('.input-free-d').val());
+
                     tbl_content += '<tr>';
-                    tbl_content += '<td class="lng">' + $(this).val() + '(' + size_01 + 'cm・' + size_02 + 'cm・' + size_03 + 'cm)</td>';
+                    tbl_content += '<td class="lng">' + free_ttl + '(' + size_01 + 'cm・' + size_02 + 'cm・' + size_03 + 'cm)</td>';
                     tbl_content += '<td class="sht">' + cnt + '台</td>';
                     tbl_content += '</tr>';
                 }
