@@ -34,6 +34,27 @@ $(function() {
 
         $('#calc-total-confirm').text(show_total);
         $('#calc-total-confirm-02').text(show_total);
+        
+        if (total <= 5) {
+            total_percent = (total / 5) * 25;
+            $('#select-head-bar-list-bg').width(total_percent + "%");
+            $('#select-head-bar-list-bg').css({'background' : 'rgba(0, 255, 255, 1.0)'});
+        } else if (total <= 10) {
+            total_percent = ((total - 5) / 5) * 25 + 25;
+            $('#select-head-bar-list-bg').width(total_percent + "%");
+            $('#select-head-bar-list-bg').css({'background' : 'rgba(217, 224, 33, 1.0)'});
+        } else if (total <= 16) {
+            total_percent = ((total - 10) / 6) * 25 + 50;
+            $('#select-head-bar-list-bg').width(total_percent + "%");
+            $('#select-head-bar-list-bg').css({'background' : 'rgba(251, 176, 59, 1.0)'});
+        } else if (total <= 23) {
+            total_percent = ((total - 20) / 3) * 25 + 75;
+            $('#select-head-bar-list-bg').width(total_percent + "%");
+            $('#select-head-bar-list-bg').css({'background' : 'rgba(255, 123, 172, 1.0)'});
+        } else {
+            $('#select-head-bar-list-bg').width("100%");
+            $('#select-head-bar-list-bg').css({'background' : '#ff0000'});
+        }
     }
 
     $('.dn').on('click', function() {

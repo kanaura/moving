@@ -22,7 +22,8 @@ include_once('./global.php');
                             <span>家財メーター</span>
                             お運びする家財の量を表示いたします。
                         </p>
-                        <div class="select-head-bar-list">
+                        <div id="select-head-bar-list" class="select-head-bar-list">
+                            <div id="select-head-bar-list-bg" class="select-head-bar-list-bg"></div>
                             <div class="select-head-bar-item">
                                 <span>～5立米(m<sup>3</sup>)</span>
                             </div>
@@ -32,7 +33,7 @@ include_once('./global.php');
                             <div class="select-head-bar-item">
                                 <span>～16立米(m<sup>3</sup>)</span>
                             </div>
-                            <div class="select-head-bar-item">
+                            <div class="select-head-bar-item no-meter">
                                 <span>～23立米(m<sup>3</sup>)</span>
                             </div>
                         </div>

@@ -190,13 +190,40 @@ body.form-select {
                 }
     
                 .select-head-bar-list {
+                    position: relative;
                     @include flex-center-v;
+                    border: 2px solid #000000;
+
+                    .select-head-bar-list-bg {
+                        position: absolute;
+                        height: 100%;
+                    }
     
                     .select-head-bar-item {
                         position: relative;
                         width: 25%;
                         height: 68px;
                         text-align: center;
+
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 2px;
+                            height: 5px;
+                            background-color: #000000;
+                        }
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            width: 2px;
+                            height: 5px;
+                            background-color: #000000;
+                        }
     
                         span {
                             @include absolute-center;
@@ -207,34 +234,44 @@ body.form-select {
                         }
     
                         &:nth-child(1) {
-                            background-color: rgba(0, 255, 255, 1.0);
+                            // background-color: rgba(0, 255, 255, 1.0);
     
                             span {
-                                color: rgba(0, 73, 137, 1.0);
+                                // color: rgba(0, 73, 137, 1.0);
                             }
                         }
     
                         &:nth-child(2) {
-                            background-color: rgba(217, 224, 33, 1.0);
+                            // background-color: rgba(217, 224, 33, 1.0);
     
                             span {
-                                color: rgba(0, 146, 69, 1.0);
+                                // color: rgba(0, 146, 69, 1.0);
                             }
                         }
     
                         &:nth-child(3) {
-                            background-color: rgba(251, 176, 59, 1.0);
+                            // background-color: rgba(251, 176, 59, 1.0);
     
                             span {
-                                color: rgba(241, 90, 36, 1.0);
+                                // color: rgba(241, 90, 36, 1.0);
                             }
                         }
     
                         &:nth-child(4) {
-                            background-color: rgba(255, 123, 172, 1.0);
+                            // background-color: rgba(255, 123, 172, 1.0);
     
                             span {
-                                color: rgba(193, 39, 45, 1.0);
+                                // color: rgba(193, 39, 45, 1.0);
+                            }
+                        }
+
+                        &.no-meter {
+                            &:before {
+                                content: none;
+                            }
+
+                            &:after {
+                                content: none;
                             }
                         }
                     }

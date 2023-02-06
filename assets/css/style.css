@@ -917,12 +917,19 @@ body.form-select .select-content .select-head .select-head-l .select-head-l-ttl 
 }
 
 body.form-select .select-content .select-head .select-head-l .select-head-bar-list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 2px solid #000000;
+}
+
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-list-bg {
+  position: absolute;
+  height: 100%;
 }
 
 body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item {
@@ -930,6 +937,26 @@ body.form-select .select-content .select-head .select-head-l .select-head-bar-li
   width: 25%;
   height: 68px;
   text-align: center;
+}
+
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 5px;
+  background-color: #000000;
+}
+
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 5px;
+  background-color: #000000;
 }
 
 body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item span {
@@ -944,36 +971,12 @@ body.form-select .select-content .select-head .select-head-l .select-head-bar-li
   font-weight: 700;
 }
 
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(1) {
-  background-color: cyan;
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item.no-meter:before {
+  content: none;
 }
 
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(1) span {
-  color: #004989;
-}
-
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(2) {
-  background-color: #d9e021;
-}
-
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(2) span {
-  color: #009245;
-}
-
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(3) {
-  background-color: #fbb03b;
-}
-
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(3) span {
-  color: #f15a24;
-}
-
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(4) {
-  background-color: #ff7bac;
-}
-
-body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item:nth-child(4) span {
-  color: #c1272d;
+body.form-select .select-content .select-head .select-head-l .select-head-bar-list .select-head-bar-item.no-meter:after {
+  content: none;
 }
 
 body.form-select .select-content .select-head .select-head-r {
