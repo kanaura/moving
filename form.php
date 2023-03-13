@@ -368,15 +368,15 @@ include_once('./global.php');
 
                                                                 <div class="free-row">
 
-                                                                    <span>縦</span>
+                                                                    <span>横幅</span>
 
-                                                                    <input type="number" class="input-free input-free-w" placeholder="縦(cm)" min="0" max="500" name="free_w[<?=$i;?>]" value="0" />
+                                                                    <input type="number" class="input-free input-free-w" placeholder="横幅(cm)" min="0" max="500" name="free_w[<?=$i;?>]" value="0" />
 
                                                                     <span>cm ×&nbsp;</span><br class="br-768">
 
-                                                                    <span>横</span>
+                                                                    <span>奥行</span>
 
-                                                                    <input type="number" class="input-free input-free-h" placeholder="横(cm)" min="0" max="500" name="free_h[<?=$i;?>]" value="0" />
+                                                                    <input type="number" class="input-free input-free-h" placeholder="奥行(cm)" min="0" max="500" name="free_h[<?=$i;?>]" value="0" />
 
                                                                     <span>cm ×&nbsp;</span><br class="br-768">
 
