@@ -10,6 +10,8 @@ ini_set('error_reporting', E_ALL);
 mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 
+$test = false;
+
 function str_date($date)
 {
     $date = date($date);
@@ -33,47 +35,56 @@ $message_common .= $_POST['final_addr_02_type'] . "\r\n";
 $message_common .= "ご連絡方法：" . $_POST['final_contact_method'] . "\r\n\r\n";
 
 $message_common .= "[お見積り内容]\r\n";
-$message_common .= "お引越要望日：" . str_date($_SESSION['date']) . " " . (($_SESSION['time'] == "am") ? "午前" : "午後") . "\r\n";
-$message_common .= "基本料金：" . $_SESSION['price_good'] . "円\r\n";
-$message_common .= "オプション：" . $_SESSION['price_option'] . "円\r\n";
-$message_common .= "消費税：" . $_SESSION['price_tax'] . "円\r\n";
-$message_common .= "合計金額：" . $_SESSION['price_total'] . "円\r\n\r\n";
+$message_common .= "お引越要望日：" . str_date($_POST['date']) . " " . (($_POST['time'] == "am") ? "午前" : "午後") . "\r\n";
+$message_common .= "基本料金：" . $_POST['price_good'] . "円\r\n";
+$message_common .= "オプション：" . $_POST['price_option'] . "円\r\n";
+$message_common .= "消費税：" . $_POST['price_tax'] . "円\r\n";
+$message_common .= "合計金額：" . $_POST['price_total'] . "円\r\n\r\n";
 
 $message_common .= "[入力内容]\r\n";
 $message_common .= "【家財】\r\n";
-for ($i = 0; $i < count($_SESSION['goods_ttl']); $i++) {
-    if ($_SESSION['goods_cnt'][$i] != 0) {
-        $message_common .= $_SESSION['goods_ttl'][$i] . "：" . $_SESSION['goods_cnt'][$i] . "台\r\n";
+for ($i = 0; $i < count($_POST['goods_ttl']); $i++) {
+    if ($_POST['goods_cnt'][$i] != 0) {
+        $message_common .= $_POST['goods_ttl'][$i] . "：" . $_POST['goods_cnt'][$i] . "台\r\n";
     }
 }
 
 $message_common .= "【フリー】\r\n";
-for ($i = 0; $i < count($_SESSION['free_ttl']); $i++) {
-    if ($_SESSION['free_cnt'][$i] != 0) {
-        $message_common .= $_SESSION['free_ttl'][$i] . "：(" . $_SESSION['free_w'][$i] . "cm・" . $_SESSION['free_h'][$i] . "cm・" . $_SESSION['free_d'][$i] . "cm)" . $_SESSION['free_cnt'][$i] . "台\r\n";
+for ($i = 0; $i < count($_POST['free_ttl']); $i++) {
+    if ($_POST['free_cnt'][$i] != 0) {
+        $message_common .= $_POST['free_ttl'][$i] . "：(" . $_POST['free_w'][$i] . "cm・" . $_POST['free_h'][$i] . "cm・" . $_POST['free_d'][$i] . "cm)" . $_POST['free_cnt'][$i] . "台\r\n";
     }
 }
 
 $message_common .= "\r\n";
 $message_common .= "【オプション】\r\n";
-for ($i = 0; $i < count($_SESSION['options_ttl']); $i++) {
-    if ($_SESSION['options_cnt'][$i] != 0) {
-        $message_common .= $_SESSION['options_ttl'][$i] . "：" . $_SESSION['options_cnt'][$i] . "台\r\n";
+for ($i = 0; $i < count($_POST['options_ttl']); $i++) {
+    if ($_POST['options_cnt'][$i] != 0) {
+        $message_common .= $_POST['options_ttl'][$i] . "：" . $_POST['options_cnt'][$i] . "台\r\n";
     }
 }
 $message_common .= "\r\n";
-$message_common .= "お問い合わせ：\r\n".$_SESSION['message'];
+$message_common .= "お問い合わせ：\r\n".$_POST['message'];
 
 $message_common .= "\r\n";
 $message_common .= "\r\n";
 
-$mailto  = "info@hacovice.com";
+if (!$test) {
+    $mailto  = "info@hacovice.com";
+} else {
+    $mailto  = "user01@localhost.com";
+}
 
 $header = "Content-Type: multipart/mixed;boundary=\"__BOUNDARY__\"\r\n";
 $header .= "Return-Path: " . $mailto . " \r\n";
-$header .= "From: <info@hacovice.com>" . "\r\n";
-$header .= "Sender: <info@hacovice.com>" . "\r\n";
-$header .= "Bcc: <info@sangodesign.jp>\r\n";
+if (!$test) {
+    $header .= "From: <info@hacovice.com>" . "\r\n";
+    $header .= "Sender: <info@hacovice.com>" . "\r\n";
+    $header .= "Bcc: <info@sangodesign.jp>\r\n";
+} else {
+    $header .= "From: <user01@localhost.com>" . "\r\n";
+    $header .= "Sender: <user01@localhost.com>" . "\r\n";
+}
 $header .= "Return-Path: " . $mailto . " \r\n";
 
 $title   = "お引越しの仮申込入りました";
@@ -118,8 +129,13 @@ $mailto  = $_POST['final_email'];
 
 $header = "Content-Type: multipart/mixed;boundary=\"__BOUNDARY__\"\r\n";
 $header .= "Return-Path: " . $mailto . " \r\n";
-$header .= "From: <info@hacovice.com>" . "\r\n";
-$header .= "Sender: <info@hacovice.com>" . "\r\n";
+if (!$test) {
+    $header .= "From: <info@hacovice.com>" . "\r\n";
+    $header .= "Sender: <info@hacovice.com>" . "\r\n";
+} else {
+    $header .= "From: <user01@localhost.com>" . "\r\n";
+    $header .= "Sender: <user01@localhost.com>" . "\r\n";    
+}
 $header .= "Return-Path: " . $mailto . " \r\n";
 
 $title   = "お引越しの仮申込ありがとうございます【株式会社ハコビス】";

@@ -205,7 +205,7 @@ $(document).ready(function() {
                     var size_03 = parseInt($(this).parent().parent().find('.input-free-d').val());
 
                     tbl_content += '<tr>';
-                    tbl_content += '<td class="lng">' + free_ttl + '(' + size_01 + 'cm・' + size_02 + 'cm・' + size_03 + 'cm)</td>';
+                    tbl_content += '<td class="lng">' + free_ttl + '(横幅' + size_01 + 'cm・奥行' + size_02 + 'cm・高さ' + size_03 + 'cm)</td>';
                     tbl_content += '<td class="sht">' + cnt + '台</td>';
                     tbl_content += '</tr>';
                 }

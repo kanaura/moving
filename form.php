@@ -382,7 +382,7 @@ include_once('./global.php');
 
                                                                     <span>高さ</span>
 
-                                                                    <input type="number" class="input-free input-free-d" placeholder="高(cm)" min="0" max="500" name="free_d[<?=$i;?>]" value="0" />
+                                                                    <input type="number" class="input-free input-free-d" placeholder="高さ(cm)" min="0" max="500" name="free_d[<?=$i;?>]" value="0" />
 
                                                                     <span>cm</span>
 
@@ -432,7 +432,7 @@ include_once('./global.php');
 
                         <p class="txt txt-has-star">
 
-                            リスト内に掲載のない家財がある場合は、上記の「フリー入力」バナーを開いて家財の寸法（縦・横・高さ）をご入力ください。
+                            リスト内に掲載のない家財がある場合は、上記の「フリー入力」バナーを開いて家財の寸法（横幅×奥行×高さ）をご入力ください。
 
                         </p>
 
