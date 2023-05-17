@@ -310,6 +310,20 @@ $(document).ready(function() {
                 }
             });
 
+            if ($('#select-elevator-01').val() == 0) {
+                $floor_price = parseInt($('#select-floor-01').val());
+                if ($floor_price != 0) {
+                    $price_option += $floor_price;
+                }
+            }
+
+            if ($('#select-elevator-02').val() == 0) {
+                $floor_price = parseInt($('#select-floor-02').val());
+                if ($floor_price != 0) {
+                    $price_option += $floor_price;
+                }
+            }
+
             $price_tax = parseInt(($price_good + $price_option) * 0.1);
 
             $price_total = $price_good + $price_option + $price_tax;
