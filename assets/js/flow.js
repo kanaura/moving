@@ -231,6 +231,13 @@ $(document).ready(function() {
                 }
             });
 
+            if ($('#option_special_recycle').val() == 1) {
+                tbl_content += '<tr>';
+                tbl_content += '<td class="lng">リサイクル処分</td>';
+                tbl_content += '<td class="sht">現地にてお見積り</td>';
+                tbl_content += '</tr>';
+            }
+
             $('#confirm-option-table').html(tbl_content);
         } else if (flow_step == 3) {
             var date_str = $('input[name=date]').val();

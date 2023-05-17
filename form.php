@@ -532,7 +532,7 @@ include_once('./global.php');
                                                     <td>
                                                         <div class="item-name">
                                                             リサイクル処分
-                                                            <select class="item-ctrl num">                                                    
+                                                            <select id="option_special_recycle" name="option_special_recycle" class="item-ctrl num">                                                    
                                                                 <option value="0">無し</option>                                                    
                                                                 <option value="1">あり</option>                                                    
                                                             </select>
