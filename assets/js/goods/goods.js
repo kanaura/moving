@@ -116,6 +116,18 @@ $(function() {
             $('.option-select-content .item-ctrl.num').each(function(index) {
                 $(this).val(0);
                 $(this).parent().find('.cnt').val(0);
+
+                $('#option_special_recycle')[0].selectedIndex = 0;
+                $('#option_special_useless')[0].selectedIndex = 0;
+
+                $('#select-elevator-01')[0].selectedIndex = 0;
+                $('#select-floor-01')[0].selectedIndex = 0;
+                $('#select-elevator-02')[0].selectedIndex = 0;
+                $('#select-floor-02')[0].selectedIndex = 0;
+                
+                $('.block-select-floor').each(function() {
+                    $(this).show();
+                });
             });
         }
 
