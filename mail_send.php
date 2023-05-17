@@ -63,6 +63,31 @@ for ($i = 0; $i < count($_POST['options_ttl']); $i++) {
         $message_common .= $_POST['options_ttl'][$i] . "：" . $_POST['options_cnt'][$i] . "台\r\n";
     }
 }
+
+if (isset($_POST['option_special_recycle']) && ($_POST['option_special_recycle'] == 1)) {
+    $message_common .= "リサイクル処分：現地にてお見積り\r\n";
+}
+
+if (isset($_POST['option_special_useless']) && ($_POST['option_special_useless'] == 1)) {
+    $message_common .= "不用品回収：現地にてお見積り\r\n";
+}
+
+if (isset($_POST['select_elevator_01']) && ($_POST['select_elevator_01'] == 0)) {
+    if (isset($_POST['select_floor_01']) && ($_POST['select_floor_01'] != 0)) {
+        $message_common .= "4階以上作業(引越し元)：";
+        $floor = intval(($_POST['select_floor_01'] - 5000) / 2000) + 4;
+        $message_common .= $floor . "階\r\n";
+    }
+}
+
+if (isset($_POST['select_elevator_02']) && ($_POST['select_elevator_02'] == 0)) {
+    if (isset($_POST['select_floor_02']) && ($_POST['select_floor_02'] != 0)) {
+        $message_common .= "4階以上作業(引越し先)：";
+        $floor = intval(($_POST['select_floor_02'] - 5000) / 2000) + 4;
+        $message_common .= $floor . "階\r\n";
+    }
+}
+
 $message_common .= "\r\n";
 $message_common .= "お問い合わせ：\r\n".$_POST['message'];
 
