@@ -238,6 +238,13 @@ $(document).ready(function() {
                 tbl_content += '</tr>';
             }
 
+            if ($('#option_special_useless').val() == 1) {
+                tbl_content += '<tr>';
+                tbl_content += '<td class="lng">不用品回収</td>';
+                tbl_content += '<td class="sht">現地にてお見積り</td>';
+                tbl_content += '</tr>';
+            }
+
             $('#confirm-option-table').html(tbl_content);
         } else if (flow_step == 3) {
             var date_str = $('input[name=date]').val();

@@ -7,6 +7,7 @@
 	<meta http-equiv="Content-Style-Type" content="text/css" />
     <meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache">
 
     <title><?=$page_ttl;?></title>
 

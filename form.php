@@ -302,7 +302,7 @@ include_once('./global.php');
 
                                                                     <?php else : ?>
 
-                                                                    <span class="single-mark"><?=$item['ttl'];?></span>                                                                    
+                                                                    <span class="single-mark"><?=$item['ttl'];?></span>                
 
                                                                     <select class="item-ctrl num  good single single-<?=$item['idx'];?>">
 
@@ -532,9 +532,9 @@ include_once('./global.php');
                                                     <td>
                                                         <div class="item-name">
                                                             リサイクル処分
-                                                            <select id="option_special_recycle" name="option_special_recycle" class="item-ctrl num">                                                    
-                                                                <option value="0">無し</option>                                                    
-                                                                <option value="1">あり</option>                                                    
+                                                            <select id="option_special_recycle" name="option_special_recycle" class="item-ctrl num">
+                                                                <option value="0">無し</option>
+                                                                <option value="1">あり</option>
                                                             </select>
                                                         </div>
                                                     </td>
@@ -550,9 +550,9 @@ include_once('./global.php');
                                                     <td>
                                                         <div class="item-name">
                                                             不用品回収
-                                                            <select class="item-ctrl num">                                                    
-                                                                <option value="0">無し</option>                                                    
-                                                                <option value="1">あり</option>                                                    
+                                                            <select id="option_special_useless" name="option_special_useless" class="item-ctrl num">
+                                                                <option value="0">無し</option>
+                                                                <option value="1">あり</option>
                                                             </select>
                                                         </div>
                                                     </td>
