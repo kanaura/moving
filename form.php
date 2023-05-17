@@ -524,6 +524,118 @@ include_once('./global.php');
 
                                     <p class="select-item-head"><?=$option['ttl'];?></p>
 
+                                    <?php if ($option['ttl'] == 'リサイクル処分') : ?>
+                                    <div class="select-item-body">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="item-name">
+                                                            リサイクル処分
+                                                            <select class="item-ctrl num">                                                    
+                                                                <option value="0">無し</option>                                                    
+                                                                <option value="1">あり</option>                                                    
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <?php elseif ($option['ttl'] == '不用品回収') : ?>
+                                    <div class="select-item-body">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="item-name">
+                                                            不用品回収
+                                                            <select class="item-ctrl num">                                                    
+                                                                <option value="0">無し</option>                                                    
+                                                                <option value="1">あり</option>                                                    
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <?php elseif ($option['ttl'] == '4階以上作業') : ?>
+                                    <div class="select-item-body">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="item-name">
+                                                            引越し元
+                                                            <span class="select-size" data-target="good-4floors-01">選択</span>
+                                                        </div>
+                                                        <ul id="good-4floors-01" class="sub-item-list">
+                                                            <li class="">
+                                                                <div class="item-name">
+                                                                    エレベーターの有無
+                                                                    <select class="item-ctrl num">
+                                                                        <option value="0">無し</option>
+                                                                        <option value="1">あり</option>
+                                                                    </select>
+                                                                </div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div class="item-name">
+                                                                    階数
+                                                                    <select class="item-ctrl num">
+                                                                        <option value="0">4階未満</option>
+                                                                        <option value="5000">4階</option>
+                                                                        <option value="7000">5階</option>
+                                                                        <option value="9000">6階</option>
+                                                                        <option value="11000">7階</option>
+                                                                        <option value="13000">8階</option>
+                                                                        <option value="15000">9階</option>
+                                                                        <option value="17000">10階</option>
+                                                                    </select>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="item-name">
+                                                            引越し先
+                                                            <span class="select-size" data-target="good-4floors-02">選択</span>
+                                                        </div>
+                                                        <ul id="good-4floors-02" class="sub-item-list">
+                                                            <li class="">
+                                                                <div class="item-name">
+                                                                    エレベーターの有無
+                                                                    <select class="item-ctrl num">
+                                                                        <option value="0">無し</option>
+                                                                        <option value="1">あり</option>
+                                                                    </select>
+                                                                </div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div class="item-name">
+                                                                    階数
+                                                                    <select class="item-ctrl num">
+                                                                        <option value="0">4階未満</option>
+                                                                        <option value="5000">4階</option>
+                                                                        <option value="7000">5階</option>
+                                                                        <option value="9000">6階</option>
+                                                                        <option value="11000">7階</option>
+                                                                        <option value="13000">8階</option>
+                                                                        <option value="15000">9階</option>
+                                                                        <option value="17000">10階</option>
+                                                                    </select>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <?php else : ?>
                                     <div class="select-item-body">
 
                                         <table>
@@ -631,6 +743,7 @@ include_once('./global.php');
                                         </table>
 
                                     </div>
+                                    <?php endif; ?>
 
                                 </div>
 
