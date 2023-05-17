@@ -574,16 +574,16 @@ include_once('./global.php');
                                                             <li class="">
                                                                 <div class="item-name">
                                                                     エレベーターの有無
-                                                                    <select class="item-ctrl num">
+                                                                    <select id="select-elevator-01" class="item-ctrl num select-elevator">
                                                                         <option value="0">無し</option>
                                                                         <option value="1">あり</option>
                                                                     </select>
                                                                 </div>
                                                             </li>
-                                                            <li class="">
+                                                            <li class="block-select-floor">
                                                                 <div class="item-name">
                                                                     階数
-                                                                    <select class="item-ctrl num">
+                                                                    <select id="select-floor-01" class="item-ctrl num">
                                                                         <option value="0">4階未満</option>
                                                                         <option value="5000">4階</option>
                                                                         <option value="7000">5階</option>
@@ -608,16 +608,16 @@ include_once('./global.php');
                                                             <li class="">
                                                                 <div class="item-name">
                                                                     エレベーターの有無
-                                                                    <select class="item-ctrl num">
+                                                                    <select id="select-elevator-02" class="item-ctrl num select-elevator">
                                                                         <option value="0">無し</option>
                                                                         <option value="1">あり</option>
                                                                     </select>
                                                                 </div>
                                                             </li>
-                                                            <li class="">
+                                                            <li class="block-select-floor">
                                                                 <div class="item-name">
                                                                     階数
-                                                                    <select class="item-ctrl num">
+                                                                    <select id="select-floor-02" class="item-ctrl num">
                                                                         <option value="0">4階未満</option>
                                                                         <option value="5000">4階</option>
                                                                         <option value="7000">5階</option>

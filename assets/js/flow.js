@@ -245,6 +245,28 @@ $(document).ready(function() {
                 tbl_content += '</tr>';
             }
 
+            if ($('#select-elevator-01').val() == 0) {
+                $floor_price = $('#select-floor-01').val();
+                $floor = $('#select-floor-01')[0].selectedIndex + 3;
+                if ($floor_price != 0) {
+                    tbl_content += '<tr>';
+                    tbl_content += '<td class="lng">【4階以上作業】引越し元</td>';
+                    tbl_content += '<td class="sht">' + $floor + '階</td>';
+                    tbl_content += '</tr>';         
+                }
+            }
+
+            if ($('#select-elevator-02').val() == 0) {
+                $floor_price = $('#select-floor-02').val();
+                $floor = $('#select-floor-02')[0].selectedIndex + 3;
+                if ($floor_price != 0) {
+                    tbl_content += '<tr>';
+                    tbl_content += '<td class="lng">【4階以上作業】引越し先</td>';
+                    tbl_content += '<td class="sht">' + $floor + '階</td>';
+                    tbl_content += '</tr>';         
+                }
+            }
+
             $('#confirm-option-table').html(tbl_content);
         } else if (flow_step == 3) {
             var date_str = $('input[name=date]').val();
@@ -319,5 +341,15 @@ $(document).ready(function() {
     $('.btn-back').on('click', function() {
         flow_step--;
         refresh_form();
+    });
+
+    $('.select-elevator').on('change', function() {
+        $exist = $(this).val();
+        if ($exist == "1") {
+            $(this).parent().parent().next().hide();
+        } else {
+            $(this).parent().parent().next().show();
+            $(this).parent().parent().next().find('select')[0].selectedIndex = 0;
+        }
     });
 });
