@@ -687,6 +687,21 @@
                                                 }
                                             }
                                         }
+
+                                        .has-desc {
+                                            position: relative;
+                                            line-height: unset;
+
+                                            .desc {
+                                                display: block;
+                                                font-size: 18px;
+                                                font-weight: $fw-normal;
+
+                                                @media only screen and (max-width: 480px) {
+                                                    font-size: 10px;
+                                                }
+                                            }
+                                        }
                                     }
     
                                     ul {

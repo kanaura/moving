@@ -65,11 +65,11 @@ for ($i = 0; $i < count($_POST['options_ttl']); $i++) {
 }
 
 if (isset($_POST['option_special_recycle']) && ($_POST['option_special_recycle'] == 1)) {
-    $message_common .= "リサイクル処分：現地にてお見積り\r\n";
+    $message_common .= "リサイクル処分：別途お見積り\r\n";
 }
 
 if (isset($_POST['option_special_useless']) && ($_POST['option_special_useless'] == 1)) {
-    $message_common .= "不用品回収：現地にてお見積り\r\n";
+    $message_common .= "不用品回収：別途お見積り\r\n";
 }
 
 if (isset($_POST['select_elevator_01']) && ($_POST['select_elevator_01'] == 0)) {

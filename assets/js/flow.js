@@ -234,14 +234,14 @@ $(document).ready(function() {
             if ($('#option_special_recycle').val() == 1) {
                 tbl_content += '<tr>';
                 tbl_content += '<td class="lng">リサイクル処分</td>';
-                tbl_content += '<td class="sht">現地にてお見積り</td>';
+                tbl_content += '<td class="sht">別途お見積り</td>';
                 tbl_content += '</tr>';
             }
 
             if ($('#option_special_useless').val() == 1) {
                 tbl_content += '<tr>';
                 tbl_content += '<td class="lng">不用品回収</td>';
-                tbl_content += '<td class="sht">現地にてお見積り</td>';
+                tbl_content += '<td class="sht">別途お見積り</td>';
                 tbl_content += '</tr>';
             }
 

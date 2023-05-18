@@ -531,7 +531,10 @@ include_once('./global.php');
                                                 <tr>
                                                     <td>
                                                         <div class="item-name">
-                                                            リサイクル処分
+                                                            <p class="has-desc">
+                                                                リサイクル処分
+                                                                <span class="desc">別途お見積り<br class="br-480">（地域によって対応できない場合があります）</span>
+                                                            </p>
                                                             <select id="option_special_recycle" name="option_special_recycle" class="item-ctrl num">
                                                                 <option value="0">無し</option>
                                                                 <option value="1">あり</option>
@@ -549,7 +552,10 @@ include_once('./global.php');
                                                 <tr>
                                                     <td>
                                                         <div class="item-name">
-                                                            不用品回収
+                                                            <p class="has-desc">
+                                                                不用品回収
+                                                                <span class="desc">別途お見積り<br class="br-480">（地域によって対応できない場合があります）</span>
+                                                            </p>
                                                             <select id="option_special_useless" name="option_special_useless" class="item-ctrl num">
                                                                 <option value="0">無し</option>
                                                                 <option value="1">あり</option>
@@ -1035,7 +1041,7 @@ include_once('./global.php');
 
                                     <div class="attention-txt">
 
-                                        ・旧居もしくはご新居が4階以上のマンションの場合、別途料金となります。<br>
+                                        ・上記お見積り金額は概算となりますので、実際の金額とは異なる場合がございます。あらかじめご了承ください。<br>
 
                                         ・ご家財や間取りにより、窓吊り作業等の特殊作業が発生した場合は別途料金となります。<br>
 
