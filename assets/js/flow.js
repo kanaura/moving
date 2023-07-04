@@ -299,7 +299,15 @@ $(document).ready(function() {
 
             $truck_id = get_truck_idx($('input[name=total_cm3]').val());
 
+            $moving_date = $('input[name=date]').val();
+            $md_items = $moving_date.split("-");
+            $moving_date_val = parseInt($md_items[1]) * 100 + parseInt($md_items[2]);
+
             $price_good = $price_goods[$area_01_id][$truck_id][$area_02_id];
+
+            if ($moving_date_val >= 315 && $moving_date_val <= 415) {
+                $price_good = parseInt($price_good / 2);
+            }
 
             $price_option = 0;
             $('input.option-cnt').each(function(index) {
