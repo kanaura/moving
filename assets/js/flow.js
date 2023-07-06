@@ -306,7 +306,7 @@ $(document).ready(function() {
             $price_good = $price_goods[$area_01_id][$truck_id][$area_02_id];
 
             if ($moving_date_val >= 315 && $moving_date_val <= 415) {
-                $price_good = parseInt($price_good / 2);
+                $price_good = parseInt($price_good * 1.5);
             }
 
             $price_option = 0;
